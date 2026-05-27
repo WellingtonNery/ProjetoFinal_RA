@@ -12,8 +12,8 @@ dia7 = pg.image.load('Imagens/Calendario/seven.png')
 dia8 = pg.image.load('Imagens/Calendario/eight.png')
 dia9 = pg.image.load('Imagens/Calendario/nine.png')
 
-tamanho_dias = (135, 65)
-tamanho_numero = (35, 50)
+tamanho_dias = (150, 65)
+tamanho_numero = (30, 45)
 
 dia = pg.transform.scale(dia, tamanho_dias)
 
@@ -56,8 +56,12 @@ def desenhar_dia_no_papel(janela, papel_rect, valor):
     x = papel_rect.centerx - largura_total // 2
     y = papel_rect.centery
 
-    dias_rect = dia.get_rect()
-    dias_rect.midleft = (x + 25, y)
+    if int(valor) < 10:
+        dias_rect = dia.get_rect()
+        dias_rect.midleft = (x + 15, y)
+    else:
+        dias_rect = dia.get_rect()
+        dias_rect.midleft = (x + 25, y)
 
     janela.blit(dia, dias_rect)
 
