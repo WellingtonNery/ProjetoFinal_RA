@@ -4,10 +4,6 @@ import pontos
 import eventos
 import dialogo
 
-def aplicar_efeito(ponto, efeito):
-    for chave, valor in efeito.items():
-        ponto[chave] += valor
-
 pg.init()
 
 fullscreen = False
@@ -36,6 +32,7 @@ mostrar_npc = True
 tempo_esperando = 5000
 agora = 0
 tempo_sem_npc = 0
+tela_inicio = True
 
 rects_quadro = {
     "cima": pg.Rect(1398, 119, 92, 39),
@@ -45,9 +42,12 @@ rects_quadro = {
 
 rects_pontos = {
     "Contentamento": 100,
-    "Populacao": 0,
-    "Dinheiro": 0
+    "Populacao": 50,
+    "Dinheiro": 75
 }
+
+rect_opcao_esquerda = pg.Rect(340, 760, 300, 90)
+rect_opcao_direita = pg.Rect(960, 760, 300, 90)
 
 janela = pg.display.set_mode((LARGURA, ALTURA), pg.FULLSCREEN | pg.SCALED)
 dialogo.carregar()
@@ -61,6 +61,25 @@ fundo_tarde = pg.transform.scale(fundo_tarde, (LARGURA, ALTURA))
 fundo_noite = pg.image.load('Imagens/fundo_noite.png').convert()
 fundo_noite = pg.transform.scale(fundo_noite, (LARGURA, ALTURA))
 fundo = fundo_manha
+
+fundo_inicio = pg.transform.smoothscale(fundo_manha, (160, 90))
+fundo_inicio = pg.transform.smoothscale(fundo_inicio, (LARGURA, ALTURA))
+escurecer_inicio = pg.Surface((LARGURA, ALTURA))
+escurecer_inicio.fill((0, 0, 0))
+escurecer_inicio.set_alpha(90)
+
+logo = pg.image.load('Imagens/logo.png').convert_alpha()
+logo.set_colorkey((0, 0, 0))
+largura_logo = 950
+altura_logo = int(logo.get_height() * (largura_logo / logo.get_width()))
+logo = pg.transform.smoothscale(logo, (largura_logo, altura_logo))
+logo_rect = logo.get_rect()
+logo_rect.center = (LARGURA // 2, ALTURA // 2 - 70)
+
+fonte_inicio = pg.font.SysFont("arial", 34)
+texto_inicio = fonte_inicio.render("toque para começar", True, (245, 226, 177))
+texto_inicio_rect = texto_inicio.get_rect()
+texto_inicio_rect.center = (LARGURA // 2, ALTURA - 135)
 
 rei = pg.image.load('Imagens/imagem_rei.png').convert_alpha()
 largura_rei = rei.get_width()
@@ -87,6 +106,10 @@ y_trono = ((900 - altura_rei) // 2) - 100
 
 loop = True
 
+def aplicar_efeito(efeito):
+    for chave, valor in efeito.items():
+        rects_pontos[chave] += valor
+
 while loop:
     for event in pg.event.get():
         if event.type == pg.QUIT:
@@ -95,10 +118,15 @@ while loop:
             if event.key == pg.K_ESCAPE:
                 loop = False
         if event.type == pg.MOUSEBUTTONDOWN:
-            if event.button == 1 and mostrar_npc and not apagando and not esperando:
-                fala_atual += 1
+            if event.button == 1 and tela_inicio:
+                tela_inicio = False
 
-                if fala_atual >= len(eventos.eventos[evento_atual]["falas"]):
+            elif event.button == 1 and mostrar_npc and not apagando and not esperando:
+                evento_info = eventos.eventos[evento_atual]
+                ultima_fala = fala_atual == len(evento_info["falas"]) - 1
+
+                if ultima_fala and rect_opcao_esquerda.collidepoint(event.pos):
+                    aplicar_efeito(evento_info["efeito_esquerda"])
                     mostrar_npc = False
                     esperando_npc = True
 
@@ -106,6 +134,27 @@ while loop:
                     evento += 1
 
                     tempo_sem_npc = pg.time.get_ticks()
+
+                elif ultima_fala and rect_opcao_direita.collidepoint(event.pos):
+                    aplicar_efeito(evento_info["efeito_direita"])
+                    mostrar_npc = False
+                    esperando_npc = True
+
+                    fala_atual = 0
+                    evento += 1
+
+                    tempo_sem_npc = pg.time.get_ticks()
+
+                elif not ultima_fala:
+                    fala_atual += 1
+
+    if tela_inicio:
+        janela.blit(fundo_inicio, (0, 0))
+        janela.blit(escurecer_inicio, (0, 0))
+        janela.blit(logo, logo_rect)
+        janela.blit(texto_inicio, texto_inicio_rect)
+        pg.display.update()
+        continue
 
     if esperando_npc:
         agora = pg.time.get_ticks()
@@ -115,6 +164,8 @@ while loop:
             esperando_npc = False
 
             evento_atual += 1
+            if evento_atual >= len(eventos.eventos):
+                evento_atual = 0
 
     if apagando:
         alpha += 5
@@ -166,8 +217,14 @@ while loop:
     janela.blit(fade, (0, 0))
 
     if mostrar_npc and not apagando and not esperando:
-        eventos.imprimir_sprite(janela, personagem_rect, eventos.eventos[evento_atual]["sprite"])
-        fala = eventos.eventos[evento_atual]["falas"][fala_atual]
-        dialogo.desenhar(janela, fala)
+        evento_info = eventos.eventos[evento_atual]
+
+        eventos.imprimir_sprite(janela, personagem_rect, evento_info["sprite"])
+        fala = evento_info["falas"][fala_atual]
+
+        if fala_atual == len(evento_info["falas"]) - 1:
+            dialogo.desenhar(janela, fala, evento_info["opcao_esquerda"], evento_info["opcao_direita"])
+        else:
+            dialogo.desenhar(janela, fala)
 
     pg.display.update()
