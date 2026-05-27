@@ -4,6 +4,10 @@ import pontos
 import eventos
 import dialogo
 
+def aplicar_efeito(ponto, efeito):
+    for chave, valor in efeito.items():
+        ponto[chave] += valor
+
 pg.init()
 
 fullscreen = False
@@ -26,6 +30,12 @@ alpha = 0
 apagando = False
 esperando = False
 tempo_preto = 0
+
+esperando_npc = False
+mostrar_npc = True
+tempo_esperando = 5000
+agora = 0
+tempo_sem_npc = 0
 
 rects_quadro = {
     "cima": pg.Rect(1398, 119, 92, 39),
@@ -85,14 +95,26 @@ while loop:
             if event.key == pg.K_ESCAPE:
                 loop = False
         if event.type == pg.MOUSEBUTTONDOWN:
-            if event.button == 1 and not apagando and not esperando:
+            if event.button == 1 and mostrar_npc and not apagando and not esperando:
                 fala_atual += 1
 
                 if fala_atual >= len(eventos.eventos[evento_atual]["falas"]):
-                    fala_atual = 0
-                    evento_atual += 1
+                    mostrar_npc = False
+                    esperando_npc = True
 
+                    fala_atual = 0
                     evento += 1
+
+                    tempo_sem_npc = pg.time.get_ticks()
+
+    if esperando_npc:
+        agora = pg.time.get_ticks()
+
+        if agora - tempo_sem_npc >= tempo_esperando:
+            mostrar_npc = True
+            esperando_npc = False
+
+            evento_atual += 1
 
     if apagando:
         alpha += 5
@@ -126,9 +148,6 @@ while loop:
     elif evento == 1:
         fundo = fundo_tarde
 
-    else:
-        fundo = fundo_manha
-
     janela.blit(fundo, (0, 0))
 
     janela.blit(rei, (x_trono, y_trono))
@@ -143,12 +162,11 @@ while loop:
     pontos.atualizar(janela, rects_quadro["meio"], rects_pontos["Populacao"])
     pontos.atualizar(janela, rects_quadro["baixo"], rects_pontos["Dinheiro"])
 
-    eventos.imprimir_sprite(janela, personagem_rect, eventos.eventos[evento_atual]["sprite"])
-
     fade.set_alpha(alpha)
     janela.blit(fade, (0, 0))
 
-    if not apagando and not esperando:
+    if mostrar_npc and not apagando and not esperando:
+        eventos.imprimir_sprite(janela, personagem_rect, eventos.eventos[evento_atual]["sprite"])
         fala = eventos.eventos[evento_atual]["falas"][fala_atual]
         dialogo.desenhar(janela, fala)
 
