@@ -15,22 +15,39 @@ sprites = {
 eventos = [
     {
         "sprite": 1,
+
         "falas": [
             "Meu senhor, os camponeses estão com fome.",
             "Eles pedem arroz dos estoques do castelo.",
             "O que deseja fazer?"
         ],
 
-        "opcao_esquerda": "Ajudar",
-        "opcao_direita": "Recusar",
+        "qtd_escolhas": {
+            "opcao_primeira": "Ajudar",
+            "opcao_segunda": "Recusar",
+            "opcao_terceira": "Dar a bunda",
+            "opcao_quarta": "Dar um beijo no Diego"
+        },
 
-        "efeito_esquerda": {
+        "efeito_primeira": {
             "Contentamento": 15,
             "Populacao": 5,
             "Dinheiro": -30
         },
 
-        "efeito_direita": {
+        "efeito_segunda": {
+            "Contentamento": -15,
+            "Populacao": -5,
+            "Dinheiro": 20
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -15,
+            "Populacao": -5,
+            "Dinheiro": 20
+        },
+
+        "efeito_quarta": {
             "Contentamento": -15,
             "Populacao": -5,
             "Dinheiro": 20
@@ -39,22 +56,25 @@ eventos = [
 
     {
         "sprite": 2,
+
         "falas": [
             "Um samurai pede dinheiro para proteger as estradas.",
             "Ele diz que bandidos estão atacando viajantes.",
             "Qual será sua ordem?"
         ],
 
-        "opcao_esquerda": "Ajudar",
-        "opcao_direita": "Recusar",
+        "qtd_escolhas": {
+            "opcao_primeira": "Ajudar",
+            "opcao_segunda": "Recusar"
+        },
 
-        "efeito_esquerda": {
+        "efeito_primeira": {
             "Contentamento": 15,
             "Populacao": 5,
             "Dinheiro": -30
         },
 
-        "efeito_direita": {
+        "efeito_segunda": {
             "Contentamento": -15,
             "Populacao": -5,
             "Dinheiro": 20
@@ -63,22 +83,25 @@ eventos = [
 
     {
         "sprite": 3,
+
         "falas": [
             "Lucas inutil",
             "João lindo",
             "Diego"
         ],
 
-        "opcao_esquerda": "Ajudar",
-        "opcao_direita": "Recusar",
+        "qtd_escolhas": {
+            "opcao_primeira": "Ajudar",
+            "opcao_segunda": "Recusar"
+        },
 
-        "efeito_esquerda": {
+        "efeito_primeira": {
             "Contentamento": 15,
             "Populacao": 5,
             "Dinheiro": -30
         },
 
-        "efeito_direita": {
+        "efeito_segunda": {
             "Contentamento": -15,
             "Populacao": -5,
             "Dinheiro": 20
@@ -87,23 +110,26 @@ eventos = [
 
     {
         "sprite": 4,
+
         "falas": [
-            "O sapo não lava o pé",
+            "O sapo não lava o pé.",
             "Não lava porque não quer!",
-            "Ele mora la na lagoa",
+            "Ele mora lá na lagoa.",
             "Não lava o pé porque não quer!"
         ],
 
-        "opcao_esquerda": "Ajudar",
-        "opcao_direita": "Recusar",
+        "qtd_escolhas": {
+            "opcao_primeira": "Ajudar",
+            "opcao_segunda": "Recusar"
+        },
 
-        "efeito_esquerda": {
+        "efeito_primeira": {
             "Contentamento": 15,
             "Populacao": 5,
             "Dinheiro": -30
         },
 
-        "efeito_direita": {
+        "efeito_segunda": {
             "Contentamento": -15,
             "Populacao": -5,
             "Dinheiro": 20
@@ -113,18 +139,17 @@ eventos = [
 
 tamanho = (315, 624)
 
+
 def cortar_transparencia(surface):
     rect = surface.get_bounding_rect()
     return surface.subsurface(rect).copy()
 
-for imagem in sprites:
-    sprites[imagem] = cortar_transparencia(sprites[imagem])
-    sprites[imagem] = pg.transform.scale(sprites[imagem], tamanho)
+
+for chave in sprites:
+    sprites[chave] = cortar_transparencia(sprites[chave])
+    sprites[chave] = pg.transform.scale(sprites[chave], tamanho)
+
 
 def imprimir_sprite(janela, sprite_rect, valor):
-    x = sprite_rect.centerx // 2
-    y = sprite_rect.centery
-
     sprite_imprimir = sprites[valor]
-
     janela.blit(sprite_imprimir, sprite_rect)
