@@ -51,6 +51,25 @@ eventos = [
             "Contentamento": -15,
             "Populacao": -5,
             "Dinheiro": 20
+        },
+
+        "falas_pos": {
+            1: [
+                "Euuu",
+                "Diegooo"
+            ],
+
+            2: ["a"
+
+            ],
+
+            3: ["b"
+
+            ],
+
+            4: ["c"
+
+            ]
         }
     },
 
@@ -78,6 +97,17 @@ eventos = [
             "Contentamento": -15,
             "Populacao": -5,
             "Dinheiro": 20
+        },
+
+        "falas_pos": {
+            1: [
+                "Euuu",
+                "Diegooo"
+            ],
+
+            2: ["a"
+
+            ]
         }
     },
 
@@ -105,6 +135,17 @@ eventos = [
             "Contentamento": -15,
             "Populacao": -5,
             "Dinheiro": 20
+        },
+
+        "falas_pos": {
+            1: [
+                "Euuu",
+                "Diegooo"
+            ],
+
+            2: ["a"
+
+            ]
         }
     },
 
@@ -133,23 +174,49 @@ eventos = [
             "Contentamento": -15,
             "Populacao": -5,
             "Dinheiro": 20
+        },
+
+        "falas_pos": {
+            1: [
+                "Euuu",
+                "Diegooo"
+            ],
+
+            2: ["a"
+
+            ]
         }
     }
 ]
 
-tamanho = (315, 624)
-
+rect_limite = pg.Rect(17, 248, 343, 634)
 
 def cortar_transparencia(surface):
     rect = surface.get_bounding_rect()
     return surface.subsurface(rect).copy()
 
-
 for chave in sprites:
     sprites[chave] = cortar_transparencia(sprites[chave])
-    sprites[chave] = pg.transform.scale(sprites[chave], tamanho)
+
+    largura = sprites[chave].get_width()
+    altura = sprites[chave].get_height()
+
+    escala_largura = rect_limite.width / largura
+    escala_altura = rect_limite.height / altura
+
+    escala = min(escala_largura, escala_altura)
+
+    if escala < 1:
+        nova_largura = int(largura * escala)
+        nova_altura = int(altura * escala)
+
+        sprites[chave] = pg.transform.scale(sprites[chave], (nova_largura, nova_altura))
 
 
 def imprimir_sprite(janela, sprite_rect, valor):
     sprite_imprimir = sprites[valor]
-    janela.blit(sprite_imprimir, sprite_rect)
+
+    sprite_imprimir_rect = sprite_imprimir.get_rect()
+    sprite_imprimir_rect.center = sprite_rect.center
+
+    janela.blit(sprite_imprimir, sprite_imprimir_rect)

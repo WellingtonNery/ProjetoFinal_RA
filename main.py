@@ -27,6 +27,15 @@ tempo_sem_npc = 0
 mostrando_escolhas = False
 tela_inicio = True
 
+ultimas_falas = False
+ultima_fala_atual = 0
+ultimas_falas_escolha = 0
+
+letras_visiveis = 0
+tempo_ultima_letra = 0
+velocidade_texto = 30
+fala_anterior = ""
+
 fade = pg.Surface((LARGURA, ALTURA))
 fade.fill((0, 0, 0))
 
@@ -67,7 +76,6 @@ pg.display.set_caption("100 days of Shogun")
 
 dialogo.carregar()
 
-
 def aplicar_efeito(efeito):
     for chave, valor in efeito.items():
         rects_pontos[chave] += valor
@@ -75,17 +83,37 @@ def aplicar_efeito(efeito):
 
 
 def finalizar_evento():
-    global mostrar_npc, esperando_npc, mostrando_escolhas
-    global fala_atual, evento, tempo_sem_npc
+    global mostrar_npc, esperando_npc, mostrando_escolhas, ultimas_falas
+    global fala_atual, evento, tempo_sem_npc, ultima_fala_atual, ultimas_falas_escolha
 
     mostrar_npc = False
     esperando_npc = True
     mostrando_escolhas = False
+    ultimas_falas = False
 
     fala_atual = 0
+    ultima_fala_atual = 0
+    ultimas_falas_escolha = 0
     evento += 1
 
     tempo_sem_npc = pg.time.get_ticks()
+
+def efeito_digitando(texto):
+    global letras_visiveis, tempo_ultima_letra, fala_anterior
+
+    agora = pg.time.get_ticks()
+
+    if texto != fala_anterior:
+        fala_anterior = texto
+        letras_visiveis = 0
+        tempo_ultima_letra = agora
+
+    if letras_visiveis < len(texto):
+        if agora - tempo_ultima_letra >= velocidade_texto:
+            letras_visiveis += 1
+            tempo_ultima_letra = agora
+
+    return texto[:letras_visiveis]
 
 
 fundo_manha = pg.image.load("Imagens/imagem_fundo.png").convert()
@@ -126,8 +154,8 @@ rei = pg.image.load("Imagens/imagem_rei.png").convert_alpha()
 largura_rei = rei.get_width()
 altura_rei = rei.get_height()
 
-x_trono = (LARGURA - largura_rei) // 2
-y_trono = ((ALTURA - altura_rei) // 2) - 100
+x_rei = (LARGURA - largura_rei) // 2
+y_rei = ((ALTURA - altura_rei) // 2) - 100
 
 calendario = pg.image.load("Imagens/Calendario/calendario.png").convert_alpha()
 
@@ -145,7 +173,7 @@ quadro = pg.image.load("Imagens/quadro.png").convert_alpha()
 quadro_rect = quadro.get_rect()
 quadro_rect.topright = (LARGURA + 40, -100)
 
-personagem_rect = pg.Rect(38, 248, 396, 624)
+personagem_rect = pg.Rect(17, 248, 343, 634)
 
 sombra_opcoes = pg.Surface((LARGURA, ALTURA))
 sombra_opcoes.fill((0, 0, 0))
@@ -158,61 +186,106 @@ while loop:
         if event.type == pg.QUIT:
             loop = False
 
-        if event.type == pg.KEYDOWN:
+        elif event.type == pg.KEYDOWN:
             if event.key == pg.K_ESCAPE:
                 loop = False
 
-        if event.type == pg.MOUSEBUTTONDOWN:
+        elif event.type == pg.MOUSEBUTTONDOWN:
             if event.button == 1 and tela_inicio:
                 tela_inicio = False
 
             elif event.button == 1 and mostrar_npc and not apagando and not esperando:
                 evento_info = eventos.eventos[evento_atual]
 
-                if mostrando_escolhas:
+                if ultimas_falas:
+                    falas_finais = evento_info["falas_pos"][ultimas_falas_escolha]
+                    fala_final_texto = falas_finais[ultima_fala_atual]
+
+                    if letras_visiveis < len(fala_final_texto):
+                        letras_visiveis = len(fala_final_texto)
+
+                    elif ultima_fala_atual < len(falas_finais) - 1:
+                        ultima_fala_atual += 1
+
+                    else:
+                        finalizar_evento()
+
+                elif mostrando_escolhas:
                     quantidade_escolhas = len(evento_info["qtd_escolhas"])
 
                     if quantidade_escolhas == 2:
                         if rects_escolhas[2]["cima"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_primeira"])
-                            finalizar_evento()
+                            ultimas_falas_escolha = 1
+                            ultimas_falas = True
+                            mostrando_escolhas = False
+                            ultima_fala_atual = 0
 
                         elif rects_escolhas[2]["baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_segunda"])
-                            finalizar_evento()
+                            ultimas_falas_escolha = 2
+                            ultimas_falas = True
+                            mostrando_escolhas = False
+                            ultima_fala_atual = 0
 
                     elif quantidade_escolhas == 3:
                         if rects_escolhas[3]["cima"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_primeira"])
-                            finalizar_evento()
+                            ultimas_falas_escolha = 1
+                            ultimas_falas = True
+                            mostrando_escolhas = False
+                            ultima_fala_atual = 0
 
                         elif rects_escolhas[3]["meio"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_segunda"])
-                            finalizar_evento()
+                            ultimas_falas_escolha = 2
+                            ultimas_falas = True
+                            mostrando_escolhas = False
+                            ultima_fala_atual = 0
 
                         elif rects_escolhas[3]["baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_terceira"])
-                            finalizar_evento()
+                            ultimas_falas_escolha = 3
+                            ultimas_falas = True
+                            mostrando_escolhas = False
+                            ultima_fala_atual = 0
 
                     elif quantidade_escolhas == 4:
                         if rects_escolhas[4]["cima"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_primeira"])
-                            finalizar_evento()
+                            ultimas_falas_escolha = 1
+                            ultimas_falas = True
+                            mostrando_escolhas = False
+                            ultima_fala_atual = 0
 
                         elif rects_escolhas[4]["meio-cima"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_segunda"])
-                            finalizar_evento()
+                            ultimas_falas_escolha = 2
+                            ultimas_falas = True
+                            mostrando_escolhas = False
+                            ultima_fala_atual = 0
 
                         elif rects_escolhas[4]["meio-baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_terceira"])
-                            finalizar_evento()
+                            ultimas_falas_escolha = 3
+                            ultimas_falas = True
+                            mostrando_escolhas = False
+                            ultima_fala_atual = 0
 
                         elif rects_escolhas[4]["baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_quarta"])
-                            finalizar_evento()
+                            ultimas_falas_escolha = 4
+                            ultimas_falas = True
+                            mostrando_escolhas = False
+                            ultima_fala_atual = 0
 
                 else:
-                    if fala_atual < len(evento_info["falas"]) - 1:
+                    fala_texto = evento_info["falas"][fala_atual]
+
+                    if letras_visiveis < len(fala_texto):
+                        letras_visiveis = len(fala_texto)
+
+                    elif fala_atual < len(evento_info["falas"]) - 1:
                         fala_atual += 1
 
                     else:
@@ -274,7 +347,7 @@ while loop:
         fundo = fundo_manha
 
     janela.blit(fundo, (0, 0))
-    janela.blit(rei, (x_trono, y_trono))
+    janela.blit(rei, (x_rei, y_rei))
 
     janela.blit(calendario, cal_rect)
     janela.blit(quadro, quadro_rect)
@@ -308,13 +381,19 @@ while loop:
             evento_info["sprite"]
         )
 
-        fala = evento_info["falas"][fala_atual]
-
         if mostrando_escolhas:
             janela.blit(sombra_opcoes, (0, 0))
             dialogo.aparecer_escolha(janela, evento_info["qtd_escolhas"])
+
+        elif ultimas_falas:
+            fala_ultima = evento_info["falas_pos"][ultimas_falas_escolha][ultima_fala_atual]
+            fala_digitada = efeito_digitando(fala_ultima)
+            dialogo.desenhar(janela, fala_digitada)
+
         else:
-            dialogo.desenhar(janela, fala)
+            fala = evento_info["falas"][fala_atual]
+            fala_digitada = efeito_digitando(fala)
+            dialogo.desenhar(janela, fala_digitada)
 
     fade.set_alpha(alpha)
     janela.blit(fade, (0, 0))
