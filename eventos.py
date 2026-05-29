@@ -11,6 +11,16 @@ spr8 = pg.image.load("Imagens/sprites/ninja.png")
 spr9 = pg.image.load("Imagens/sprites/vendedor.png")
 spr10 = pg.image.load("Imagens/sprites/onmyoji.png")
 spr11 = pg.image.load("Imagens/sprites/alquimista.png")
+spr12 = pg.image.load("Imagens/sprites/viajante tempo.png")
+
+spr13 = spr1
+spr71 = spr1
+spr85 = spr1
+spr110 = spr1
+spr157 = spr1
+spr189 = spr1
+spr229 = spr1
+spr230 = spr1
 
 sprites = {
     1: spr1,
@@ -23,7 +33,25 @@ sprites = {
     8: spr8,
     9: spr9,
     10: spr10,
-    11: spr11
+    11: spr11,
+    12: spr12,
+
+    #JOAO
+    13: spr13,
+    71: spr71,
+
+    #WELLINGTON
+    85: spr85,
+    110: spr110,
+
+    #DIEGO
+    157: spr157,
+    189: spr189,
+
+    #LUCAS
+    229: spr229,
+    230: spr230
+
 }
 
 eventos = [
@@ -499,6 +527,7 @@ eventos = [
             "Contentamento": -5,
             "Populacao": 0,
             "Dinheiro": 0
+
         },"falas_pos": {
             1: [
                 "Aqui estão senhor! Caso precise de mais sabe onde me encontrar.",
@@ -515,6 +544,129 @@ eventos = [
             3: [
                 "Que pena! Se mudar de ideia sabe onde me encontrar.",
                 "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 12,
+
+        "dia_minimo": 10,
+
+        "falas": [
+            "Olá, rei. Eu venho de um futuro distante, cerca de 15 mil anos à frente do seu tempo.",
+            "No meu mundo, uma doença letal está exterminando cidades inteiras.",
+            "Preciso de cobaias para um experimento arriscado. Pode parecer cruel, mas é a única chance de salvar o meu povo.",
+            "Se me permitir levar dez pessoas comigo, retornarei em alguns dias com uma grande recompensa.",
+            "Qual sua resposta?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Permitir",
+            "opcao_segunda": "Recusar educadamente",
+            "opcao_terceira": "Executá-lo"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": -10,
+            "Populacao": -10,
+            "Dinheiro": 0
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "efeito_terceira": {
+            "Contentamento": 10,
+            "Populacao": 0,
+            "Dinheiro": 100,
+        },
+
+        "falas_pos": {
+            1: [
+                "Muito obrigado senhor, você realmente é nobre de coração como haviam me dito!",
+                "Em alguns dias trarei sua recompensa e o compensarei por tudo isso!",
+                "(-10 de Contentamento, -10 de População)"
+            ],
+
+            2: ["Entendo sua decisão, tentarei achar outro jeito de salvar meu povo!",
+                "(5 de Contentamento)"
+
+                ],
+
+            3: [
+                "NÃO! POR FAVOR ME PERDOE",
+                "SE ME DEIXAR PARTIR PROMETO QUE NUNCA MAIS ME VERÁ",
+                "POR FAVOR SENHOR"
+                "(+10 de Contentamento, +100 de Dinheiro)"
+            ]
+        }
+    },
+
+{
+        "sprite": 1,
+
+        "dia_minimo": 1,
+
+        "falas": [
+            ""
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "",
+            "opcao_segunda": "",
+            "opcao_terceira": "",
+            "opcao_quarta": ""
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 0,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 0,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "efeito_terceira": {
+            "Contentamento": 0,
+            "Populacao": 0,
+            "Dinheiro": 0,
+        },
+
+        "efeito_quarta": {
+            "Contentamento": 0,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "",
+                "",
+                "(0 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ],
+
+            2: ["",
+                "",
+                "(0 de Contentamento, 0 de População, 0 de Dinheiro)"
+
+            ],
+
+            3: [
+                "",
+                "(0 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ],
+
+            4: [
+                "",
+                "(0 de Contentamento, 0 de População, 0 de Dinheiro)"
             ]
         }
     }
@@ -551,3 +703,4 @@ def imprimir_sprite(janela, sprite_rect, valor):
     sprite_imprimir_rect.center = sprite_rect.center
 
     janela.blit(sprite_imprimir, sprite_imprimir_rect)
+    
