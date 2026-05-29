@@ -316,10 +316,13 @@ while loop:
             mostrar_npc = True
             esperando_npc = False
 
-            evento_atual = random.randint(0, len(eventos.eventos) - 1)
+            eventos_disponiveis = []
 
-            if evento_atual >= len(eventos.eventos):
-                evento_atual = 0
+            for indice, evento_info in enumerate(eventos.eventos):
+                if evento_info.get("dia_minimo", 1) <= dia:
+                    eventos_disponiveis.append(indice)
+
+            evento_atual = random.choice(eventos_disponiveis)
 
     if apagando:
         alpha += 5

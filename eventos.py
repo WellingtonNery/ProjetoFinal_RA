@@ -29,6 +29,7 @@ sprites = {
 eventos = [
     {
         "sprite": 1,
+        "dia_minimo": 1,
 
         "falas": [
             "Olá meu senhor, venho por meio desta  carta lhe informar da situação atual do feudo.",
@@ -64,6 +65,7 @@ eventos = [
 
     {
         "sprite": 2,
+        "dia_minimo": 1,
 
         "falas": [
             "Olá mero mortal, sou Raiden, a shogun de Inazuma. Venho até você para pedir uma aliança contra Tsaritsa.",
@@ -106,6 +108,7 @@ eventos = [
 
     {
         "sprite": 3,
+        "dia_minimo": 2,
 
         "falas": [
             "Olá humano, eu vim oferecer um pacto... eu irei te dar riquezas e prosperidade, porém irei levar grande parte de almas comigo... ",
@@ -144,6 +147,7 @@ eventos = [
 
     {
         "sprite": 4,
+        "dia_minimo": 1,
 
         "falas": [
             "Olá meu senhor, sou uma yokai que vive na floresta próxima",
@@ -184,6 +188,7 @@ eventos = [
 
     {
         "sprite": 5,
+        "dia_minimo": 2,
 
         "falas": [
             "Olá senhor, sou Gorobei, o sapo monge.",
@@ -238,6 +243,7 @@ eventos = [
 
     {
         "sprite": 6,
+        "dia_minimo": 3,
 
         "falas": [
             "Olá meu senhor, sou um construtor e venho até você para oferecer meus serviços. Posso construir casas, pontes, estradas e muito mais. Se precisar de algo, é só me chamar.",
@@ -290,6 +296,7 @@ eventos = [
 
     {
         "sprite": 7,
+        "dia_minimo": 3,
 
         "falas": [
             "Olá meu senhor, sou um monge e venho até você para pedir ajuda. A cidade está sendo atacada por demônios e preciso de seu apoio para enfrentar essa ameaça.",
@@ -329,6 +336,7 @@ eventos = [
 
     {
         "sprite": 8,
+        "dia_minimo": 2,
 
         "falas": [
             "Olá senhor, fiquei sabendo que está tendo problemas com o reino inimigo.",
@@ -369,6 +377,7 @@ eventos = [
 
     {
         "sprite": 9,
+        "dia_minimo": 3,
         "falas": [
             "Olá meu senhor, sou um mercador e venho até você para oferecer meus serviços. Tenho uma ampla seleção de mercadorias para venda.",
             "Você está interessado em algo específico?"
@@ -421,6 +430,7 @@ eventos = [
 
     {
         "sprite": 10,
+        "dia_minimo": 4,
 
         "falas": [
             "Olá meu senhor, venho avisar que tempos sombrios se aproximam!."
@@ -460,6 +470,7 @@ eventos = [
 
 {
         "sprite": 11,
+        "dia_minimo": 4,
 
         "falas": [
             "Olá meu senhor, sou um alquimista e venho até você para oferecer meus serviços. Posso criar poções e elixires que podem ajudar a cidade.",
