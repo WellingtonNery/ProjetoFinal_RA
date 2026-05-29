@@ -3,13 +3,14 @@ import pygame as pg
 spr1 = pg.image.load("Imagens/sprites/mensageiro.png")
 spr2 = pg.image.load("Imagens/sprites/raiden.png")
 spr3 = pg.image.load("Imagens/sprites/diabo.png")
-spr4 = pg.image.load("Imagens/sprites/lobo.png")
+spr4 = pg.image.load("Imagens/sprites/yokai.png")
 spr5 = pg.image.load("Imagens/sprites/sapo.png")
 spr6 = pg.image.load("Imagens/sprites/construtor.png")
-spr7 = pg.image.load("Imagens/sprites/cego.png")
+spr7 = pg.image.load("Imagens/sprites/monge.png")
 spr8 = pg.image.load("Imagens/sprites/ninja.png")
 spr9 = pg.image.load("Imagens/sprites/vendedor.png")
 spr10 = pg.image.load("Imagens/sprites/onmyoji.png")
+spr11 = pg.image.load("Imagens/sprites/alquimista.png")
 
 sprites = {
     1: spr1,
@@ -21,7 +22,8 @@ sprites = {
     7: spr7,
     8: spr8,
     9: spr9,
-    10: spr10
+    10: spr10,
+    11: spr11
 }
 
 eventos = [
@@ -43,7 +45,7 @@ eventos = [
         "efeito_primeira": {
             "Contentamento": 0,
             "Populacao": 0,
-            "Dinheiro": -0
+            "Dinheiro": 0
         },
 
         "efeito_segunda": {
@@ -88,11 +90,14 @@ eventos = [
 
         "falas_pos": {
             1: [
-                "Agradeço pela ajuda mortal, juntos derrotaremos Tsaritsa e traremos a paz para Inazuma, vou deixar alguns de meus guardas e um pouco de dinheiro para você.",
+                "Agradeço pela ajuda mortal, juntos conquistaremos a eternidade e traremos a paz para Inazuma",
+                "Irei deixar alguns de meus suditos e um pouco de dinheiro para você!",
                 "(-15 de Contentamento, +10 de População, +50 de Dinheiro)"
             ],
 
-            2: ["Ah, entendo. Você prefere ficar do lado de Tsaritsa, não é? Bem, isso é uma escolha errada, AGORA É GUERRA! ",
+            2: ["MUSOU",
+                "NO",
+                "HITOTACHI",
                 "(+10 de Contentamento, -15 de População, -20 de Dinheiro)"
 
             ]
@@ -141,8 +146,10 @@ eventos = [
         "sprite": 4,
 
         "falas": [
-            "Olá meu senhor, sou uma yokai que vive na floresta próxima, venho até você para pedir ajuda, a floresta tem sido destruída por madeireiros e caçadores.",
-            "Nela existem muitos seres vivos que dependem da floresta para sobreviver. Por favor, me ajude a proteger a floresta e seus habitantes...",
+            "Olá meu senhor, sou uma yokai que vive na floresta próxima",
+            "Venho aqui pedir sua ajuda, a floresta tem sido destruída por madeireiros e caçadores!",
+            "Nela existem muitos seres vivos que dependem da floresta para sobreviver.",
+            "Por favor, me ajude a proteger a floresta e seus habitantes",
         ],
 
         "qtd_escolhas": {
@@ -179,9 +186,10 @@ eventos = [
         "sprite": 5,
 
         "falas": [
-            "Meu senhor, sou Gorobei, o sapo monge.",
-            "Venho até você informar que os sapos do reino não estão lavando seus pés.",
-            "Vossa excelência, por favor o senhor conseguiria construir algumas fontes termais para os sapos se banharem?"
+            "Olá senhor, sou Gorobei, o sapo monge.",
+            "Os sapos de nosso reino não estão lavando seus pés.",
+            "Eles precisam urgentemente da construção de novas fontes termais para se banharem",
+            "Posso contar com a sua ajuda?"
         ],
 
         "qtd_escolhas":  {
@@ -210,17 +218,19 @@ eventos = [
 
         "falas_pos": {
             1: [
-                "Muito obrigado por sua ajuda, senhor. A floresta e seus habitantes ficarão muito gratos por sua decisão, espero que possamos contar com seu apoio no futuro.",
-                "(-5 de Contentamento, +10 de População, -20 de Dinheiro)"
+                "Serei eternamente grato à voce senhor.",
+                "Se precisar da ajuda dos sapos não hesite em pedir.",
+                "Glória à Takayama!",
+                "(+5 de Contentamento, +10 de População, -50 de Dinheiro)"
             ],
 
-            2: ["Ah, entendo. Você prefere não se envolver, não é? Bem, até a próxima... ",
-                "(+5 de Contentamento, +0 de População, +20 de Dinheiro)"
+            2: ["Ah, obrigado senhor",
+                "(+0 de Contentamento, +10 de População, -20 de Dinheiro)"
 
             ],
 
             3: [
-                "Entendo. Você optou por recusar a construção de fontes. Espero que reconsidere no futuro.",
+                "Não acredito que achei que você fosse diferente dos outros tiranos... ",
                 "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
             ]
         }
@@ -260,17 +270,19 @@ eventos = [
 
         "falas_pos": {
             1: [
-                "Muito obrigado por sua ajuda, senhor. A floresta e seus habitantes ficarão muito gratos por sua decisão, espero que possamos contar com seu apoio no futuro.",
-                "(-5 de Contentamento, +10 de População, -20 de Dinheiro)"
+                "Obrigado pela confiança senhor! Farei a entrega das casas o mais rápido possível!",
+                "Glória à Takayama",
+                "(+10 de Contentamento, +20 de População, -100 de Dinheiro)"
             ],
 
-            2: ["Ah, entendo. Você prefere não se envolver, não é? Bem, até a próxima... ",
-                "(+5 de Contentamento, +0 de População, +20 de Dinheiro)"
+            2: ["Obrigado pela confiança senhor! Entregarei a ponte o mais rápido possível!",
+                "Glória à Takayama",
+                "(+5 de Contentamento, +10 de População, -50 de Dinheiro)"
 
             ],
 
             3: [
-                "Entendo. Você optou por recusar a construção de fontes. Espero que reconsidere no futuro.",
+                "Entendo sua decisão. Espero que reconsidere no futuro.",
                 "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
             ]
         }
@@ -303,18 +315,14 @@ eventos = [
 
         "falas_pos": {
             1: [
-                "Muito obrigado por sua ajuda, senhor. A floresta e seus habitantes ficarão muito gratos por sua decisão, espero que possamos contar com seu apoio no futuro.",
-                "(-5 de Contentamento, +10 de População, -20 de Dinheiro)"
+                "Farei de tudo para proteger nossa cidade senhor, você não irá se arrepender dessa decisão!",
+                "Glória à Takayama",
+                "(+10 de Contentamento, +20 de População, -100 de Dinheiro)"
             ],
 
-            2: ["Ah, entendo. Você prefere não se envolver, não é? Bem, até a próxima... ",
-                "(+5 de Contentamento, +0 de População, +20 de Dinheiro)"
-
-            ],
-
-            3: [
-                "Entendo. Você optou por recusar a construção de fontes. Espero que reconsidere no futuro.",
+            2: ["Você ainda há de se arrepender muito por essa decisão... ",
                 "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+
             ]
         }
     },
@@ -323,46 +331,38 @@ eventos = [
         "sprite": 8,
 
         "falas": [
-            "Olá meu senhor, sou um alquimista e venho até você para oferecer meus serviços. Posso criar poções e elixires que podem ajudar a cidade.",
-            "Você precisa de alguma coisa específica?"
+            "Olá senhor, fiquei sabendo que está tendo problemas com o reino inimigo.",
+            "Posso trabalhar pra você e conseguir informações importantes dos inimigos",
+            "O que acha de eu te dar uma ajuda em troca de um bom pagamento?"
         ],
 
         "qtd_escolhas": {
-            "opcao_primeira": "Comprar poções de cura",
-            "opcao_segunda": "Comprar poções de força",
-            "opcao_terceira": "Recusar"
+            "opcao_primeira": "Contratá-lo",
+            "opcao_segunda": "Recusar proposta"
         },
 
         "efeito_primeira": {
-            "Contentamento": 5,
-            "Populacao": 10,
-            "Dinheiro": -50
-        },
-
-        "efeito_segunda": {
-            "Contentamento": 10,
-            "Populacao": 20,
+            "Contentamento": -5,
+            "Populacao": 1,
             "Dinheiro": -100
         },
 
-        "efeito_terceira": {
-            "Contentamento": -5,
-            "Populacao": 0,
+        "efeito_segunda": {
+            "Contentamento": +5,
+            "Populacao": -5,
             "Dinheiro": 0
-        },"falas_pos": {
+        },
+
+        "falas_pos": {
             1: [
-                "Muito obrigado por sua ajuda, senhor. A floresta e seus habitantes ficarão muito gratos por sua decisão, espero que possamos contar com seu apoio no futuro.",
-                "(-5 de Contentamento, +10 de População, -20 de Dinheiro)"
+                "Provarei que todos estão errados sobre mim!",
+                "Você não irá se arrepender, nunca desapontei um mestre.",
+                "(-5 de Contentamento, +1 de População, -100 de Dinheiro)"
             ],
 
-            2: ["Ah, entendo. Você prefere não se envolver, não é? Bem, até a próxima... ",
-                "(+5 de Contentamento, +0 de População, +20 de Dinheiro)"
+            2: ["Bom, não venha se queixar se algumas informações de seu reino vazarem!",
+                "(+5 de Contentamento, -5 de População)"
 
-            ],
-
-            3: [
-                "Entendo. Você optou por recusar a construção de fontes. Espero que reconsidere no futuro.",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
             ]
         }
     },
@@ -400,17 +400,20 @@ eventos = [
 
         "falas_pos": {
             1: [
-                "Muito obrigado por sua ajuda, senhor. A floresta e seus habitantes ficarão muito gratos por sua decisão, espero que possamos contar com seu apoio no futuro.",
-                "(-5 de Contentamento, +10 de População, -20 de Dinheiro)"
+                "Aqui estão! Tome cuidado ao manuseá-las!",
+                "Glória à Takayama",
+                "(+5 de Contentamento, +10 de População, -50 de Dinheiro)"
             ],
 
-            2: ["Ah, entendo. Você prefere não se envolver, não é? Bem, até a próxima... ",
-                "(+5 de Contentamento, +0 de População, +20 de Dinheiro)"
+            2: ["Aqui estão! Com elas ganharemos a luta contra o mal!",
+                "Glória à Takayama",
+                "(+10 de Contentamento, +20 de População, -100 de Dinheiro)"
 
             ],
 
             3: [
-                "Entendo. Você optou por recusar a construção de fontes. Espero que reconsidere no futuro.",
+                "Entendido. Caso surja a necessidade basta me contatar meu senhor!",
+                "Glória à Takayama",
                 "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
             ]
         }
@@ -420,8 +423,9 @@ eventos = [
         "sprite": 10,
 
         "falas": [
-            "Olá meu senhor, sou um onmyoji e venho até você para oferecer meus serviços. Posso exorcizar espíritos malignos e proteger a cidade de ameaças sobrenaturais.",
-            "Você precisa de alguma ajuda específica?"
+            "Olá meu senhor, venho avisar que tempos sombrios se aproximam!."
+            "Posso exorcizar espíritos malignos e proteger a cidade de ameaças sobrenaturais.",
+            "O que me diz, mortal?"
         ],
 
         "qtd_escolhas": {
@@ -442,17 +446,63 @@ eventos = [
 
         "falas_pos": {
             1: [
-                "Muito obrigado por sua ajuda, senhor. A floresta e seus habitantes ficarão muito gratos por sua decisão, espero que possamos contar com seu apoio no futuro.",
-                "(-5 de Contentamento, +10 de População, -20 de Dinheiro)"
+                "Nenhuma alma vil se aproximará deste reino meu senhor, tens minha garantia!",
+                "Glória à Takayama",
+                "(+10 de Contentamento, +20 de População, -100 de Dinheiro)"
             ],
 
-            2: ["Ah, entendo. Você prefere não se envolver, não é? Bem, até a próxima... ",
-                "(+5 de Contentamento, +0 de População, +20 de Dinheiro)"
+            2: ["Me certificarei de que sua queda seja certeira! HAHAHAHAHAHAHHAHAHA",
+                "(+5 de Contentamento, +0 de População, +0 de Dinheiro)"
+
+            ]
+        }
+    },
+
+{
+        "sprite": 11,
+
+        "falas": [
+            "Olá meu senhor, sou um alquimista e venho até você para oferecer meus serviços. Posso criar poções e elixires que podem ajudar a cidade.",
+            "Você precisa de alguma coisa específica?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar poções de cura",
+            "opcao_segunda": "Comprar poções de força",
+            "opcao_terceira": "Recusar"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 10,
+            "Dinheiro": -50
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 10,
+            "Populacao": 20,
+            "Dinheiro": -100
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },"falas_pos": {
+            1: [
+                "Aqui estão senhor! Caso precise de mais sabe onde me encontrar.",
+                "Glória à Takayama",
+                "(+5 de Contentamento, +10 de População, -50 de Dinheiro)"
+            ],
+
+            2: ["Aqui estão senhor! Caso precise de mais sabe onde me encontrar",
+                "Glória à Takayama",
+                "(+10 de Contentamento, +20 de População, -100 de Dinheiro)"
 
             ],
 
             3: [
-                "Entendo. Você optou por recusar a construção de fontes. Espero que reconsidere no futuro.",
+                "Que pena! Se mudar de ideia sabe onde me encontrar.",
                 "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
             ]
         }

@@ -44,7 +44,7 @@ def desenhar(janela, fala, opcao_esquerda=None, opcao_direita=None):
 
     linhas.append(linha_atual)
 
-    y = caixa_rect.y + 35
+    y = caixa_rect.y + 50
 
     for linha in linhas:
         texto_img = fonte.render(linha, True, cor_texto)

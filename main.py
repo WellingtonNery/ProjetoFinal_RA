@@ -12,7 +12,7 @@ ALTURA = 900
 
 evento = 0
 dia = 1
-evento_atual = 0 
+evento_atual = 0
 fala_atual = 0
 
 alpha = 0
@@ -77,10 +77,13 @@ pg.display.set_caption("100 days of Shogun")
 
 dialogo.carregar()
 
+
 def aplicar_efeito(efeito):
     for chave, valor in efeito.items():
         rects_pontos[chave] += valor
         rects_pontos["Contentamento"] = max(0, min(rects_pontos["Contentamento"], 100))
+        rects_pontos["Dinheiro"] = max(0, rects_pontos["Dinheiro"])
+        rects_pontos["Populacao"] = max(0, rects_pontos["Populacao"])
 
 
 def finalizar_evento():
@@ -100,6 +103,7 @@ def finalizar_evento():
     eventos.eventos.pop(evento_atual)
 
     tempo_sem_npc = pg.time.get_ticks()
+
 
 def efeito_digitando(texto):
     global letras_visiveis, tempo_ultima_letra, fala_anterior
@@ -182,10 +186,9 @@ sombra_opcoes = pg.Surface((LARGURA, ALTURA))
 sombra_opcoes.fill((0, 0, 0))
 sombra_opcoes.set_alpha(120)
 
-
 if dia == 1 and evento == 0:
     evento_atual = 0
-    
+
 loop = True
 
 while loop:
