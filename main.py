@@ -3,6 +3,7 @@ import dias
 import pontos
 import eventos
 import dialogo
+import random
 
 pg.init()
 
@@ -11,7 +12,7 @@ ALTURA = 900
 
 evento = 0
 dia = 1
-evento_atual = 0
+evento_atual = 0 
 fala_atual = 0
 
 alpha = 0
@@ -46,8 +47,8 @@ rects_quadro = {
 }
 
 rects_pontos = {
-    "Contentamento": 100,
-    "Populacao": 50,
+    "Contentamento": 50,
+    "Populacao": 100,
     "Dinheiro": 75
 }
 
@@ -79,7 +80,7 @@ dialogo.carregar()
 def aplicar_efeito(efeito):
     for chave, valor in efeito.items():
         rects_pontos[chave] += valor
-        rects_pontos[chave] = max(0, min(rects_pontos[chave], 100))
+        rects_pontos["Contentamento"] = max(0, min(rects_pontos["Contentamento"], 100))
 
 
 def finalizar_evento():
@@ -95,6 +96,8 @@ def finalizar_evento():
     ultima_fala_atual = 0
     ultimas_falas_escolha = 0
     evento += 1
+
+    eventos.eventos.pop(evento_atual)
 
     tempo_sem_npc = pg.time.get_ticks()
 
@@ -179,6 +182,10 @@ sombra_opcoes = pg.Surface((LARGURA, ALTURA))
 sombra_opcoes.fill((0, 0, 0))
 sombra_opcoes.set_alpha(120)
 
+
+if dia == 1 and evento == 0:
+    evento_atual = 0
+    
 loop = True
 
 while loop:
@@ -306,7 +313,7 @@ while loop:
             mostrar_npc = True
             esperando_npc = False
 
-            evento_atual += 1
+            evento_atual = random.randint(0, len(eventos.eventos) - 1)
 
             if evento_atual >= len(eventos.eventos):
                 evento_atual = 0
