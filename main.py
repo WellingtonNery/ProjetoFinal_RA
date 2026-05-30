@@ -32,6 +32,10 @@ ultimas_falas = False
 ultima_fala_atual = 0
 ultimas_falas_escolha = 0
 
+casou_com_pretendente = False
+ajudou_viajante = False
+aceitou_karasu = False
+
 letras_visiveis = 0
 tempo_ultima_letra = 0
 velocidade_texto = 30
@@ -231,6 +235,9 @@ while loop:
                             mostrando_escolhas = False
                             ultima_fala_atual = 0
 
+                            if evento_info["sprite"] == 13:
+                                aceitou_karasu = True
+
                         elif rects_escolhas[2]["baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_segunda"])
                             ultimas_falas_escolha = 2
@@ -245,6 +252,11 @@ while loop:
                             ultimas_falas = True
                             mostrando_escolhas = False
                             ultima_fala_atual = 0
+
+                            if evento_info["sprite"] == 85:
+                                casou_com_pretendente = True
+                            if evento_info["sprite"] == 12:
+                                ajudou_viajante = True
 
                         elif rects_escolhas[3]["meio"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_segunda"])
@@ -320,6 +332,15 @@ while loop:
 
             for indice, evento_info in enumerate(eventos.eventos):
                 if evento_info.get("dia_minimo", 1) <= dia:
+                    if evento_info["sprite"] == 86 and not casou_com_pretendente:
+                        continue
+
+                    if evento_info["sprite"] == 87 and not ajudou_viajante:
+                        continue
+
+                    if evento_info["sprite"] == 14 and not aceitou_karasu:
+                        continue
+
                     eventos_disponiveis.append(indice)
 
             evento_atual = random.choice(eventos_disponiveis)
