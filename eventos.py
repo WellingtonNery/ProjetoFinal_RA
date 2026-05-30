@@ -12,11 +12,23 @@ spr9 = pg.image.load("Imagens/sprites/vendedor.png")
 spr10 = pg.image.load("Imagens/sprites/onmyoji.png")
 spr11 = pg.image.load("Imagens/sprites/alquimista.png")
 spr12 = pg.image.load("Imagens/sprites/viajante tempo.png")
+spr13 = pg.image.load("Imagens/sprites/karasu.png")
+spr14 = pg.image.load("Imagens/sprites/karasu.png")
+spr15 = pg.image.load("Imagens/sprites/herbista.png")
+spr16 = pg.image.load("Imagens/sprites/gaviao.png")
+spr17 = pg.image.load("Imagens/sprites/argilista.png")
+spr18 = pg.image.load("Imagens/sprites/mensageira2.png")
+spr19 = pg.image.load("Imagens/sprites/cacadora.png")
+spr20 = pg.image.load("Imagens/sprites/pintor.png")
 
-spr13 = spr1
 spr71 = spr1
-spr85 = spr1
+
+spr85 = pg.image.load("Imagens/sprites/pretendente.png")
+spr86 = pg.image.load("Imagens/sprites/pretendente_gravida.png")
+spr87 = pg.image.load("Imagens/sprites/viajante_futuro.png")
+
 spr110 = spr1
+
 spr157 = spr1
 spr189 = spr1
 spr229 = spr1
@@ -38,10 +50,19 @@ sprites = {
 
     #JOAO
     13: spr13,
+    14: spr14,
+    15: spr15,
+    16: spr16,
+    17: spr17,
+    18: spr18,
+    19: spr19,
+    20: spr20,
     71: spr71,
 
     #WELLINGTON
     85: spr85,
+    86: spr86,
+    87: spr87,
     110: spr110,
 
     #DIEGO
@@ -167,7 +188,7 @@ eventos = [
             ],
 
             2: ["Ah, entendo. Você prefere manter sua alma intacta, não é? Bem, isso é uma escolha sábia, até a próxima... ",
-                "(+20 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(+20 de Contentamento)"
 
             ]
         }
@@ -258,13 +279,13 @@ eventos = [
             ],
 
             2: ["Ah, obrigado senhor",
-                "(+0 de Contentamento, +10 de População, -20 de Dinheiro)"
+                "(+10 de População, -20 de Dinheiro)"
 
             ],
 
             3: [
                 "Não acredito que achei que você fosse diferente dos outros tiranos... ",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
@@ -317,7 +338,7 @@ eventos = [
 
             3: [
                 "Entendo sua decisão. Espero que reconsidere no futuro.",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
@@ -356,7 +377,7 @@ eventos = [
             ],
 
             2: ["Você ainda há de se arrepender muito por essa decisão... ",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento)"
 
             ]
         }
@@ -451,7 +472,7 @@ eventos = [
             3: [
                 "Entendido. Caso surja a necessidade basta me contatar meu senhor!",
                 "Glória à Takayama",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
@@ -490,7 +511,7 @@ eventos = [
             ],
 
             2: ["Me certificarei de que sua queda seja certeira! HAHAHAHAHAHAHHAHAHA",
-                "(+5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(+5 de Contentamento)"
 
             ]
         }
@@ -514,13 +535,13 @@ eventos = [
         "efeito_primeira": {
             "Contentamento": 5,
             "Populacao": 10,
-            "Dinheiro": -50
+            "Dinheiro": -25
         },
 
         "efeito_segunda": {
             "Contentamento": 10,
             "Populacao": 20,
-            "Dinheiro": -100
+            "Dinheiro": -50
         },
 
         "efeito_terceira": {
@@ -543,7 +564,7 @@ eventos = [
 
             3: [
                 "Que pena! Se mudar de ideia sabe onde me encontrar.",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
@@ -606,7 +627,547 @@ eventos = [
         }
     },
 
-{
+    {
+        "sprite": 13,
+
+        "dia_minimo": 1,
+
+        "falas": [
+            "Olá grande shogun, eu sou Karasu, um guerreiro que ainda não tem feitos, porém muita vontade e corajem para lutar.",
+            "Posso ser um grande aliado para o senhor, me deixe provar minha lealdade e coragem em batalha, e prometo que não irá se arrepender."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aceitar",
+            "opcao_segunda": "Recusar"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 2,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+
+        "efeito_segunda": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Muito muito muito OBRIGADO shogunzinho, prometo não te decepcionar!",
+                "Irei me esforçar para trazer uma recompensa ao senhor assim que possível!",
+                "(+2 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+
+            2: ["Ah tudo bem então...",
+                "(-2 de Contentamento)"
+
+            ]
+        }
+    },
+
+    {
+        "sprite": 14,
+
+        "dia_minimo": 2,
+
+        "falas": [
+            "Olá meu senhor! Lembra de mim?",
+            "Aqui está os tesouros que havia prometido! Espero que ainda possamos trabalhar juntos!"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aceitar friamente.",
+            "opcao_segunda": "Aceitar e elogiar Karasu",
+        },
+
+        "efeito_primeira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 100
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": 100
+        },
+
+        "falas_pos": {
+            1: [
+                "Oloko meu senhor, podia agradecer pelo menos né... ",
+                "(+100 de Dinheiro)"
+            ],
+
+            2: [
+                "Obrigado senhor, sempre estarei aqui para ajudá-lo!",
+                "(+2 de Contentamento, +100 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 15,
+
+        "dia_minimo": 3,
+
+        "falas": [
+            "Caro shogun, sou uma herbista que vive na floresta próxima. ",
+            "Tenho uma grande variedade de ervas medicinais que podem ser usadas para criar poções e remédios para a cidade. ",
+            "Se estiver interessado, posso lhe mostrar minha coleção e ajudá-lo a escolher as melhores ervas."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar ervas medicinais",
+            "opcao_segunda": "Contratar para cuidar dos cidadões",
+            "opcao_terceira": "Fazer parceria para criar um hospital",
+            "opcao_quarta": "Recusar"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 10,
+            "Populacao": 5,
+            "Dinheiro": -20
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 15,
+            "Populacao": 10,
+            "Dinheiro": -50
+        },
+
+        "efeito_terceira": {
+            "Contentamento": 20,
+            "Populacao": 15,
+            "Dinheiro": -100
+        },
+
+        "efeito_quarta": {
+            "Contentamento": -5,
+            "Populacao": -2,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Oh, muito obrigado senhor! Essas ervas serão muito úteis para a cidade!",
+                "(10 de Contentamento, 5 de População, -20 de Dinheiro)"
+            ],
+
+            2: ["Oh, que ótimo! Vou cuidar dos cidadãos com muito carinho e dedicação!",
+                "(15 de Contentamento, 10 de População, -50 de Dinheiro)"
+
+            ],
+
+            3: [
+                "OH, que ótimo! Vou fazer o melhor hospital para a saúde da nação!",
+                "(20 de Contentamento, 15 de População, -100 de Dinheiro)"
+            ],
+
+            4: [
+                "Entendo, talvez outra hora seja melhor...",
+                "( -5 de Contentamento,  -2 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 16,
+
+        "dia_minimo": 1,
+
+        "falas": [
+            "Com lincença shogun, sou um treinador de falcões e venho até você para oferecer meus serviços.",
+            "Posso treinar falcões para ajudar na defesa da cidade, ou para caçar presas para a população. O que acha?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Contratar serviços",
+            "opcao_segunda": "Dispensá-lo"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -45
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 0,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Muito obrigado senhor! Meus falcões serão muito úteis para a cidade!",
+                "(5 de Contentamento, 1 de População, -45 de Dinheiro)"
+            ],
+
+            2: [
+                "Entendo, talvez outra hora seja melhor..."
+            ],
+
+        }
+    },
+
+    {
+        "sprite": 17,
+
+        "dia_minimo": 3,
+
+        "falas": [
+            "Olá meu senhor, sou um argilista e venho até você para oferecer meus serviços.",
+            "Posso criar belas esculturas e obras de arte para decorar a cidade, ou posso criar utensílios de cerâmica para uso diário. O que acha?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Contratar para criar obras de arte",
+            "opcao_segunda": "Contratar para criar utensílios de cerâmica",
+            "opcao_terceira": "Fazer parceria para criar um museu",
+            "opcao_quarta": "Recusar"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 10,
+            "Populacao": 1,
+            "Dinheiro": -30
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 15,
+            "Populacao": 5,
+            "Dinheiro": 50
+        },
+
+        "efeito_terceira": {
+            "Contentamento": 20,
+            "Populacao": 10,
+            "Dinheiro":-100
+        },
+
+        "efeito_quarta": {
+            "Contentamento": -10,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Muito obrigado senhor! Minhas obras de arte trarão beleza e cultura para a cidade!",
+                "(10 de Contentamento, 1 de População, -30 de Dinheiro)"
+            ],
+
+            2: [
+                "Muito obrigado senhor! Meus utensílios de cerâmica serão muito úteis para a população!",
+                "(15 de Contentamento, 5 de População, 50 de Dinheiro)"
+
+            ],
+
+            3: [
+                "Muito obrigado senhor! Nossa parceria criará um museu incrível para a cidade!",
+                "(20 de Contentamento, 10 de População, -100 de Dinheiro)"
+            ],
+
+            4: [
+                "Entendo, talvez outra hora seja melhor...",
+                "( -10 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 18,
+
+        "dia_minimo": 4,
+
+        "falas": [
+            "Com sua licença shogun, sou uma mensageira de outro feuo.",
+            "Venho aqui para entregar uma mensagem importante para você, mas antes de entregá-la, gostaria de saber se você está disposto a ouvir o que tenho a dizer."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Ver a mensagem",
+            "opcao_segunda": "Ignorar a mensageira"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 0,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 0,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Muito obrigado por ouvir minha mensagem, senhor. ",
+                "A mensagem é a seguinte: 'O feudo vizinho está planejando um ataque surpresa contra o seu feudo, eles estão se preparando para atacar em breve, então esteja preparado para se defender.'",
+                "Até mais..."
+
+            ],
+
+            2: [
+                "Tudo bem então...",
+
+            ]
+        }
+    },
+
+    {
+        "sprite": 19,
+
+        "dia_minimo": 1,
+
+        "falas": [
+            "Com licença shogun, sou uma caçadora.",
+            "Vim até você oferecer meus serviços para caçar animais selvagens que estão ameaçando a população da cidade. O que acha?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aceitar",
+            "opcao_segunda": "Recusar"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+
+        "efeito_segunda": {
+            "Contentamento": -5,
+            "Populacao": -10,
+            "Dinheiro": 0
+        },
+
+
+        "falas_pos": {
+            1: [
+                "Obrigado senhor! Meus serviços de caça ajudarão a proteger a população da cidade!",
+                "(+5 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+
+            2: [
+                "Entendo, talvez outra hora seja melhor...",
+                "(As feras atacam alguns cidadãos)"
+                "( -5 de Contentamento,  -10 de População)"
+            ],
+        }
+    },
+
+    {
+        "sprite": 20,
+
+        "dia_minimo": 3,
+
+        "falas": [
+            "Olá caro shogun, sou um pintor e vim oferecer meus serviços a ti."
+            "Posso criar belas pinturas para decorar a cidade, ou posso criar retratos de pessoas importantes para a história da cidade. O que acha?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Contratar para criar pinturas",
+            "opcao_segunda": "Contratar para criar retratos",
+            "opcao_terceira": "Recusar"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 10,
+            "Populacao": 1,
+            "Dinheiro": -30
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 15,
+            "Populacao": 1,
+            "Dinheiro": -45
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0,
+        },
+
+        "falas_pos": {
+            1: [
+                "Muito obrigado senhor! Minhas pinturas trarão beleza e cultura para a cidade!",
+                "(+10 de Contentamento, +1 de População, -30 de Dinheiro)"
+            ],
+
+            2: [
+                "Muito obrigado senhor! Meus retratos trarão felicidade e cultura para a cidade!",
+                "(+15 de Contentamento, +1 de População, -45 de Dinheiro)"
+
+            ],
+
+            3: [
+                "Entendo, talvez outra hora seja melhor...",
+                "(-5 de Contentamento)"
+            ],
+        }
+    },
+
+    {
+        "sprite": 85,
+
+        "dia_minimo": 1,
+
+        "falas": [
+            "Olá, sou Ayahime, filha casa Hayashi.",
+            "Minha família controla quase todas as rotas comerciais de Takayama!",
+            "Creio que deve conhecer meu pai, Hayashi Nobumasa.",
+            "Pensando de forma estratégica, não seria nada mal se pudessemos juntar nossos sobrenomes!",
+            "O que me diz, belo moço?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Casar-se com ela",
+            "opcao_segunda": "Dispensá-la",
+            "opcao_terceira": "Cortar negócios com a sua família"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 10,
+            "Populacao": 0,
+            "Dinheiro": 1000
+        },
+
+        "efeito_segunda": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -15,
+            "Populacao": -15,
+            "Dinheiro": -500,
+        },
+
+        "falas_pos": {
+            1: [
+                "Que ótima notícia!",
+                "De agora em diante farei de tudo para prosperar ao seu lado, meu amor!",
+                "(+10 de Contentamento, +1000 de Dinheiro)"
+            ],
+
+            2: ["É como dizem, nem todos têm bom gosto!",
+                "(-5 de Contentamento)"
+
+            ],
+
+            3: [
+                "COMO SE ATREVE?",
+                "VOCÊ SE ARREPENDERÁ AMARGAMENTE DISSO!"
+                "(-15 de Contentamento, -15 de População, -500 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 86,
+
+        "dia_minimo": 1,
+
+        "falas": [
+            "Meu amor, trago ótimas notícias!",
+            "Em alguns dias nascerá nosso primogênito",
+            "Finalmente teremos alguém para continuar nosso legado!",
+            "Creio que neste momento não exista ninguém mais feliz do que eu ao seu lado."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Que ótima notícia meu amor!",
+            "opcao_segunda": "Vamos começar os preparativos para receber-lô!",
+            "opcao_terceira": "Eu não estou pronto pra isso, se retire!"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 15,
+            "Populacao": 1,
+            "Dinheiro": 0
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 15,
+            "Populacao": 1,
+            "Dinheiro": -100
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -20,
+            "Populacao": -16,
+            "Dinheiro": -200,
+        },
+
+        "falas_pos": {
+            1: [
+                "Vou começar os preparos para recebê-lo imediatamente, meu amor!",
+                "(+10 de Contentamento, +1 de População)"
+            ],
+
+            2: ["Você é o melhor marido que eu poderia ter!",
+                "(+15 de Contentamento, +1 de População, -100 de Dinheiro)"
+                ],
+
+            3: [
+                "COMO VOCÊ OUSA DIZER ISSO?",
+                "EU MESMA ME GARANTIREI DE DESTRUIR O SEU LEGADO!",
+                "(-20 de Contentamento, -16 de População, -200 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 87,
+
+        "dia_minimo": 1,
+
+        "falas": [
+            "Muito obrigado por sua ajuda nobre senhor!",
+            "Com os experimentos que o senhor me possibilitou foi possivel encontrar uma cura pro meu povo!",
+            "Mas se todos estão bem é graças a você, leve isso como recompensa."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Fico feliz em ouvir isso!",
+            "opcao_segunda": "Ótimo, agora caia fora daqui!"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 0,
+            "Populacao": 0,
+            "Dinheiro": 1000
+        },
+
+        "efeito_segunda": {
+            "Contentamento": -1,
+            "Populacao": 0,
+            "Dinheiro": 1000
+        },
+
+        "falas_pos": {
+            1: [
+                "Agora tenho que voltar para o meu tempo.",
+                "Até a proxima, senhor!",
+                "(+1000 de Dinheiro)"
+            ],
+
+            2: ["Nossa... perdão pelo incômodo.",
+                "(-1 de Contentamento, +1000 de Dinheiro)"
+                ]
+        }
+    },
+
+    {
         "sprite": 1,
 
         "dia_minimo": 1,
@@ -703,4 +1264,3 @@ def imprimir_sprite(janela, sprite_rect, valor):
     sprite_imprimir_rect.center = sprite_rect.center
 
     janela.blit(sprite_imprimir, sprite_imprimir_rect)
-    
