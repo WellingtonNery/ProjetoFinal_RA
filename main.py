@@ -35,6 +35,8 @@ ultimas_falas_escolha = 0
 casou_com_pretendente = False
 ajudou_viajante = False
 aceitou_karasu = False
+vendedor_escolha_boa = False
+vendedor_escolha_ma = False
 
 letras_visiveis = 0
 tempo_ultima_letra = 0
@@ -237,6 +239,8 @@ while loop:
 
                             if evento_info["sprite"] == 13:
                                 aceitou_karasu = True
+                            if evento_info["sprite"] == 89:
+                                vendedor_escolha_boa = True
 
                         elif rects_escolhas[2]["baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_segunda"])
@@ -244,6 +248,9 @@ while loop:
                             ultimas_falas = True
                             mostrando_escolhas = False
                             ultima_fala_atual = 0
+
+                            if evento_info["sprite"] == 89:
+                                vendedor_escolha_ma = True
 
                     elif quantidade_escolhas == 3:
                         if rects_escolhas[3]["cima"].collidepoint(event.pos):
@@ -341,6 +348,11 @@ while loop:
                     if evento_info["sprite"] == 14 and not aceitou_karasu:
                         continue
 
+                    if evento_info["sprite"] == 90 and not vendedor_escolha_boa:
+                        continue
+
+                    if evento_info["sprite"] == 91 and not vendedor_escolha_ma:
+                        continue
                     eventos_disponiveis.append(indice)
 
             evento_atual = random.choice(eventos_disponiveis)
