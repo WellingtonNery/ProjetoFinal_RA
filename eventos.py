@@ -42,8 +42,27 @@ spr100 = pg.image.load("Imagens/sprites/pescador.png")
 
 spr110 = spr1
 
-spr157 = spr1
+spr157 = pg.image.load("Imagens/sprites/astronoma.png")
+spr158 = pg.image.load("Imagens/sprites/engenheiro_canais.png")
+spr159 = pg.image.load("Imagens/sprites/capita_guarda.png")
+spr160 = pg.image.load("Imagens/sprites/apicultor.png")
+spr161 = pg.image.load("Imagens/sprites/tecela.png")
+spr162 = pg.image.load("Imagens/sprites/embaixador_rival.png")
+spr163 = pg.image.load("Imagens/sprites/parteira.png")
+spr164 = pg.image.load("Imagens/sprites/cartografo.png")
+spr165 = pg.image.load("Imagens/sprites/cervejeira_arroz.png")
+spr166 = pg.image.load("Imagens/sprites/ronin.png")
+spr167 = pg.image.load("Imagens/sprites/sacerdotista_chuva.png")
+spr168 = pg.image.load("Imagens/sprites/coletor_impostos.png")
+spr169 = pg.image.load("Imagens/sprites/guardia_floresta.png")
+spr170 = pg.image.load("Imagens/sprites/inventor_pipas.png")
+spr171 = pg.image.load("Imagens/sprites/cozinheira_real.png")
+spr172 = pg.image.load("Imagens/sprites/domador_cavalos.png")
+spr173 = pg.image.load("Imagens/sprites/viuva_soldado.png")
+spr174 = pg.image.load("Imagens/sprites/artesao_mascaras.png")
+
 spr189 = spr1
+
 spr229 = spr1
 spr230 = spr1
 
@@ -93,6 +112,24 @@ sprites = {
 
     #DIEGO
     157: spr157,
+    158: spr158,
+    159: spr159,
+    160: spr160,
+    161: spr161,
+    162: spr162,
+    163: spr163,
+    164: spr164,
+    165: spr165,
+    166: spr166,
+    167: spr167,
+    168: spr168,
+    169: spr169,
+    170: spr170,
+    171: spr171,
+    172: spr172,
+    173: spr173,
+    174: spr174,
+
     189: spr189,
 
     #LUCAS
@@ -1883,7 +1920,944 @@ eventos = [
                 "(-8 de Contentamento, -5 de População, +10 de Dinheiro)"
             ]
         }
-    }
+    },
+
+    {
+        "sprite": 157,
+        "dia_minimo": 12,
+
+        "falas": [
+            "Meu senhor, observei sinais estranhos nos ceus durante tres noites.",
+            "As estrelas indicam uma estacao dificil, mas tambem uma chance de preparar o feudo.",
+            "Com recursos, posso orientar agricultores e navegadores antes que os problemas cheguem."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Financiar os estudos",
+            "opcao_segunda": "Cobrar impostos pelo pressagio",
+            "opcao_terceira": "Ignorar os pressagios"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 10,
+            "Populacao": 3,
+            "Dinheiro": -140
+        },
+
+        "efeito_segunda": {
+            "Contentamento": -10,
+            "Populacao": 0,
+            "Dinheiro": 160
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": -2,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Com tempo e instrumentos, poderemos evitar perdas antes que elas acontecam.",
+                "(+10 de Contentamento, +3 de Populacao, -140 de Dinheiro)"
+            ],
+
+            2: [
+                "Os cofres crescerao, mas o povo nao gostara de pagar por medo das estrelas.",
+                "(-10 de Contentamento, +160 de Dinheiro)"
+            ],
+
+            3: [
+                "Entao torcamos para que os ceus estejam errados, meu senhor.",
+                "(-3 de Contentamento, -2 de Populacao)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 158,
+        "dia_minimo": 16,
+
+        "falas": [
+            "Meu senhor, os campos proximos ao rio poderiam produzir muito mais.",
+            "Se cavarmos canais de irrigacao, as colheitas futuras serao melhores.",
+            "Mas a obra exigira dinheiro e trabalhadores por alguns dias."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Construir os canais",
+            "opcao_segunda": "Fazer uma obra pequena",
+            "opcao_terceira": "Adiar a construcao"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 12,
+            "Populacao": 8,
+            "Dinheiro": -260
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 3,
+            "Dinheiro": -100
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -6,
+            "Populacao": -2,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Os campos beberao do rio. O povo colhera os frutos dessa decisao.",
+                "(+12 de Contentamento, +8 de Populacao, -260 de Dinheiro)"
+            ],
+
+            2: [
+                "Nao sera perfeito, mas ja ajudara parte das plantacoes.",
+                "(+5 de Contentamento, +3 de Populacao, -100 de Dinheiro)"
+            ],
+
+            3: [
+                "A terra continuara seca em muitos lugares, meu senhor.",
+                "(-6 de Contentamento, -2 de Populacao)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 159,
+        "dia_minimo": 10,
+
+        "falas": [
+            "Meu senhor, os caminhos comerciais estao sendo atacados por bandidos.",
+            "Posso enviar patrulhas para proteger as estradas.",
+            "Isso trara seguranca, mas manter soldados fora da cidade custa caro."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Enviar patrulhas",
+            "opcao_segunda": "Cobrar escolta",
+            "opcao_terceira": "Nao deslocar soldados"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 2,
+            "Dinheiro": -130
+        },
+
+        "efeito_segunda": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 120
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -9,
+            "Populacao": -3,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "As estradas serao vigiadas. Comerciantes e viajantes respirarao melhor.",
+                "(+8 de Contentamento, +2 de Populacao, -130 de Dinheiro)"
+            ],
+
+            2: [
+                "Quem puder pagar estara seguro. Quem nao puder, reclamara.",
+                "(-4 de Contentamento, +120 de Dinheiro)"
+            ],
+
+            3: [
+                "Entao os viajantes seguirao por conta propria. Alguns talvez nao cheguem.",
+                "(-9 de Contentamento, -3 de Populacao)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 160,
+        "dia_minimo": 7,
+
+        "falas": [
+            "Meu senhor, minhas colmeias estao crescendo bem.",
+            "Com apoio, posso ensinar outras familias a produzir mel.",
+            "O mel alimenta, cura e vende bem."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Apoiar os apicultores",
+            "opcao_segunda": "Comprar o mel para revenda",
+            "opcao_terceira": "Deixar como esta"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 9,
+            "Populacao": 2,
+            "Dinheiro": -70
+        },
+
+        "efeito_segunda": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 110
+        },
+
+        "efeito_terceira": {
+            "Contentamento": 1,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "As colmeias se espalharao pelas vilas. O povo tera alimento e trabalho.",
+                "(+9 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
+            ],
+
+            2: [
+                "Sera lucrativo, mas as familias sentirao falta do mel em casa.",
+                "(-5 de Contentamento, +110 de Dinheiro)"
+            ],
+
+            3: [
+                "Continuarei cuidando das minhas colmeias, meu senhor.",
+                "(+1 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 161,
+        "dia_minimo": 9,
+
+        "falas": [
+            "Meu senhor, nossas tecelas produzem bons tecidos, mas faltam teares.",
+            "Com novos equipamentos, poderemos vender mais e empregar familias.",
+            "O investimento nao sera pequeno."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar novos teares",
+            "opcao_segunda": "Exigir mais producao",
+            "opcao_terceira": "Recusar"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 11,
+            "Populacao": 5,
+            "Dinheiro": -180
+        },
+
+        "efeito_segunda": {
+            "Contentamento": -12,
+            "Populacao": -1,
+            "Dinheiro": 140
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "As oficinas ficarao cheias de trabalho. O feudo vestira sua prosperidade.",
+                "(+11 de Contentamento, +5 de Populacao, -180 de Dinheiro)"
+            ],
+
+            2: [
+                "Produziremos mais, mas a custa do cansaco e da raiva das artesas.",
+                "(-12 de Contentamento, -1 de Populacao, +140 de Dinheiro)"
+            ],
+
+            3: [
+                "Entao continuaremos trabalhando devagar, com ferramentas antigas.",
+                "(-4 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 162,
+        "dia_minimo": 18,
+
+        "falas": [
+            "Meu senhor, venho em nome do feudo vizinho.",
+            "Meu mestre propoe um acordo comercial entre nossas terras.",
+            "Mas ele exige uma taxa inicial como prova de boa vontade."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aceitar o acordo",
+            "opcao_segunda": "Negociar melhor",
+            "opcao_terceira": "Recusar com firmeza"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 2,
+            "Dinheiro": -120
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": 80
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "O acordo sera firmado. Que ambas as terras lucrem com prudencia.",
+                "(+4 de Contentamento, +2 de Populacao, -120 de Dinheiro)"
+            ],
+
+            2: [
+                "Vejo que nao sera facil engana-lo, meu senhor. Levarei sua contraproposta.",
+                "(+2 de Contentamento, +80 de Dinheiro)"
+            ],
+
+            3: [
+                "Meu mestre ficara ofendido, mas respeitara sua clareza.",
+                "(-3 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 163,
+        "dia_minimo": 11,
+
+        "falas": [
+            "Meu senhor, muitas familias vivem longe de ajuda quando nascem suas criancas.",
+            "Se eu puder treinar novas parteiras, salvaremos maes e bebes.",
+            "Preciso de apoio para viajar pelas vilas."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Financiar o treinamento",
+            "opcao_segunda": "Ajudar a vila central",
+            "opcao_terceira": "Negar apoio"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 13,
+            "Populacao": 7,
+            "Dinheiro": -160
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 2,
+            "Dinheiro": -50
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -9,
+            "Populacao": -3,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Viajarei amanha. Muitas vidas pequenas agradecerao sem saber seu nome.",
+                "(+13 de Contentamento, +7 de Populacao, -160 de Dinheiro)"
+            ],
+
+            2: [
+                "A vila central ficara mais segura, mas as distantes ainda precisarao de ajuda.",
+                "(+5 de Contentamento, +2 de Populacao, -50 de Dinheiro)"
+            ],
+
+            3: [
+                "Entao farei o que puder sozinha, meu senhor.",
+                "(-9 de Contentamento, -3 de Populacao)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 164,
+        "dia_minimo": 15,
+
+        "falas": [
+            "Meu senhor, retornei das montanhas com mapas incompletos, mas promissores.",
+            "Encontrei trilhas, fontes e possiveis rotas comerciais.",
+            "Com uma escolta, posso terminar o levantamento."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Enviar escolta",
+            "opcao_segunda": "Comprar os mapas",
+            "opcao_terceira": "Dispensa-lo"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 3,
+            "Dinheiro": -110
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 1,
+            "Populacao": 0,
+            "Dinheiro": -40
+        },
+
+        "efeito_terceira": {
+            "Contentamento": 0,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Com protecao, voltarei com rotas seguras para comercio e expansao.",
+                "(+6 de Contentamento, +3 de Populacao, -110 de Dinheiro)"
+            ],
+
+            2: [
+                "Os mapas ainda podem servir, embora faltem partes importantes.",
+                "(+1 de Contentamento, -40 de Dinheiro)"
+            ],
+
+            3: [
+                "Entendo. Talvez outro senhor veja valor nos caminhos que encontrei.",
+                "(0 de Contentamento, 0 de Populacao, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 165,
+        "dia_minimo": 13,
+
+        "falas": [
+            "Meu senhor, minha familia sabe produzir uma bebida de arroz excelente.",
+            "Ela pode render lucro em festivais e tavernas.",
+            "Mas alguns monges dizem que isso trara desordem."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Permitir a producao",
+            "opcao_segunda": "Taxar fortemente",
+            "opcao_terceira": "Proibir"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 1,
+            "Dinheiro": 90
+        },
+
+        "efeito_segunda": {
+            "Contentamento": -7,
+            "Populacao": 0,
+            "Dinheiro": 180
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "As tavernas brindarao por sua decisao, meu senhor.",
+                "(+8 de Contentamento, +1 de Populacao, +90 de Dinheiro)"
+            ],
+
+            2: [
+                "Os cofres gostarao. Os clientes e produtores, nem tanto.",
+                "(-7 de Contentamento, +180 de Dinheiro)"
+            ],
+
+            3: [
+                "Entao os barris permanecerao fechados... oficialmente.",
+                "(-5 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 166,
+        "dia_minimo": 20,
+
+        "falas": [
+            "Meu senhor, sou um samurai sem mestre.",
+            "Procuro um lugar onde minha espada ainda tenha proposito.",
+            "Posso servir ao seu feudo, se aceitar minha lealdade."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Contratar o ronin",
+            "opcao_segunda": "Treinar os guardas",
+            "opcao_terceira": "Recusar sua espada"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": -100
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 7,
+            "Populacao": 0,
+            "Dinheiro": -70
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Minha espada sera sua, meu senhor.",
+                "(+3 de Contentamento, +1 de Populacao, -100 de Dinheiro)"
+            ],
+
+            2: [
+                "Treinarei seus guardas para que muitos protejam o que antes um so protegia.",
+                "(+7 de Contentamento, -70 de Dinheiro)"
+            ],
+
+            3: [
+                "Entao seguirei pela estrada. Que seu feudo nao precise de mim.",
+                "(-2 de Contentamento, -1 de Populacao)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 167,
+        "dia_minimo": 17,
+
+        "falas": [
+            "Meu senhor, os campos comecam a secar.",
+            "Posso conduzir um ritual pela chuva, mas precisarei de oferendas.",
+            "Alguns acreditarao. Outros dirao que e desperdicio."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Realizar o ritual",
+            "opcao_segunda": "Comprar agua",
+            "opcao_terceira": "Esperar a chuva"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 9,
+            "Populacao": 2,
+            "Dinheiro": -90
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 3,
+            "Dinheiro": -180
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -8,
+            "Populacao": -4,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "As preces subirao com a fumaca das oferendas.",
+                "(+9 de Contentamento, +2 de Populacao, -90 de Dinheiro)"
+            ],
+
+            2: [
+                "A agua chegara em barris. Nao sera barato, mas salvara plantacoes.",
+                "(+5 de Contentamento, +3 de Populacao, -180 de Dinheiro)"
+            ],
+
+            3: [
+                "A terra aguardara. Espero que ela tenha paciencia.",
+                "(-8 de Contentamento, -4 de Populacao)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 168,
+        "dia_minimo": 8,
+
+        "falas": [
+            "Meu senhor, os impostos deste mes podem ser aumentados.",
+            "Os cofres precisam se fortalecer para decisoes futuras.",
+            "Mas o povo ja sente o peso das cobrancas."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aumentar impostos",
+            "opcao_segunda": "Manter como esta",
+            "opcao_terceira": "Reduzir impostos"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": -15,
+            "Populacao": -2,
+            "Dinheiro": 260
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 0,
+            "Populacao": 0,
+            "Dinheiro": 80
+        },
+
+        "efeito_terceira": {
+            "Contentamento": 14,
+            "Populacao": 2,
+            "Dinheiro": -120
+        },
+
+        "falas_pos": {
+            1: [
+                "Os cofres ficarao cheios, mas as ruas ficarao amargas.",
+                "(-15 de Contentamento, -2 de Populacao, +260 de Dinheiro)"
+            ],
+
+            2: [
+                "Seguiremos com a cobranca habitual, meu senhor.",
+                "(+80 de Dinheiro)"
+            ],
+
+            3: [
+                "O povo sentira alivio imediato. Os cofres, nem tanto.",
+                "(+14 de Contentamento, +2 de Populacao, -120 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 169,
+        "dia_minimo": 19,
+
+        "falas": [
+            "Meu senhor, cacadores estao entrando fundo demais na floresta.",
+            "Se continuarem, os animais desaparecerao e as vilas perderao equilibrio.",
+            "Peco limites antes que seja tarde."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar area protegida",
+            "opcao_segunda": "Permitir caca controlada",
+            "opcao_terceira": "Liberar a caca"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 2,
+            "Dinheiro": -70
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": 60
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -10,
+            "Populacao": -3,
+            "Dinheiro": 170
+        },
+
+        "falas_pos": {
+            1: [
+                "A floresta tera tempo para respirar. As proximas geracoes notarao.",
+                "(+6 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
+            ],
+
+            2: [
+                "Cacaremos com medida. Nem fome, nem destruicao.",
+                "(+4 de Contentamento, +1 de Populacao, +60 de Dinheiro)"
+            ],
+
+            3: [
+                "A carne sera abundante agora. Depois, talvez so reste silencio.",
+                "(-10 de Contentamento, -3 de Populacao, +170 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 170,
+        "dia_minimo": 6,
+
+        "falas": [
+            "Meu senhor! Criei pipas enormes que podem levar mensagens pelo vento.",
+            "Tambem podem alegrar as criancas nos dias de descanso.",
+            "So preciso de bambu, papel e um pouco de confianca."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Apoiar a invencao",
+            "opcao_segunda": "Usar so em mensagens",
+            "opcao_terceira": "Manda-lo embora"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 10,
+            "Populacao": 1,
+            "Dinheiro": -60
+        },
+
+        "efeito_segunda": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": -30
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "As criancas verao dragoes no ceu, e os mensageiros terao novas rotas.",
+                "(+10 de Contentamento, +1 de Populacao, -60 de Dinheiro)"
+            ],
+
+            2: [
+                "Funciona tambem... mas e triste ver uma pipa sem riso por perto.",
+                "(-2 de Contentamento, -30 de Dinheiro)"
+            ],
+
+            3: [
+                "Certo... talvez outro senhor goste de dragoes voadores.",
+                "(-3 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 171,
+        "dia_minimo": 5,
+
+        "falas": [
+            "Meu senhor, sobras do castelo poderiam alimentar muita gente.",
+            "Posso organizar uma cozinha comunitaria para os mais necessitados.",
+            "Isso custara pouco, mas exigira ordem e funcionarios."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar cozinha comunitaria",
+            "opcao_segunda": "Vender sobras baratas",
+            "opcao_terceira": "Guardar tudo no castelo"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 12,
+            "Populacao": 4,
+            "Dinheiro": -90
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 30
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -9,
+            "Populacao": -2,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Ninguem deveria dormir com fome sob um bom governante.",
+                "(+12 de Contentamento, +4 de Populacao, -90 de Dinheiro)"
+            ],
+
+            2: [
+                "Nao sera caridade completa, mas ja aliviara muitas mesas.",
+                "(+5 de Contentamento, +1 de Populacao, +30 de Dinheiro)"
+            ],
+
+            3: [
+                "As panelas do castelo ficarao cheias. As das ruas, talvez nao.",
+                "(-9 de Contentamento, -2 de Populacao)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 172,
+        "dia_minimo": 21,
+
+        "falas": [
+            "Meu senhor, cavalos fortes chegaram das planicies.",
+            "Com eles, mensageiros, patrulhas e comerciantes viajarao mais rapido.",
+            "Mas bons cavalos custam caro."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar cavalos",
+            "opcao_segunda": "Comprar poucos",
+            "opcao_terceira": "Nao comprar"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 4,
+            "Dinheiro": -300
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": -120
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Seu feudo parecera menor quando as noticias correrem a cavalo.",
+                "(+8 de Contentamento, +4 de Populacao, -300 de Dinheiro)"
+            ],
+
+            2: [
+                "Os guardas montarao melhor, ainda que o povo veja pouco beneficio.",
+                "(+3 de Contentamento, +1 de Populacao, -120 de Dinheiro)"
+            ],
+
+            3: [
+                "Entao seguiremos no passo dos proprios pes.",
+                "(-2 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 173,
+        "dia_minimo": 14,
+
+        "falas": [
+            "Meu senhor, meu marido serviu aos guardas do feudo e morreu protegendo a estrada.",
+            "Minha familia ficou sem sustento.",
+            "Peco que sua lealdade nao seja esquecida."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Conceder pensao",
+            "opcao_segunda": "Dar pagamento unico",
+            "opcao_terceira": "Negar ajuda"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 14,
+            "Populacao": 1,
+            "Dinheiro": -150
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 6,
+            "Populacao": 0,
+            "Dinheiro": -60
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -14,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "Meu marido descansara sabendo que sua casa nao foi abandonada.",
+                "(+14 de Contentamento, +1 de Populacao, -150 de Dinheiro)"
+            ],
+
+            2: [
+                "A ajuda aliviara este mes. Depois, veremos como sobreviver.",
+                "(+6 de Contentamento, -60 de Dinheiro)"
+            ],
+
+            3: [
+                "Entao a lealdade dele morreu com ele, meu senhor.",
+                "(-14 de Contentamento, -1 de Populacao)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 174,
+        "dia_minimo": 10,
+
+        "falas": [
+            "Meu senhor, proponho um festival de mascaras para atrair visitantes.",
+            "Havera musica, teatro e comercio nas ruas.",
+            "Pode ser belo, lucrativo... ou uma grande confusao."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Autorizar o festival",
+            "opcao_segunda": "Cobrar entrada",
+            "opcao_terceira": "Proibir aglomeracoes"
+        },
+
+        "efeito_primeira": {
+            "Contentamento": 16,
+            "Populacao": 3,
+            "Dinheiro": -100
+        },
+
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 120
+        },
+
+        "efeito_terceira": {
+            "Contentamento": -10,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+
+        "falas_pos": {
+            1: [
+                "As ruas terao musica, cor e historias ate a lua subir.",
+                "(+16 de Contentamento, +3 de Populacao, -100 de Dinheiro)"
+            ],
+
+            2: [
+                "Havera festa, mas alguns ficarao do lado de fora contando moedas.",
+                "(+5 de Contentamento, +1 de Populacao, +120 de Dinheiro)"
+            ],
+
+            3: [
+                "Guardarei as mascaras. Rostos serios tambem contam uma historia.",
+                "(-10 de Contentamento)"
+            ]
+        }
+    },
+
 ]
 
 rect_limite = pg.Rect(17, 248, 343, 634)
