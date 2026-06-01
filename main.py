@@ -6,6 +6,7 @@ import dialogo
 import random
 
 pg.init()
+pg.mixer.init()
 
 LARGURA = 1600
 ALTURA = 900
@@ -14,6 +15,7 @@ evento = 0
 dia = 1
 evento_atual = 0
 fala_atual = 0
+DIA_MAXIMO = 100
 
 alpha = 0
 apagando = False
@@ -22,7 +24,7 @@ tempo_preto = 0
 
 esperando_npc = False
 mostrar_npc = True
-tempo_esperando = 5000
+TEMPO_ESPERANDO = 5000
 tempo_sem_npc = 0
 
 mostrando_escolhas = False
@@ -40,11 +42,19 @@ vendedor_escolha_ma = False
 
 letras_visiveis = 0
 tempo_ultima_letra = 0
-velocidade_texto = 30
+VELOCIDADE_TEXTO = 30
 fala_anterior = ""
 
 fade = pg.Surface((LARGURA, ALTURA))
 fade.fill((0, 0, 0))
+
+som = None
+sons_fala = [
+    pg.mixer.Sound("Audios/vozes1.mp3"),
+    pg.mixer.Sound("Audios/vozes2.mp3"),
+    pg.mixer.Sound("Audios/vozes3.mp3"),
+    pg.mixer.Sound("Audios/vozes4.mp3"),
+]
 
 rects_quadro = {
     "cima": pg.Rect(1398, 119, 92, 39),
@@ -122,19 +132,25 @@ def efeito_digitando(texto):
         tempo_ultima_letra = agora
 
     if letras_visiveis < len(texto):
-        if agora - tempo_ultima_letra >= velocidade_texto:
+        if agora - tempo_ultima_letra >= VELOCIDADE_TEXTO:
             letras_visiveis += 1
             tempo_ultima_letra = agora
 
+            if letras_visiveis % 4 == 0:
+                som = random.choice(sons_fala)
+                som.set_volume(0.1)
+                som.play()
+
     return texto[:letras_visiveis]
 
+pg.mixer.music.load("Audios/som_fundo.mp3")
+pg.mixer.music.set_volume(0.025)
+pg.mixer.music.play(-1)
 
 fundo_manha = pg.image.load("Imagens/imagem_fundo.png").convert()
 fundo_manha = pg.transform.scale(fundo_manha, (LARGURA, ALTURA))
-
 fundo_tarde = pg.image.load("Imagens/fundo_tarde.png").convert()
 fundo_tarde = pg.transform.scale(fundo_tarde, (LARGURA, ALTURA))
-
 fundo_noite = pg.image.load("Imagens/fundo_noite.png").convert()
 fundo_noite = pg.transform.scale(fundo_noite, (LARGURA, ALTURA))
 
@@ -150,10 +166,10 @@ escurecer_inicio.set_alpha(90)
 logo = pg.image.load("Imagens/logo.png").convert_alpha()
 logo.set_colorkey((0, 0, 0))
 
-largura_logo = 950
-altura_logo = int(logo.get_height() * (largura_logo / logo.get_width()))
+LARGURA_LOGO = 950
+altura_logo = int(logo.get_height() * (LARGURA_LOGO / logo.get_width()))
 
-logo = pg.transform.smoothscale(logo, (largura_logo, altura_logo))
+logo = pg.transform.smoothscale(logo, (LARGURA_LOGO, altura_logo))
 logo_rect = logo.get_rect()
 logo_rect.center = (LARGURA // 2, ALTURA // 2 - 70)
 
@@ -182,7 +198,11 @@ cal_rect.topleft = (25, 25)
 
 papel_rect = pg.Rect(86, 125, 153, 83)
 
-quadro = pg.image.load("Imagens/quadro.png").convert_alpha()
+quadro_alto = pg.image.load("Imagens/quadro.png").convert_alpha()
+quadro_medio = pg.image.load("Imagens/quadro_medio.png").convert_alpha()
+quadro_baixo = pg.image.load("Imagens/quadro_baixo.png").convert_alpha()
+
+quadro = quadro_alto
 quadro_rect = quadro.get_rect()
 quadro_rect.topright = (LARGURA + 40, -100)
 
@@ -317,8 +337,17 @@ while loop:
                     elif fala_atual < len(evento_info["falas"]) - 1:
                         fala_atual += 1
 
+
                     else:
                         mostrando_escolhas = True
+
+    if rects_pontos["Contentamento"] >= 70:
+        quadro = quadro_alto
+    elif 70 > rects_pontos["Contentamento"] >= 30:
+        quadro = quadro_medio
+    else:
+        quadro = quadro_baixo
+
 
     if tela_inicio:
         janela.blit(fundo_inicio, (0, 0))
@@ -331,7 +360,7 @@ while loop:
     if esperando_npc:
         agora = pg.time.get_ticks()
 
-        if agora - tempo_sem_npc >= tempo_esperando:
+        if agora - tempo_sem_npc >= TEMPO_ESPERANDO:
             mostrar_npc = True
             esperando_npc = False
 
