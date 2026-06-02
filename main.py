@@ -37,8 +37,14 @@ ultimas_falas_escolha = 0
 casou_com_pretendente = False
 ajudou_viajante = False
 aceitou_karasu = False
+tesouro_karasu = False
 vendedor_escolha_boa = False
 vendedor_escolha_ma = False
+guerra1 = False
+guerra2 = False
+guerra3 = False
+luta_feitceiros1 = False
+luta_feitceiros2 = False
 
 letras_visiveis = 0
 tempo_ultima_letra = 0
@@ -259,6 +265,10 @@ while loop:
 
                             if evento_info["sprite"] == 13:
                                 aceitou_karasu = True
+                            if evento_info["sprite"] == 14:
+                                tesouro_karasu = True
+                            if evento_info["sprite"] == 18:
+                                guerra1 = True
                             if evento_info["sprite"] == 89:
                                 vendedor_escolha_boa = True
 
@@ -269,6 +279,10 @@ while loop:
                             mostrando_escolhas = False
                             ultima_fala_atual = 0
 
+                            if evento_info["sprite"] == 14:
+                                tesouro_karasu = True
+                            if evento_info["sprite"] == 18:
+                                guerra1 = True
                             if evento_info["sprite"] == 89:
                                 vendedor_escolha_ma = True
 
@@ -307,12 +321,30 @@ while loop:
                             mostrando_escolhas = False
                             ultima_fala_atual = 0
 
+                            if evento_info["sprite"] == 36:
+                                guerra2 = True
+                            if evento_info["sprite"] == 35:
+                                luta_feitceiros1 = True
+                            if evento_info["sprite"] == 37:
+                                luta_feitceiros2 = True
+                            if evento_info["sprite"] == 38:
+                                guerra3 = True
+
                         elif rects_escolhas[4]["meio-cima"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_segunda"])
                             ultimas_falas_escolha = 2
                             ultimas_falas = True
                             mostrando_escolhas = False
                             ultima_fala_atual = 0
+
+                            if evento_info["sprite"] == 36:
+                                guerra2 = True
+                            if evento_info["sprite"] == 35:
+                                luta_feitceiros1 = True
+                            if evento_info["sprite"] == 37:
+                                luta_feitceiros2 = True
+                            if evento_info["sprite"] == 38:
+                                guerra3 = True
 
                         elif rects_escolhas[4]["meio-baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_terceira"])
@@ -321,12 +353,30 @@ while loop:
                             mostrando_escolhas = False
                             ultima_fala_atual = 0
 
+                            if evento_info["sprite"] == 36:
+                                guerra2 = True
+                            if evento_info["sprite"] == 35:
+                                luta_feitceiros1 = True
+                            if evento_info["sprite"] == 37:
+                                luta_feitceiros2 = True
+                            if evento_info["sprite"] == 38:
+                                guerra3 = True
+
                         elif rects_escolhas[4]["baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_quarta"])
                             ultimas_falas_escolha = 4
                             ultimas_falas = True
                             mostrando_escolhas = False
                             ultima_fala_atual = 0
+
+                            if evento_info["sprite"] == 36:
+                                guerra2 = True
+                            if evento_info["sprite"] == 35:
+                                luta_feitceiros1 = True
+                            if evento_info["sprite"] == 37:
+                                luta_feitceiros2 = True
+                            if evento_info["sprite"] == 38:
+                                guerra3 = True
 
                 else:
                     fala_texto = evento_info["falas"][fala_atual]
@@ -375,6 +425,24 @@ while loop:
                         continue
 
                     if evento_info["sprite"] == 14 and not aceitou_karasu:
+                        continue
+
+                    if evento_info["sprite"] == 33 and not tesouro_karasu:
+                        continue
+
+                    if evento_info["sprite"] == 36 and not guerra1:
+                        continue
+
+                    if evento_info["sprite"] == 37 and not luta_feitceiros1:
+                        continue
+
+                    if evento_info["sprite"] == 38 and not guerra2:
+                        continue
+
+                    if evento_info["sprite"] == 39 and not luta_feitceiros2:
+                        continue
+
+                    if evento_info["sprite"] == 40 and not guerra3:
                         continue
 
                     if evento_info["sprite"] == 90 and not vendedor_escolha_boa:
