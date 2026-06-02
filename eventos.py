@@ -1793,8 +1793,7 @@ eventos = [
 
         "falas": [
             "Shogun, encontrei os rastros de Sukuna nas montanhas.",
-            "A presença dele ainda marca esta terra... então você não estava mentindo.",
-            "Os soldados que atacam sua cidade são decepcionantes. Não me interessam mais.",
+            "A presença dele ainda marca esta terra...",
             "Prepare um lugar afastado e leve Sukuna até lá.",
             "Caso me faça esperar cercado por aldeões indefesos, não garanto que minha paciência durará muito."
         ],
