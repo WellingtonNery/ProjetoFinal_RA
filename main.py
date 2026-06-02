@@ -16,6 +16,17 @@ dia = 1
 evento_atual = 0
 fala_atual = 0
 DIA_MAXIMO = 100
+final_ativo = False
+final_tipo = None
+final_imagem = None
+
+FINAIS = {
+    "populacao": "Imagens/Finais/final_populacao.png",
+    "dinheiro": "Imagens/Finais/final_dinheiro.png",
+    "contentamento": "Imagens/Finais/final_contentamento.png",
+    "dia_100": "Imagens/Finais/final_dia_100.png",
+    "era_de_ouro": "Imagens/Finais/final_era_de_ouro.png",
+}
 
 alpha = 0
 apagando = False
@@ -106,6 +117,50 @@ def aplicar_efeito(efeito):
         rects_pontos["Contentamento"] = max(0, min(rects_pontos["Contentamento"], 100))
         rects_pontos["Dinheiro"] = max(0, rects_pontos["Dinheiro"])
         rects_pontos["Populacao"] = max(0, rects_pontos["Populacao"])
+
+
+def esta_na_era_de_ouro():
+    return False
+
+
+def carregar_final(tipo):
+    caminho = FINAIS[tipo]
+    imagem = pg.image.load(caminho).convert_alpha()
+    return pg.transform.scale(imagem, (LARGURA, ALTURA))
+
+
+def verificar_final():
+    global final_ativo, final_tipo, final_imagem
+    global mostrar_npc, esperando_npc, mostrando_escolhas, apagando, esperando
+
+    if final_ativo:
+        return
+
+    if rects_pontos["Populacao"] <= 0:
+        final_tipo = "populacao"
+    elif rects_pontos["Dinheiro"] <= 0:
+        final_tipo = "dinheiro"
+    elif rects_pontos["Contentamento"] <= 0:
+        final_tipo = "contentamento"
+    elif dia >= DIA_MAXIMO:
+        if esta_na_era_de_ouro():
+            final_tipo = "era_de_ouro"
+        else:
+            final_tipo = "dia_100"
+    else:
+        return
+
+    final_ativo = True
+    final_imagem = carregar_final(final_tipo)
+    mostrar_npc = False
+    esperando_npc = False
+    mostrando_escolhas = False
+    apagando = False
+    esperando = False
+
+
+def desenhar_final():
+    janela.blit(final_imagem, (0, 0))
 
 
 def finalizar_evento():
@@ -407,6 +462,11 @@ while loop:
         pg.display.update()
         continue
 
+    if final_ativo:
+        desenhar_final()
+        pg.display.update()
+        continue
+
     if esperando_npc:
         agora = pg.time.get_ticks()
 
@@ -469,6 +529,7 @@ while loop:
             dia += 1
             evento = 0
             fundo = fundo_manha
+            verificar_final()
 
     else:
         if alpha > 0:
