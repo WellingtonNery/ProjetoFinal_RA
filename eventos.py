@@ -116,7 +116,34 @@ spr197 = spr170
 spr198 = spr171
 spr199 = spr172
 spr200 = spr107
-spr201 = spr103
+spr201 = pg.image.load("Imagens/sprites/mestre_banhos.png")
+spr202 = pg.image.load("Imagens/sprites/gravadora_madeira.png")
+spr203 = pg.image.load("Imagens/sprites/guia_neve.png")
+spr204 = pg.image.load("Imagens/sprites/inspetora_arroz.png")
+spr205 = pg.image.load("Imagens/sprites/ferreiro_sinos.png")
+spr206 = pg.image.load("Imagens/sprites/jardineira_musgo.png")
+spr207 = pg.image.load("Imagens/sprites/sacerdote_estrada.png")
+spr208 = pg.image.load("Imagens/sprites/mercadora_laca.png")
+spr209 = pg.image.load("Imagens/sprites/tocadora_biwa.png")
+spr210 = pg.image.load("Imagens/sprites/fabricante_sandalias.png")
+spr211 = pg.image.load("Imagens/sprites/minerador_prata.png")
+spr212 = pg.image.load("Imagens/sprites/curandeira_cogumelos.png")
+spr213 = pg.image.load("Imagens/sprites/oleiro_telhas.png")
+spr214 = pg.image.load("Imagens/sprites/treinadora_caes.png")
+spr215 = pg.image.load("Imagens/sprites/mensageiro_montanha.png")
+spr216 = spr201
+spr217 = spr202
+spr218 = spr203
+spr219 = spr204
+spr220 = spr205
+spr221 = spr206
+spr222 = spr207
+spr223 = spr208
+spr224 = spr209
+spr225 = spr210
+spr226 = spr211
+spr227 = spr212
+spr228 = spr213
 
 #LUCAS
 spr229 = spr1
@@ -241,6 +268,33 @@ sprites = {
     199: spr199,
     200: spr200,
     201: spr201,
+    202: spr202,
+    203: spr203,
+    204: spr204,
+    205: spr205,
+    206: spr206,
+    207: spr207,
+    208: spr208,
+    209: spr209,
+    210: spr210,
+    211: spr211,
+    212: spr212,
+    213: spr213,
+    214: spr214,
+    215: spr215,
+    216: spr216,
+    217: spr217,
+    218: spr218,
+    219: spr219,
+    220: spr220,
+    221: spr221,
+    222: spr222,
+    223: spr223,
+    224: spr224,
+    225: spr225,
+    226: spr226,
+    227: spr227,
+    228: spr228,
 
     #LUCAS
     229: spr229,
@@ -4834,41 +4888,1092 @@ eventos = [
 
     {
         "sprite": 201,
-        "dia_minimo": 6,
+
+        "dia_minimo": 7,
 
         "falas": [
-            "Meu senhor, as filas no portão estão atrasando entregas pequenas.",
-            "Podemos simplificar os registros para moradores conhecidos.",
-            "Isso facilita a vida da vila, mas reduz um pouco o controle."
+            "Meu senhor, os banhos termais próximos à estrada estão sujos e mal cuidados.",
+            "Viajantes, idosos e trabalhadores usam aquelas águas para descansar o corpo.",
+            "Com madeira nova e limpeza adequada, o lugar voltará a servir Takayama."
         ],
 
         "qtd_escolhas": {
-            "opcao_primeira": "Simplificar os registros.",
-            "opcao_segunda": "Manter tudo rigoroso.",
-            "opcao_terceira": "Cobrar prioridade na fila."
+            "opcao_primeira": "Reformar os banhos.",
+            "opcao_segunda": "Limpar só a área principal.",
+            "opcao_terceira": "Fechar por economia."
         },
 
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -10},
-        "efeito_segunda": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 20},
-        "efeito_terceira": {"Contentamento": -7, "Populacao": 0, "Dinheiro": 45},
+        "efeito_primeira": {"Contentamento": 9, "Populacao": 3, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": -6, "Populacao": -1, "Dinheiro": 0},
 
         "falas_pos": {
             1: [
-                "Os moradores conhecidos passarão com menos espera.",
-                "A vida cotidiana ficou menos travada.",
-                "(+6 de Contentamento, +1 de População, -10 de Dinheiro)"
+                "Os banhos foram restaurados e voltarão a receber moradores cansados.",
+                "(+9 de Contentamento, +3 de População, -80 de Dinheiro)"
             ],
 
             2: [
-                "As filas continuarão lentas, mas bem documentadas.",
-                "A ordem venceu a paciência.",
-                "(-4 de Contentamento, 0 de População, +20 de Dinheiro)"
+                "A área principal ficou limpa, embora o resto ainda precise de cuidado.",
+                "(+4 de Contentamento, +1 de População, -25 de Dinheiro)"
             ],
 
             3: [
-                "Quem pagar passará primeiro.",
-                "Os cofres sorriram; a fila, não.",
-                "(-7 de Contentamento, 0 de População, +45 de Dinheiro)"
+                "Os portões dos banhos serão fechados, e muitos sentirão falta do calor.",
+                "(-6 de Contentamento, -1 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 202,
+
+        "dia_minimo": 6,
+
+        "falas": [
+            "Meu senhor, as placas de madeira nas trilhas estão gastas pela chuva.",
+            "Viajantes erram caminhos e chegam tarde ao mercado.",
+            "Posso gravar novas indicações para estradas, pontes e entradas das vilas."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Encomendar placas completas.",
+            "opcao_segunda": "Fazer só placas principais.",
+            "opcao_terceira": "Manter as antigas."
+        },
+
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -45},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -15},
+        "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "As trilhas receberão placas novas e viajantes se perderão menos.",
+                "(+6 de Contentamento, +1 de População, -45 de Dinheiro)"
+            ],
+
+            2: [
+                "As placas principais ajudarão, mas caminhos menores seguirão confusos.",
+                "(+3 de Contentamento, 0 de População, -15 de Dinheiro)"
+            ],
+
+            3: [
+                "As placas velhas continuarão apontando direções pela metade.",
+                "(-3 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 203,
+
+        "dia_minimo": 12,
+
+        "falas": [
+            "Meu senhor, a neve costuma esconder pedras soltas nas trilhas altas de Hida.",
+            "Com marcações simples, posso tornar a passagem mais segura antes do frio piorar.",
+            "Sem isso, viajantes dependerão apenas da sorte."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Marcar rota segura.",
+            "opcao_segunda": "Contratar guia temporário.",
+            "opcao_terceira": "Deixar viajantes decidirem."
+        },
+
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -60},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -30},
+        "efeito_terceira": {"Contentamento": -7, "Populacao": -2, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "A rota será marcada antes que a neve esconda os perigos.",
+                "(+7 de Contentamento, +2 de População, -60 de Dinheiro)"
+            ],
+
+            2: [
+                "Um guia ajudará por algum tempo, embora nem todos sejam atendidos.",
+                "(+3 de Contentamento, +1 de População, -30 de Dinheiro)"
+            ],
+
+            3: [
+                "A montanha continuará ensinando seus caminhos com frio e risco.",
+                "(-7 de Contentamento, -2 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 204,
+
+        "dia_minimo": 8,
+
+        "falas": [
+            "Meu senhor, algumas bancas do mercado usam medidas diferentes para vender arroz.",
+            "O povo reclama que paga o mesmo e recebe menos.",
+            "Posso padronizar as tigelas de medição e fiscalizar os abusos."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Padronizar medidas.",
+            "opcao_segunda": "Fiscalizar só suspeitos.",
+            "opcao_terceira": "Ignorar reclamações."
+        },
+
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 1, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": 20},
+        "efeito_terceira": {"Contentamento": -8, "Populacao": 0, "Dinheiro": 40},
+
+        "falas_pos": {
+            1: [
+                "O mercado ficará mais justo, e as medidas terão o peso da lei.",
+                "(+8 de Contentamento, +1 de População, -35 de Dinheiro)"
+            ],
+
+            2: [
+                "Alguns abusos serão corrigidos, mas muitos escaparão da vistoria.",
+                "(+3 de Contentamento, 0 de População, +20 de Dinheiro)"
+            ],
+
+            3: [
+                "Os cofres ganham com taxas, mas o povo perde confiança no mercado.",
+                "(-8 de Contentamento, 0 de População, +40 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 205,
+
+        "dia_minimo": 10,
+
+        "falas": [
+            "Meu senhor, posso fundir sinos pequenos para alertar vilas sobre incêndios e cheias.",
+            "Um bom som atravessa neblina, chuva e confusão.",
+            "O bronze não é barato, mas aviso rápido salva vidas."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Instalar sinos nas vilas.",
+            "opcao_segunda": "Colocar só no castelo.",
+            "opcao_terceira": "Recusar os sinos."
+        },
+
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -75},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": -4, "Populacao": -1, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Os sinos chamarão ajuda antes que o fogo ou a água avancem demais.",
+                "(+6 de Contentamento, +2 de População, -75 de Dinheiro)"
+            ],
+
+            2: [
+                "O castelo terá aviso claro, mas as vilas continuarão mais lentas.",
+                "(+2 de Contentamento, 0 de População, -25 de Dinheiro)"
+            ],
+
+            3: [
+                "Sem sinos, cada emergência dependerá de gritos e pernas rápidas.",
+                "(-4 de Contentamento, -1 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 206,
+
+        "dia_minimo": 9,
+
+        "falas": [
+            "Meu senhor, o jardim do templo está tomado por mato e pedras fora do lugar.",
+            "Um jardim bem cuidado acalma visitantes e honra as cerimônias.",
+            "Posso restaurá-lo com musgo, cascalho e trabalho paciente."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Restaurar o jardim.",
+            "opcao_segunda": "Limpar apenas o pátio.",
+            "opcao_terceira": "Abandonar o jardim."
+        },
+
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 1, "Dinheiro": -65},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -20},
+        "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "O jardim voltará a receber passos calmos e preces silenciosas.",
+                "(+10 de Contentamento, +1 de População, -65 de Dinheiro)"
+            ],
+
+            2: [
+                "O pátio ficará apresentável, embora o jardim continue sem vida.",
+                "(+4 de Contentamento, 0 de População, -20 de Dinheiro)"
+            ],
+
+            3: [
+                "O templo seguirá cercado por descuido e folhas mortas.",
+                "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 207,
+
+        "dia_minimo": 11,
+
+        "falas": [
+            "Meu senhor, pequenos marcos de estrada estão quebrados nas rotas de montanha.",
+            "Viajantes deixam oferendas ali antes de seguir viagem.",
+            "Repará-los traria respeito aos caminhos e aos espíritos locais."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Reparar todos os marcos.",
+            "opcao_segunda": "Reparar só os quebrados.",
+            "opcao_terceira": "Negar o pedido."
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -40},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -15},
+        "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Os caminhos parecerão menos abandonados aos olhos de quem viaja.",
+                "(+5 de Contentamento, +1 de População, -40 de Dinheiro)"
+            ],
+
+            2: [
+                "Os piores marcos foram salvos, mas muitos ainda envelhecem sozinhos.",
+                "(+2 de Contentamento, 0 de População, -15 de Dinheiro)"
+            ],
+
+            3: [
+                "Os marcos continuarão caídos, como preces esquecidas na estrada.",
+                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 208,
+
+        "dia_minimo": 13,
+
+        "falas": [
+            "Meu senhor, caixas laqueadas de Takayama poderiam atrair compradores ricos.",
+            "A madeira local é boa, e nossos artesãos sabem trabalhar com delicadeza.",
+            "Com apoio inicial, posso abrir uma banca elegante na feira."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Apoiar a oficina.",
+            "opcao_segunda": "Cobrar taxa alta.",
+            "opcao_terceira": "Recusar a banca."
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -50},
+        "efeito_segunda": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 90},
+        "efeito_terceira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "A feira ganhará brilho, e o nome de Takayama viajará em madeira laqueada.",
+                "(+5 de Contentamento, +1 de População, -50 de Dinheiro)"
+            ],
+
+            2: [
+                "A taxa encherá os cofres, mas apertará a margem dos artesãos.",
+                "(-3 de Contentamento, 0 de População, +90 de Dinheiro)"
+            ],
+
+            3: [
+                "A mercadora seguirá para outro lugar com suas caixas brilhantes.",
+                "(-2 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 209,
+
+        "dia_minimo": 10,
+
+        "falas": [
+            "Meu senhor, sei cantar histórias antigas de Hida ao som do biwa.",
+            "O povo trabalha melhor quando lembra por que sua terra importa.",
+            "Peço permissão para tocar na praça ao anoitecer."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Pagar apresentação pública.",
+            "opcao_segunda": "Permitir doações.",
+            "opcao_terceira": "Proibir aglomeração."
+        },
+
+        "efeito_primeira": {"Contentamento": 11, "Populacao": 1, "Dinheiro": -45},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 0, "Dinheiro": 0},
+        "efeito_terceira": {"Contentamento": -7, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "A praça ouvirá canções antigas, e a noite parecerá menos pesada.",
+                "(+11 de Contentamento, +1 de População, -45 de Dinheiro)"
+            ],
+
+            2: [
+                "A música virá sem custo ao castelo, sustentada por pequenas moedas.",
+                "(+5 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ],
+
+            3: [
+                "A praça ficará quieta, e algumas histórias continuarão sem voz.",
+                "(-7 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 210,
+
+        "dia_minimo": 5,
+
+        "falas": [
+            "Meu senhor, muitos trabalhadores usam sandálias gastas nos arrozais e obras.",
+            "Pés feridos atrasam trabalho e tornam cada trilha mais cruel.",
+            "Posso fazer pares simples de palha antes que a estação piore."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Encomendar sandálias.",
+            "opcao_segunda": "Ajudar só os mais pobres.",
+            "opcao_terceira": "Negar ajuda."
+        },
+
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 2, "Dinheiro": -55},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -20},
+        "efeito_terceira": {"Contentamento": -6, "Populacao": -1, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Sandálias novas chegarão aos trabalhadores antes que os pés desistam.",
+                "(+8 de Contentamento, +2 de População, -55 de Dinheiro)"
+            ],
+
+            2: [
+                "Os mais necessitados receberão pares novos, embora muitos ainda esperem.",
+                "(+4 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+
+            3: [
+                "O trabalho continuará, mas cada passo cobrará seu preço.",
+                "(-6 de Contentamento, -1 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 211,
+
+        "dia_minimo": 16,
+
+        "falas": [
+            "Meu senhor, uma galeria de prata nas montanhas está rendendo mais que o esperado.",
+            "Mas as vigas antigas rangem quando os homens batem a picareta.",
+            "Podemos reforçar a mina antes de continuar extraindo."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Reforçar a mina.",
+            "opcao_segunda": "Reduzir a extração.",
+            "opcao_terceira": "Explorar ao máximo."
+        },
+
+        "efeito_primeira": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -90},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -20},
+        "efeito_terceira": {"Contentamento": -10, "Populacao": -3, "Dinheiro": 160},
+
+        "falas_pos": {
+            1: [
+                "A mina ficará mais segura antes que a prata custe vidas.",
+                "(+3 de Contentamento, +1 de População, -90 de Dinheiro)"
+            ],
+
+            2: [
+                "A produção diminuirá, mas os mineradores respirarão melhor.",
+                "(+5 de Contentamento, 0 de População, -20 de Dinheiro)"
+            ],
+
+            3: [
+                "A prata virá rápido, junto com medo e vigas cansadas.",
+                "(-10 de Contentamento, -3 de População, +160 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 212,
+
+        "dia_minimo": 9,
+
+        "falas": [
+            "Meu senhor, encontrei cogumelos medicinais nas florestas úmidas de Hida.",
+            "Eles ajudam contra febres leves, mas precisam ser colhidos com cuidado.",
+            "Posso preparar remédios para as vilas."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Financiar coleta segura.",
+            "opcao_segunda": "Comprar pequena porção.",
+            "opcao_terceira": "Deixar coleta livre."
+        },
+
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 3, "Dinheiro": -50},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -15},
+        "efeito_terceira": {"Contentamento": -4, "Populacao": -1, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Os remédios chegarão às vilas sem arriscar colheitas perigosas.",
+                "(+7 de Contentamento, +3 de População, -50 de Dinheiro)"
+            ],
+
+            2: [
+                "Uma porção pequena ajudará os primeiros doentes.",
+                "(+3 de Contentamento, +1 de População, -15 de Dinheiro)"
+            ],
+
+            3: [
+                "Quem não conhece a floresta pode confundir cura com veneno.",
+                "(-4 de Contentamento, -1 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 213,
+
+        "dia_minimo": 7,
+
+        "falas": [
+            "Meu senhor, muitas casas ainda usam telhas rachadas desde as últimas chuvas.",
+            "Posso moldar uma nova leva de barro antes que o tempo vire novamente.",
+            "Telhado seco é coisa simples, mas muda uma noite inteira."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Encomendar muitas telhas.",
+            "opcao_segunda": "Priorizar casas piores.",
+            "opcao_terceira": "Adiar a encomenda."
+        },
+
+        "efeito_primeira": {"Contentamento": 9, "Populacao": 2, "Dinheiro": -85},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -35},
+        "efeito_terceira": {"Contentamento": -6, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "As casas receberão telhas novas antes da próxima chuva forte.",
+                "(+9 de Contentamento, +2 de População, -85 de Dinheiro)"
+            ],
+
+            2: [
+                "As casas mais afetadas serão protegidas primeiro.",
+                "(+5 de Contentamento, +1 de População, -35 de Dinheiro)"
+            ],
+
+            3: [
+                "As goteiras continuarão caindo onde ordens não chegaram.",
+                "(-6 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 214,
+
+        "dia_minimo": 14,
+
+        "falas": [
+            "Meu senhor, cães bem treinados podem vigiar armazéns e trilhas próximas.",
+            "Eles farejam intrusos antes dos guardas enxergarem sombras.",
+            "Com ração e tempo, posso preparar uma pequena matilha."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Treinar cães para a vila.",
+            "opcao_segunda": "Usar só nos armazéns.",
+            "opcao_terceira": "Recusar o treino."
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -70},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -30},
+        "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "A vila dormirá com ouvidos atentos guardando as ruas.",
+                "(+5 de Contentamento, +1 de População, -70 de Dinheiro)"
+            ],
+
+            2: [
+                "Os armazéns ficarão protegidos, mas as trilhas seguirão quietas demais.",
+                "(+2 de Contentamento, 0 de População, -30 de Dinheiro)"
+            ],
+
+            3: [
+                "Os guardas continuarão contando apenas com os próprios olhos.",
+                "(-3 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 215,
+
+        "dia_minimo": 11,
+
+        "falas": [
+            "Meu senhor, vilas afastadas recebem notícias tarde demais.",
+            "Posso criar rotas fixas de mensagens pelas montanhas.",
+            "Não será rápido como vento, mas será melhor que esperar rumores."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Financiar rotas.",
+            "opcao_segunda": "Testar uma rota.",
+            "opcao_terceira": "Negar o pedido."
+        },
+
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -75},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "As mensagens circularão melhor entre castelo, vilas e estradas.",
+                "(+7 de Contentamento, +2 de População, -75 de Dinheiro)"
+            ],
+
+            2: [
+                "Uma rota será testada antes que o plano cresça.",
+                "(+3 de Contentamento, +1 de População, -25 de Dinheiro)"
+            ],
+
+            3: [
+                "As vilas distantes continuarão sabendo das coisas tarde demais.",
+                "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 216,
+
+        "dia_minimo": 15,
+
+        "falas": [
+            "Meu senhor, doentes e idosos pedem horários reservados nos banhos termais.",
+            "A água quente ajuda corpos cansados, mas os viajantes comuns reclamarão da espera.",
+            "Posso organizar turnos sem fechar o lugar."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Reservar horários.",
+            "opcao_segunda": "Cobrar entrada reduzida.",
+            "opcao_terceira": "Manter como está."
+        },
+
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": 15},
+        "efeito_terceira": {"Contentamento": -4, "Populacao": -1, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Os mais frágeis terão acesso tranquilo às águas quentes.",
+                "(+8 de Contentamento, +3 de População, -35 de Dinheiro)"
+            ],
+
+            2: [
+                "A entrada reduzida ajudará alguns, mas não resolverá a disputa por espaço.",
+                "(+3 de Contentamento, +1 de População, +15 de Dinheiro)"
+            ],
+
+            3: [
+                "Os banhos seguirão cheios, e os fracos esperarão como todos.",
+                "(-4 de Contentamento, -1 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 217,
+
+        "dia_minimo": 10,
+
+        "falas": [
+            "Meu senhor, muitos discutem no mercado por não conhecerem as regras.",
+            "Posso gravar tabuletas com leis simples sobre pesos, filas e taxas.",
+            "Quando a regra está à vista, a briga perde força."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Gravar regras.",
+            "opcao_segunda": "Gravar só impostos.",
+            "opcao_terceira": "Não expor regras."
+        },
+
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -30},
+        "efeito_segunda": {"Contentamento": 1, "Populacao": 0, "Dinheiro": 25},
+        "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "As regras ficarão claras para moradores e viajantes.",
+                "(+6 de Contentamento, 0 de População, -30 de Dinheiro)"
+            ],
+
+            2: [
+                "Todos saberão o que devem ao castelo, mas pouco sobre seus direitos.",
+                "(+1 de Contentamento, 0 de População, +25 de Dinheiro)"
+            ],
+
+            3: [
+                "O mercado continuará resolvendo dúvidas no grito.",
+                "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 218,
+
+        "dia_minimo": 18,
+
+        "falas": [
+            "Meu senhor, uma rota fria precisa de abrigo simples para viajantes.",
+            "Basta uma construção pequena com telhado firme e lenha seca.",
+            "Sem abrigo, tempestades curtas podem virar tragédia."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Construir abrigo.",
+            "opcao_segunda": "Deixar mantimentos.",
+            "opcao_terceira": "Ignorar a rota."
+        },
+
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": -6, "Populacao": -2, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "O abrigo ficará de pé contra vento, neve e azar.",
+                "(+7 de Contentamento, +2 de População, -80 de Dinheiro)"
+            ],
+
+            2: [
+                "Os mantimentos ajudarão, mesmo sem proteger do frio.",
+                "(+3 de Contentamento, +1 de População, -25 de Dinheiro)"
+            ],
+
+            3: [
+                "A rota seguirá vazia de abrigo e cheia de risco.",
+                "(-6 de Contentamento, -2 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 219,
+
+        "dia_minimo": 9,
+
+        "falas": [
+            "Meu senhor, parte do arroz no armazém está úmida.",
+            "Se separarmos agora, salvamos o restante.",
+            "Se fingirmos que está tudo bem, a perda pode se espalhar."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Separar tudo.",
+            "opcao_segunda": "Vender barato.",
+            "opcao_terceira": "Esconder o problema."
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -30},
+        "efeito_segunda": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 45},
+        "efeito_terceira": {"Contentamento": -9, "Populacao": -3, "Dinheiro": 80},
+
+        "falas_pos": {
+            1: [
+                "O arroz bom será salvo antes que a umidade avance.",
+                "(+5 de Contentamento, +2 de População, -30 de Dinheiro)"
+            ],
+
+            2: [
+                "O arroz ruim sairá rápido, mas compradores notarão o cheiro.",
+                "(-2 de Contentamento, 0 de População, +45 de Dinheiro)"
+            ],
+
+            3: [
+                "Os cofres ganham hoje; os armazéns podem pagar amanhã.",
+                "(-9 de Contentamento, -3 de População, +80 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 220,
+
+        "dia_minimo": 13,
+
+        "falas": [
+            "Meu senhor, o sino menor do templo rachou.",
+            "Seu som falha durante cerimônias e avisos públicos.",
+            "Posso fundir um novo ou tentar um remendo simples."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Fundir sino novo.",
+            "opcao_segunda": "Remendar o antigo.",
+            "opcao_terceira": "Deixar rachado."
+        },
+
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 0, "Dinheiro": -90},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Um sino novo chamará o povo com som limpo.",
+                "(+8 de Contentamento, 0 de População, -90 de Dinheiro)"
+            ],
+
+            2: [
+                "O sino voltará a soar, ainda que sem a mesma força.",
+                "(+3 de Contentamento, 0 de População, -25 de Dinheiro)"
+            ],
+
+            3: [
+                "O templo continuará ouvindo metal cansado.",
+                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 221,
+
+        "dia_minimo": 6,
+
+        "falas": [
+            "Meu senhor, o musgo deixou escorregadias as escadas de pedra.",
+            "Muitos passam por ali levando água, lenha e arroz.",
+            "Uma limpeza simples evitará quedas vergonhosas e perigosas."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Limpar tudo.",
+            "opcao_segunda": "Limpar só a entrada.",
+            "opcao_terceira": "Esperar secar."
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -10},
+        "efeito_terceira": {"Contentamento": -5, "Populacao": -1, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "As escadas voltarão a servir pés apressados com segurança.",
+                "(+5 de Contentamento, +1 de População, -25 de Dinheiro)"
+            ],
+
+            2: [
+                "A entrada ficará segura, mas os degraus altos ainda exigirão cuidado.",
+                "(+2 de Contentamento, 0 de População, -10 de Dinheiro)"
+            ],
+
+            3: [
+                "O musgo continuará esperando o próximo tornozelo distraído.",
+                "(-5 de Contentamento, -1 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 222,
+
+        "dia_minimo": 12,
+
+        "falas": [
+            "Meu senhor, uma encruzilhada perigosa não tem altar nem placa.",
+            "Viajantes hesitam ali e escolhem caminhos errados.",
+            "Um pequeno marco ajudaria corpo e espírito."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Erguer altar.",
+            "opcao_segunda": "Pôr placa simples.",
+            "opcao_terceira": "Negar pedido."
+        },
+
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -45},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -10},
+        "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "A encruzilhada ganhará altar, direção e respeito.",
+                "(+6 de Contentamento, +1 de População, -45 de Dinheiro)"
+            ],
+
+            2: [
+                "A placa ajudará os olhos, mesmo sem confortar o espírito.",
+                "(+2 de Contentamento, 0 de População, -10 de Dinheiro)"
+            ],
+
+            3: [
+                "A encruzilhada continuará confundindo passos.",
+                "(-3 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 223,
+
+        "dia_minimo": 15,
+
+        "falas": [
+            "Meu senhor, documentos importantes estão guardados em caixas frágeis.",
+            "A umidade de Takayama não respeita decretos nem registros.",
+            "Tenho caixas laqueadas que podem proteger esses papéis."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar caixas.",
+            "opcao_segunda": "Comprar poucas.",
+            "opcao_terceira": "Recusar."
+        },
+
+        "efeito_primeira": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -60},
+        "efeito_segunda": {"Contentamento": 1, "Populacao": 0, "Dinheiro": -20},
+        "efeito_terceira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Os registros ficarão secos, organizados e dignos do castelo.",
+                "(+3 de Contentamento, 0 de População, -60 de Dinheiro)"
+            ],
+
+            2: [
+                "Só os documentos mais importantes serão protegidos.",
+                "(+1 de Contentamento, 0 de População, -20 de Dinheiro)"
+            ],
+
+            3: [
+                "Os papéis continuarão enfrentando a umidade sozinhos.",
+                "(-2 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 224,
+
+        "dia_minimo": 16,
+
+        "falas": [
+            "Meu senhor, há mortos antigos que não receberam cerimônia pública.",
+            "Posso tocar por eles no templo e na praça.",
+            "Às vezes, lembrar os mortos fortalece os vivos."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Autorizar cerimônia.",
+            "opcao_segunda": "Tocar apenas no templo.",
+            "opcao_terceira": "Recusar."
+        },
+
+        "efeito_primeira": {"Contentamento": 9, "Populacao": 1, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -10},
+        "efeito_terceira": {"Contentamento": -7, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "A música dará nome ao luto que muitos guardavam calados.",
+                "(+9 de Contentamento, +1 de População, -35 de Dinheiro)"
+            ],
+
+            2: [
+                "O templo ouvirá a homenagem, mesmo sem toda a praça presente.",
+                "(+4 de Contentamento, 0 de População, -10 de Dinheiro)"
+            ],
+
+            3: [
+                "Os mortos seguirão lembrados apenas dentro de algumas casas.",
+                "(-7 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 225,
+
+        "dia_minimo": 8,
+
+        "falas": [
+            "Meu senhor, mensageiros gastam sandálias rápido nas trilhas de Hida.",
+            "Quando as tiras arrebentam, notícias importantes chegam tarde.",
+            "Posso preparar pares extras para as viagens longas."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Encomendar pares extras.",
+            "opcao_segunda": "Remendar antigos.",
+            "opcao_terceira": "Não ajudar."
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -40},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -10},
+        "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Os mensageiros caminharão melhor pelas rotas de montanha.",
+                "(+5 de Contentamento, +1 de População, -40 de Dinheiro)"
+            ],
+
+            2: [
+                "Os remendos aguentarão por algum tempo.",
+                "(+2 de Contentamento, 0 de População, -10 de Dinheiro)"
+            ],
+
+            3: [
+                "As mensagens seguirão dependendo de tiras velhas e sorte.",
+                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 226,
+
+        "dia_minimo": 19,
+
+        "falas": [
+            "Meu senhor, encontrei um veio pequeno de prata em terreno difícil.",
+            "Não vale uma grande mina, mas pode render moedas se for explorado com cuidado.",
+            "Também posso vender o direito de exploração a mercadores."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Explorar com cuidado.",
+            "opcao_segunda": "Vender exploração.",
+            "opcao_terceira": "Fechar o veio."
+        },
+
+        "efeito_primeira": {"Contentamento": 2, "Populacao": 1, "Dinheiro": 70},
+        "efeito_segunda": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 140},
+        "efeito_terceira": {"Contentamento": 1, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "A prata será retirada sem transformar a montanha em ferida aberta.",
+                "(+2 de Contentamento, +1 de População, +70 de Dinheiro)"
+            ],
+
+            2: [
+                "Os mercadores pagarão bem, mas pensarão primeiro no lucro.",
+                "(-4 de Contentamento, 0 de População, +140 de Dinheiro)"
+            ],
+
+            3: [
+                "O veio ficará fechado, quieto sob a pedra.",
+                "(+1 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 227,
+
+        "dia_minimo": 13,
+
+        "falas": [
+            "Meu senhor, raízes amargas podem ajudar contra febres leves.",
+            "Com preparo correto, elas servem às vilas antes que a doença cresça.",
+            "Preciso de tempo e alguns ajudantes para secá-las."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Distribuir remédio.",
+            "opcao_segunda": "Guardar na enfermaria.",
+            "opcao_terceira": "Não confiar."
+        },
+
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -45},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -15},
+        "efeito_terceira": {"Contentamento": -5, "Populacao": -1, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "As raízes preparadas chegarão às vilas antes que a febre se espalhe.",
+                "(+8 de Contentamento, +3 de População, -45 de Dinheiro)"
+            ],
+
+            2: [
+                "A enfermaria ficará abastecida, mas as vilas terão menos acesso.",
+                "(+3 de Contentamento, +1 de População, -15 de Dinheiro)"
+            ],
+
+            3: [
+                "As raízes voltarão à floresta, e os doentes dependerão de descanso.",
+                "(-5 de Contentamento, -1 de População, 0 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 228,
+
+        "dia_minimo": 17,
+
+        "falas": [
+            "Meu senhor, o templo menor tem goteiras sobre tábuas votivas.",
+            "Quando a chuva cai, nomes e pedidos se apagam devagar.",
+            "Posso trocar as telhas antes que a madeira estrague."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Trocar telhado.",
+            "opcao_segunda": "Reparar só o altar.",
+            "opcao_terceira": "Adiar."
+        },
+
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 1, "Dinheiro": -70},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "O templo ficará seco, e as preces não escorrerão pela madeira.",
+                "(+7 de Contentamento, +1 de População, -70 de Dinheiro)"
+            ],
+
+            2: [
+                "O altar será protegido, mas o restante ainda ouvirá a chuva.",
+                "(+3 de Contentamento, 0 de População, -25 de Dinheiro)"
+            ],
+
+            3: [
+                "As goteiras continuarão apagando pequenos pedidos.",
+                "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
             ]
         }
     }
