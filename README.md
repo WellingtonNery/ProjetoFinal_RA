@@ -46,9 +46,15 @@ Projeto/
 └── README.md
 ```
 
+## Adaptações do projeto
+
+A entrada de dados por parte do usuário é coletada por meio de uma função do Pygame, `pg.event.get()`, em vez do `input`. Da mesma forma, utilizamos a função `blit`, também do Pygame, para exibir imagens na tela, substituindo o uso do `print`.
+Utilizamos dicionários para armazenar informações do mesmo tipo que possuem valores diferentes, como os pontos, além de também utilizá-los para armazenar os eventos. Já as listas foram utilizadas majoritariamente para armazenar os balões de fala dos personagens, além de uma lista principal usada para armazenar os dicionários de eventos.
+
+
 ## Status do Projeto
 
-Em desenvolvimento.
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
 ## Autores
 
