@@ -42,6 +42,25 @@ spr38 = pg.image.load("Imagens/sprites/general.png")
 spr39 = pg.image.load("Imagens/sprites/hajime.png")
 spr40 = pg.image.load("Imagens/sprites/mensageira.png")
 spr41 = pg.image.load("Imagens/sprites/banze.png")
+spr42 = pg.image.load("Imagens/sprites/hornet.png")
+spr43 = pg.image.load("Imagens/sprites/entalhador.png")
+spr44 = pg.image.load("Imagens/sprites/festeiro.png")
+spr45 = pg.image.load("Imagens/sprites/professora.png")
+spr46 = pg.image.load("Imagens/sprites/lutadorsumo.png")
+spr47 = pg.image.load("Imagens/sprites/camponesa.png")
+spr48 = pg.image.load("Imagens/sprites/carpinteirooutracidade.png")
+spr49 = pg.image.load("Imagens/sprites/festeiro.png")
+spr50 = pg.image.load("Imagens/sprites/mensageironobre.png")
+spr51 = pg.image.load("Imagens/sprites/gladtornm.png")
+spr52 = pg.image.load("Imagens/sprites/parteirasimples.png")
+spr53 = pg.image.load("Imagens/sprites/produtoradepapel.png")
+spr54 = pg.image.load("Imagens/sprites/conselheira.png")
+spr55 = pg.image.load("Imagens/sprites/agricultordasmontanhas.png")
+spr56 = pg.image.load("Imagens/sprites/chefedoscarregadores.png")
+spr57 = pg.image.load("Imagens/sprites/chefedosviajantes.png")
+spr58 = pg.image.load("Imagens/sprites/produtordemisso.png")
+spr59 = pg.image.load("Imagens/sprites/guardareal.png")
+spr60 = pg.image.load("Imagens/sprites/representante.png")
 
 #WELL
 spr85 = pg.image.load("Imagens/sprites/pretendente.png")
@@ -166,6 +185,25 @@ sprites = {
     39: spr39,
     40: spr40,
     41: spr41,
+    42: spr42,
+    43: spr43,
+    44: spr44,
+    45: spr45,
+    46: spr46,
+    47: spr47,
+    48: spr48,
+    49: spr49,
+    50: spr50,
+    51: spr51,
+    52: spr52,
+    53: spr53,
+    54: spr54,
+    55: spr55,
+    56: spr56,
+    57: spr57,
+    58: spr58,
+    59: spr59,
+    60: spr60,
 
     #WELLINGTON
     85: spr85,
@@ -1792,7 +1830,7 @@ eventos = [
         "dia_minimo": 13,
 
         "falas": [
-            "Shogun, encontrei os rastros de Sukuna nas montanhas.",
+            "Olá Shogun, encontrei os rastros de Sukuna nas montanhas.",
             "A presença dele ainda marca esta terra...",
             "Prepare um lugar afastado e leve Sukuna até lá.",
             "Caso me faça esperar cercado por aldeões indefesos, não garanto que minha paciência durará muito."
@@ -1949,6 +1987,932 @@ eventos = [
                 "Um dia, quando um oni estiver batendo em seus portões, lembrará que poderia ter investido na HUMANIDADE!",
                 "(Banzé deixa o castelo indignado, gritando sobre o potencial humano pelo caminho.)",
                 "(-8 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 42,
+
+        "dia_minimo": 14,
+
+        "falas": [
+            "Com sua licença, senhor shogun. Meu nome é Sayo, e minha família cria bichos-da-seda nas terras próximas ao rio.",
+            "As folhas de amoreira estão boas este ano, e várias famílias desejam vendê-las junto aos casulos na praça diante do castelo.",
+            "Porém, alguns grandes mercadores querem comprar tudo antes que os pequenos produtores cheguem ao mercado.",
+            "Se isso acontecer, teremos moedas agora, mas muitas famílias perderão seu sustento.",
+            "Como deseja organizar a venda, meu senhor?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Reservar barracas para os produtores",
+            "opcao_segunda": "Cobrar taxa de todas as vendas",
+            "opcao_terceira": "Vender tudo aos grandes mercadores",
+            "opcao_quarta": "Proibir o comércio de casulos"
+        },
+
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 4, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 2, "Dinheiro": 45},
+        "efeito_terceira": {"Contentamento": -8, "Populacao": -3, "Dinheiro": 100},
+        "efeito_quarta": {"Contentamento": -10, "Populacao": -5, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Muito obrigada, meu senhor.",
+                "As famílias poderão negociar com as próprias mãos aquilo que criaram com tanto esforço.",
+                "O lucro será menor para o castelo, mas o mercado estará cheio de gente agradecida.",
+                "(+10 de Contentamento, +4 de População, -25 de Dinheiro)"
+            ],
+
+            2: [
+                "Entendo. Organizaremos as barracas e pagaremos a taxa estabelecida.",
+                "Não será perfeito para todos, mas ainda poderemos trabalhar honestamente.",
+                "(+3 de Contentamento, +2 de População, +45 de Dinheiro)"
+            ],
+
+            3: [
+                "Então entregaremos nossos casulos antes mesmo de abrir as barracas...",
+                "Os grandes comerciantes certamente agradecerão. As famílias menores, nem tanto.",
+                "(-8 de Contentamento, -3 de População, +100 de Dinheiro)"
+            ],
+
+            4: [
+                "Proibir a venda? Mas é disso que muitas famílias vivem, meu senhor!",
+                "Sem mercado para nossos casulos, alguns deixarão Takayama antes da próxima estação.",
+                "(-10 de Contentamento, -5 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 43,
+
+        "dia_minimo": 14,
+
+        "falas": [
+            "Saudações, meu senhor. Sou Genzo, mestre entalhador da madeira de Hida.",
+            "Minhas mãos já estão velhas, mas ainda conhecem técnicas que aprendi com meu mestre e aperfeiçoei durante toda a vida.",
+            "Tenho um aprendiz chamado Ren. Ele possui talento, disciplina e respeito pela madeira.",
+            "Não tenho filhos para herdar minha oficina, então desejo adotá-lo como sucessor e transmitir meu nome a ele.",
+            "Alguns parentes distantes contestam a decisão, pois querem vender minha oficina quando eu morrer.",
+            "Peço que reconheça oficialmente meu aprendiz como herdeiro."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Reconhecer Ren como herdeiro",
+            "opcao_segunda": "Permitir apenas a aprendizagem",
+            "opcao_terceira": "Entregar a oficina aos parentes"
+        },
+
+        "efeito_primeira": {"Contentamento": 9, "Populacao": 3, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": 0},
+        "efeito_terceira": {"Contentamento": -9, "Populacao": -2, "Dinheiro": 70},
+
+        "falas_pos": {
+            1: [
+                "O senhor preservou mais do que uma oficina.",
+                "Ren carregará meu nome e meu ofício com honra.",
+                "Takayama ainda terá grandes artesãos quando minhas mãos não puderem mais trabalhar.",
+                "(+9 de Contentamento, +3 de População, -20 de Dinheiro)"
+            ],
+
+            2: [
+                "Entendo sua cautela, meu senhor.",
+                "Continuarei ensinando o rapaz enquanto tiver forças, mesmo sem saber o destino da oficina.",
+                "(+3 de Contentamento, +1 de População)"
+            ],
+
+            3: [
+                "Então minhas ferramentas serão vendidas como objetos comuns...",
+                "Os parentes receberão moedas, mas Takayama perderá uma tradição que levou décadas para ser construída.",
+                "(-9 de Contentamento, -2 de População, +70 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 44,
+
+        "dia_minimo": 14,
+
+        "falas": [
+            "Meu senhor, sou Saburo, responsável por um dos carros festivos guardados pelos moradores de Takayama.",
+            "Com a chegada da época do festival, os bairros desejam colocar seus yatai nas ruas outra vez.",
+            "O nosso carro ainda é belo, mas as rodas precisam de reparos e o mecanismo dos bonecos já não funciona como antes.",
+            "Se recebermos ajuda, poderemos realizar uma apresentação digna diante de toda a cidade.",
+            "Como Takayama participará dos preparativos?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Restaurar o yatai e os bonecos",
+            "opcao_segunda": "Consertar apenas as rodas",
+            "opcao_terceira": "Organizar uma procissão simples",
+            "opcao_quarta": "Não gastar recursos com o festival"
+        },
+
+        "efeito_primeira": {"Contentamento": 14, "Populacao": 3, "Dinheiro": -130},
+        "efeito_segunda": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -55},
+        "efeito_terceira": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -20},
+        "efeito_quarta": {"Contentamento": -7, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Que honra, meu senhor!",
+                "Os artesãos trabalharão dia e noite para que as rodas girem firmes e os bonecos dancem novamente.",
+                "Quando o festival chegar, o povo verá o cuidado que teve com as tradições de Takayama.",
+                "(+14 de Contentamento, +3 de População, -130 de Dinheiro)"
+            ],
+
+            2: [
+                "Compreendo. Sem a apresentação dos bonecos, mas com segurança, ainda poderemos desfilar.",
+                "Faremos com que o carro volte às ruas sem colocar ninguém em risco.",
+                "(+7 de Contentamento, +2 de População, -55 de Dinheiro)"
+            ],
+
+            3: [
+                "Então levaremos lanternas, música e nossas orações pelas ruas.",
+                "Não será o festival mais grandioso, mas ainda reunirá os bairros.",
+                "(+4 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+
+            4: [
+                "Entendo que os cofres pesam mais do que a celebração neste momento.",
+                "Ainda assim, os moradores ficarão tristes ao ver os carros fechados em seus depósitos.",
+                "(-7 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 45,
+
+        "dia_minimo": 15,
+
+        "falas": [
+            "Bom dia, senhor shogun. Sou Chiyo, filha de um escriba e professora de algumas crianças do bairro leste.",
+            "Os filhos dos mercadores aprendem contas em casa, mas os filhos dos camponeses e artesãos raramente conseguem sequer escrever seus nomes.",
+            "Gostaria de abrir uma pequena escola, onde eu ensinaria leitura, caligrafia e cálculo com ábaco.",
+            "Não peço luxo: apenas uma sala, papel e algum arroz para que as famílias permitam que seus filhos estudem.",
+            "O senhor apoiará essa escola?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar uma escola para todas as crianças",
+            "opcao_segunda": "Financiar vagas para famílias pobres",
+            "opcao_terceira": "Permitir aulas pagas",
+            "opcao_quarta": "Recusar o pedido"
+        },
+
+        "efeito_primeira": {"Contentamento": 12, "Populacao": 6, "Dinheiro": -100},
+        "efeito_segunda": {"Contentamento": 8, "Populacao": 4, "Dinheiro": -55},
+        "efeito_terceira": {"Contentamento": 2, "Populacao": 1, "Dinheiro": 25},
+        "efeito_quarta": {"Contentamento": -6, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Muito obrigada, meu senhor!",
+                "Um feudo onde até o filho de um lavrador pode aprender a contar será mais forte amanhã do que é hoje.",
+                "(+12 de Contentamento, +6 de População, -100 de Dinheiro)"
+            ],
+
+            2: [
+                "Farei bom uso de cada moeda.",
+                "As crianças que jamais teriam acesso aos estudos agora terão uma chance.",
+                "(+8 de Contentamento, +4 de População, -55 de Dinheiro)"
+            ],
+
+            3: [
+                "Entendido. Começarei com aqueles que puderem pagar pelas aulas.",
+                "Talvez, algum dia, consigamos abrir as portas para mais crianças.",
+                "(+2 de Contentamento, +1 de População, +25 de Dinheiro)"
+            ],
+
+            4: [
+                "Compreendo, meu senhor.",
+                "Guardarei meus pincéis e continuarei ensinando apenas quando alguma família conseguir me pagar.",
+                "(-6 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 46,
+
+        "dia_minimo": 15,
+
+        "falas": [
+            "Senhor shogun! Sou Tetsumaru, lutador de sumô viajante.",
+            "Minha comitiva chegou a Takayama com homens fortes, tambores e vontade de mostrar nossa arte.",
+            "Desejamos realizar combates no pátio próximo ao santuário, diante dos moradores.",
+            "Um torneio animaria o povo e atrairia visitantes, mas precisaremos de espaço, comida e ordem para impedir brigas nas apostas.",
+            "Que tipo de torneio o senhor permitirá?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Patrocinar um grande torneio",
+            "opcao_segunda": "Permitir lutas sem apostas",
+            "opcao_terceira": "Cobrar taxa sobre as apostas",
+            "opcao_quarta": "Mandar a comitiva seguir viagem"
+        },
+
+        "efeito_primeira": {"Contentamento": 13, "Populacao": 4, "Dinheiro": -85},
+        "efeito_segunda": {"Contentamento": 8, "Populacao": 2, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": -3, "Populacao": 1, "Dinheiro": 95},
+        "efeito_quarta": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "HA! Uma decisão digna de um governante de peito forte!",
+                "Prepararemos os melhores combates que Takayama já viu.",
+                "Até quem perder sairá contando histórias sobre este lugar.",
+                "(+13 de Contentamento, +4 de População, -85 de Dinheiro)"
+            ],
+
+            2: [
+                "Sem apostas? Justo.",
+                "Lutaremos pela honra e pelo rugido da multidão, não pelas moedas dos bêbados.",
+                "(+8 de Contentamento, +2 de População, -25 de Dinheiro)"
+            ],
+
+            3: [
+                "Então o castelo deseja lucrar com a empolgação do povo...",
+                "Os combates acontecerão, mas alguns apostadores não gostarão de dividir suas moedas.",
+                "(-3 de Contentamento, +1 de População, +95 de Dinheiro)"
+            ],
+
+            4: [
+                "Que pena, meu senhor.",
+                "Partiremos amanhã e mostraremos nossa força a um feudo que saiba receber bons lutadores.",
+                "(-5 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 47,
+
+        "dia_minimo": 15,
+
+        "falas": [
+            "Meu senhor, perdoe minha entrada tão desesperada.",
+            "Meu nome é Kinu. Após uma colheita ruim, meu marido empenhou nossas ferramentas para comprar comida.",
+            "Ele morreu antes de pagar a dívida, e agora o credor pretende tomar também nossa casa.",
+            "Não peço que apague toda dívida do reino, apenas que escute meu caso antes que meus filhos sejam colocados na rua.",
+            "O que o senhor decidirá?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Pagar a dívida da família",
+            "opcao_segunda": "Obrigar o credor a devolver as ferramentas",
+            "opcao_terceira": "Manter o acordo como foi assinado",
+            "opcao_quarta": "Confiscar os registros do credor"
+        },
+
+        "efeito_primeira": {"Contentamento": 11, "Populacao": 3, "Dinheiro": -75},
+        "efeito_segunda": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -20},
+        "efeito_terceira": {"Contentamento": -9, "Populacao": -4, "Dinheiro": 20},
+        "efeito_quarta": {"Contentamento": 2, "Populacao": 0, "Dinheiro": 60},
+
+        "falas_pos": {
+            1: [
+                "Eu... não sei como agradecer, meu senhor.",
+                "Meus filhos terão teto, e eu poderei voltar a trabalhar sem carregar essa ameaça sobre nós.",
+                "(+11 de Contentamento, +3 de População, -75 de Dinheiro)"
+            ],
+
+            2: [
+                "Com as ferramentas de volta, conseguirei pagar o restante trabalhando.",
+                "O senhor não nos deu esmola; deu-nos uma chance.",
+                "(+7 de Contentamento, +2 de População, -20 de Dinheiro)"
+            ],
+
+            3: [
+                "Entendo... a palavra escrita vale mais do que o desespero de uma viúva.",
+                "Recolherei meus filhos antes que o credor venha buscar a casa.",
+                "(-9 de Contentamento, -4 de População, +20 de Dinheiro)"
+            ],
+
+            4: [
+                "Meu senhor, talvez existam outras famílias presas nos mesmos registros.",
+                "Espero que descubra a verdade, mas temo o que os credores farão enquanto isso.",
+                "(+2 de Contentamento, +60 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 48,
+
+        "dia_minimo": 16,
+
+        "falas": [
+            "Meu senhor, sou Noritada, mestre carpinteiro escolhido pelos oficiais de uma cidade distante.",
+            "Eles desejam levar vinte dos melhores trabalhadores de Takayama para construir um grande salão cerimonial.",
+            "Ser escolhido é uma honra, e o pagamento enviado ao feudo seria generoso.",
+            "Mas muitos desses homens têm obras inacabadas aqui e famílias que dependem deles.",
+            "Devemos partir, enviar poucos trabalhadores ou permanecer servindo nossa própria cidade?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Enviar os melhores artesãos",
+            "opcao_segunda": "Enviar apenas alguns voluntários",
+            "opcao_terceira": "Manter todos trabalhando em Takayama",
+            "opcao_quarta": "Exigir pagamento maior pela mão de obra"
+        },
+
+        "efeito_primeira": {"Contentamento": -4, "Populacao": -20, "Dinheiro": 150},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": -10, "Dinheiro": 70},
+        "efeito_terceira": {"Contentamento": 8, "Populacao": 4, "Dinheiro": -35},
+        "efeito_quarta": {"Contentamento": 1, "Populacao": -20, "Dinheiro": 110},
+
+        "falas_pos": {
+            1: [
+                "Partiremos assim que as ferramentas estiverem reunidas.",
+                "O nome de Takayama será respeitado fora destas montanhas, embora nossas famílias sintam nossa ausência.",
+                "(-4 de Contentamento, -20 de População, +150 de Dinheiro)"
+            ],
+
+            2: [
+                "Uma decisão equilibrada, meu senhor.",
+                "Os que desejarem viajar representarão Takayama, enquanto os demais continuarão cuidando da cidade.",
+                "(+4 de Contentamento, -10 de População, +70 de Dinheiro)"
+            ],
+
+            3: [
+                "Então nossa habilidade será usada primeiro em nossa própria terra.",
+                "Os artesãos ficarão satisfeitos, embora os oficiais de fora possam considerar sua decisão uma afronta.",
+                "(+8 de Contentamento, +4 de População, -35 de Dinheiro)"
+            ],
+
+            4: [
+                "Levarei sua exigência aos contratantes.",
+                "Eles aceitaram pagar mais, mas reduziram o número de homens que desejam levar.",
+                "(+1 de Contentamento, -20 de População, +110 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 49,
+
+        "dia_minimo": 17,
+
+        "falas": [
+            "Meu senhor, sou Saburo novamente. Chegou o dia do festival.",
+            "Os moradores já se reúnem nas ruas e os tambores começaram a soar desde cedo.",
+            "Porém, pouco antes da procissão, uma das cordas que move o boneco do yatai principal se rompeu.",
+            "Podemos continuar sem a apresentação, gastar recursos em um conserto urgente ou cancelar tudo antes que aconteça um acidente.",
+            "O povo aguarda sua decisão."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Consertar antes da procissão",
+            "opcao_segunda": "Desfilar sem os bonecos",
+            "opcao_terceira": "Cancelar o desfile",
+            "opcao_quarta": "Deixar os bairros decidirem"
+        },
+
+        "efeito_primeira": {"Contentamento": 18, "Populacao": 4, "Dinheiro": -90},
+        "efeito_segunda": {"Contentamento": 9, "Populacao": 2, "Dinheiro": -20},
+        "efeito_terceira": {"Contentamento": -10, "Populacao": 2, "Dinheiro": -15},
+        "efeito_quarta": {"Contentamento": 5, "Populacao": 1, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Chamarei imediatamente os artesãos!",
+                "O conserto foi concluído pouco antes da passagem do yatai.",
+                "Quando o boneco se moveu diante da multidão, as ruas explodiram em comemoração.",
+                "(+18 de Contentamento, +4 de População, -90 de Dinheiro)"
+            ],
+
+            2: [
+                "É uma escolha prudente, meu senhor.",
+                "O yatai passou pelas ruas iluminado e seguro, mesmo sem a dança do boneco.",
+                "O povo sentiu falta da apresentação, mas ainda celebrou unido.",
+                "(+9 de Contentamento, +2 de População, -20 de Dinheiro)"
+            ],
+
+            3: [
+                "Como ordenar. Não arriscaremos vidas por uma celebração.",
+                "O povo voltou para casa decepcionado, mas os artesãos respeitaram sua preocupação.",
+                "(-10 de Contentamento, +2 de População, -15 de Dinheiro)"
+            ],
+
+            4: [
+                "Então deixaremos que cada bairro cuide de seu próprio carro.",
+                "Após muita discussão, uma procissão menor atravessou as ruas sem ajuda do castelo.",
+                "(+5 de Contentamento, +1 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 50,
+
+        "dia_minimo": 17,
+
+        "falas": [
+            "Com sua permissão, senhor shogun. Sou Matsuda, representante de um grande senhor que atravessará as estradas de Hida em poucos dias.",
+            "Sua comitiva trará guardas, carregadores, cavalos e oficiais que precisam repousar antes de seguir viagem.",
+            "Esperamos que Takayama forneça hospedagem, alimento e homens para auxiliar com a bagagem.",
+            "Receber o cortejo com honra poderá render prestígio, mas o custo para seu povo não será pequeno.",
+            "Que resposta devo levar ao meu mestre?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Receber o cortejo com todas as honras",
+            "opcao_segunda": "Oferecer abrigo apenas aos oficiais",
+            "opcao_terceira": "Cobrar pelos suprimentos utilizados",
+            "opcao_quarta": "Negar passagem pela cidade"
+        },
+
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 3, "Dinheiro": -140},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 1, "Dinheiro": -55},
+        "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 95},
+        "efeito_quarta": {"Contentamento": 3, "Populacao": -3, "Dinheiro": -40},
+
+        "falas_pos": {
+            1: [
+                "Sua generosidade será lembrada, meu senhor.",
+                "A comitiva atravessou Takayama elogiando a ordem das ruas e a qualidade da recepção.",
+                "Os moradores trabalharam muito, mas ouviram boas palavras sobre sua cidade.",
+                "(+6 de Contentamento, +3 de População, -140 de Dinheiro)"
+            ],
+
+            2: [
+                "Levaremos sua resposta ao meu mestre.",
+                "Os oficiais foram bem recebidos, enquanto o restante da comitiva acampou fora das muralhas.",
+                "Não foi uma recepção grandiosa, mas evitou grande peso sobre os moradores.",
+                "(+2 de Contentamento, +1 de População, -55 de Dinheiro)"
+            ],
+
+            3: [
+                "Cobrar de uma comitiva honrada não será esquecido facilmente.",
+                "Ainda assim, pagaremos pelos alimentos e pelos animais utilizados.",
+                "Os cofres ganharam moedas, mas seu nome foi pronunciado com menos respeito.",
+                "(-4 de Contentamento, +95 de Dinheiro)"
+            ],
+
+            4: [
+                "Negar passagem? Meu mestre considerará isso uma grande ofensa.",
+                "A comitiva desviou pelas estradas menores, causando tensão entre seus guardas e os moradores das vilas próximas.",
+                "(+3 de Contentamento, -3 de População, -40 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 51,
+
+        "dia_minimo": 50,
+
+        "falas": [
+            "Saudações, nobre shogun de Takayama.",
+            "Meu nome é Gladtornm Whordlagh, soberano da distante Britânia.",
+            "Em minhas terras, sou conhecido como o Rei dos Heróis, aquele que ergue sua espada não para conquistar, mas para proteger os que não podem se defender.",
+            "Viajei por mares e montanhas ao ouvir que seu povo enfrenta tempos difíceis.",
+            "Não vim exigir tributos, terras ou juramentos de lealdade.",
+            "Vim como pacificador, para oferecer a Takayama parte da prosperidade que os céus confiaram às minhas mãos.",
+            "Diga-me, shogun: qual necessidade de seu povo devo aliviar primeiro?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Alimentar os necessitados",
+            "opcao_segunda": "Curar os enfermos",
+            "opcao_terceira": "Reconstruir os lares destruídos",
+            "opcao_quarta": "Abençoar toda Takayama"
+        },
+
+        "efeito_primeira": {"Contentamento": 18, "Populacao": 10, "Dinheiro": 80},
+        "efeito_segunda": {"Contentamento": 15, "Populacao": 50, "Dinheiro": 40},
+        "efeito_terceira": {"Contentamento": 20, "Populacao": 25, "Dinheiro": 120},
+        "efeito_quarta": {"Contentamento": 15, "Populacao": 100, "Dinheiro": 350},
+
+        "falas_pos": {
+            1: [
+                "Uma escolha digna de um verdadeiro governante.",
+                "Nenhuma criança deveria dormir com fome enquanto houver homens honrados capazes de dividir seu pão.",
+                "Minhas carruagens entregarão trigo, carne seca e moedas aos armazéns de Takayama.",
+                "Naquela noite, muitas famílias comeram até se sentirem seguras novamente.",
+                "(+18 de Contentamento, +10 de População, +80 de Dinheiro)"
+            ],
+
+            2: [
+                "Então salvaremos aqueles que ainda lutam pela vida.",
+                "Meus médicos e sacerdotes servirão ao seu povo sem exigir pagamento algum.",
+                "Durante dias, os doentes foram tratados e muitos que já haviam perdido a esperança voltaram a caminhar.",
+                "(+15 de Contentamento, +50 de População, +40 de Dinheiro)"
+            ],
+
+            3: [
+                "Um povo precisa de um teto antes que possa sonhar com o futuro.",
+                "Meus construtores trabalharão ao lado dos artesãos de Takayama, e toda madeira utilizada será paga por Britânia.",
+                "Casas antes abandonadas voltaram a ter luz, fumaça nas cozinhas e crianças correndo em seus corredores.",
+                "(+20 de Contentamento, +25 de População, +120 de Dinheiro)"
+            ],
+
+            4: [
+                "Não deseja escolher apenas uma necessidade, mas fortalecer o reino inteiro?",
+                "Vejo sabedoria em seu coração, shogun.",
+                "Gladtornm ergueu sua espada diante do castelo, e uma luz serena percorreu os campos, as ruas e os telhados de Takayama.",
+                "Os armazéns receberam suprimentos, os enfermos encontraram alívio e o povo sentiu que dias melhores finalmente poderiam chegar.",
+                "(+15 de Contentamento, +100 de População, +350 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 52,
+
+        "dia_minimo": 17,
+
+        "falas": [
+            "Senhor shogun, sou Oume, parteira do bairro sul.",
+            "Vim porque uma febre estranha começou a se espalhar entre as famílias que dividem as casas mais apertadas.",
+            "Primeiro vem o calor, depois surgem manchas e feridas pelo corpo.",
+            "Já perdemos alguns moradores, e temo que a doença alcance o mercado.",
+            "Preciso de sua ordem antes que seja tarde."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Isolar os doentes e enviar alimento",
+            "opcao_segunda": "Manter o mercado aberto"
+        },
+
+        "efeito_primeira": {"Contentamento": 6, "Populacao": -4, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": -12, "Populacao": -16, "Dinheiro": 35},
+
+        "falas_pos": {
+            1: [
+                "Farei com que as famílias doentes permaneçam afastadas e recebam arroz sem sair de casa.",
+                "Não conseguiremos salvar todos, mas a febre não se espalhou pela cidade inteira.",
+                "(+6 de Contentamento, -4 de População, -80 de Dinheiro)"
+            ],
+
+            2: [
+                "Entendido... não diremos nada para não interromper as vendas.",
+                "Dias depois, muitas barracas ficaram fechadas, não por ordem do castelo, mas porque seus donos já não conseguiam se levantar.",
+                "(-12 de Contentamento, -16 de População, +35 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 53,
+
+        "dia_minimo": 18,
+
+        "falas": [
+            "Com sua licença, senhor shogun. Meu nome é Akemi, sou mestra na fabricação de papel.",
+            "Viajei até Takayama com meus aprendizes e nossas famílias, procurando um lugar onde possamos recomeçar.",
+            "Sabemos produzir papel resistente para registros, cartas, escolas e templos.",
+            "Não desejamos viver de caridade: queremos trabalhar e fazer parte deste feudo.",
+            "O senhor permitiria que nossas famílias se estabelecessem aqui?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Construir uma oficina para eles",
+            "opcao_segunda": "Permitir que se instalem por conta própria",
+            "opcao_terceira": "Cobrar uma taxa para recebê-los"
+        },
+
+        "efeito_primeira": {"Contentamento": 11, "Populacao": 12, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 6, "Populacao": 8, "Dinheiro": -20},
+        "efeito_terceira": {"Contentamento": -3, "Populacao": 5, "Dinheiro": 55},
+
+        "falas_pos": {
+            1: [
+                "Uma oficina? O senhor nos oferece mais do que abrigo, oferece um futuro.",
+                "Nossos aprendizes trabalharão para que Takayama nunca fique sem papel para registrar sua história.",
+                "(+11 de Contentamento, +12 de População, -80 de Dinheiro)"
+            ],
+
+            2: [
+                "Muito obrigada, meu senhor.",
+                "Usaremos nossas próprias economias para começar, e em breve nossas famílias estarão produzindo para a cidade.",
+                "(+6 de Contentamento, +8 de População, -20 de Dinheiro)"
+            ],
+
+            3: [
+                "O preço é alto para quem está começando de novo...",
+                "Ainda assim, algumas famílias aceitarão ficar, pois não temos outro lar esperando por nós.",
+                "(-3 de Contentamento, +5 de População, +55 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 54,
+
+        "dia_minimo": 18,
+
+        "falas": [
+            "Meu senhor, sou Fumi, responsável por aconselhar famílias nas vilas próximas.",
+            "Muitos jovens de Takayama desejam formar seus próprios lares, mas não têm arroz, tecido ou moedas para iniciar uma casa.",
+            "Também há jovens de aldeias vizinhas dispostos a viver aqui caso encontrem acolhimento.",
+            "Com um pequeno apoio do castelo, novas famílias poderiam nascer dentro de suas terras.",
+            "O que deseja fazer?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Oferecer auxílio aos novos casais",
+            "opcao_segunda": "Apenas reconhecer as novas famílias"
+        },
+
+        "efeito_primeira": {"Contentamento": 13, "Populacao": 14, "Dinheiro": -95},
+        "efeito_segunda": {"Contentamento": 6, "Populacao": 7, "Dinheiro": -15},
+
+        "falas_pos": {
+            1: [
+                "Que decisão bondosa, meu senhor!",
+                "Com arroz para os primeiros meses e tecido para novas casas, muitos casais poderão permanecer em Takayama.",
+                "As vilas logo estarão cheias de novos lares.",
+                "(+13 de Contentamento, +14 de População, -95 de Dinheiro)"
+            ],
+
+            2: [
+                "Entendo. Nem todos precisam de moedas; alguns só desejavam a permissão para construir uma vida aqui.",
+                "Registrarei as novas famílias sob a proteção de Takayama.",
+                "(+6 de Contentamento, +7 de População, -15 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 55,
+
+        "dia_minimo": 19,
+
+        "falas": [
+            "Saudações, senhor shogun. Sou Bansaku, agricultor das encostas além das montanhas.",
+            "Minha aldeia cresceu mais do que nossas terras conseguem alimentar.",
+            "Vim acompanhado de famílias que sabem cultivar trigo sarraceno mesmo em terrenos difíceis e frios.",
+            "Ouvimos que algumas encostas de Takayama ainda estão vazias.",
+            "Se o senhor nos permitir viver nelas, transformaremos solo abandonado em alimento."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Ceder terras e ferramentas",
+            "opcao_segunda": "Permitir o cultivo mediante tributo",
+            "opcao_terceira": "Receber apenas algumas famílias"
+        },
+
+        "efeito_primeira": {"Contentamento": 12, "Populacao": 18, "Dinheiro": -110},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 13, "Dinheiro": 35},
+        "efeito_terceira": {"Contentamento": 3, "Populacao": 7, "Dinheiro": -25},
+
+        "falas_pos": {
+            1: [
+                "Terra e ferramentas? Não esqueceremos tamanha generosidade.",
+                "Antes da próxima estação, as encostas terão casas, plantações e novos moradores servindo ao seu feudo.",
+                "(+12 de Contentamento, +18 de População, -110 de Dinheiro)"
+            ],
+
+            2: [
+                "Aceitamos suas condições, meu senhor.",
+                "Pagaremos o tributo com o resultado do nosso trabalho, e Takayama ganhará novas famílias produtivas.",
+                "(+5 de Contentamento, +13 de População, +35 de Dinheiro)"
+            ],
+
+            3: [
+                "Nem todos conseguirão ficar, mas aqueles que forem escolhidos honrarão esta oportunidade.",
+                "Talvez, quando as primeiras plantações crescerem, o senhor permita a chegada dos demais.",
+                "(+3 de Contentamento, +7 de População, -25 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 56,
+
+        "dia_minimo": 24,
+
+        "falas": [
+            "Meu senhor, sou eu novamente: Noritada, o mestre carpinteiro que pediu trabalhadores de Takayama.",
+            "A construção em outra cidade foi concluída, e devo dizer que seus homens impressionaram até os oficiais mais exigentes.",
+            "Eles voltaram comigo em segurança, trazendo experiência, ferramentas novas e alguns aprendizes que desejaram viver em Takayama.",
+            "Também trouxe o pagamento prometido pelo serviço.",
+            "Como deseja receber nosso retorno?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Receber os homens e guardar o pagamento",
+            "opcao_segunda": "Dividir parte do pagamento com os trabalhadores",
+            "opcao_terceira": "Investir o dinheiro em uma nova oficina"
+        },
+
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 20, "Dinheiro": 160},
+        "efeito_segunda": {"Contentamento": 15, "Populacao": 20, "Dinheiro": 90},
+        "efeito_terceira": {"Contentamento": 13, "Populacao": 20, "Dinheiro": 55},
+
+        "falas_pos": {
+            1: [
+                "Como desejar, meu senhor.",
+                "Os trabalhadores voltarão para suas famílias, e os novos aprendizes serão registrados como moradores de Takayama.",
+                "Aqui está o pagamento completo pelo serviço prestado.",
+                "(+6 de Contentamento, +20 de População, +160 de Dinheiro)"
+            ],
+
+            2: [
+                "Uma decisão digna de respeito, meu senhor.",
+                "Os homens viajaram e trabalharam em nome de Takayama; receber parte da recompensa fará com que muitos permaneçam fiéis a estas terras.",
+                "Alguns aprendizes também decidiram trazer suas famílias para cá.",
+                "(+15 de Contentamento, +20 de População, +90 de Dinheiro)"
+            ],
+
+            3: [
+                "Uma nova oficina? Excelente!",
+                "Os homens que retornaram ensinarão suas técnicas aos jovens, e os aprendizes que vieram conosco terão onde trabalhar."
+                "A habilidade de Takayama atrairá ainda mais famílias.",
+                "(+13 de Contentamento, +15 de População, +55 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 57,
+
+        "dia_minimo": 19,
+
+        "falas": [
+            "Com sua permissão, senhor shogun. Sou Shige, chefe de um grupo de carregadores das montanhas.",
+            "Passamos a vida levando sal, ferramentas e mensagens pelos caminhos difíceis de Hida.",
+            "Nossas famílias, porém, vivem espalhadas por pousos frágeis e cabanas temporárias.",
+            "Gostaríamos de estabelecer nossas casas em Takayama e continuar trabalhando a partir daqui.",
+            "Teríamos um lar, e seu feudo teria homens acostumados a atravessar qualquer trilha."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Construir alojamentos para as famílias",
+            "opcao_segunda": "Permitir que morem perto da estrada",
+            "opcao_terceira": "Contratar apenas os carregadores"
+        },
+
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 16, "Dinheiro": -90},
+        "efeito_segunda": {"Contentamento": 6, "Populacao": 11, "Dinheiro": -35},
+        "efeito_terceira": {"Contentamento": 2, "Populacao": 5, "Dinheiro": 20},
+
+        "falas_pos": {
+            1: [
+                "Então nossas famílias finalmente terão um lugar para chamar de lar.",
+                "Serviremos Takayama nas montanhas e nas estradas com gratidão.",
+                "(+10 de Contentamento, +16 de População, -90 de Dinheiro)"
+            ],
+
+            2: [
+                "É mais do que tínhamos antes, meu senhor.",
+                "Ergueremos nossas casas perto da estrada e faremos de Takayama o centro de nossas viagens.",
+                "(+6 de Contentamento, +11 de População, -35 de Dinheiro)"
+            ],
+
+            3: [
+                "Alguns homens aceitarão o trabalho e trarão suas famílias mais próximas.",
+                "Não será uma mudança completa, mas Takayama ganhará novos braços fortes.",
+                "(+2 de Contentamento, +5 de População, +20 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 58,
+
+        "dia_minimo": 20,
+
+        "falas": [
+            "Meu senhor, sou Heikichi, um homem sem terras reconhecidas.",
+            "Não vim sozinho: há famílias vivendo escondidas entre as montanhas, cultivando pequenos terrenos sem pertencer oficialmente a nenhum feudo.",
+            "Elas temem impostos abusivos de seus antigos senhores, mas também temem passar a vida sem proteção.",
+            "Se Takayama permitir seu registro, essas famílias aceitarão trabalhar e obedecer às leis deste reino.",
+            "O senhor abrirá as portas para elas?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Registrar todas as famílias",
+            "opcao_segunda": "Aceitar apenas trabalhadores adultos",
+            "opcao_terceira": "Conceder moradia em troca de cultivo",
+            "opcao_quarta": "Cobrar uma taxa de registro"
+        },
+
+        "efeito_primeira": {"Contentamento": 14, "Populacao": 22, "Dinheiro": -100},
+        "efeito_segunda": {"Contentamento": -2, "Populacao": 10, "Dinheiro": 35},
+        "efeito_terceira": {"Contentamento": 9, "Populacao": 18, "Dinheiro": -60},
+        "efeito_quarta": {"Contentamento": -5, "Populacao": 8, "Dinheiro": 85},
+
+        "falas_pos": {
+            1: [
+                "O senhor aceitará todos nós?",
+                "Pela primeira vez em muitos anos, essas famílias poderão dormir sem medo de serem expulsas.",
+                "Trabalharemos para que Takayama nunca se arrependa desta misericórdia.",
+                "(+14 de Contentamento, +22 de População, -100 de Dinheiro)"
+            ],
+
+            2: [
+                "Entendo... os adultos virão trabalhar, embora muitos sofram por deixar parentes para trás.",
+                "Ainda assim, haverá novas mãos servindo ao seu feudo.",
+                "(-2 de Contentamento, +10 de População, +35 de Dinheiro)"
+            ],
+
+            3: [
+                "Teremos terras para cultivar e um lugar sob sua proteção.",
+                "As famílias aceitarão com gratidão e começarão a preparar os campos assim que chegarem.",
+                "(+9 de Contentamento, +18 de População, -60 de Dinheiro)"
+            ],
+
+            4: [
+                "Alguns não conseguirão pagar, meu senhor.",
+                "Mas aqueles que reunirem as moedas atravessarão as montanhas para viver sob sua autoridade.",
+                "(-5 de Contentamento, +8 de População, +85 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 59,
+
+        "dia_minimo": 20,
+
+        "falas": [
+            "Saudações, senhor shogun. Meu nome é Matsu, e minha família produz missô há muitas gerações.",
+            "Trouxe comigo barris, receitas e parentes que sabem trabalhar com soja, arroz e sal.",
+            "Desejamos abrir uma casa de fermentação em Takayama e morar nesta cidade.",
+            "Nosso alimento dura por bastante tempo e poderá servir tanto aos moradores quanto aos viajantes.",
+            "O senhor aceitará nossa chegada?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Financiar a casa de fermentação",
+            "opcao_segunda": "Conceder espaço no mercado",
+            "opcao_terceira": "Permitir a instalação sem ajuda"
+        },
+
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 13, "Dinheiro": -75},
+        "efeito_segunda": {"Contentamento": 6, "Populacao": 9, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": 2, "Populacao": 6, "Dinheiro": 15},
+
+        "falas_pos": {
+            1: [
+                "Agradeço profundamente, meu senhor!",
+                "Nossa família trará seus barris e começará a trabalhar imediatamente.",
+                "Takayama terá novos moradores e alimento preparado para os meses mais difíceis.",
+                "(+10 de Contentamento, +13 de População, -75 de Dinheiro)"
+            ],
+
+            2: [
+                "Um lugar no mercado será suficiente para começarmos.",
+                "Quando os moradores provarem nosso missô, talvez outras famílias também queiram vir para Takayama.",
+                "(+6 de Contentamento, +9 de População, -25 de Dinheiro)"
+            ],
+
+            3: [
+                "Aceitamos, meu senhor.",
+                "Começaremos de forma humilde, usando apenas aquilo que trouxemos conosco.",
+                "Mesmo sem auxílio, algumas famílias permanecerão em sua cidade.",
+                "(+2 de Contentamento, +6 de População, +15 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 60,
+
+        "dia_minimo": 21,
+
+        "falas": [
+            "Meu senhor, sou Jirozaemon, representante de famílias jovens das aldeias de Hida.",
+            "Em muitas casas, apenas o filho mais velho herdará os campos. Os demais precisam partir ou viver sem terras próprias.",
+            "Essas pessoas ouviram que Takayama cresce sob sua liderança e desejam começar uma nova vila sob sua proteção.",
+            "Com terra, madeira e um pouco de arroz para o início, elas erguerão casas e cultivarão novas plantações.",
+            "O senhor permitirá o nascimento de uma nova comunidade em suas terras?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Fundar uma nova vila",
+            "opcao_segunda": "Integrar as famílias aos bairros existentes",
+            "opcao_terceira": "Oferecer terras sem auxílio financeiro"
+        },
+
+        "efeito_primeira": {"Contentamento": 18, "Populacao": 100, "Dinheiro": -250},
+        "efeito_segunda": {"Contentamento": 11, "Populacao": 50, "Dinheiro": -90},
+        "efeito_terceira": {"Contentamento": -3, "Populacao": 12, "Dinheiro": 20},
+
+        "falas_pos": {
+            1: [
+                "Uma nova vila sob o nome de Takayama... não poderíamos receber honra maior.",
+                "As famílias chegarão com ferramentas, sementes e vontade de transformar a terra em lar.",
+                "Em pouco tempo, haverá novos telhados, novos campos e muitas vozes onde hoje existe apenas silêncio.",
+                "(+18 de Contentamento, +100 de População, -250 de Dinheiro)"
+            ],
+
+            2: [
+                "É uma escolha sábia, meu senhor.",
+                "As famílias poderão chegar mais rápido e ajudar os bairros que já existem, sem esperar uma vila inteira ser construída.",
+                "(+11 de Contentamento, +50 de População, -90 de Dinheiro)"
+            ],
+
+            3: [
+                "As famílias terão de trabalhar muito para começar sem apoio.",
+                "Ainda assim, algumas aceitarão a oportunidade de possuir terras sob sua autoridade.",
+                "(-3 de Contentamento, +12 de População, +20 de Dinheiro)"
             ]
         }
     },

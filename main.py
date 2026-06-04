@@ -56,6 +56,8 @@ guerra2 = False
 guerra3 = False
 luta_feitceiros1 = False
 luta_feitceiros2 = False
+festival = False
+trabalho = False
 
 letras_visiveis = 0
 tempo_ultima_letra = 0
@@ -384,6 +386,10 @@ while loop:
                                 luta_feitceiros2 = True
                             if evento_info["sprite"] == 38:
                                 guerra3 = True
+                            if evento_info["sprite"] == 44:
+                                festival = True
+                            if evento_info["sprite"] == 48:
+                                trabalho = True
 
                         elif rects_escolhas[4]["meio-cima"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_segunda"])
@@ -400,6 +406,10 @@ while loop:
                                 luta_feitceiros2 = True
                             if evento_info["sprite"] == 38:
                                 guerra3 = True
+                            if evento_info["sprite"] == 44:
+                                festival = True
+                            if evento_info["sprite"] == 48:
+                                trabalho = True
 
                         elif rects_escolhas[4]["meio-baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_terceira"])
@@ -416,6 +426,9 @@ while loop:
                                 luta_feitceiros2 = True
                             if evento_info["sprite"] == 38:
                                 guerra3 = True
+                            if evento_info["sprite"] == 44:
+                                festival = True
+                            
 
                         elif rects_escolhas[4]["baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_quarta"])
@@ -432,6 +445,10 @@ while loop:
                                 luta_feitceiros2 = True
                             if evento_info["sprite"] == 38:
                                 guerra3 = True
+                            if evento_info["sprite"] == 44:
+                                festival = True
+                            if evento_info["sprite"] == 48:
+                                trabalho = True
 
                 else:
                     fala_texto = evento_info["falas"][fala_atual]
@@ -503,6 +520,12 @@ while loop:
                         continue
 
                     if evento_info["sprite"] == 40 and not guerra3:
+                        continue
+
+                    if evento_info["sprite"] == 49 and not festival:
+                        continue
+
+                    if evento_info["sprite"] == 56 and not trabalho:
                         continue
 
                     if evento_info["sprite"] == 90 and not vendedor_escolha_boa:
