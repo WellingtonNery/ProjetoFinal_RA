@@ -278,6 +278,9 @@ sombra_opcoes.set_alpha(120)
 if dia == 1 and evento == 0:
     evento_atual = 0
 
+if dia == 67 and evento == 0:
+    evento_atual = 66
+
 loop = True
 
 while loop:
