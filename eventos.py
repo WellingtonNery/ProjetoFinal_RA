@@ -76,6 +76,15 @@ spr72 = pg.image.load("Imagens/sprites/guardareal7.png")
 spr73 = pg.image.load("Imagens/sprites/guardareal8.png")
 spr74 = pg.image.load("Imagens/sprites/guardareal8.png")
 spr75 = pg.image.load("Imagens/sprites/guardareal3.png")
+spr76 = pg.image.load("Imagens/sprites/bampi.png")
+spr77 = pg.image.load("Imagens/sprites/kankatsu.png")
+spr78 = pg.image.load("Imagens/sprites/susanoo.png")
+spr79 = pg.image.load("Imagens/sprites/lisiane.png")
+spr80 = pg.image.load("Imagens/sprites/kenji.png")
+spr81 = pg.image.load("Imagens/sprites/gladtornm.png")
+spr82 = pg.image.load("Imagens/sprites/gladtornm.png")
+spr83 = pg.image.load("Imagens/sprites/kaze.png")
+spr84 = pg.image.load("Imagens/sprites/joseph.png")
 
 #WELL
 spr85 = pg.image.load("Imagens/sprites/pretendente.png")
@@ -234,6 +243,15 @@ sprites = {
     73: spr73,
     74: spr74,
     75: spr75,
+    76: spr76,
+    77: spr77,
+    78: spr78,
+    79: spr79,
+    80: spr80,
+    81: spr81,
+    82: spr82,
+    83: spr83,
+    84: spr84,
 
     #WELLINGTON
     85: spr85,
@@ -3222,7 +3240,7 @@ eventos = [
             "opcao_primeira": "67",
             "opcao_segunda": "42"
         },
-        
+
         "efeito_primeira": {"Contentamento": 20, "Populacao": 0, "Dinheiro": 67},
         "efeito_segunda": {"Contentamento": -20, "Populacao": 0, "Dinheiro": -42},
 
@@ -3578,6 +3596,185 @@ eventos = [
                 "As celas permanecerão fechadas até que as dívidas sejam pagas.",
                 "Sem os prisioneiros para sustentar suas casas, algumas famílias deixaram o feudo.",
                 "(-10 de Contentamento, -4 de População, -15 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 76,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "Olá shogun, sou Bampi e vejo que você tem tido dificuldades para manter a administração do feudo",
+            "Mas não se preocupe, eu posso te ajudar a resolver isso!",
+            "Eu sou uma grande modeladora de processos e tenho muitos contatos que podem te ajudar a prosperar"
+            "Se me contratar, posso te ajudar a organizar melhor as finanças do castelo e a aumentar a arrecadação de tributos!"
+            "Oque acha, shogun?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Contratar a bampi",
+            "opcao_segunda": "Recusar a ajuda dela",
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": 250},
+        "efeito_segunda": {"Contentamento": -10, "Populacao": 0, "Dinheiro": -40
+        },
+
+        "falas_pos": {
+            1: [
+                "Ótimo shogun! vamos começar a organizar as finanças do castelo imediatamente!",
+                "ABSOLUTE BIZAGI!!!",
+                "(+5 de Contentamento, +1 de População, +250 de Dinheiro)"
+            ],
+            2: [
+                "Que penas... Vai perder muito com meus Bizagis e meus contatos, mas tudo bem, shogun...",
+                "(Alguns processos falham por falta de organização, e o castelo perde dinheiro por isso.)",
+                "(-10 de Contentamento, 0 de População, -40 de Dinheiro)"
+            ]
+
+        }
+    },
+
+    {
+        "sprite": 77,
+
+        "dia_minimo": 60,
+
+        "falas": [
+            "Olá humano... sou Kankatsu, o rei do submundo, deus da destruição...",
+            "Soube que um jovem de cabelos brancos com semblante pacífico... sinto um fragmento de sua presença aqui...",
+            "Preciso que me entregue-o agora... caso não queira sofrer as consequências de me desafiar..."
+            "Qual sua escolha humano...?"
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Entregar Gladtornm",
+            "opcao_segunda": "Recusar a entregar de Gladtornm"
+        },
+
+        "efeito_primeira": {"Contentamento": 20, "Populacao": -20, "Dinheiro": 1000},
+        "efeito_segunda": {"Contentamento": -20, "Populacao": -50, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Gladtornm... aqui está ele... HAHAHAHAHAHAHAHAHA!!!",
+                "Muito obrigado...te darei uma recompensa por isso...",
+                "(Kankatsu acaba matando algumas pessoas no meio da captura de Gladtornm, e o povo fica com medo de você por isso...)",
+                "(+20 de Contentamento, -20 de População, +1000 de Dinheiro)"
+            ],
+            2: [
+                "Muito bem... se é isso que você quer... mas saiba que isso não ficará impune...",
+                "Irei mandar minhas tropas atrás de você... já que está do lado deste humano inútil..."
+                "(-20 de Contentamento, -50 de População,)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 78,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "OLÁ SHOGUN! Sou Susano'o o deus da espada",
+            "Estou aqui para consagrar seu povo com minha benção e aprender parte da arte da esada com seus samurais",
+            "Em troca, peço que me deixe morar no castelo por um período de tempo.",
+            "O que me diz?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aceitar Susano'o",
+            "opcao_segunda": "Recusar Susano'o" 
+        },
+
+        "efeito_primeira": {"Contentamento": 15, "Populacao": 50, "Dinheiro": -100},
+        "efeito_segunda": {"Contentamento": -20, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "MUITO OBRIGADO SENHOR SHOGUN!",
+                "Prometo que não irei incomodar!",
+                "(Susano'o acaba atraindo muitos espadachins para cidade em busca de conseguir sua benção)",
+                "(+15 de Contentamento, +50 de População, -100 de Dinheiro)"
+            ],
+
+            2: [
+                "Ah tudo bem shogun... Até uma próxima opurtunidade...",
+                "(-20 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 79,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "Você deve ser o shogun de Takayama né...",
+            "Me chamo Lisiane, estou aqui para propor ensinar um nova linguagem.. chamada python",
+            "Ela consiste em ter uma temática lógica e direta, e poderia abrir uma escola para seu aprendizado!",
+            "O que acha?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar academia de python",
+            "opcao_segunda": "Colocar linguagem nas escolas",
+            "opcao_terceira": "Recusar proposta"
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 25, "Dinheiro": -100},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 10, "Dinheiro": -50},
+        "efeito_terceira":{"Contentamento": -10, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1:[
+                "Obrigado pela Oportunidade senhor!! Não irá se arrepender!!!",
+                "(Várias pessoas de fora do feudo se interessam pela academia)",
+                "(+5 de Contentamento, +25 de População, -100 de Dinheiro)"
+            ],
+            2:[
+                "Não é o ideal, porém já é uma órima decisão senhor!"
+                "(A linguagem faz muito sucesso e atrai muitos moradores...)"
+                "(+3 de contentamento, +10 de população, -50 de Dinheiro)"
+            ],
+            3:[
+                "Ah ok... Talvez em uma próxima...",
+                "(-10 de contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 80,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "Olá shogun, sou Kenji, um espadachim honrado...",
+            "Vim aqui procurar apoio para abrir meu restaurante de sushi",
+            "Sou humilde, porém garanto lealdade, e qualidade no meu comércio",
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aceitar Kenji",
+            "opcao_segunda": "Dispensá-lo" 
+        },
+
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 3, "Dinheiro": -100},
+        "efeito_segunda": {"Contentamento": -10, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Agradeço senhor shogun...",
+                "Apenas espere e trarei resultados...",
+                "(+6 de Contentamento, +3 de População, -100 de Dinheiro)"
+            ],
+
+            2: [
+                "Perdão pelo incomodo senhor...",
+                "(-10 de Contentamento)"
             ]
         }
     },
