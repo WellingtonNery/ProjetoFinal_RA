@@ -3650,7 +3650,7 @@ eventos = [
         ],
         "qtd_escolhas": {
             "opcao_primeira": "Entregar Gladtornm",
-            "opcao_segunda": "Recusar a entregar de Gladtornm"
+            "opcao_segunda": "Esconder Gladtornm"
         },
 
         "efeito_primeira": {"Contentamento": 20, "Populacao": -20, "Dinheiro": 1000},
@@ -3768,13 +3768,161 @@ eventos = [
         "falas_pos": {
             1: [
                 "Agradeço senhor shogun...",
-                "Apenas espere e trarei resultados...",
+                "Apenas espere e trarei resultados...WASABIII!!",
                 "(+6 de Contentamento, +3 de População, -100 de Dinheiro)"
             ],
 
             2: [
                 "Perdão pelo incomodo senhor...",
                 "(-10 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 81,
+
+        "dia_minimo": 60,
+
+        "falas": [
+            "Meu caro shogun... obrigado por me esconder de kanakatsu",
+            "Ele é um ser poderoso que busca o caos incessantemente, caso me entregasse a ele haveria consequencias horríveis...",
+            "Em troca disso, trouxe parte do exército de britânia para ajudar na sua proteção",
+            "Caso não queira recebê-los não há problema irei te recompensar em dinheiro..."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aceitar ajuda militar",
+            "opcao_segunda": "Aceitar ajuda em dinheiro" 
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 350, "Dinheiro": 0},
+        "efeito_segunda": {"Contentamento": 0, "Populacao": 0, "Dinheiro": 750},
+
+        "falas_pos": {
+            1: [
+                "Agradeço senhor shogun...",
+                "Meus exércitos garantem proteção aos seus cidadãos, espero te ver novamente...",
+                "(+350 de População)"
+            ],
+
+            2: [
+                "Ah ok... Mas ainda sim preciso te recompensar de alguma forma... receba isso...",
+                "(+750 de dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 82,
+
+        "dia_minimo": 60,
+
+        "falas": [
+            "Ah shogun... oque fizestes...",
+            "Kankatsu é um ser poderoso que busca o caos incessantemente...",
+            "Sei que estava querendo proteger seu povo, porém agora você iniciou uma catástrofe interminável...",
+            "posso te dar uma última chance de me ajudar contra ele, caso aceite alocarei minhas tropas em seu reinado e lutaremos contra Kankatsu..."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Ajudar Gladtornm",
+            "opcao_segunda": "Ajudar Kankatsu" 
+        },
+
+        "efeito_primeira": {"Contentamento": 15, "Populacao": 500, "Dinheiro": 0},
+        "efeito_segunda": {"Contentamento": -50, "Populacao": -100, "Dinheiro": 1000},
+
+        "falas_pos": {
+            1: [
+                "Agradeço senhor shogun...",
+                "Vamos trabalhar juntos para derrotar essa ameaça absurda...",
+                "(+15 de Contentamento, +500 de População)"
+            ],
+
+            2: [
+                "Então parece que você não era tão puro assim... sinto pena de ter que lutar contra você neste momento..",
+                "(Kankatsu destrói boa parte de seu feudo contra Gladtornm, porém ele decide te recompensar em dinheiro...)",
+                "(-50 de Contentamento, -100 de População, 1000 de dinheiro)"
+            ]
+        }
+    },
+
+    {
+    "sprite": 83,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "Olá senhor shogun, sou Kaze, uma geisha da cidade",
+            "Recentemente vi que um espadchim veio ao senhor pedir para abrir um restaurante de sushi...",
+            "Ele é meu marido e gostaria que nos desse a chance de nos casa mesmo sendo de classes sociais bem distintas...",
+            "Espero que deixe isso acontecer..."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aprovar Casamento",
+            "opcao_segunda": "Reprovar Casamento" 
+        },
+
+        "efeito_primeira": {"Contentamento": 15, "Populacao": 3, "Dinheiro": -30},
+        "efeito_segunda": {"Contentamento": -15, "Populacao": -3, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "MUITO MUITO OBRIGADO senhor shogun!",
+                "Inclusive, estamos aguardando um terceiro integrante para cidade.",
+                "(+15 de Contentamento, +3 de População, -30 de Dinheiro)"
+            ],
+
+            2: [
+                "Ah... Infelizmente teremos que nos retirar do país então... Até estávamos esperando mais uma pessoa para o reino...",
+                "Adeus...",
+                "(-15 de Contentamento, -3 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 84,
+
+        "dia_minimo": 28,
+
+        "falas": [
+            "OH! Finalmente encontrei o castelo certo!",
+            "Você aí no trono deve ser o shogun de Takayama, não é?",
+            "Meu nome é Mike Ferdinand, viajante, estrategista aposentado e, modéstia à parte, um velho ainda muito bonito!",
+            "Vim de terras distantes procurando meu neto, Karasu.",
+            "O garoto é corajoso, teimoso e completamente incapaz de seguir um mapa sem se perder no primeiro desvio.",
+            "Antes que diga qualquer coisa, sua próxima frase será: 'Como posso ajudá-lo, velho estranho?'",
+            "Acertei? HA! Eu ainda tenho talento!",
+            "Falando sério agora, senhor shogun... ouvi rumores de que um jovem estrangeiro foi visto nas estradas próximas de Takayama.",
+            "Preciso encontrá-lo antes que ele se meta em algum problema maior do que a própria cabeça."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Enviar guardas para procurá-lo",
+            "opcao_segunda": "Dizer que ele procure sozinho"
+        },
+
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 2, "Dinheiro": -45},
+        "efeito_segunda": {"Contentamento": -6, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Excelente decisão, shogun!",
+                "Eu sabia que havia inteligência por trás desse olhar sério.",
+                "Seus guardas procurarão por Karasu nas estradas, hospedarias e tavernas da região.",
+                "Quando eu encontrar aquele garoto, darei nele o maior sermão que Takayama já ouviu!",
+                "NETINHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!",
+                "(+5 de Contentamento, +1 de População, -45 de Dinheiro)"
+            ],
+
+            2: [
+                "Então terei que procurar sozinho?",
+                "Hmph... tudo bem! Eu já sobrevivi a viagens piores com menos ajuda e mais dor nas costas.",
+                "Mas se meu Neto estiver causando confusão por aí, não diga que o velho Mike Ferdinand não avisou!",
+                "(-6 de Contentamento)"
             ]
         }
     },
