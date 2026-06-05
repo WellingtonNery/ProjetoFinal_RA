@@ -61,6 +61,30 @@ spr57 = pg.image.load("Imagens/sprites/chefedosviajantes.png")
 spr58 = pg.image.load("Imagens/sprites/produtordemisso.png")
 spr59 = pg.image.load("Imagens/sprites/guardareal.png")
 spr60 = pg.image.load("Imagens/sprites/representante.png")
+spr61 = pg.image.load("Imagens/sprites/guardareal2.png")
+spr62 = pg.image.load("Imagens/sprites/guardareal2.png")
+spr63 = pg.image.load("Imagens/sprites/guardareal3.png")
+spr64 = pg.image.load("Imagens/sprites/guardareal4.png")
+spr65 = pg.image.load("Imagens/sprites/guardareal4.png")
+spr66 = pg.image.load("Imagens/sprites/guardareal5.png")
+spr67 = pg.image.load("Imagens/sprites/bampi67.png")
+spr68 = pg.image.load("Imagens/sprites/guardareal5.png")
+spr69 = pg.image.load("Imagens/sprites/guardareal6.png")
+spr70 = pg.image.load("Imagens/sprites/guardareal6.png")
+spr71 = pg.image.load("Imagens/sprites/guardareal7.png")
+spr72 = pg.image.load("Imagens/sprites/guardareal7.png")
+spr73 = pg.image.load("Imagens/sprites/guardareal8.png")
+spr74 = pg.image.load("Imagens/sprites/guardareal8.png")
+spr75 = pg.image.load("Imagens/sprites/guardareal3.png")
+spr76 = pg.image.load("Imagens/sprites/bampi.png")
+spr77 = pg.image.load("Imagens/sprites/kankatsu.png")
+spr78 = pg.image.load("Imagens/sprites/susanoo.png")
+spr79 = pg.image.load("Imagens/sprites/lisiane.png")
+spr80 = pg.image.load("Imagens/sprites/kenji.png")
+spr81 = pg.image.load("Imagens/sprites/gladtornm.png")
+spr82 = pg.image.load("Imagens/sprites/gladtornm.png")
+spr83 = pg.image.load("Imagens/sprites/kaze.png")
+spr84 = pg.image.load("Imagens/sprites/joseph.png")
 
 #WELL
 spr85 = pg.image.load("Imagens/sprites/pretendente.png")
@@ -231,6 +255,30 @@ sprites = {
     58: spr58,
     59: spr59,
     60: spr60,
+    61: spr61,
+    62: spr62,
+    63: spr63,
+    64: spr64,
+    65: spr65,
+    66: spr66,
+    67: spr67,
+    68: spr68,
+    69: spr69,
+    70: spr70,
+    71: spr71,
+    72: spr72,
+    73: spr73,
+    74: spr74,
+    75: spr75,
+    76: spr76,
+    77: spr77,
+    78: spr78,
+    79: spr79,
+    80: spr80,
+    81: spr81,
+    82: spr82,
+    83: spr83,
+    84: spr84,
 
     #WELLINGTON
     85: spr85,
@@ -2967,6 +3015,968 @@ eventos = [
                 "As famílias terão de trabalhar muito para começar sem apoio.",
                 "Ainda assim, algumas aceitarão a oportunidade de possuir terras sob sua autoridade.",
                 "(-3 de Contentamento, +12 de População, +20 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 61,
+
+        "dia_minimo": 21,
+
+        "falas": [
+            "Meu senhor, sou um dos guardas responsáveis pela praça do mercado.",
+            "Alguns comerciantes começaram a recusar moedas de cobre recebidas esta manhã.",
+            "Ao analisarmos melhor, descobrimos que muitas delas são falsas e já circulam entre o povo.",
+            "Se não fizermos nada, ninguém confiará nas vendas de hoje.",
+            "Qual é a sua ordem?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Recolher as moedas falsas e compensar o povo",
+            "opcao_segunda": "Declarar as moedas inválidas sem compensação",
+            "opcao_terceira": "Aceitar as moedas como tributo"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -55},
+        "efeito_segunda": {"Contentamento": -8, "Populacao": -2, "Dinheiro": 0},
+        "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 35},
+
+        "falas_pos": {
+            1: [
+                "Como ordenar, meu senhor.",
+                "Recolheremos as moedas falsas e devolveremos parte do prejuízo aos moradores.",
+                "O mercado não ficará feliz, mas ao menos voltará a funcionar.",
+                "(0 de Contentamento, 0 de População, -55 de Dinheiro)"
+            ],
+
+            2: [
+                "Entendido, meu senhor.",
+                "Muitos moradores perderão as moedas que receberam honestamente.",
+                "A culpa não é deles, mas serão eles que pagarão por ela.",
+                "(-8 de Contentamento, -2 de População, 0 de Dinheiro)"
+            ],
+
+            3: [
+                "Então aceitaremos essas moedas nos pagamentos ao castelo.",
+                "Os cofres receberão mais metal, mas o povo dirá que permitimos a fraude continuar.",
+                "(-5 de Contentamento, 0 de População, +35 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 62,
+
+        "dia_minimo": 21,
+
+        "falas": [
+            "Meu senhor, dois agricultores discutem diante dos portões desde o amanhecer.",
+            "Durante a noite, as pedras que marcavam o limite entre seus campos foram movidas.",
+            "Cada família acusa a outra de tentar roubar parte da plantação.",
+            "Se não decidirmos logo, temo que a discussão termine em sangue."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Consultar registros e medir as terras",
+            "opcao_segunda": "Dividir igualmente a área disputada",
+            "opcao_terceira": "Favorecer a família que paga mais tributos"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": -3, "Populacao": 0, "Dinheiro": -10},
+        "efeito_terceira": {"Contentamento": -10, "Populacao": -3, "Dinheiro": 45},
+
+        "falas_pos": {
+            1: [
+                "Buscaremos os registros antigos e mediremos o terreno novamente.",
+                "Nenhuma das famílias gostou de esperar, mas aceitaram a decisão quando viram as marcas corretas.",
+                "(0 de Contentamento, 0 de População, -25 de Dinheiro)"
+            ],
+
+            2: [
+                "Dividiremos a área como ordenou.",
+                "A briga foi encerrada, mas ambas as famílias acreditam ter perdido algo.",
+                "(-3 de Contentamento, 0 de População, -10 de Dinheiro)"
+            ],
+
+            3: [
+                "A família de maior tributo receberá o campo disputado.",
+                "Os cofres ficarão protegidos, mas os camponeses entenderão qual justiça pesa mais neste feudo.",
+                "(-10 de Contentamento, -3 de População, +45 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 63,
+
+        "dia_minimo": 21,
+
+        "falas": [
+            "Meu senhor, venho relatar uma vergonha entre nossos próprios homens.",
+            "Viajantes denunciaram que guardas do portão estão exigindo moedas extras para permitir sua entrada.",
+            "Eles chamam isso de taxa de segurança, mas nenhuma ordem veio do castelo.",
+            "Os acusados ainda estão em seus postos, aguardando julgamento."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Punir os guardas culpados",
+            "opcao_segunda": "Substituir toda a guarda do portão",
+            "opcao_terceira": "Permitir a cobrança secretamente"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": -3, "Populacao": -1, "Dinheiro": -45},
+        "efeito_terceira": {"Contentamento": -12, "Populacao": -4, "Dinheiro": 75},
+
+        "falas_pos": {
+            1: [
+                "Os culpados serão retirados do posto e punidos diante dos demais.",
+                "O povo dirá que a justiça chegou, embora tarde demais para alguns viajantes.",
+                "(0 de Contentamento, 0 de População, -20 de Dinheiro)"
+            ],
+
+            2: [
+                "Trocaremos todos os homens do portão.",
+                "Alguns inocentes reclamarão por terem sido tratados como culpados, mas a cobrança cessará.",
+                "(-3 de Contentamento, -1 de População, -45 de Dinheiro)"
+            ],
+
+            3: [
+                "Entendido, meu senhor. A cobrança continuará sem levar o nome do castelo.",
+                "Ainda assim, o povo sabe muito bem quem controla os portões.",
+                "(-12 de Contentamento, -4 de População, +75 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 64,
+
+        "dia_minimo": 22,
+
+        "falas": [
+            "Meu senhor, alguns bois escaparam de um curral durante a madrugada.",
+            "Eles atravessaram dois campos plantados e destruíram parte da colheita.",
+            "Os donos dos animais dizem não ter dinheiro para compensar os agricultores.",
+            "As famílias atingidas aguardam uma decisão do castelo."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Pagar parte do prejuízo aos agricultores",
+            "opcao_segunda": "Confiscar os bois como compensação",
+            "opcao_terceira": "Deixar as famílias resolverem entre si"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -45},
+        "efeito_segunda": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 20},
+        "efeito_terceira": {"Contentamento": -8, "Populacao": -2, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Entregaremos compensação aos agricultores, meu senhor.",
+                "Eles ainda perderam trabalho e parte da colheita, mas não ficarão completamente desamparados.",
+                "(0 de Contentamento, 0 de População, -45 de Dinheiro)"
+            ],
+
+            2: [
+                "Os bois serão tomados e vendidos para cobrir parte das perdas.",
+                "Os agricultores aceitaram a decisão. Os donos dos animais jamais esquecerão.",
+                "(-4 de Contentamento, 0 de População, +20 de Dinheiro)"
+            ],
+
+            3: [
+                "Como ordenar.",
+                "Sem uma decisão do castelo, as duas famílias resolveram a disputa com violência.",
+                "(-8 de Contentamento, -2 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 65,
+
+        "dia_minimo": 22,
+
+        "falas": [
+            "Meu senhor, os guardas encontraram o depósito de lenha para o inverno quase vazio.",
+            "A reserva deveria ser usada pelas famílias mais velhas e pelos doentes.",
+            "Encontramos marcas de carroças levando madeira durante a noite.",
+            "Ainda podemos procurar os responsáveis ou comprar nova lenha antes que o frio chegue."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar nova lenha para a reserva",
+            "opcao_segunda": "Procurar os responsáveis casa por casa",
+            "opcao_terceira": "Distribuir apenas o que restou"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -65},
+        "efeito_segunda": {"Contentamento": -5, "Populacao": -1, "Dinheiro": -20},
+        "efeito_terceira": {"Contentamento": -10, "Populacao": -4, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Compraremos lenha imediatamente, meu senhor.",
+                "A reserva voltará a existir, embora o ladrão permaneça sem punição.",
+                "(0 de Contentamento, 0 de População, -65 de Dinheiro)"
+            ],
+
+            2: [
+                "Revistaremos as casas até encontrar a madeira desaparecida.",
+                "Parte da lenha foi recuperada, mas muitos moradores se revoltaram com a busca.",
+                "(-5 de Contentamento, -1 de População, -20 de Dinheiro)"
+            ],
+
+            3: [
+                "Distribuiremos apenas o que restou.",
+                "Quando as noites frias chegaram, algumas famílias descobriram que a reserva não era suficiente.",
+                "(-10 de Contentamento, -4 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 66,
+
+        "dia_minimo": 22,
+
+        "falas": [
+            "Meu senhor, descobrimos jogos de aposta acontecendo nos fundos de uma casa de chá.",
+            "Trabalhadores têm perdido moedas e até porções de arroz nessas partidas.",
+            "Ontem à noite, uma briga deixou dois homens feridos.",
+            "O dono do local oferece parte do lucro para continuarmos olhando para o outro lado."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Fechar a casa de apostas",
+            "opcao_segunda": "Cobrar uma taxa sobre os jogos",
+            "opcao_terceira": "Aceitar o pagamento do dono"
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 50},
+        "efeito_terceira": {"Contentamento": -11, "Populacao": -3, "Dinheiro": 80},
+
+        "falas_pos": {
+            1: [
+                "Fecharemos o local ainda hoje.",
+                "Os apostadores reclamarão, mas novas brigas não acontecerão ali.",
+                "(+5 de Contentamento, 0 de População, -25 de Dinheiro)"
+            ],
+
+            2: [
+                "Então os jogos poderão continuar sob cobrança do castelo.",
+                "As brigas talvez diminuam, mas muitas famílias ainda perderão arroz nas apostas.",
+                "(-5 de Contentamento, 0 de População, +50 de Dinheiro)"
+            ],
+
+            3: [
+                "Entendido, meu senhor.",
+                "O dono continuará lucrando, e nós fingiremos não ouvir as brigas durante a noite.",
+                "(-11 de Contentamento, -3 de População, +80 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 67,
+
+        "dia_minimo": 67,
+
+        "falas": [
+            "67676767676767676767676767676767676767676767676767676767676767"
+            "Six seven ou four two?????"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "67",
+            "opcao_segunda": "42"
+        },
+
+        "efeito_primeira": {"Contentamento": 20, "Populacao": 0, "Dinheiro": 67},
+        "efeito_segunda": {"Contentamento": -20, "Populacao": 0, "Dinheiro": -42},
+
+        "falas_pos": {
+            1: [
+                "SIX SEVEEEEEEEEEN!!!!!!!!!!!!!",
+                "(+20 de Contentamento, 0 de População, +67 de Dinheiro)"
+            ],
+            2: [
+                "Six seven... four two não...",
+                "(-20 de Contentamento, 0 de População, -42 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 68,
+
+        "dia_minimo": 23,
+
+        "falas": [
+            "Meu senhor, parte do óleo usado nas lanternas das ruas desapareceu do depósito dos guardas.",
+            "Sem iluminação, algumas passagens ficam completamente escuras durante a noite.",
+            "Ontem, dois moradores foram roubados ao voltar para casa.",
+            "Precisamos decidir como proteger as ruas."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar óleo e reforçar as rondas",
+            "opcao_segunda": "Estabelecer toque de recolher",
+            "opcao_terceira": "Manter as rondas como estão"
+        },
+
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -50},
+        "efeito_segunda": {"Contentamento": -6, "Populacao": 0, "Dinheiro": -15},
+        "efeito_terceira": {"Contentamento": -10, "Populacao": -3, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Compraremos óleo e dobraremos as rondas nas ruas mais escuras.",
+                "O povo continuará desconfiado, mas os roubos diminuirão.",
+                "(+6 de Contentamento, 0 de População, -50 de Dinheiro)"
+            ],
+
+            2: [
+                "Ao cair da noite, todos deverão permanecer em suas casas.",
+                "As ruas ficaram mais seguras, mas os moradores não gostam de ser tratados como prisioneiros.",
+                "(-6 de Contentamento, 0 de População, -15 de Dinheiro)"
+            ],
+
+            3: [
+                "Como ordenar.",
+                "Sem luz suficiente, os ladrões continuaram escolhendo suas vítimas na escuridão.",
+                "(-10 de Contentamento, -3 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 69,
+
+        "dia_minimo": 23,
+
+        "falas": [
+            "Meu senhor, homens convocados para limpar a vala ao redor das defesas abandonaram o trabalho.",
+            "Eles dizem que foram chamados vezes demais e que suas próprias plantações estão sendo esquecidas.",
+            "Se a vala permanecer entupida, as chuvas podem danificar parte das proteções da cidade.",
+            "Qual será sua ordem?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Pagar trabalhadores para terminar o serviço",
+            "opcao_segunda": "Obrigar os convocados a retornar",
+            "opcao_terceira": "Adiar a limpeza"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -70},
+        "efeito_segunda": {"Contentamento": -9, "Populacao": -2, "Dinheiro": -10},
+        "efeito_terceira": {"Contentamento": -6, "Populacao": -3, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Contrataremos homens para concluir a limpeza, meu senhor.",
+                "A vala será desobstruída sem retirar mais camponeses de seus campos.",
+                "(0 de Contentamento, 0 de População, -70 de Dinheiro)"
+            ],
+
+            2: [
+                "Os convocados voltarão ao trabalho sob vigilância dos guardas.",
+                "A vala ficou limpa, mas alguns agricultores abandonaram suas plantações em protesto.",
+                "(-9 de Contentamento, -2 de População, -10 de Dinheiro)"
+            ],
+
+            3: [
+                "Então deixaremos o serviço para depois.",
+                "A chuva veio antes da nova convocação, danificando parte da defesa e algumas casas próximas.",
+                "(-6 de Contentamento, -3 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 70,
+
+        "dia_minimo": 23,
+
+        "falas": [
+            "Meu senhor, encontramos o corpo de um homem na estrada leste.",
+            "Ele não carrega símbolo de família, moedas ou documentos.",
+            "Os moradores acreditam que haja um assassino circulando pelas trilhas.",
+            "Os guardas podem investigar, mas isso exigirá homens fora dos portões por vários dias."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Investigar a morte",
+            "opcao_segunda": "Expor o corpo para identificação",
+            "opcao_terceira": "Enterrá-lo sem investigação"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -45},
+        "efeito_segunda": {"Contentamento": -4, "Populacao": 0, "Dinheiro": -10},
+        "efeito_terceira": {"Contentamento": -8, "Populacao": -2, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Investigaremos cada trilha e cada pousada próxima, meu senhor.",
+                "Talvez demore, mas o povo verá que uma morte não será simplesmente ignorada.",
+                "(0 de Contentamento, 0 de População, -45 de Dinheiro)"
+            ],
+
+            2: [
+                "O corpo ficará exposto até que alguém reconheça seu rosto.",
+                "A família foi encontrada, mas muitos moradores ficaram perturbados com a cena.",
+                "(-4 de Contentamento, 0 de População, -10 de Dinheiro)"
+            ],
+
+            3: [
+                "Ele será enterrado sem perguntas.",
+                "Dias depois, viajantes começaram a evitar a estrada por medo de serem os próximos.",
+                "(-8 de Contentamento, -2 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 71,
+
+        "dia_minimo": 24,
+
+        "falas": [
+            "Meu senhor, dois povoados estão discutindo pelo uso de uma pequena comporta de água.",
+            "A aldeia de cima abre a passagem para seus campos e deixa pouca água para as plantações mais baixas.",
+            "Os moradores da aldeia de baixo ameaçam quebrar a comporta durante a noite.",
+            "Precisamos impedir que a disputa aumente."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Estabelecer horários para cada aldeia",
+            "opcao_segunda": "Favorecer a aldeia que produz mais tributos",
+            "opcao_terceira": "Deixar que os líderes resolvam"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": -8, "Populacao": -3, "Dinheiro": 50},
+        "efeito_terceira": {"Contentamento": -10, "Populacao": -4, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Os guardas observarão a abertura da comporta durante os próximos dias.",
+                "Ninguém recebeu toda a água que queria, mas a disputa foi controlada.",
+                "(0 de Contentamento, 0 de População, -20 de Dinheiro)"
+            ],
+
+            2: [
+                "A aldeia que mais contribui ao castelo receberá prioridade.",
+                "A arrecadação ficará protegida, mas os campos abaixo começaram a secar.",
+                "(-8 de Contentamento, -3 de População, +50 de Dinheiro)"
+            ],
+
+            3: [
+                "Como ordenar.",
+                "Durante a noite, a comporta foi destruída e a briga chegou aos campos.",
+                "(-10 de Contentamento, -4 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 72,
+
+        "dia_minimo": 24,
+
+        "falas": [
+            "Meu senhor, os coletores recolheram parte do arroz que alguns agricultores haviam separado para plantar na próxima estação.",
+            "Eles afirmam que apenas cumpriram a cobrança devida.",
+            "Os agricultores dizem que, sem essas sementes, não terão como preparar novos campos.",
+            "O arroz já está guardado no depósito do castelo."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Devolver o arroz de plantio",
+            "opcao_segunda": "Emprestar novas sementes às famílias",
+            "opcao_terceira": "Manter toda a cobrança"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -50},
+        "efeito_segunda": {"Contentamento": -3, "Populacao": 0, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": -12, "Populacao": -5, "Dinheiro": 60},
+
+        "falas_pos": {
+            1: [
+                "Devolveremos o arroz reservado para o plantio.",
+                "Os agricultores não celebrarão, mas ao menos poderão semear quando chegar a estação.",
+                "(0 de Contentamento, 0 de População, -50 de Dinheiro)"
+            ],
+
+            2: [
+                "O castelo emprestará sementes, e a dívida será cobrada após a colheita.",
+                "As famílias aceitaram, embora não gostem de iniciar a estação devendo ainda mais.",
+                "(-3 de Contentamento, 0 de População, -25 de Dinheiro)"
+            ],
+
+            3: [
+                "A cobrança será mantida integralmente.",
+                "Alguns campos permanecerão vazios, pois seus donos já não possuem o que plantar.",
+                "(-12 de Contentamento, -5 de População, +60 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 73,
+
+        "dia_minimo": 24,
+
+        "falas": [
+            "Meu senhor, alguém espalhou tábuas escritas pelas ruas acusando um oficial do castelo de desviar tributos.",
+            "Não sabemos se as acusações são verdadeiras, mas muitos moradores já leram as mensagens.",
+            "O oficial exige que prendamos os responsáveis pela difamação.",
+            "Como deseja proceder?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Investigar o oficial acusado",
+            "opcao_segunda": "Remover as tábuas sem prender ninguém",
+            "opcao_terceira": "Prender quem espalhou as acusações"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
+        "efeito_terceira": {"Contentamento": -11, "Populacao": -2, "Dinheiro": 30},
+
+        "falas_pos": {
+            1: [
+                "Investigaremos os registros do oficial e ouviremos testemunhas.",
+                "O povo ainda desconfia, mas verá que a acusação não foi simplesmente silenciada.",
+                "(0 de Contentamento, 0 de População, -35 de Dinheiro)"
+            ],
+
+            2: [
+                "Retiraremos todas as tábuas das ruas.",
+                "As palavras desapareceram da praça, mas não da conversa dos moradores.",
+                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+            ],
+
+            3: [
+                "Os responsáveis serão encontrados e presos.",
+                "O oficial agradeceu sua proteção, enquanto o povo passou a acreditar ainda mais nas acusações.",
+                "(-11 de Contentamento, -2 de População, +30 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 74,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "Meu senhor, trabalhadores de uma forja vieram até o posto dos guardas pedir ajuda.",
+            "O proprietário prometeu pagar seus salários após vender uma grande encomenda de ferramentas.",
+            "A venda aconteceu, mas os homens continuam sem receber.",
+            "O dono afirma que, se entregarmos o dinheiro aos trabalhadores, sua oficina fechará."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Obrigar o dono a pagar os salários",
+            "opcao_segunda": "Pagar os trabalhadores com dinheiro do castelo",
+            "opcao_terceira": "Proteger a oficina e dispensar as reclamações"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -15},
+        "efeito_segunda": {"Contentamento": -2, "Populacao": 0, "Dinheiro": -70},
+        "efeito_terceira": {"Contentamento": -12, "Populacao": -5, "Dinheiro": 45},
+
+        "falas_pos": {
+            1: [
+                "O pagamento será retirado dos cofres da oficina antes de qualquer nova venda.",
+                "Os trabalhadores receberam aquilo que já lhes pertencia, embora a produção tenha parado por alguns dias.",
+                "(0 de Contentamento, 0 de População, -15 de Dinheiro)"
+            ],
+
+            2: [
+                "O castelo pagará os salários atrasados.",
+                "Os homens ficaram aliviados, mas o dono da forja escapou das consequências de sua própria dívida.",
+                "(-2 de Contentamento, 0 de População, -70 de Dinheiro)"
+            ],
+
+            3: [
+                "Expulsaremos os trabalhadores que insistirem em protestar.",
+                "A oficina permanecerá aberta, mas muitos homens deixaram Takayama procurando trabalho justo em outro lugar.",
+                "(-12 de Contentamento, -5 de População, +45 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 75,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "Meu senhor, as celas do posto de guarda estão cheias.",
+            "A maioria dos presos não é formada por assassinos ou invasores, mas por homens que não conseguiram pagar pequenas dívidas.",
+            "Mantê-los presos exige comida e vigilância, enquanto suas famílias ficam sem quem trabalhe.",
+            "Precisamos decidir o que fazer com eles."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Libertar os presos por pequenas dívidas",
+            "opcao_segunda": "Usá-los em trabalhos obrigatórios",
+            "opcao_terceira": "Mantê-los presos até o pagamento"
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 2, "Dinheiro": -40},
+        "efeito_segunda": {"Contentamento": -7, "Populacao": -2, "Dinheiro": 45},
+        "efeito_terceira": {"Contentamento": -10, "Populacao": -4, "Dinheiro": -15},
+
+        "falas_pos": {
+            1: [
+                "Os presos por pequenas dívidas serão libertados.",
+                "Suas famílias os receberão de volta, embora os credores protestem diante do castelo.",
+                "(0 de Contentamento, +2 de População, -40 de Dinheiro)"
+            ],
+
+            2: [
+                "Eles trabalharão para pagar aquilo que devem.",
+                "As obras ganharão braços, mas poucos chamarão isso de misericórdia.",
+                "(-7 de Contentamento, -2 de População, +45 de Dinheiro)"
+            ],
+
+            3: [
+                "As celas permanecerão fechadas até que as dívidas sejam pagas.",
+                "Sem os prisioneiros para sustentar suas casas, algumas famílias deixaram o feudo.",
+                "(-10 de Contentamento, -4 de População, -15 de Dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 76,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "Olá shogun, sou Bampi e vejo que você tem tido dificuldades para manter a administração do feudo",
+            "Mas não se preocupe, eu posso te ajudar a resolver isso!",
+            "Eu sou uma grande modeladora de processos e tenho muitos contatos que podem te ajudar a prosperar"
+            "Se me contratar, posso te ajudar a organizar melhor as finanças do castelo e a aumentar a arrecadação de tributos!"
+            "Oque acha, shogun?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Contratar a bampi",
+            "opcao_segunda": "Recusar a ajuda dela",
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": 250},
+        "efeito_segunda": {"Contentamento": -10, "Populacao": 0, "Dinheiro": -40
+        },
+
+        "falas_pos": {
+            1: [
+                "Ótimo shogun! vamos começar a organizar as finanças do castelo imediatamente!",
+                "ABSOLUTE BIZAGI!!!",
+                "(+5 de Contentamento, +1 de População, +250 de Dinheiro)"
+            ],
+            2: [
+                "Que penas... Vai perder muito com meus Bizagis e meus contatos, mas tudo bem, shogun...",
+                "(Alguns processos falham por falta de organização, e o castelo perde dinheiro por isso.)",
+                "(-10 de Contentamento, 0 de População, -40 de Dinheiro)"
+            ]
+
+        }
+    },
+
+    {
+        "sprite": 77,
+
+        "dia_minimo": 60,
+
+        "falas": [
+            "Olá humano... sou Kankatsu, o rei do submundo, deus da destruição...",
+            "Soube que um jovem de cabelos brancos com semblante pacífico... sinto um fragmento de sua presença aqui...",
+            "Preciso que me entregue-o agora... caso não queira sofrer as consequências de me desafiar..."
+            "Qual sua escolha humano...?"
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Entregar Gladtornm",
+            "opcao_segunda": "Esconder Gladtornm"
+        },
+
+        "efeito_primeira": {"Contentamento": 20, "Populacao": -20, "Dinheiro": 1000},
+        "efeito_segunda": {"Contentamento": -20, "Populacao": -50, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Gladtornm... aqui está ele... HAHAHAHAHAHAHAHAHA!!!",
+                "Muito obrigado...te darei uma recompensa por isso...",
+                "(Kankatsu acaba matando algumas pessoas no meio da captura de Gladtornm, e o povo fica com medo de você por isso...)",
+                "(+20 de Contentamento, -20 de População, +1000 de Dinheiro)"
+            ],
+            2: [
+                "Muito bem... se é isso que você quer... mas saiba que isso não ficará impune...",
+                "Irei mandar minhas tropas atrás de você... já que está do lado deste humano inútil..."
+                "(-20 de Contentamento, -50 de População,)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 78,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "OLÁ SHOGUN! Sou Susano'o o deus da espada",
+            "Estou aqui para consagrar seu povo com minha benção e aprender parte da arte da esada com seus samurais",
+            "Em troca, peço que me deixe morar no castelo por um período de tempo.",
+            "O que me diz?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aceitar Susano'o",
+            "opcao_segunda": "Recusar Susano'o" 
+        },
+
+        "efeito_primeira": {"Contentamento": 15, "Populacao": 50, "Dinheiro": -100},
+        "efeito_segunda": {"Contentamento": -20, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "MUITO OBRIGADO SENHOR SHOGUN!",
+                "Prometo que não irei incomodar!",
+                "(Susano'o acaba atraindo muitos espadachins para cidade em busca de conseguir sua benção)",
+                "(+15 de Contentamento, +50 de População, -100 de Dinheiro)"
+            ],
+
+            2: [
+                "Ah tudo bem shogun... Até uma próxima opurtunidade...",
+                "(-20 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 79,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "Você deve ser o shogun de Takayama né...",
+            "Me chamo Lisiane, estou aqui para propor ensinar um nova linguagem.. chamada python",
+            "Ela consiste em ter uma temática lógica e direta, e poderia abrir uma escola para seu aprendizado!",
+            "O que acha?"
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar academia de python",
+            "opcao_segunda": "Colocar linguagem nas escolas",
+            "opcao_terceira": "Recusar proposta"
+        },
+
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 25, "Dinheiro": -100},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 10, "Dinheiro": -50},
+        "efeito_terceira":{"Contentamento": -10, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1:[
+                "Obrigado pela Oportunidade senhor!! Não irá se arrepender!!!",
+                "(Várias pessoas de fora do feudo se interessam pela academia)",
+                "(+5 de Contentamento, +25 de População, -100 de Dinheiro)"
+            ],
+            2:[
+                "Não é o ideal, porém já é uma órima decisão senhor!"
+                "(A linguagem faz muito sucesso e atrai muitos moradores...)"
+                "(+3 de contentamento, +10 de população, -50 de Dinheiro)"
+            ],
+            3:[
+                "Ah ok... Talvez em uma próxima...",
+                "(-10 de contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 80,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "Olá shogun, sou Kenji, um espadachim honrado...",
+            "Vim aqui procurar apoio para abrir meu restaurante de sushi",
+            "Sou humilde, porém garanto lealdade, e qualidade no meu comércio",
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aceitar Kenji",
+            "opcao_segunda": "Dispensá-lo" 
+        },
+
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 3, "Dinheiro": -100},
+        "efeito_segunda": {"Contentamento": -10, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Agradeço senhor shogun...",
+                "Apenas espere e trarei resultados...WASABIII!!",
+                "(+6 de Contentamento, +3 de População, -100 de Dinheiro)"
+            ],
+
+            2: [
+                "Perdão pelo incomodo senhor...",
+                "(-10 de Contentamento)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 81,
+
+        "dia_minimo": 60,
+
+        "falas": [
+            "Meu caro shogun... obrigado por me esconder de kanakatsu",
+            "Ele é um ser poderoso que busca o caos incessantemente, caso me entregasse a ele haveria consequencias horríveis...",
+            "Em troca disso, trouxe parte do exército de britânia para ajudar na sua proteção",
+            "Caso não queira recebê-los não há problema irei te recompensar em dinheiro..."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aceitar ajuda militar",
+            "opcao_segunda": "Aceitar ajuda em dinheiro" 
+        },
+
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 350, "Dinheiro": 0},
+        "efeito_segunda": {"Contentamento": 0, "Populacao": 0, "Dinheiro": 750},
+
+        "falas_pos": {
+            1: [
+                "Agradeço senhor shogun...",
+                "Meus exércitos garantem proteção aos seus cidadãos, espero te ver novamente...",
+                "(+350 de População)"
+            ],
+
+            2: [
+                "Ah ok... Mas ainda sim preciso te recompensar de alguma forma... receba isso...",
+                "(+750 de dinheiro)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 82,
+
+        "dia_minimo": 60,
+
+        "falas": [
+            "Ah shogun... oque fizestes...",
+            "Kankatsu é um ser poderoso que busca o caos incessantemente...",
+            "Sei que estava querendo proteger seu povo, porém agora você iniciou uma catástrofe interminável...",
+            "posso te dar uma última chance de me ajudar contra ele, caso aceite alocarei minhas tropas em seu reinado e lutaremos contra Kankatsu..."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Ajudar Gladtornm",
+            "opcao_segunda": "Ajudar Kankatsu" 
+        },
+
+        "efeito_primeira": {"Contentamento": 15, "Populacao": 500, "Dinheiro": 0},
+        "efeito_segunda": {"Contentamento": -50, "Populacao": -100, "Dinheiro": 1000},
+
+        "falas_pos": {
+            1: [
+                "Agradeço senhor shogun...",
+                "Vamos trabalhar juntos para derrotar essa ameaça absurda...",
+                "(+15 de Contentamento, +500 de População)"
+            ],
+
+            2: [
+                "Então parece que você não era tão puro assim... sinto pena de ter que lutar contra você neste momento..",
+                "(Kankatsu destrói boa parte de seu feudo contra Gladtornm, porém ele decide te recompensar em dinheiro...)",
+                "(-50 de Contentamento, -100 de População, 1000 de dinheiro)"
+            ]
+        }
+    },
+
+    {
+    "sprite": 83,
+
+        "dia_minimo": 25,
+
+        "falas": [
+            "Olá senhor shogun, sou Kaze, uma geisha da cidade",
+            "Recentemente vi que um espadchim veio ao senhor pedir para abrir um restaurante de sushi...",
+            "Ele é meu marido e gostaria que nos desse a chance de nos casa mesmo sendo de classes sociais bem distintas...",
+            "Espero que deixe isso acontecer..."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Aprovar Casamento",
+            "opcao_segunda": "Reprovar Casamento" 
+        },
+
+        "efeito_primeira": {"Contentamento": 15, "Populacao": 3, "Dinheiro": -30},
+        "efeito_segunda": {"Contentamento": -15, "Populacao": -3, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "MUITO MUITO OBRIGADO senhor shogun!",
+                "Inclusive, estamos aguardando um terceiro integrante para cidade.",
+                "(+15 de Contentamento, +3 de População, -30 de Dinheiro)"
+            ],
+
+            2: [
+                "Ah... Infelizmente teremos que nos retirar do país então... Até estávamos esperando mais uma pessoa para o reino...",
+                "Adeus...",
+                "(-15 de Contentamento, -3 de População)"
+            ]
+        }
+    },
+
+    {
+        "sprite": 84,
+
+        "dia_minimo": 28,
+
+        "falas": [
+            "OH! Finalmente encontrei o castelo certo!",
+            "Você aí no trono deve ser o shogun de Takayama, não é?",
+            "Meu nome é Mike Ferdinand, viajante, estrategista aposentado e, modéstia à parte, um velho ainda muito bonito!",
+            "Vim de terras distantes procurando meu neto, Karasu.",
+            "O garoto é corajoso, teimoso e completamente incapaz de seguir um mapa sem se perder no primeiro desvio.",
+            "Antes que diga qualquer coisa, sua próxima frase será: 'Como posso ajudá-lo, velho estranho?'",
+            "Acertei? HA! Eu ainda tenho talento!",
+            "Falando sério agora, senhor shogun... ouvi rumores de que um jovem estrangeiro foi visto nas estradas próximas de Takayama.",
+            "Preciso encontrá-lo antes que ele se meta em algum problema maior do que a própria cabeça."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Enviar guardas para procurá-lo",
+            "opcao_segunda": "Dizer que ele procure sozinho"
+        },
+
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 2, "Dinheiro": -45},
+        "efeito_segunda": {"Contentamento": -6, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Excelente decisão, shogun!",
+                "Eu sabia que havia inteligência por trás desse olhar sério.",
+                "Seus guardas procurarão por Karasu nas estradas, hospedarias e tavernas da região.",
+                "Quando eu encontrar aquele garoto, darei nele o maior sermão que Takayama já ouviu!",
+                "NETINHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!",
+                "(+5 de Contentamento, +1 de População, -45 de Dinheiro)"
+            ],
+
+            2: [
+                "Então terei que procurar sozinho?",
+                "Hmph... tudo bem! Eu já sobrevivi a viagens piores com menos ajuda e mais dor nas costas.",
+                "Mas se meu Neto estiver causando confusão por aí, não diga que o velho Mike Ferdinand não avisou!",
+                "(-6 de Contentamento)"
             ]
         }
     },

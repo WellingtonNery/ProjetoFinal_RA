@@ -58,6 +58,11 @@ luta_feitceiros1 = False
 luta_feitceiros2 = False
 festival = False
 trabalho = False
+reidemonio = False
+entregar = False
+esconder = False
+vo_karasu = False
+kenji = False
 
 letras_visiveis = 0
 tempo_ultima_letra = 0
@@ -278,6 +283,9 @@ sombra_opcoes.set_alpha(120)
 if dia == 1 and evento == 0:
     evento_atual = 0
 
+if dia == 67 and evento == 0:
+    evento_atual = 66
+
 loop = True
 
 while loop:
@@ -322,10 +330,15 @@ while loop:
 
                             if evento_info["sprite"] == 13:
                                 aceitou_karasu = True
+                                vo_karasu = True
                             if evento_info["sprite"] == 14:
                                 tesouro_karasu = True
                             if evento_info["sprite"] == 18:
                                 guerra1 = True
+                            if evento_info["sprite"] == 77:
+                                entregar = True
+                            if evento_info["sprite"] == 80 :
+                                kenji = True
                             if evento_info["sprite"] == 89:
                                 vendedor_escolha_boa = True
 
@@ -338,8 +351,13 @@ while loop:
 
                             if evento_info["sprite"] == 14:
                                 tesouro_karasu = True
+                                vo_karasu = True
                             if evento_info["sprite"] == 18:
                                 guerra1 = True
+                            if evento_info["sprite"] == 77:
+                                esconder = True
+                            if evento_info["sprite"] == 80 :
+                                kenji = True
                             if evento_info["sprite"] == 89:
                                 vendedor_escolha_ma = True
 
@@ -390,6 +408,8 @@ while loop:
                                 festival = True
                             if evento_info["sprite"] == 48:
                                 trabalho = True
+                            if evento_info["sprite"] == 51:
+                                reidemonio = True
 
                         elif rects_escolhas[4]["meio-cima"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_segunda"])
@@ -410,6 +430,8 @@ while loop:
                                 festival = True
                             if evento_info["sprite"] == 48:
                                 trabalho = True
+                            if evento_info["sprite"] == 51:
+                                reidemonio = True
 
                         elif rects_escolhas[4]["meio-baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_terceira"])
@@ -428,6 +450,8 @@ while loop:
                                 guerra3 = True
                             if evento_info["sprite"] == 44:
                                 festival = True
+                            if evento_info["sprite"] == 51:
+                                reidemonio = True
                             
 
                         elif rects_escolhas[4]["baixo"].collidepoint(event.pos):
@@ -449,6 +473,8 @@ while loop:
                                 festival = True
                             if evento_info["sprite"] == 48:
                                 trabalho = True
+                            if evento_info["sprite"] == 51:
+                                reidemonio = True
 
                 else:
                     fala_texto = evento_info["falas"][fala_atual]
@@ -526,6 +552,21 @@ while loop:
                         continue
 
                     if evento_info["sprite"] == 56 and not trabalho:
+                        continue
+
+                    if evento_info["sprite"] == 77 and not reidemonio:
+                        continue
+
+                    if evento_info["sprite"] == 81 and not esconder:
+                        continue
+
+                    if evento_info["sprite"] == 82 and not entregar:
+                        continue
+
+                    if evento_info["sprite"] == 83 and not kenji:
+                        continue
+
+                    if evento_info["sprite"] == 84 and not vo_karasu:
                         continue
 
                     if evento_info["sprite"] == 90 and not vendedor_escolha_boa:
