@@ -189,8 +189,50 @@ spr227 = spr212
 spr228 = spr213
 
 #LUCAS
-spr229 = spr1
-spr230 = spr1
+spr229 = pg.image.load("Imagens/sprites/Cacador.png")
+spr230 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr231 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr232 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr233 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr234 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr235 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr236 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr237 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr238 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr239 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr240 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr241 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr241 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr242 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr243 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr244 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr245 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr246 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr247 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr248 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr249 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr250 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr251 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr252 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr253 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr254 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr255 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr256 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr257 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr258 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr259 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr260 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr261 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr262 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr263 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr264 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr265 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr266 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr267 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr268 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr269 = pg.image.load("Imagens/sprites/carpinteiro.png")
+spr270 = pg.image.load("Imagens/sprites/carpinteiro.png")
+
 
 sprites = {
     1: spr1,
@@ -385,10 +427,50 @@ sprites = {
     #LUCAS
     229: spr229,
     230: spr230,
+    231: spr231,
+    232: spr232,
+    233: spr233,
+    234: spr234,
+    235: spr235,
+    236: spr236,
+    237: spr237,
+    238: spr238,
+    239: spr239,
+    240: spr240,
+    241: spr241,
+    242: spr242,
+    243: spr243,
+    244: spr244,
+    245: spr245,
+    246: spr246,
+    247: spr247,
+    248: spr248,
+    249: spr249,
+    250: spr250,
+    251: spr251,
+    252: spr252,
+    253: spr253,
+    254: spr254,
+    255: spr255,
+    256: spr256,
+    257: spr257,
+    258: spr258,
+    259: spr259,
+    260: spr260,
+    261: spr261,
+    262: spr262,
+    263: spr263,
+    264: spr264,
+    265: spr265,
+    266: spr266,
+    267: spr267,
+    268: spr268,
+    269: spr269,
+    270: spr270,
 
 }
 
-eventos = [
+eventos = [  
     {
         "sprite": 1,
         "dia_minimo": 1,
@@ -7950,10 +8032,3752 @@ eventos = [
                 "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
             ]
         }
+    },
+    
+    {
+        "sprite": 230,
+        "dia_minimo": 7,
+        "falas": [
+            "Meu senhor, o oleiro do mercado trouxe um lote de tigelas que saíram tortas do forno.",
+            "Ele jura que são perfeitas para servir arroz em curva, mas os compradores estão rindo mais do que comprando.",
+            "Podemos transformar o erro em atração da feira."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Fazer feira das tigelas tortas.",
+            "opcao_segunda": "Comprar para os refeitórios.",
+            "opcao_terceira": "Proibir a venda."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 35
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -25
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As tigelas tortas viraram moda por um dia.",
+                "Até o arroz pareceu se inclinar em respeito.",
+                "(+5 de Contentamento, +1 de População, +35 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -25 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    
+    {
+        "sprite": 230,
+        "dia_minimo": 14,
+        "falas": [
+            "Meu senhor, uma aprendiz de ceramista derrubou tinta azul nos telhados de miniatura do santuário.",
+            "Agora todos parecem cobertos por uma chuva impossível.",
+            "Ela pede permissão para vender as peças como amuletos de céu claro."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Permitir a venda dos amuletos.",
+            "opcao_segunda": "Usar só em decoração.",
+            "opcao_terceira": "Mandar refazer tudo."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": 30
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": -35
+        },
+        "falas_pos": {
+            "1": [
+                "As peças azuis agradaram crianças e viajantes.",
+                "O acidente ganhou nome bonito antes que alguém reclamasse.",
+                "(+6 de Contentamento, +1 de População, +30 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, -35 de Dinheiro)"
+            ]
+        }
+    },
+    
+    {
+        "sprite": 231,
+        "dia_minimo": 8,
+        "falas": [
+            "Meu senhor, um fabricante de guarda-chuvas quer testar modelos de papel oleado na rua principal.",
+            "Ele promete que ninguém ficará encharcado, embora esteja sorrindo demais.",
+            "Se chover, pode virar propaganda; se ventar, pode virar confusão."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Financiar o teste público.",
+            "opcao_segunda": "Testar apenas no pátio.",
+            "opcao_terceira": "Negar a demonstração."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": -40
+        },
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": -15
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os guarda-chuvas resistiram à chuva e quase resistiram ao orgulho do artesão.",
+                "A rua ficou mais colorida.",
+                "(+6 de Contentamento, +1 de População, -40 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+2 de Contentamento, +0 de População, -15 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 231,
+        "dia_minimo": 15,
+        "falas": [
+            "Meu senhor, crianças estão usando guarda-chuvas velhos como barcos no canal raso.",
+            "Metade da vila acha engraçado, a outra metade teme que alguém volte boiando até Kyoto.",
+            "Pedem uma ordem antes que o jogo cresça."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar corrida vigiada.",
+            "opcao_segunda": "Recolher os guarda-chuvas.",
+            "opcao_terceira": "Ignorar a brincadeira."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 2,
+            "Dinheiro": -20
+        },
+        "efeito_segunda": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 5
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A corrida vigiada virou festa pequena.",
+                "Os barcos eram péssimos, mas os gritos foram excelentes.",
+                "(+7 de Contentamento, +2 de População, -20 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(-3 de Contentamento, +0 de População, +5 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, -1 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 232,
+        "dia_minimo": 9,
+        "falas": [
+            "Meu senhor, uma escriba encontrou erros nos registros de arroz entregues ao armazém.",
+            "Os números não batem, mas ninguém sabe se foi fraude ou sono.",
+            "Ela quer revisar tudo antes do próximo pagamento."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Revisar os registros.",
+            "opcao_segunda": "Aceitar os números atuais.",
+            "opcao_terceira": "Punir os responsáveis."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -20
+        },
+        "efeito_segunda": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 40
+        },
+        "efeito_terceira": {
+            "Contentamento": -7,
+            "Populacao": -1,
+            "Dinheiro": 20
+        },
+        "falas_pos": {
+            "1": [
+                "Os registros foram corrigidos com paciência.",
+                "Pouco dinheiro se perdeu, e muita desconfiança foi evitada.",
+                "(+4 de Contentamento, +0 de População, -20 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(-4 de Contentamento, +0 de População, +40 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-7 de Contentamento, -1 de População, +20 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 232,
+        "dia_minimo": 16,
+        "falas": [
+            "Meu senhor, um copiador de decretos trocou duas palavras e anunciou banho público obrigatório para patos.",
+            "A aldeia está confusa, os patos parecem satisfeitos.",
+            "Ele pede autorização para corrigir os cartazes sem perder o cargo."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Corrigir com bom humor.",
+            "opcao_segunda": "Cobrar multa do copiador.",
+            "opcao_terceira": "Manter o decreto dos patos."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": -5
+        },
+        "efeito_segunda": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 25
+        },
+        "efeito_terceira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -15
+        },
+        "falas_pos": {
+            "1": [
+                "Os cartazes foram corrigidos e o erro virou piada oficial.",
+                "Os patos perderam direitos, mas ganharam fama.",
+                "(+6 de Contentamento, +1 de População, -5 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(-2 de Contentamento, +0 de População, +25 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(+4 de Contentamento, +0 de População, -15 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 233,
+        "dia_minimo": 10,
+        "falas": [
+            "Meu senhor, uma vendedora de doces quer montar barraca de mochi perto do templo.",
+            "Os monges temem migalhas, mas os peregrinos apoiam com entusiasmo.",
+            "Ela promete limpar tudo ao pôr do sol."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Autorizar a barraca.",
+            "opcao_segunda": "Autorizar longe do templo.",
+            "opcao_terceira": "Proibir doces ali."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 2,
+            "Dinheiro": 30
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": 15
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O mochi atraiu peregrinos e deixou o templo mais animado.",
+                "Nem todas as orações foram silenciosas.",
+                "(+7 de Contentamento, +2 de População, +30 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, +15 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 233,
+        "dia_minimo": 17,
+        "falas": [
+            "Meu senhor, o doceiro local criou bolinhos em formato de capacete samurai.",
+            "Alguns guerreiros acham ofensivo; as crianças mordem os generais de arroz sem piedade.",
+            "Ele pede proteção para vender a novidade."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Apoiar os bolinhos.",
+            "opcao_segunda": "Vender com outro formato.",
+            "opcao_terceira": "Recolher a fornada."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": 45
+        },
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": 10
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": -20
+        },
+        "falas_pos": {
+            "1": [
+                "Os capacetes doces venceram a honra pela fome.",
+                "Até um samurai comprou dois, olhando para os lados.",
+                "(+6 de Contentamento, +1 de População, +45 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+2 de Contentamento, +0 de População, +10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, +0 de População, -20 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 234,
+        "dia_minimo": 11,
+        "falas": [
+            "Meu senhor, um pescador trouxe carpas vivas para soltar no lago do jardim.",
+            "Ele diz que carpas fortes trazem sorte e visitantes.",
+            "O jardineiro diz que carpas fortes também comem plantas caras."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Soltar as carpas.",
+            "opcao_segunda": "Soltar poucas carpas.",
+            "opcao_terceira": "Recusar as carpas."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -30
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As carpas deslizaram pelo lago como pequenos senhores de bigode.",
+                "O jardim ganhou movimento.",
+                "(+5 de Contentamento, +1 de População, -30 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 234,
+        "dia_minimo": 18,
+        "falas": [
+            "Meu senhor, uma carpa enorme saltou durante uma cerimônia e derrubou chá no enviado local.",
+            "Ninguém sabe se foi mau presságio ou excelente pontaria.",
+            "Os servos perguntam como tratar o caso."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Declarar sinal de sorte.",
+            "opcao_segunda": "Pedir desculpas formais.",
+            "opcao_terceira": "Mandar retirar a carpa."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 0,
+            "Dinheiro": 20
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -25
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "falas_pos": {
+            "1": [
+                "O salto virou presságio favorável.",
+                "O enviado fingiu acreditar enquanto secava a manga.",
+                "(+7 de Contentamento, +0 de População, +20 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -25 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 235,
+        "dia_minimo": 12,
+        "falas": [
+            "Meu senhor, uma tecelã quer ensinar mulheres da vila a fazer faixas resistentes para carga.",
+            "O trabalho pode render moedas e reduzir acidentes no transporte.",
+            "Ela pede fios bons e um espaço coberto."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Financiar a oficina.",
+            "opcao_segunda": "Dar apenas o espaço.",
+            "opcao_terceira": "Negar apoio."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 3,
+            "Dinheiro": -60
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": -10
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A oficina começou com fios firmes e conversa alta.",
+                "As cargas e os ânimos ficaram mais seguros.",
+                "(+7 de Contentamento, +3 de População, -60 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, -10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 235,
+        "dia_minimo": 19,
+        "falas": [
+            "Meu senhor, um aprendiz tingiu tecido cerimonial de rosa forte por engano.",
+            "A cor é impossível de ignorar, até atrás de uma árvore.",
+            "Ele sugere vender como roupa de festival."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Transformar em moda de festival.",
+            "opcao_segunda": "Guardar para teatro.",
+            "opcao_terceira": "Descartar o tecido."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": 35
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": 5
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": -30
+        },
+        "falas_pos": {
+            "1": [
+                "O rosa tomou a praça como uma flor teimosa.",
+                "A vergonha virou renda antes de secar.",
+                "(+6 de Contentamento, +1 de População, +35 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, +5 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, -30 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 236,
+        "dia_minimo": 13,
+        "falas": [
+            "Meu senhor, um monge viajante pede apoio para copiar sutras raros no salão menor.",
+            "Ele trará estudantes e silêncio, pelo menos em teoria.",
+            "O papel custará caro, mas o prestígio pode crescer."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Financiar a cópia.",
+            "opcao_segunda": "Oferecer só hospedagem.",
+            "opcao_terceira": "Recusar o pedido."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 2,
+            "Dinheiro": -70
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os sutras começaram a ser copiados com tinta cuidadosa.",
+                "O feudo ganhou respeito entre estudiosos.",
+                "(+6 de Contentamento, +2 de População, -70 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 236,
+        "dia_minimo": 20,
+        "falas": [
+            "Meu senhor, um noviço adormeceu meditando e roncou tão alto que assustou os corvos do templo.",
+            "Os fiéis riram, depois ficaram culpados por rir.",
+            "O abade pede uma resposta discreta."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Dar descanso aos noviços.",
+            "opcao_segunda": "Fingir que foi ritual.",
+            "opcao_terceira": "Punir o noviço."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -15
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": 10
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os noviços receberam horários mais humanos.",
+                "Os corvos continuam desconfiados.",
+                "(+5 de Contentamento, +1 de População, -15 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +0 de População, +10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 237,
+        "dia_minimo": 14,
+        "falas": [
+            "Meu senhor, um fabricante de lanternas quer iluminar a margem do rio durante o festival de outono.",
+            "A ideia atrairá famílias, mas exige óleo e vigias.",
+            "Sem cuidado, uma lanterna vira problema voador."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Iluminar toda a margem.",
+            "opcao_segunda": "Iluminar só a praça.",
+            "opcao_terceira": "Cancelar as lanternas."
+        },
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 3,
+            "Dinheiro": -75
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": -30
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As lanternas refletiram no rio como estrelas obedientes.",
+                "O festival ficou memorável.",
+                "(+8 de Contentamento, +3 de População, -75 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, -30 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 237,
+        "dia_minimo": 21,
+        "falas": [
+            "Meu senhor, um menino colocou rosto bravo em todas as lanternas do depósito.",
+            "Agora até o corredor parece julgar quem passa.",
+            "Os artesãos querem saber se devem apagar os desenhos."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Usar no festival cômico.",
+            "opcao_segunda": "Apagar metade.",
+            "opcao_terceira": "Apagar tudo."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 1,
+            "Dinheiro": 25
+        },
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": -20
+        },
+        "falas_pos": {
+            "1": [
+                "As lanternas carrancudas fizeram sucesso.",
+                "Nunca se viu tanta gente pedir desculpa a papel aceso.",
+                "(+7 de Contentamento, +1 de População, +25 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+2 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, -20 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 238,
+        "dia_minimo": 15,
+        "falas": [
+            "Meu senhor, uma curandeira quer plantar ervas medicinais perto das águas quentes.",
+            "Diz que o vapor ajuda as folhas e acalma pacientes.",
+            "Os banhistas reclamam que o cheiro pode ficar forte."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar jardim medicinal.",
+            "opcao_segunda": "Plantar em área menor.",
+            "opcao_terceira": "Negar o jardim."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 3,
+            "Dinheiro": -50
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O jardim começou a perfumar as águas com cuidado.",
+                "Doentes e curiosos apareceram em igual número.",
+                "(+7 de Contentamento, +3 de População, -50 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 238,
+        "dia_minimo": 22,
+        "falas": [
+            "Meu senhor, um curandeiro afirma que nabos dançantes curam tristeza se forem pintados com olhos.",
+            "Não há prova, mas há muitos nabos e muita gente triste no inverno.",
+            "Ele pede tinta e um tambor pequeno."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Autorizar o ritual dos nabos.",
+            "opcao_segunda": "Permitir sem gastar tinta.",
+            "opcao_terceira": "Proibir a bobagem."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": -15
+        },
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os nabos não dançaram sozinhos, mas a vila riu bastante.",
+                "Às vezes a cura usa pernas humanas.",
+                "(+6 de Contentamento, +1 de População, -15 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 239,
+        "dia_minimo": 16,
+        "falas": [
+            "Meu senhor, um mestre de teatro quer apresentar peça sobre um daimyo teimoso e um sapo sábio.",
+            "Alguns conselheiros suspeitam que o daimyo teimoso parece familiar demais.",
+            "A troupe promete mudar nomes e bigodes."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Patrocinar a peça.",
+            "opcao_segunda": "Permitir sem patrocínio.",
+            "opcao_terceira": "Censurar a peça."
+        },
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 2,
+            "Dinheiro": -65
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -6,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A peça lotou o pátio e ninguém mencionou seu bigode.",
+                "O sapo recebeu mais aplausos que alguns oficiais.",
+                "(+8 de Contentamento, +2 de População, -65 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-6 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 239,
+        "dia_minimo": 23,
+        "falas": [
+            "Meu senhor, atores kabuki perderam uma sobrancelha falsa gigante usada pelo vilão.",
+            "Sem ela, dizem que o público não saberá quem odiar.",
+            "Pedem dinheiro para fabricar outra depressa."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Pagar nova sobrancelha.",
+            "opcao_segunda": "Improvisar com palha.",
+            "opcao_terceira": "Cancelar a cena."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -25
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A nova sobrancelha entrou em cena antes do vilão.",
+                "O público vaiou com alegria.",
+                "(+5 de Contentamento, +1 de População, -25 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 240,
+        "dia_minimo": 17,
+        "falas": [
+            "Meu senhor, um fabricante de tambores quer restaurar instrumentos antigos guardados no depósito.",
+            "Os tambores podem marcar festivais e alertas.",
+            "Mas couro bom e madeira seca custam dinheiro."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Restaurar todos.",
+            "opcao_segunda": "Restaurar dois tambores.",
+            "opcao_terceira": "Vender os antigos."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 2,
+            "Dinheiro": -80
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": -35
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 60
+        },
+        "falas_pos": {
+            "1": [
+                "Os tambores voltaram a soar fundo.",
+                "Até as montanhas pareceram responder.",
+                "(+7 de Contentamento, +2 de População, -80 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, -35 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +60 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 240,
+        "dia_minimo": 24,
+        "falas": [
+            "Meu senhor, um tambor enorme rolou ladeira abaixo e parou dentro de uma loja de tofu.",
+            "Ninguém se feriu, mas o tofu pareceu profundamente ofendido.",
+            "O dono exige compensação."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Pagar o prejuízo.",
+            "opcao_segunda": "Transformar em anúncio festivo.",
+            "opcao_terceira": "Culpar a ladeira."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -30
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 20
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O prejuízo foi resolvido com dignidade.",
+                "O tofu, apesar de amassado, manteve silêncio exemplar.",
+                "(+4 de Contentamento, +0 de População, -30 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, +20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 241,
+        "dia_minimo": 18,
+        "falas": [
+            "Meu senhor, um mensageiro sugere criar caixas de recados nas vilas afastadas.",
+            "Assim pedidos pequenos não dependerão de viagens ao castelo.",
+            "Será preciso alguém para recolher mensagens toda semana."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar as caixas.",
+            "opcao_segunda": "Criar só nas vilas maiores.",
+            "opcao_terceira": "Manter como está."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 2,
+            "Dinheiro": -45
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As caixas de recados aproximaram o castelo das aldeias.",
+                "Alguns bilhetes vieram com desenhos de gatos.",
+                "(+6 de Contentamento, +2 de População, -45 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 241,
+        "dia_minimo": 5,
+        "falas": [
+            "Meu senhor, um mensageiro jura que seu chapéu novo o faz correr mais rápido.",
+            "O chapéu tem penas demais e dignidade de menos.",
+            "Ele pede permissão para equipar outros mensageiros."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar chapéus velozes.",
+            "opcao_segunda": "Comprar só um reserva.",
+            "opcao_terceira": "Banir o chapéu."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -40
+        },
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os chapéus ficaram famosos antes das mensagens.",
+                "Ninguém provou a velocidade, mas todos viram as penas.",
+                "(+5 de Contentamento, +1 de População, -40 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+2 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 242,
+        "dia_minimo": 19,
+        "falas": [
+            "Meu senhor, uma família de agricultores quer experimentar arroz em terraço novo na encosta.",
+            "A ideia exige contenção de barro e canais menores.",
+            "Se der certo, a colheita crescerá."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Apoiar o terraço.",
+            "opcao_segunda": "Testar em área pequena.",
+            "opcao_terceira": "Negar a experiência."
+        },
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 4,
+            "Dinheiro": -90
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 2,
+            "Dinheiro": -35
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O terraço foi preparado com barro firme e esperança.",
+                "A encosta ganhou degraus produtivos.",
+                "(+8 de Contentamento, +4 de População, -90 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +2 de População, -35 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 242,
+        "dia_minimo": 6,
+        "falas": [
+            "Meu senhor, um espantalho vestido com armadura velha está assustando mais agricultores que corvos.",
+            "De longe, parece um samurai muito paciente.",
+            "A aldeia pede decisão antes que alguém ofereça saquê a ele."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Manter como atração.",
+            "opcao_segunda": "Trocar a roupa dele.",
+            "opcao_terceira": "Retirar o espantalho."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 15
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -5
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O espantalho virou guardião cômico dos campos.",
+                "Os corvos e os bêbados mantiveram distância.",
+                "(+5 de Contentamento, +1 de População, +15 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -5 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 243,
+        "dia_minimo": 20,
+        "falas": [
+            "Meu senhor, um mestre de chá quer abrir sessões públicas para ensinar etiqueta simples.",
+            "Ele diz que bons modos reduzem brigas no mercado.",
+            "O chá, infelizmente, não será gratuito."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Patrocinar sessões públicas.",
+            "opcao_segunda": "Cobrar entrada baixa.",
+            "opcao_terceira": "Deixar privado."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 2,
+            "Dinheiro": -55
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": 20
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As sessões ensinaram silêncio, postura e paciência.",
+                "Alguns só aprenderam a segurar a tigela.",
+                "(+6 de Contentamento, +2 de População, -55 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, +20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 243,
+        "dia_minimo": 7,
+        "falas": [
+            "Meu senhor, um aprendiz serviu chá salgado por engano a três anciãos importantes.",
+            "Eles beberam tudo por educação e agora parecem ondas furiosas.",
+            "O mestre pede ajuda para reparar a vergonha."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Enviar doces de desculpa.",
+            "opcao_segunda": "Dizer que era tradição rara.",
+            "opcao_terceira": "Ignorar os anciãos."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 0,
+            "Dinheiro": -20
+        },
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": 10
+        },
+        "efeito_terceira": {
+            "Contentamento": -6,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os doces acalmaram os anciãos mais que as explicações.",
+                "O sal ficará longe do chá por um bom tempo.",
+                "(+5 de Contentamento, +0 de População, -20 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+2 de Contentamento, +0 de População, +10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-6 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 244,
+        "dia_minimo": 21,
+        "falas": [
+            "Meu senhor, um carpinteiro naval quer consertar pequenos barcos de pesca antes das cheias.",
+            "Os remos rangem e alguns cascos bebem mais água que peixe.",
+            "O trabalho evitará perdas no rio."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Consertar todos os barcos.",
+            "opcao_segunda": "Consertar os piores.",
+            "opcao_terceira": "Adiar os consertos."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 3,
+            "Dinheiro": -85
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": -35
+        },
+        "efeito_terceira": {
+            "Contentamento": -6,
+            "Populacao": -2,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os barcos voltaram ao rio sem engolir metade dele.",
+                "Os pescadores agradeceram.",
+                "(+7 de Contentamento, +3 de População, -85 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, -35 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-6 de Contentamento, -2 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 244,
+        "dia_minimo": 8,
+        "falas": [
+            "Meu senhor, um barco cerimonial ficou preso em lama rasa durante ensaio solene.",
+            "Seis homens empurraram, dois caíram e um fingiu que fazia parte da dança.",
+            "Pedem ajuda para salvar a cerimônia."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Contratar empurradores extras.",
+            "opcao_segunda": "Mudar para cerimônia em terra.",
+            "opcao_terceira": "Cancelar tudo."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -25
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A cerimônia seguiu com empurradores discretos.",
+                "A lama recebeu mais reverências que o previsto.",
+                "(+5 de Contentamento, +1 de População, -25 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 245,
+        "dia_minimo": 22,
+        "falas": [
+            "Meu senhor, uma anciã quer organizar banco de sementes para invernos ruins.",
+            "Cada família doaria um pouco após a colheita.",
+            "Será preciso guardar contra umidade e ratos."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar banco de sementes.",
+            "opcao_segunda": "Guardar só sementes raras.",
+            "opcao_terceira": "Não organizar estoque."
+        },
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 4,
+            "Dinheiro": -70
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 2,
+            "Dinheiro": -25
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O banco de sementes começou pequeno e promissor.",
+                "O futuro ganhou sacos bem amarrados.",
+                "(+8 de Contentamento, +4 de População, -70 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +2 de População, -25 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, -1 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 245,
+        "dia_minimo": 9,
+        "falas": [
+            "Meu senhor, ratos foram vistos carregando grãos em fila como uma pequena procissão.",
+            "Os moradores não sabem se riem ou declaram guerra.",
+            "A anciã pede gatos, armadilhas ou muita paciência."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Contratar gatos do templo.",
+            "opcao_segunda": "Montar armadilhas simples.",
+            "opcao_terceira": "Deixar os ratos em paz."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": -30
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_terceira": {
+            "Contentamento": -6,
+            "Populacao": -2,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os gatos chegaram com ar de funcionários importantes.",
+                "A procissão dos ratos perdeu a fé.",
+                "(+6 de Contentamento, +1 de População, -30 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-6 de Contentamento, -2 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 246,
+        "dia_minimo": 23,
+        "falas": [
+            "Meu senhor, um pintor quer registrar em biombo a vista das montanhas de Hida.",
+            "A obra pode decorar o salão e impressionar visitantes.",
+            "Ele exige pigmentos bons e ninguém respirando perto da tinta."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Encomendar o biombo.",
+            "opcao_segunda": "Pedir versão menor.",
+            "opcao_terceira": "Recusar a obra."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": -75
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -30
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O biombo começou a tomar forma com montanhas serenas.",
+                "O salão parecerá maior que suas paredes.",
+                "(+6 de Contentamento, +1 de População, -75 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -30 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 246,
+        "dia_minimo": 10,
+        "falas": [
+            "Meu senhor, o pintor retratou acidentalmente o senhor com orelhas enormes por causa de um pincel aberto.",
+            "Ele chama de estilo expressivo.",
+            "Os servos tentam não olhar para o quadro."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Assumir a pintura como piada.",
+            "opcao_segunda": "Mandar corrigir.",
+            "opcao_terceira": "Queimar o retrato."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": 10
+        },
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": -5
+        },
+        "falas_pos": {
+            "1": [
+                "A pintura arrancou risos controlados e respeito estranho.",
+                "As orelhas viraram símbolo de escutar o povo.",
+                "(+6 de Contentamento, +1 de População, +10 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+2 de Contentamento, +0 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, +0 de População, -5 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 247,
+        "dia_minimo": 24,
+        "falas": [
+            "Meu senhor, um vendedor de sal quer abrir depósito pequeno perto do mercado.",
+            "Sal preserva peixe e legumes, mas atrai ladrões se mal guardado.",
+            "Ele pede licença e proteção inicial."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Autorizar com guarda.",
+            "opcao_segunda": "Autorizar sem guarda.",
+            "opcao_terceira": "Negar o depósito."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 35
+        },
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": 60
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O depósito foi aberto com portas fortes.",
+                "A comida durará mais que a desconfiança.",
+                "(+5 de Contentamento, +1 de População, +35 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+2 de Contentamento, +0 de População, +60 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 247,
+        "dia_minimo": 11,
+        "falas": [
+            "Meu senhor, sacos de sal rasgaram e uma rua inteira ficou branca como inverno falso.",
+            "Crianças estão fazendo bonecos de sal e comerciantes escorregam reclamando.",
+            "O vendedor pede ajuda antes que chova."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Limpar a rua.",
+            "opcao_segunda": "Vender como atração.",
+            "opcao_terceira": "Deixar a chuva resolver."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -20
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 25
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A rua foi limpa antes de virar sopa.",
+                "Os bonecos de sal foram lembrados com lágrimas, talvez por causa do sal.",
+                "(+4 de Contentamento, +0 de População, -20 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, +25 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 248,
+        "dia_minimo": 5,
+        "falas": [
+            "Meu senhor, uma guarda noturna quer instalar sinos discretos em becos escuros.",
+            "Eles alertariam patrulhas sem assustar toda a cidade.",
+            "O custo é pequeno, mas precisa de manutenção."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Instalar os sinos.",
+            "opcao_segunda": "Instalar só no mercado.",
+            "opcao_terceira": "Recusar os sinos."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": -45
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -15
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os sinos passaram a vigiar onde olhos falham.",
+                "A noite ficou um pouco menos ousada.",
+                "(+6 de Contentamento, +1 de População, -45 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -15 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 248,
+        "dia_minimo": 12,
+        "falas": [
+            "Meu senhor, um sino novo toca sozinho sempre que um gato passa pelo beco.",
+            "A patrulha correu cinco vezes e prendeu apenas orgulho ferido.",
+            "A guarda pede solução."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Ajustar o sino.",
+            "opcao_segunda": "Nomear o gato vigia.",
+            "opcao_terceira": "Remover o sino."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O gato virou vigia honorário sem entender o cargo.",
+                "A patrulha aprendeu a correr com menos solenidade.",
+                "(+4 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 249,
+        "dia_minimo": 6,
+        "falas": [
+            "Meu senhor, um mestre de caligrafia quer ensinar crianças a escrever pedidos oficiais.",
+            "Isso reduziria confusão nos bilhetes enviados ao castelo.",
+            "Ele cobra pouco, mas exige silêncio raro."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Abrir aulas de caligrafia.",
+            "opcao_segunda": "Ensinar só os mais velhos.",
+            "opcao_terceira": "Negar as aulas."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 3,
+            "Dinheiro": -50
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As crianças começaram a escrever com traços mais firmes.",
+                "Alguns pedidos agora têm menos manchas de ameixa.",
+                "(+7 de Contentamento, +3 de População, -50 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 249,
+        "dia_minimo": 13,
+        "falas": [
+            "Meu senhor, um aluno escreveu um pedido oficial inteiro de cabeça para baixo.",
+            "O texto está correto, se alguém virar o pescoço como garça.",
+            "O mestre pergunta se deve aceitar como criatividade."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Premiar a criatividade.",
+            "opcao_segunda": "Mandar refazer.",
+            "opcao_terceira": "Reprovar publicamente."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 0
+        },
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": -5
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A criatividade foi aceita com risadas moderadas.",
+                "Garças e escribas sentiram-se representados.",
+                "(+5 de Contentamento, +1 de População, +0 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+2 de Contentamento, +0 de População, -5 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 250,
+        "dia_minimo": 7,
+        "falas": [
+            "Meu senhor, uma parte dos telhados de palha está úmida demais antes da neve.",
+            "Se secarem mal, casas adoecerão por dentro.",
+            "Um grupo oferece reparos rápidos."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Reparar os telhados.",
+            "opcao_segunda": "Reparar casas mais velhas.",
+            "opcao_terceira": "Esperar a neve."
+        },
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 4,
+            "Dinheiro": -95
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 2,
+            "Dinheiro": -40
+        },
+        "efeito_terceira": {
+            "Contentamento": -8,
+            "Populacao": -3,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os telhados foram reforçados antes do frio.",
+                "As casas respirarão melhor.",
+                "(+8 de Contentamento, +4 de População, -95 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +2 de População, -40 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-8 de Contentamento, -3 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 250,
+        "dia_minimo": 14,
+        "falas": [
+            "Meu senhor, um telhado recém-reparado ficou tão fofo que crianças tentam dormir em cima dele.",
+            "Os pais reclamam, os cães aprovam.",
+            "O reparador pede ordem clara."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar regra contra subir.",
+            "opcao_segunda": "Fazer visita vigiada.",
+            "opcao_terceira": "Ignorar as crianças."
+        },
+        "efeito_primeira": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -5
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A visita vigiada salvou o telhado e a diversão.",
+                "Os cães continuam decepcionados.",
+                "(+3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, -5 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, -1 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 251,
+        "dia_minimo": 8,
+        "falas": [
+            "Meu senhor, um comerciante de papel quer organizar mercado de livros usados.",
+            "Estudantes pobres poderiam comprar textos antigos.",
+            "Alguns livros têm manchas, mas ainda ensinam."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Apoiar o mercado.",
+            "opcao_segunda": "Cobrar taxa simbólica.",
+            "opcao_terceira": "Negar a licença."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 2,
+            "Dinheiro": -35
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": 20
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O mercado de livros trouxe estudantes e curiosos.",
+                "Conhecimento usado ainda pesa pouco e vale muito.",
+                "(+7 de Contentamento, +2 de População, -35 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, +20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 251,
+        "dia_minimo": 15,
+        "falas": [
+            "Meu senhor, um livro de receitas foi copiado com instruções trocadas e manda ferver sandálias.",
+            "A cozinha do mercado está alarmada.",
+            "O comerciante pede permissão para vender como comédia."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Vender como livro engraçado.",
+            "opcao_segunda": "Corrigir as cópias.",
+            "opcao_terceira": "Confiscar tudo."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": 30
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O livro virou sucesso entre cozinheiros corajosos.",
+                "Nenhuma sandália foi oficialmente servida.",
+                "(+6 de Contentamento, +1 de População, +30 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 252,
+        "dia_minimo": 9,
+        "falas": [
+            "Meu senhor, uma família pede autorização para abrir casa de banho menor na estrada.",
+            "Viajantes limpos brigam menos e compram mais.",
+            "Mas água quente exige madeira e cuidado."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Autorizar a casa de banho.",
+            "opcao_segunda": "Autorizar sem apoio do feudo.",
+            "opcao_terceira": "Negar o banho."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 3,
+            "Dinheiro": -80
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": 20
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A casa de banho recebeu os primeiros viajantes cansados.",
+                "A estrada cheirou melhor por um instante histórico.",
+                "(+7 de Contentamento, +3 de População, -80 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, +20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 252,
+        "dia_minimo": 16,
+        "falas": [
+            "Meu senhor, um cliente dormiu dentro da banheira e começou a roncar bolhas.",
+            "Os demais banhistas acham que é espírito aquático ou homem exausto.",
+            "A família pede orientação."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Criar limite de tempo.",
+            "opcao_segunda": "Cobrar taxa de cochilo.",
+            "opcao_terceira": "Expulsar roncadores."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": 5
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 25
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A taxa de cochilo foi aceita com surpreendente entusiasmo.",
+                "Alguns vieram só para roncar oficialmente.",
+                "(+4 de Contentamento, +0 de População, +5 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, +25 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 253,
+        "dia_minimo": 10,
+        "falas": [
+            "Meu senhor, um mestre de máscaras quer fazer rostos cerimoniais para o festival dos ancestrais.",
+            "As máscaras antigas racharam e assustam mais do que honram.",
+            "Ele pede madeira leve e tempo."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Encomendar máscaras novas.",
+            "opcao_segunda": "Reparar as antigas.",
+            "opcao_terceira": "Usar as rachadas."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 2,
+            "Dinheiro": -65
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As novas máscaras trouxeram dignidade ao festival.",
+                "Os ancestrais pareceram menos zangados.",
+                "(+7 de Contentamento, +2 de População, -65 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 253,
+        "dia_minimo": 17,
+        "falas": [
+            "Meu senhor, uma máscara sorridente ficou presa no rosto de um ator sério.",
+            "Ele ameaça fazer tragédia sorrindo até o fim.",
+            "A troupe pede ajuda antes da apresentação."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Chamar artesão para soltar.",
+            "opcao_segunda": "Transformar em comédia.",
+            "opcao_terceira": "Cancelar o ator."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -15
+        },
+        "efeito_segunda": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": 20
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A tragédia virou comédia e ninguém reclamou.",
+                "O ator sorriu contra a própria vontade e ganhou aplausos.",
+                "(+4 de Contentamento, +0 de População, -15 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+6 de Contentamento, +1 de População, +20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 254,
+        "dia_minimo": 11,
+        "falas": [
+            "Meu senhor, um apicultor quer mover colmeias para perto dos pomares.",
+            "As flores renderão mais frutos, mas os camponeses temem picadas.",
+            "Ele promete cercas simples e fumaça controlada."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Mover as colmeias.",
+            "opcao_segunda": "Mover poucas colmeias.",
+            "opcao_terceira": "Recusar as abelhas."
+        },
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 4,
+            "Dinheiro": -55
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 2,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As abelhas trabalharam sem pedir salário.",
+                "Os pomares agradecerão na próxima estação.",
+                "(+8 de Contentamento, +4 de População, -55 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +2 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, -1 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 254,
+        "dia_minimo": 18,
+        "falas": [
+            "Meu senhor, abelhas invadiram uma apresentação e pousaram no chapéu do juiz local.",
+            "Ele não se mexe há dez minutos e parece mais justo que nunca.",
+            "O apicultor pede calma e mel."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Retirar com cuidado.",
+            "opcao_segunda": "Declarar o chapéu sagrado.",
+            "opcao_terceira": "Espantar com gritos."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 15
+        },
+        "efeito_terceira": {
+            "Contentamento": -7,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As abelhas saíram sem guerra.",
+                "O juiz recuperou o chapéu e parte da alma.",
+                "(+4 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, +15 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-7 de Contentamento, -1 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 255,
+        "dia_minimo": 12,
+        "falas": [
+            "Meu senhor, uma costureira oferece consertar roupas de inverno dos pobres antes do frio.",
+            "Retalhos servem bem quando mãos sabem costurar.",
+            "Ela pede agulhas, linha e um canto iluminado."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Apoiar o mutirão.",
+            "opcao_segunda": "Dar só materiais.",
+            "opcao_terceira": "Não ajudar."
+        },
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 3,
+            "Dinheiro": -45
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -6,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O mutirão remendou roupas e dignidade.",
+                "O inverno encontrará menos buracos.",
+                "(+8 de Contentamento, +3 de População, -45 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-6 de Contentamento, -1 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 255,
+        "dia_minimo": 19,
+        "falas": [
+            "Meu senhor, um quimono cerimonial encolheu e agora só serve em um adolescente muito confuso.",
+            "A família nobre exige solução discreta.",
+            "A costureira diz que culpa a água, o tecido e talvez a lua."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Pagar ajuste novo.",
+            "opcao_segunda": "Transformar em prêmio juvenil.",
+            "opcao_terceira": "Negar responsabilidade."
+        },
+        "efeito_primeira": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -45
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 5
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O quimono virou prêmio de festival para jovens.",
+                "A família fingiu que sempre foi tradição.",
+                "(+3 de Contentamento, +0 de População, -45 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, +5 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 256,
+        "dia_minimo": 13,
+        "falas": [
+            "Meu senhor, um mestre de arquearia quer organizar torneio pacífico com alvos de palha.",
+            "O evento atrairá visitantes e disciplinará jovens.",
+            "Ele promete distância segura das barracas de comida."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Patrocinar o torneio.",
+            "opcao_segunda": "Permitir sem prêmio.",
+            "opcao_terceira": "Negar o torneio."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 2,
+            "Dinheiro": -70
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As flechas encontraram palha, aplausos e poucos sustos.",
+                "A vila ganhou competição sem briga.",
+                "(+7 de Contentamento, +2 de População, -70 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 256,
+        "dia_minimo": 20,
+        "falas": [
+            "Meu senhor, um arqueiro acertou sem querer uma melancia e agora todos querem repetir.",
+            "O dono das frutas não compartilha o entusiasmo.",
+            "O mestre pede uma solução antes que o mercado vire campo de batalha."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar frutas para alvo.",
+            "opcao_segunda": "Proibir alvos comestíveis.",
+            "opcao_terceira": "Deixar cada um pagar."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": -30
+        },
+        "efeito_segunda": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 20
+        },
+        "falas_pos": {
+            "1": [
+                "As frutas viraram alvos oficiais e sobremesa acidental.",
+                "O mercado nunca viu tanta pontaria pegajosa.",
+                "(+6 de Contentamento, +1 de População, -30 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +20 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 257,
+        "dia_minimo": 14,
+        "falas": [
+            "Meu senhor, uma fabricante de leques quer distribuir leques simples durante onda de calor.",
+            "Pessoas frescas discutem menos na fila do arroz.",
+            "Bambu barato resolve, seda não será necessária."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Distribuir leques.",
+            "opcao_segunda": "Vender a preço baixo.",
+            "opcao_terceira": "Não intervir."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 3,
+            "Dinheiro": -40
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": 25
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os leques espalharam vento e gratidão.",
+                "A praça parecia cheia de pequenas asas.",
+                "(+7 de Contentamento, +3 de População, -40 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, +25 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, -1 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 257,
+        "dia_minimo": 21,
+        "falas": [
+            "Meu senhor, um leque gigante de propaganda derrubou três chapéus e uma tigela de macarrão.",
+            "O fabricante chama isso de demonstração de potência.",
+            "Os atingidos chamam de almoço perdido."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Compensar os atingidos.",
+            "opcao_segunda": "Usar em espetáculo.",
+            "opcao_terceira": "Proibir leques grandes."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -20
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 20
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O leque gigante virou atração controlada.",
+                "O macarrão, infelizmente, não voltou ao prato.",
+                "(+4 de Contentamento, +0 de População, -20 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, +20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 258,
+        "dia_minimo": 15,
+        "falas": [
+            "Meu senhor, um comerciante de bambu quer fornecer cercas leves para hortas pequenas.",
+            "As cercas impedem animais e organizam quintais.",
+            "Ele pede compra em quantidade."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar cercas para hortas.",
+            "opcao_segunda": "Comprar metade.",
+            "opcao_terceira": "Recusar a compra."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 3,
+            "Dinheiro": -60
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": -25
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As hortas ganharam cercas retas e esperança verde.",
+                "Os legumes ficaram menos vulneráveis a cabras curiosas.",
+                "(+7 de Contentamento, +3 de População, -60 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, -25 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 258,
+        "dia_minimo": 22,
+        "falas": [
+            "Meu senhor, uma cabra aprendeu a abrir cercas de bambu com a testa.",
+            "Ela parece orgulhosa e os donos, derrotados.",
+            "O comerciante oferece travas novas."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar travas novas.",
+            "opcao_segunda": "Contratar vigia de cabras.",
+            "opcao_terceira": "Aceitar a superioridade da cabra."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -30
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As travas seguraram a cabra por enquanto.",
+                "Ela observa tudo como futura estrategista.",
+                "(+5 de Contentamento, +1 de População, -30 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, -1 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 259,
+        "dia_minimo": 16,
+        "falas": [
+            "Meu senhor, um relojoeiro de água quer instalar marcador de horas no pátio administrativo.",
+            "Isso ajudaria audiências a começar no tempo certo.",
+            "A água precisa ser limpa e constante."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Instalar o relógio de água.",
+            "opcao_segunda": "Testar por um mês.",
+            "opcao_terceira": "Manter sinos manuais."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": -75
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -25
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O relógio de água começou a pingar disciplina.",
+                "Algumas reuniões finalmente terminaram antes da fome.",
+                "(+6 de Contentamento, +1 de População, -75 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -25 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 259,
+        "dia_minimo": 23,
+        "falas": [
+            "Meu senhor, o relógio de água atrasou porque um sapo decidiu morar nele.",
+            "O sapo mantém expressão oficial e não aceita remoção verbal.",
+            "O relojoeiro pede autoridade."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Remover o sapo com cuidado.",
+            "opcao_segunda": "Nomear sapo assistente.",
+            "opcao_terceira": "Desmontar o relógio."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -5
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": -20
+        },
+        "falas_pos": {
+            "1": [
+                "O sapo foi removido sem incidente diplomático.",
+                "O tempo voltou a escorrer sozinho.",
+                "(+4 de Contentamento, +0 de População, -5 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, -20 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 260,
+        "dia_minimo": 17,
+        "falas": [
+            "Meu senhor, uma família quer abrir pequena escola de contas para filhos de comerciantes.",
+            "Mais gente sabendo somar reduz brigas no mercado.",
+            "O professor pede tábuas, pincéis e arroz."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Apoiar a escola de contas.",
+            "opcao_segunda": "Cobrar mensalidade baixa.",
+            "opcao_terceira": "Negar a escola."
+        },
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 3,
+            "Dinheiro": -65
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": 15
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A escola começou com contas simples e muita testa franzida.",
+                "O mercado terá menos discussões sobre troco.",
+                "(+8 de Contentamento, +3 de População, -65 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, +15 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 260,
+        "dia_minimo": 24,
+        "falas": [
+            "Meu senhor, um aluno provou que três bolinhos podem virar dois se ele comer um durante a conta.",
+            "Tecnicamente ele não mentiu, mas o professor está exausto.",
+            "Pedem uma punição ou uma sobremesa."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Dar lição extra.",
+            "opcao_segunda": "Transformar em aula prática.",
+            "opcao_terceira": "Expulsar o guloso."
+        },
+        "efeito_primeira": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -5
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A aula prática ensinou matemática e vigilância de bolinhos.",
+                "O aluno continua suspeito perto de comida.",
+                "(+3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, -5 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 261,
+        "dia_minimo": 18,
+        "falas": [
+            "Meu senhor, um fabricante de papel quer recolher fibras de amoreira nas aldeias.",
+            "Com isso, o feudo dependerá menos de comerciantes distantes.",
+            "A coleta precisa ser organizada para não prejudicar plantações."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Organizar a coleta.",
+            "opcao_segunda": "Comprar fibras prontas.",
+            "opcao_terceira": "Ignorar a proposta."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 2,
+            "Dinheiro": -45
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": -35
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A coleta começou com cuidado e cestos bem marcados.",
+                "O papel local terá origem conhecida.",
+                "(+7 de Contentamento, +2 de População, -45 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, -35 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 261,
+        "dia_minimo": 5,
+        "falas": [
+            "Meu senhor, folhas de papel recém-feitas voaram pelo pátio e cobriram um conselheiro inteiro.",
+            "Ele continua falando como se nada tivesse acontecido.",
+            "O fabricante pede desculpas e pedras para prensar."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar pesos de prensagem.",
+            "opcao_segunda": "Declarar o conselheiro uma carta viva.",
+            "opcao_terceira": "Punir o descuido."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -15
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 10
+        },
+        "falas_pos": {
+            "1": [
+                "Os pesos seguraram o papel no lugar.",
+                "O conselheiro foi libertado de sua carreira como pergaminho.",
+                "(+4 de Contentamento, +0 de População, -15 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +10 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 262,
+        "dia_minimo": 19,
+        "falas": [
+            "Meu senhor, um oleiro especializado em telhas quer produzir reservas contra tempestades.",
+            "Telhas prontas permitem conserto rápido após vento forte.",
+            "O estoque ocupará espaço seco."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Produzir reserva de telhas.",
+            "opcao_segunda": "Produzir lote pequeno.",
+            "opcao_terceira": "Não fazer estoque."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 2,
+            "Dinheiro": -70
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": -30
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": -1,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As telhas foram empilhadas como escamas de proteção.",
+                "A próxima tempestade encontrará resposta pronta.",
+                "(+7 de Contentamento, +2 de População, -70 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, -30 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, -1 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 262,
+        "dia_minimo": 6,
+        "falas": [
+            "Meu senhor, uma telha pintada com rosto bravo espantou um ladrão supersticioso.",
+            "Agora os moradores querem rostos em todos os telhados.",
+            "O oleiro pede tinta e permissão."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Pintar rostos em algumas telhas.",
+            "opcao_segunda": "Vender telhas decoradas.",
+            "opcao_terceira": "Proibir rostos no telhado."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": 35
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As telhas carrancudas vigiam a vila do alto.",
+                "Nem a chuva parece confortável.",
+                "(+6 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +0 de População, +35 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 263,
+        "dia_minimo": 20,
+        "falas": [
+            "Meu senhor, uma cozinheira quer criar estoque de picles para meses frios.",
+            "Legumes preservados evitam fome e desperdício.",
+            "O cheiro no depósito, porém, será inesquecível."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Preparar grande estoque.",
+            "opcao_segunda": "Preparar estoque menor.",
+            "opcao_terceira": "Não preparar picles."
+        },
+        "efeito_primeira": {
+            "Contentamento": 8,
+            "Populacao": 4,
+            "Dinheiro": -50
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 2,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": -2,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os jarros de picles foram alinhados como soldados azedos.",
+                "O inverno terá sabor forte.",
+                "(+8 de Contentamento, +4 de População, -50 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +2 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, -2 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 263,
+        "dia_minimo": 7,
+        "falas": [
+            "Meu senhor, um jarro de picles explodiu durante reunião e perfumou todos os documentos.",
+            "Ninguém consegue discutir seriamente cheirando a nabo fermentado.",
+            "A cozinheira pede novos jarros."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar jarros melhores.",
+            "opcao_segunda": "Transformar em piada oficial.",
+            "opcao_terceira": "Banir picles do castelo."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -25
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Jarros melhores foram comprados e a reunião respirou aliviada.",
+                "Os documentos ainda guardam certa acidez.",
+                "(+4 de Contentamento, +0 de População, -25 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 264,
+        "dia_minimo": 21,
+        "falas": [
+            "Meu senhor, um entalhador quer fazer pequenas estátuas protetoras para cruzamentos perigosos.",
+            "Ele diz que viajantes respeitam mais a estrada quando há rosto olhando.",
+            "Madeira boa evitará rachaduras."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Encomendar as estátuas.",
+            "opcao_segunda": "Fazer só nos piores caminhos.",
+            "opcao_terceira": "Dispensar as estátuas."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 2,
+            "Dinheiro": -55
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As estátuas surgiram nos cruzamentos com olhos atentos.",
+                "Até os apressados diminuíram o passo.",
+                "(+6 de Contentamento, +2 de População, -55 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 264,
+        "dia_minimo": 8,
+        "falas": [
+            "Meu senhor, uma estátua nova ficou parecida demais com o cobrador local.",
+            "Viajantes estão deixando moedas por medo de serem taxados por madeira.",
+            "O entalhador oferece corrigir o nariz."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Corrigir a estátua.",
+            "opcao_segunda": "Aproveitar as doações.",
+            "opcao_terceira": "Remover a estátua."
+        },
+        "efeito_primeira": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": 30
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O nariz foi corrigido e o cobrador recuperou exclusividade.",
+                "As moedas pararam de temer madeira.",
+                "(+3 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +0 de População, +30 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 265,
+        "dia_minimo": 22,
+        "falas": [
+            "Meu senhor, um mestre de bonsai quer ensinar paciência aos jovens através de árvores pequenas.",
+            "Ele afirma que quem cuida de galho pensa antes de agir.",
+            "Os jovens afirmam que árvores pequenas ainda são árvores."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Patrocinar aulas de bonsai.",
+            "opcao_segunda": "Fazer oficina curta.",
+            "opcao_terceira": "Recusar a ideia."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 2,
+            "Dinheiro": -40
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": -15
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "As aulas começaram lentas, como esperado.",
+                "Alguns jovens descobriram que paciência também cresce torta.",
+                "(+5 de Contentamento, +2 de População, -40 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, -15 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 265,
+        "dia_minimo": 9,
+        "falas": [
+            "Meu senhor, um bonsai premiado foi confundido com arbusto comum e quase varrido do salão.",
+            "O mestre está pálido e a vassoura, culpada.",
+            "Ele pede uma placa de aviso."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Fazer placa elegante.",
+            "opcao_segunda": "Colocar guarda no bonsai.",
+            "opcao_terceira": "Rir do tamanho dele."
+        },
+        "efeito_primeira": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -20
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A placa salvou a pequena árvore de grandes mal-entendidos.",
+                "A vassoura foi aposentada daquele canto.",
+                "(+4 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -20 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 266,
+        "dia_minimo": 23,
+        "falas": [
+            "Meu senhor, um fabricante de sandálias quer montar oficina para consertos rápidos no mercado.",
+            "Pés confortáveis viajam mais e reclamam menos.",
+            "Ele pede licença para ocupar uma esquina."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Autorizar a oficina.",
+            "opcao_segunda": "Autorizar em rua lateral.",
+            "opcao_terceira": "Negar a licença."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 2,
+            "Dinheiro": 25
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": 10
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A oficina abriu com cheiro de palha nova.",
+                "O mercado caminhou melhor.",
+                "(+6 de Contentamento, +2 de População, +25 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, +10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 266,
+        "dia_minimo": 10,
+        "falas": [
+            "Meu senhor, sandálias recém-feitas rangem como grilos ofendidos.",
+            "Os compradores não sabem se usam nos pés ou em serenatas.",
+            "O fabricante pede tempo para trocar as tiras."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Permitir ajustes gratuitos.",
+            "opcao_segunda": "Vender como sandália musical.",
+            "opcao_terceira": "Fechar a oficina."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -20
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 0,
+            "Dinheiro": 30
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os ajustes silenciaram a maioria dos grilos.",
+                "Alguns clientes sentiram falta do ritmo.",
+                "(+5 de Contentamento, +1 de População, -20 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +0 de População, +30 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 267,
+        "dia_minimo": 24,
+        "falas": [
+            "Meu senhor, um guardião do armazém quer marcar sacos de arroz com símbolos grandes.",
+            "Isso evitaria trocas entre aldeias durante entregas.",
+            "Tinta barata basta, mas precisa de tempo."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Marcar todos os sacos.",
+            "opcao_segunda": "Marcar só os maiores.",
+            "opcao_terceira": "Não marcar nada."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -25
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": -10
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os sacos ganharam símbolos claros.",
+                "Menos aldeias discutirão com grãos inocentes.",
+                "(+5 de Contentamento, +1 de População, -25 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, -10 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 267,
+        "dia_minimo": 11,
+        "falas": [
+            "Meu senhor, um saco de arroz foi marcado com desenho de rosto sorridente e virou favorito das crianças.",
+            "Agora ninguém quer abrir o saco para cozinhar.",
+            "O guardião pede decisão prática."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Abrir mesmo assim.",
+            "opcao_segunda": "Guardar como mascote.",
+            "opcao_terceira": "Leiloar o saco sorridente."
+        },
+        "efeito_primeira": {
+            "Contentamento": 2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "efeito_segunda": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -15
+        },
+        "efeito_terceira": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": 40
+        },
+        "falas_pos": {
+            "1": [
+                "O saco sorridente virou mascote temporário.",
+                "A fome respeitou a arte por um dia.",
+                "(+2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+5 de Contentamento, +1 de População, -15 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(+3 de Contentamento, +0 de População, +40 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 268,
+        "dia_minimo": 5,
+        "falas": [
+            "Meu senhor, uma família de tintureiros quer usar cascas locais para criar tecido marrom resistente.",
+            "A cor não é luxuosa, mas aguenta trabalho pesado.",
+            "Eles pedem compra inicial do feudo."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Comprar o tecido resistente.",
+            "opcao_segunda": "Comprar lote pequeno.",
+            "opcao_terceira": "Recusar o tecido."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 2,
+            "Dinheiro": -60
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 1,
+            "Dinheiro": -25
+        },
+        "efeito_terceira": {
+            "Contentamento": -3,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "O tecido marrom entrou em uso nas tarefas duras.",
+                "Nem tudo precisa brilhar para servir bem.",
+                "(+6 de Contentamento, +2 de População, -60 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +1 de População, -25 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 268,
+        "dia_minimo": 12,
+        "falas": [
+            "Meu senhor, um tintureiro caiu no barril e saiu da cor de uma ameixa furiosa.",
+            "A vila inteira viu e agora chama a cor de coragem roxa.",
+            "Ele pede permissão para vender o tom."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Apoiar a coragem roxa.",
+            "opcao_segunda": "Vender discretamente.",
+            "opcao_terceira": "Proibir a cor."
+        },
+        "efeito_primeira": {
+            "Contentamento": 6,
+            "Populacao": 1,
+            "Dinheiro": 35
+        },
+        "efeito_segunda": {
+            "Contentamento": 3,
+            "Populacao": 0,
+            "Dinheiro": 15
+        },
+        "efeito_terceira": {
+            "Contentamento": -2,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A coragem roxa apareceu em faixas e risadas.",
+                "O tintureiro nunca esteve tão colorido.",
+                "(+6 de Contentamento, +1 de População, +35 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+3 de Contentamento, +0 de População, +15 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 269,
+        "dia_minimo": 6,
+        "falas": [
+            "Meu senhor, um mestre de cerimônias quer organizar concurso de haicais sobre a primeira neve.",
+            "Isso trará poetas, estudantes e velhos críticos ao pátio.",
+            "Prêmios simples bastam."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Patrocinar o concurso.",
+            "opcao_segunda": "Permitir sem prêmio.",
+            "opcao_terceira": "Cancelar a poesia."
+        },
+        "efeito_primeira": {
+            "Contentamento": 7,
+            "Populacao": 2,
+            "Dinheiro": -35
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 1,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "Os haicais cobriram a praça antes da neve.",
+                "Alguns versos foram melhores que outros, mas todos couberam.",
+                "(+7 de Contentamento, +2 de População, -35 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +1 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 269,
+        "dia_minimo": 13,
+        "falas": [
+            "Meu senhor, um poeta escreveu haicai tão ruim que os pardais fugiram do telhado.",
+            "Ele insiste que a natureza apenas ficou emocionada.",
+            "O mestre de cerimônias pede julgamento."
+        ],
+        "qtd_escolhas": {
+            "opcao_primeira": "Premiar pela coragem.",
+            "opcao_segunda": "Dar menção cômica.",
+            "opcao_terceira": "Banir o poeta."
+        },
+        "efeito_primeira": {
+            "Contentamento": 5,
+            "Populacao": 1,
+            "Dinheiro": -5
+        },
+        "efeito_segunda": {
+            "Contentamento": 4,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "efeito_terceira": {
+            "Contentamento": -5,
+            "Populacao": 0,
+            "Dinheiro": 0
+        },
+        "falas_pos": {
+            "1": [
+                "A menção cômica salvou a honra e os pardais.",
+                "O poeta prometeu escrever menos alto.",
+                "(+5 de Contentamento, +1 de População, -5 de Dinheiro)"
+            ],
+            "2": [
+                "A opção moderada foi seguida sem grande alarde.",
+                "Nem todos celebraram, mas a ordem se manteve.",
+                "(+4 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ],
+            "3": [
+                "A decisão mais dura foi registrada.",
+                "O povo aceitará, mas lembrará do ocorrido.",
+                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+            ]
+        }
+    },
+    {
+        "sprite": 229,
+        "dia_minimo": 7,
+
+        "falas": [
+            "Eu e os outros caçadores relatam ter visto um enorme lobo branco próximo das fazendas.",
+            "Os moradores temem sair de casa durante a noite."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Organizar uma caça",
+            "opcao_segunda": "Ignorar os relatos"
+        },
+
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 0, "Dinheiro": -90},
+        "efeito_segunda": {"Contentamento": -12, "Populacao": -15, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Os caçadores retornam celebrando enquanto carregam peles e presas.",
+                "(+8 de Contentamento, -90 de Dinheiro)"
+            ],
+
+            2: [
+                "Durante a noite, animais desaparecem dos celeiros e o medo cresce.",
+                "(-12 de Contentamento, -15 de População)"
+            ]
+        }
+
+    },
+    
+    {
+        "sprite": 270,
+        "dia_minimo": 7,
+
+        "falas": [
+            "Uma nova ponte pode ser construída ligando Takayama a vilas comerciais próximas.",
+            "Mercadores afirmam que o comércio crescerá rapidamente."
+        ],
+
+        "qtd_escolhas": {
+            "opcao_primeira": "Construir a ponte",
+            "opcao_segunda": "Não construir"
+        },
+
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 20, "Dinheiro": -250},
+        "efeito_segunda": {"Contentamento": -8, "Populacao": 0, "Dinheiro": 0},
+
+        "falas_pos": {
+            1: [
+                "Mercadores atravessam a nova ponte trazendo riqueza para Hida.",
+                "(+10 de Contentamento, +20 de População, -250 de Dinheiro)"
+            ],
+
+            2: [
+                "As caravanas continuam evitando as estradas perigosas da região.",
+                "(-8 de Contentamento)"
+            ]
+        }
+
     }
-
-]
-
+ ] 
 rect_limite = pg.Rect(17, 248, 343, 634)
 
 def cortar_transparencia(surface):
