@@ -598,8 +598,6 @@ sprites = {
     268: spr268,
     269: spr269,
     270: spr270,
-
-    # EVENTOS LUCAS COM PERSONAGENS REPETIDOS
     271: spr271,
     272: spr272,
     273: spr273,
@@ -666,10 +664,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 2,
-        "dia_minimo": 1,
+        "dia_minimo": 34,
         "falas": [
             "Olá, sou Raiden, também conhecida como arconte Electro!",
             "Venho até você pedir ajuda para alcançar a eternidade.",
@@ -680,27 +677,26 @@ eventos = [
             "opcao_primeira": "Ajudar",
             "opcao_segunda": "Recusar"
         },
-        "efeito_primeira": {"Contentamento": -15, "Populacao": 10, "Dinheiro": 50},
-        "efeito_segunda": {"Contentamento": 10, "Populacao": -15, "Dinheiro": -20},
+        "efeito_primeira": {"Contentamento": -13, "Populacao": 10, "Dinheiro": 50},
+        "efeito_segunda": {"Contentamento": 10, "Populacao": -12, "Dinheiro": -35},
         "falas_pos": {
             1: [
                 "Agradeço pela ajuda mortal, juntos conquistaremos a eternidade e traremos paz para Inazuma",
                 "Irei deixar alguns de meus súditos e um pouco de dinheiro para você!",
-                "(-15 de Contentamento, +10 de População, +50 de Dinheiro)"
+                "(-13 de Contentamento, +10 de Populacao, +50 de Dinheiro)"
             ],
             2: [
                 "MUSOU",
                 "NO",
                 "HITOTACHI!",
                 "(Você sente a terra estremecer)",
-                "(+10 de Contentamento, -15 de População, -20 de Dinheiro)"
+                "(+10 de Contentamento, -12 de Populacao, -35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 3,
-        "dia_minimo": 2,
+        "dia_minimo": 43,
         "falas": [
             "Olá humano, eu vim oferecer um pacto...",
             "Eu lhe darei riquezas e prosperidade, porém irei levar uma parte de almas comigo... ",
@@ -710,13 +706,13 @@ eventos = [
             "opcao_primeira": "Aceitar",
             "opcao_segunda": "Recusar"
         },
-        "efeito_primeira": {"Contentamento": -20, "Populacao": -40, "Dinheiro": 500},
+        "efeito_primeira": {"Contentamento": -20, "Populacao": -35, "Dinheiro": 300},
         "efeito_segunda": {"Contentamento": 20, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Adeus humano, foi um prazer fazer negócios com você!",
                 "Faça bom proveito de suas riquezas, até a próxima...",
-                "(-20 de Contentamento, -40 de População, +500 de Dinheiro)"
+                "(-20 de Contentamento, -35 de Populacao, +300 de Dinheiro)"
             ],
             2: [
                 "Ah, entendo. Você prefere manter sua alma intacta, não é?",
@@ -725,10 +721,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 4,
-        "dia_minimo": 1,
+        "dia_minimo": 75,
         "falas": [
             "Das árvores antigas veio uma yokai, trazendo nos olhos a pressa de quem viu a floresta adoecer.",
             "A floresta próxima está sendo destruída por madeireiros e caçadores...",
@@ -746,7 +741,7 @@ eventos = [
                 "Muito obrigado por sua ajuda, senhor.",
                 "A floresta e seus habitantes ficarão muito gratos por sua decisão!",
                 "Espero que possamos contar com seu apoio no futuro.",
-                "(-5 de Contentamento, +30 de População)"
+                "(-5 de Contentamento, +30 de Populacao)"
             ],
             2: [
                 "Ah, entendo. Você prefere não se envolver, não é? Bem, até a próxima... ",
@@ -754,10 +749,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 5,
-        "dia_minimo": 2,
+        "dia_minimo": 16,
         "falas": [
             "Olá senhor, sou Gorobei, o sapo monge.",
             "Os sapos de nosso reino não estão lavando seus pés.",
@@ -777,11 +771,11 @@ eventos = [
                 "Serei eternamente grato a você senhor.",
                 "Se precisar da ajuda dos sapos não hesite em pedir.",
                 "Que Takayama prospere.",
-                "(+10 de Contentamento, +10 de População, -100 de Dinheiro)"
+                "(+10 de Contentamento, +10 de Populacao, -100 de Dinheiro)"
             ],
             2: [
                 "Agradeço, senhor.",
-                "(+5 de Contentamento, +10 de População, -50 de Dinheiro)"
+                "(+5 de Contentamento, +10 de Populacao, -50 de Dinheiro)"
             ],
             3: [
                 "Não acredito que achei que você fosse diferente dos outros tiranos... ",
@@ -789,10 +783,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 6,
-        "dia_minimo": 3,
+        "dia_minimo": 62,
         "falas": [
             "Um construtor se apresenta ao salão com plantas, ferramentas e pressa para começar uma obra.",
             "Posso construir casas, pontes, estradas e muito mais. Se precisar de algo, é só me chamar!",
@@ -804,18 +797,18 @@ eventos = [
             "opcao_terceira": "Recusar"
         },
         "efeito_primeira": {"Contentamento": 10, "Populacao": 25, "Dinheiro": -100},
-        "efeito_segunda": {"Contentamento": 5, "Populacao": 10, "Dinheiro": -50},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 10, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Agradeço a confiança, senhor. Entregarei as casas o mais rápido possível!",
                 "Glória a Takayama",
-                "(+10 de Contentamento, +25 de População, -100 de Dinheiro)"
+                "(+10 de Contentamento, +25 de Populacao, -100 de Dinheiro)"
             ],
             2: [
                 "Agradeço a confiança, senhor. Entregarei a ponte o mais rápido possível!",
                 "Glória a Takayama",
-                "(+5 de Contentamento, +10 de População, -50 de Dinheiro)"
+                "(+5 de Contentamento, +10 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Entendo sua decisão. Espero que reconsidere no futuro.",
@@ -823,10 +816,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 7,
-        "dia_minimo": 3,
+        "dia_minimo": 8,
         "falas": [
             "Um monge atravessou os portões antes do amanhecer, dizendo que a cidade corre perigo.",
             "A cidade está sendo atacada por demônios e preciso de seu apoio para enfrentar essa ameaça.",
@@ -836,13 +828,13 @@ eventos = [
             "opcao_primeira": "Aceitar a missão",
             "opcao_segunda": "Recusar"
         },
-        "efeito_primeira": {"Contentamento": 15, "Populacao": 20, "Dinheiro": -100},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 5, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Farei de tudo para proteger nossa cidade senhor, você não irá se arrepender dessa decisão!",
                 "Glória a Takayama",
-                "(+15 de Contentamento, +20 de População, -100 de Dinheiro)"
+                "(+8 de Contentamento, +5 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Você ainda há de se arrepender muito por essa decisão... ",
@@ -850,7 +842,6 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 8,
         "dia_minimo": 2,
@@ -863,24 +854,23 @@ eventos = [
             "opcao_primeira": "Contratá-lo",
             "opcao_segunda": "Recusar proposta"
         },
-        "efeito_primeira": {"Contentamento": -5, "Populacao": 1, "Dinheiro": -100},
+        "efeito_primeira": {"Contentamento": -5, "Populacao": 1, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 5, "Populacao": -5, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Provarei que todos estão errados sobre mim!",
                 "Você não irá se arrepender, nunca desapontei um mestre.",
-                "(-5 de Contentamento, +1 de População, -100 de Dinheiro)"
+                "(-5 de Contentamento, +1 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Bom, não venha se queixar se algumas informações de seu reino vazarem!",
-                "(+5 de Contentamento, -5 de População)"
+                "(+5 de Contentamento, -5 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 9,
-        "dia_minimo": 3,
+        "dia_minimo": 36,
         "falas": [
             "Um mercador abriu baús diante do trono, exibindo armas, armaduras e mercadorias de muitas estradas.",
             "Você está interessado em algo específico?"
@@ -891,18 +881,18 @@ eventos = [
             "opcao_terceira": "Recusar"
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 10, "Dinheiro": -50},
-        "efeito_segunda": {"Contentamento": 10, "Populacao": 20, "Dinheiro": -100},
+        "efeito_segunda": {"Contentamento": 10, "Populacao": 12, "Dinheiro": -100},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Aqui estão! Tome cuidado ao manuseá-las!",
                 "O nome de Takayama seguirá adiante.",
-                "(+5 de Contentamento, +10 de População, -50 de Dinheiro)"
+                "(+5 de Contentamento, +10 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "Aqui estão! Com elas ganharemos a luta contra o mal!",
                 "Hoje, Takayama tem motivo para celebrar.",
-                "(+10 de Contentamento, +20 de População, -100 de Dinheiro)"
+                "(+10 de Contentamento, +12 de Populacao, -100 de Dinheiro)"
             ],
             3: [
                 "Entendido. Caso surja a necessidade basta me contatar meu senhor!",
@@ -911,10 +901,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 10,
-        "dia_minimo": 4,
+        "dia_minimo": 35,
         "falas": [
             "Um onmyoji pediu silêncio no salão antes de anunciar que tempos sombrios se aproximam.",
             "Posso expurgar espíritos malignos e proteger a cidade de ameaças sobrenaturais.",
@@ -924,25 +913,24 @@ eventos = [
             "opcao_primeira": "Contratar para expurgar os espíritos malignos",
             "opcao_segunda": "Recusar"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 20, "Dinheiro": -100},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 12, "Dinheiro": -100},
         "efeito_segunda": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Nenhuma alma vil se aproximará deste reino, meu senhor, tem minha garantia!",
                 "Hoje, Takayama tem motivo para celebrar.",
-                "(+10 de Contentamento, +20 de População, -100 de Dinheiro)"
+                "(+10 de Contentamento, +12 de Populacao, -100 de Dinheiro)"
             ],
             2: [
                 "Se você pudesse ouvir os espíritos saberia do erro que está cometendo!",
                 "(Você sente um calafrio em sua espinha)",
-                "(+5 de Contentamento)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 11,
-        "dia_minimo": 4,
+        "dia_minimo": 22,
         "falas": [
             "O alquimista deixou sobre a mesa frascos coloridos e promessas difíceis de ignorar.",
             "Posso criar poções e elixires que podem ajudar a cidade, você precisa de alguma coisa específica?"
@@ -952,19 +940,19 @@ eventos = [
             "opcao_segunda": "Comprar poções de força",
             "opcao_terceira": "Recusar"
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 10, "Dinheiro": -25},
-        "efeito_segunda": {"Contentamento": 10, "Populacao": 20, "Dinheiro": -50},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 10, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 10, "Populacao": 12, "Dinheiro": -50},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Aqui estão, senhor. Caso precise de mais, sabe onde me encontrar.",
                 "Que os céus protejam Takayama.",
-                "(+5 de Contentamento, +10 de População, -25 de Dinheiro)"
+                "(+5 de Contentamento, +10 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "Aqui estão, senhor. Caso precise de mais, sabe onde me encontrar.",
                 "Esta vitória pertence a Takayama.",
-                "(+10 de Contentamento, +20 de População, -50 de Dinheiro)"
+                "(+10 de Contentamento, +12 de Populacao, -50 de Dinheiro)"
             ],
             3: [
                 "Que pena! Se mudar de ideia sabe onde me encontrar.",
@@ -972,7 +960,6 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 12,
         "dia_minimo": 10,
@@ -1009,7 +996,6 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 13,
         "dia_minimo": 1,
@@ -1035,10 +1021,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 14,
-        "dia_minimo": 2,
+        "dia_minimo": 1,
         "falas": [
             "Lembra de mim?",
             "Aqui estão os tesouros que havia prometido! Espero que ainda possamos trabalhar juntos!"
@@ -1060,10 +1045,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 15,
-        "dia_minimo": 3,
+        "dia_minimo": 45,
         "falas": [
             "Caro shogun, sou uma herbista que vive na floresta próxima. ",
             "Tenho uma grande variedade de ervas medicinais que podem ser usadas para criar poções e remédios para a cidade. ",
@@ -1075,33 +1059,32 @@ eventos = [
             "opcao_terceira": "Fazer parceria para criar um hospital",
             "opcao_quarta": "Recusar"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 5, "Dinheiro": -20},
-        "efeito_segunda": {"Contentamento": 15, "Populacao": 10, "Dinheiro": -50},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 5, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 15, "Populacao": 10, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": 20, "Populacao": 15, "Dinheiro": -100},
         "efeito_quarta": {"Contentamento": -5, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Agradeço, senhor. Essas ervas serão muito úteis para a cidade!",
-                "(+10 de Contentamento, +5 de População, -20 de Dinheiro)"
+                "(+10 de Contentamento, +5 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Ótima decisão. Cuidarei dos cidadãos com carinho e dedicação!",
-                "(+15 de Contentamento, +10 de População, -50 de Dinheiro)"
+                "(+15 de Contentamento, +10 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Excelente decisão. Farei o possível para erguer um hospital digno de Takayama!",
-                "(+20 de Contentamento, +15 de População, -100 de Dinheiro)"
+                "(+20 de Contentamento, +15 de Populacao, -100 de Dinheiro)"
             ],
             4: [
                 "Entendo. Talvez outra ocasião seja mais favorável...",
-                "( -5 de Contentamento,  -2 de População)"
+                "(-5 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 16,
-        "dia_minimo": 1,
+        "dia_minimo": 14,
         "falas": [
             "Com licença shogun, sou um treinador de falcões e venho até você para oferecer meus serviços.",
             "Posso treinar falcões para ajudar na defesa da cidade, ou para caçar presas para a população. O que acha?"
@@ -1115,17 +1098,16 @@ eventos = [
         "falas_pos": {
             1: [
                 "Agradeço, senhor. Meus falcões serão muito úteis para a cidade!",
-                "(5 de Contentamento, 1 de População, -45 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "Entendo, talvez não seja a melhor hora..."
             ]
         }
     },
-
     {
         "sprite": 17,
-        "dia_minimo": 3,
+        "dia_minimo": 38,
         "falas": [
             "O argilista trouxe as mãos marcadas de barro e uma proposta para embelezar Takayama.",
             "Posso criar belas esculturas e obras de arte para decorar a cidade, ou posso criar utensílios de cerâmica para uso diário. O que acha?"
@@ -1136,22 +1118,22 @@ eventos = [
             "opcao_terceira": "Fazer parceria para criar um museu",
             "opcao_quarta": "Recusar"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 1, "Dinheiro": -30},
-        "efeito_segunda": {"Contentamento": 15, "Populacao": 5, "Dinheiro": -50},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 1, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 15, "Populacao": 5, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": 20, "Populacao": 10, "Dinheiro": -100},
         "efeito_quarta": {"Contentamento": -10, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Agradeço, senhor. Minhas obras trarão beleza e cultura para a cidade!",
-                "(+10 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+10 de Contentamento, +1 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Agradeço, senhor. Meus utensílios de cerâmica serão úteis para a população!",
-                "(+15 de Contentamento, +5 de População, -50 de Dinheiro)"
+                "(+15 de Contentamento, +5 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Agradeço, senhor. Nossa parceria criará um museu digno da cidade!",
-                "(+20 de Contentamento, +10 de População, -100 de Dinheiro)"
+                "(+20 de Contentamento, +10 de Populacao, -100 de Dinheiro)"
             ],
             4: [
                 "Entendo. Talvez outra ocasião seja mais favorável...",
@@ -1159,7 +1141,6 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 18,
         "dia_minimo": 4,
@@ -1184,10 +1165,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 19,
-        "dia_minimo": 1,
+        "dia_minimo": 26,
         "falas": [
             "Com licença shogun, sou uma caçadora.",
             "Vim até você oferecer meus serviços para caçar animais selvagens que estão ameaçando a população da cidade. O que acha?"
@@ -1196,24 +1176,23 @@ eventos = [
             "opcao_primeira": "Aceitar",
             "opcao_segunda": "Recusar"
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -20},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": -5, "Populacao": -10, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Agradeço, senhor. Minha caça ajudará a proteger a população da cidade!",
-                "(+5 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "Entendo. Talvez outra ocasião seja mais favorável...",
                 "(As feras atacam alguns cidadãos)",
-                "(-5 de Contentamento, -10 de População)"
+                "(-5 de Contentamento, -10 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 20,
-        "dia_minimo": 3,
+        "dia_minimo": 33,
         "falas": [
             "Olá caro shogun, sou um pintor e vim oferecer meus serviços a ti.",
             "Posso criar belas pinturas para decorar a cidade, ou posso criar retratos de pessoas importantes para a história da cidade.",
@@ -1224,17 +1203,17 @@ eventos = [
             "opcao_segunda": "Contratar para criar retratos",
             "opcao_terceira": "Recusar"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 1, "Dinheiro": -30},
-        "efeito_segunda": {"Contentamento": 15, "Populacao": 1, "Dinheiro": -45},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 1, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 13, "Populacao": 1, "Dinheiro": -45},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Agradeço, senhor. Minhas pinturas trarão beleza e cultura para a cidade!",
-                "(+10 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+10 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "Agradeço, senhor. Meus retratos guardarão a memória da cidade!",
-                "(+15 de Contentamento, +1 de População, -45 de Dinheiro)"
+                "(+13 de Contentamento, +1 de Populacao, -45 de Dinheiro)"
             ],
             3: [
                 "Entendo. Talvez outra ocasião seja mais favorável...",
@@ -1242,7 +1221,6 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 21,
         "dia_minimo": 3,
@@ -1258,30 +1236,29 @@ eventos = [
             "opcao_terceira": "Selar os locais"
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 5, "Dinheiro": -40},
-        "efeito_segunda": {"Contentamento": -10, "Populacao": -5, "Dinheiro": 0},
+        "efeito_segunda": {"Contentamento": -8, "Populacao": -5, "Dinheiro": 0},
         "efeito_terceira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -20},
         "falas_pos": {
             1: [
                 "Os trabalhadores encontraram antigos túneis esquecidos abaixo da cidade.",
                 "Ao menos agora o povo conseguirá dormir em paz.",
-                "(+5 de Contentamento, +5 de População, -40 de Dinheiro)"
+                "(+5 de Contentamento, +5 de Populacao, -40 de Dinheiro)"
             ],
             2: [
                 "As batidas continuaram pelas próximas noites.",
                 "Muitos moradores começaram a abandonar a região.",
-                "(-10 de Contentamento, -5 de População)"
+                "(-8 de Contentamento, -5 de Populacao)"
             ],
             3: [
                 "Os acessos foram fechados rapidamente.",
                 "Mesmo assim... as batidas continuam.",
-                "(0 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(-20 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 22,
-        "dia_minimo": 5,
+        "dia_minimo": 86,
         "falas": [
             "Shogun, dois grupos de samurais começaram uma briga dentro de uma taverna.",
             "O motivo parece ter sido uma discussão sobre qual clã possui a melhor escola de espada.",
@@ -1294,7 +1271,7 @@ eventos = [
             "opcao_terceira": "Ignorar o caso"
         },
         "efeito_primeira": {"Contentamento": 8, "Populacao": 0, "Dinheiro": 10},
-        "efeito_segunda": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -12, "Populacao": -5, "Dinheiro": 0},
         "falas_pos": {
             1: [
@@ -1303,18 +1280,17 @@ eventos = [
             ],
             2: [
                 "Os donos da taverna agradeceram profundamente pela ajuda.",
-                "(+5 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Outras tavernas começaram a registrar confusões parecidas.",
-                "(-12 de Contentamento, -5 de População)"
+                "(-12 de Contentamento, -5 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 23,
-        "dia_minimo": 6,
+        "dia_minimo": 44,
         "falas": [
             "Um grupo de crianças começou a desaparecer das aulas do templo.",
             "Após investigação, descobrimos que elas estão fugindo para assistir lutas clandestinas perto do rio.",
@@ -1326,29 +1302,28 @@ eventos = [
             "opcao_segunda": "Cobrar impostos das apostas",
             "opcao_terceira": "Permitir os eventos"
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 5, "Dinheiro": -15},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 5, "Dinheiro": -80},
         "efeito_segunda": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 60},
         "efeito_terceira": {"Contentamento": -12, "Populacao": -8, "Dinheiro": 20},
         "falas_pos": {
             1: [
                 "Os combates ilegais foram encerrados.",
                 "Os monges elogiaram sua decisão.",
-                "(+5 de Contentamento, +5 de População, -15 de Dinheiro)"
+                "(+5 de Contentamento, +5 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "As apostas continuaram, agora sob supervisão do castelo.",
-                "( -5 de Contentamento, +60 de Dinheiro)"
+                "(-5 de Contentamento, +60 de Dinheiro)"
             ],
             3: [
                 "As lutas cresceram rapidamente e vários jovens se machucaram.",
-                "(-12 de Contentamento, -8 de População, +20 de Dinheiro)"
+                "(-12 de Contentamento, -8 de Populacao, +20 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 24,
-        "dia_minimo": 8,
+        "dia_minimo": 14,
         "falas": [
             "Shogun, acabei de criar um novo prato utilizando peixe cru.",
             "Alguns nobres ficaram curiosos...",
@@ -1360,14 +1335,14 @@ eventos = [
             "opcao_segunda": "Testar primeiro",
             "opcao_terceira": "Proibir o prato"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 3, "Dinheiro": -15},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -15},
         "efeito_segunda": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -5},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O banquete foi um sucesso inesperado.",
                 "Os convidados passaram a noite comentando sobre o novo prato.",
-                "(+10 de Contentamento, +3 de População, -15 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -15 de Dinheiro)"
             ],
             2: [
                 "Alguns soldados provaram primeiro.",
@@ -1380,10 +1355,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 25,
-        "dia_minimo": 10,
+        "dia_minimo": 72,
         "falas": [
             "Moradores afirmam ter visto uma figura usando máscara noh observando casas durante a madrugada.",
             "Sempre que ela aparece, objetos desaparecem na manhã seguinte.",
@@ -1395,30 +1369,29 @@ eventos = [
             "opcao_segunda": "Criar toque de recolher",
             "opcao_terceira": "Ignorar rumores"
         },
-        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -30},
-        "efeito_segunda": {"Contentamento": -3, "Populacao": 5, "Dinheiro": -10},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": -3, "Populacao": 5, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -15, "Populacao": -10, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os guardas encontraram apenas pegadas molhadas perto do rio.",
                 "Mesmo assim, os roubos diminuíram.",
-                "(+8 de Contentamento, +3 de População, -30 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "As ruas ficaram vazias durante a noite.",
                 "Os moradores se sentem mais seguros... embora menos livres.",
-                "(-3 de Contentamento, +5 de População, -10 de Dinheiro)"
+                "(-3 de Contentamento, +5 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Na manhã seguinte, até objetos do castelo desapareceram.",
-                "(-15 de Contentamento, -10 de População)"
+                "(-15 de Contentamento, -10 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 26,
-        "dia_minimo": 6,
+        "dia_minimo": 22,
         "falas": [
             "Uma família encontrou uma máscara antiga enterrada sob o assoalho de sua casa.",
             "Desde então, todos que dormem perto dela acordam falando palavras que não lembram ter dito.",
@@ -1429,14 +1402,14 @@ eventos = [
             "opcao_segunda": "Guardar no castelo",
             "opcao_terceira": "Quebrar a máscara"
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -20},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 30},
         "efeito_terceira": {"Contentamento": -8, "Populacao": -3, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os monges aceitaram cuidar da máscara.",
                 "O povo parece mais tranquilo agora.",
-                "(+6 de Contentamento, -20 de Dinheiro)"
+                "(+6 de Contentamento, -35 de Dinheiro)"
             ],
             2: [
                 "A máscara foi trancada no castelo.",
@@ -1446,14 +1419,13 @@ eventos = [
             3: [
                 "A máscara se partiu em pedaços.",
                 "Naquela noite, três moradores desapareceram sem deixar rastros.",
-                "(-8 de Contentamento, -3 de População)"
+                "(-8 de Contentamento, -3 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 27,
-        "dia_minimo": 9,
+        "dia_minimo": 14,
         "falas": [
             "Olá caro Shogun, sou um jovem aprendiz dos carpinteiros.",
             "Acredito ter descoberto uma forma de prever incêndios.",
@@ -1467,29 +1439,28 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 8, "Populacao": 5, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": 4, "Populacao": 3, "Dinheiro": -20},
-        "efeito_terceira": {"Contentamento": -10, "Populacao": -8, "Dinheiro": -40},
+        "efeito_terceira": {"Contentamento": -8, "Populacao": -5, "Dinheiro": -40},
         "falas_pos": {
             1: [
                 "O aprendiz apontou a região exata onde o fogo começaria.",
                 "Graças a isso, o incêndio foi evitado.",
-                "(+8 de Contentamento, +5 de População, -35 de Dinheiro)"
+                "(+8 de Contentamento, +5 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "Os moradores ficaram prontos para agir.",
                 "Quando o fogo começou, foi apagado rapidamente.",
-                "(+4 de Contentamento, +3 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, +3 de Populacao, -20 de Dinheiro)"
             ],
             3: [
                 "Na madrugada seguinte, uma fileira de casas queimou.",
                 "O povo se pergunta se deveria ter escutado o rapaz.",
-                "(-10 de Contentamento, -8 de População, -40 de Dinheiro)"
+                "(-8 de Contentamento, -5 de Populacao, -40 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 28,
-        "dia_minimo": 12,
+        "dia_minimo": 16,
         "falas": [
             "Eu e meu grupo de atores desejamos encenar uma peça sobre sua vida.",
             "Nós desejamos que a peça seja uma homenagem à sua sabedoria e liderança, porém com algumas piadas e humor.",
@@ -1507,7 +1478,7 @@ eventos = [
             1: [
                 "O povo riu durante toda a apresentação.",
                 "Sua imagem ficou mais humana aos olhos da cidade.",
-                "(+12 de Contentamento, +2 de População, +10 de Dinheiro)"
+                "(+12 de Contentamento, +2 de Populacao, +10 de Dinheiro)"
             ],
             2: [
                 "Os atores alteraram algumas cenas.",
@@ -1521,10 +1492,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 29,
-        "dia_minimo": 15,
+        "dia_minimo": 31,
         "falas": [
             "Dê-me um momento de seu dia, por favor. Sei que sou de idade, mas tenho certeza de minhas palavras.",
             "Escute bem, a grande árvore na praça central está prestes a cair.",
@@ -1535,31 +1505,30 @@ eventos = [
             "opcao_segunda": "Cercar a praça",
             "opcao_terceira": "Ignorar a senhora"
         },
-        "efeito_primeira": {"Contentamento": -3, "Populacao": 5, "Dinheiro": -25},
-        "efeito_segunda": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -10},
+        "efeito_primeira": {"Contentamento": -3, "Populacao": 5, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -12, "Populacao": -6, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O cedro foi removido antes de cair.",
                 "Muitos ficaram tristes, mas ninguém se feriu.",
-                "(-3 de Contentamento, +5 de População, -25 de Dinheiro)"
+                "(-3 de Contentamento, +5 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "A praça foi isolada por segurança.",
                 "Dias depois, o cedro caiu exatamente onde ela havia dito.",
-                "(+5 de Contentamento, +3 de População, -10 de Dinheiro)"
+                "(+5 de Contentamento, +3 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "O cedro caiu durante o mercado da manhã.",
                 "A cidade agora fala da velha como se fosse uma profeta.",
-                "(-12 de Contentamento, -6 de População)"
+                "(-12 de Contentamento, -6 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 30,
-        "dia_minimo": 18,
+        "dia_minimo": 46,
         "falas": [
             "Shogun, eu e meu grupo de jovens desejamos criar uma guarda voluntária para patrulhar os bairros à noite.",
             "Temos coragem, mas pouca experiência.",
@@ -1570,19 +1539,19 @@ eventos = [
             "opcao_segunda": "Treiná-los primeiro",
             "opcao_terceira": "Proibir o grupo"
         },
-        "efeito_primeira": {"Contentamento": 8, "Populacao": 5, "Dinheiro": -20},
-        "efeito_segunda": {"Contentamento": 12, "Populacao": 8, "Dinheiro": -50},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 5, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 12, "Populacao": 8, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -6, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os jovens começaram as patrulhas imediatamente.",
                 "Ainda são desorganizados, mas o povo gostou da iniciativa.",
-                "(+8 de Contentamento, +5 de População, -20 de Dinheiro)"
+                "(+8 de Contentamento, +5 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Os soldados treinaram os voluntários antes das patrulhas.",
                 "Takayama ganhou uma defesa melhor sem depender apenas do castelo.",
-                "(+12 de Contentamento, +8 de População, -50 de Dinheiro)"
+                "(+12 de Contentamento, +8 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Os jovens aceitaram a ordem, mas ficaram decepcionados.",
@@ -1591,10 +1560,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 31,
-        "dia_minimo": 22,
+        "dia_minimo": 27,
         "falas": [
             "Meu irmão planeja uma traição, por favor me escute!!!",
             "Tenho algumas cartas como prova!(A tinta parece recente demais)",
@@ -1606,7 +1574,7 @@ eventos = [
             "opcao_terceira": "Ignorar a disputa"
         },
         "efeito_primeira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 40},
-        "efeito_segunda": {"Contentamento": 8, "Populacao": 0, "Dinheiro": -30},
+        "efeito_segunda": {"Contentamento": 8, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -8, "Populacao": -10, "Dinheiro": 0},
         "falas_pos": {
             1: [
@@ -1617,19 +1585,18 @@ eventos = [
             2: [
                 "A investigação revelou que as cartas eram falsas.",
                 "O verdadeiro traidor era o irmão que fez a acusação.",
-                "(+8 de Contentamento, -30 de Dinheiro)"
+                "(+8 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "A disputa continuou até virar violência entre as duas famílias.",
                 "Alguns servos fugiram do castelo durante a confusão.",
-                "(-8 de Contentamento, -10 de População)"
+                "(-8 de Contentamento, -10 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 32,
-        "dia_minimo": 10,
+        "dia_minimo": 77,
         "falas": [
             "Com licença, meu senhor. Sou Ichiro, fiscal das barracas de arroz do mercado.",
             "Hoje encontrei balanças adulteradas em três lojas diferentes.",
@@ -1642,14 +1609,14 @@ eventos = [
             "opcao_segunda": "Aplicar uma multa aos comerciantes",
             "opcao_terceira": "Aceitar parte dos lucros"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 3, "Dinheiro": -35},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 3, "Dinheiro": -80},
         "efeito_segunda": {"Contentamento": 4, "Populacao": 0, "Dinheiro": 55},
         "efeito_terceira": {"Contentamento": -12, "Populacao": -4, "Dinheiro": 90},
         "falas_pos": {
             1: [
                 "Mandarei recolher as balanças falsas imediatamente, meu senhor.",
                 "O arroz devolvido não apagará o golpe, mas mostrará ao povo que o castelo está ao lado dele.",
-                "(+10 de Contentamento, +3 de População, -35 de Dinheiro)"
+                "(+10 de Contentamento, +3 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Como ordenar. Os comerciantes pagarão caro pela fraude.",
@@ -1659,14 +1626,13 @@ eventos = [
             3: [
                 "Entendo, meu senhor... direi que não encontramos irregularidades.",
                 "A cidade talvez nunca descubra a verdade, mas os comerciantes certamente saberão quem permitiu o golpe.",
-                "(-12 de Contentamento, -4 de População, +90 de Dinheiro)"
+                "(-12 de Contentamento, -4 de Populacao, +90 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 33,
-        "dia_minimo": 11,
+        "dia_minimo": 1,
         "falas": [
             "Shogunzinho! Quer dizer... meu senhor!",
             "Sou eu, Karasu. Eu queria voltar com boas notícias outra vez, mas dessa vez a situação é séria.",
@@ -1701,10 +1667,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 34,
-        "dia_minimo": 11,
+        "dia_minimo": 67,
         "falas": [
             "Meu nome é Aoi. Trabalho com tecidos tingidos no bairro dos artesãos.",
             "Vim confessar algo antes que outro o faça por mim.",
@@ -1718,8 +1683,8 @@ eventos = [
             "opcao_terceira": "Multar os responsáveis",
             "opcao_quarta": "Permitir que continuem produzindo"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 4, "Dinheiro": -70},
-        "efeito_segunda": {"Contentamento": 4, "Populacao": -3, "Dinheiro": -20},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 4, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": -3, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": 3, "Populacao": 0, "Dinheiro": 45},
         "efeito_quarta": {"Contentamento": -12, "Populacao": -7, "Dinheiro": 75},
         "falas_pos": {
@@ -1727,12 +1692,12 @@ eventos = [
                 "Agradeço pela confiança, meu senhor.",
                 "Os artesãos continuarão trabalhando, mas sem transformar nossos canais em esgoto.",
                 "Essa solução custará caro, porém evitará que muitas famílias percam seu sustento.",
-                "(+10 de Contentamento, +4 de População, -70 de Dinheiro)"
+                "(+10 de Contentamento, +4 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Entendido. As oficinas serão fechadas até que a água volte a ficar limpa.",
                 "Alguns artesãos ficarão revoltados, mas os moradores próximos agradecerão.",
-                "(+4 de Contentamento, -3 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, -3 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Os donos das oficinas pagarão a multa, meu senhor.",
@@ -1742,11 +1707,10 @@ eventos = [
             4: [
                 "Então nada será alterado...",
                 "A produção continuará alta, mas não sei por quanto tempo o povo aceitará beber água contaminada.",
-                "(-12 de Contentamento, -7 de População, +75 de Dinheiro)"
+                "(-12 de Contentamento, -7 de Populacao, +75 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 35,
         "dia_minimo": 14,
@@ -1797,10 +1761,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 36,
-        "dia_minimo": 12,
+        "dia_minimo": 4,
         "falas": [
             "Meu senhor! Sou Hana, a mensageira que esteve diante de seu trono alguns dias atrás.",
             "Naquela ocasião, tentei lhe entregar uma mensagem sobre o feudo vizinho.",
@@ -1843,10 +1806,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 37,
-        "dia_minimo": 13,
+        "dia_minimo": 14,
         "falas": [
             "Então você é o shogun deste lugar?",
             "Meu nome é Hajime Kashimo. Não vim pedir abrigo, moedas ou comida.",
@@ -1892,10 +1854,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 38,
-        "dia_minimo": 13,
+        "dia_minimo": 4,
         "falas": [
             "Shogun de Takayama, sou Masanori, comandante das tropas que cercam sua cidade.",
             "Vim sob uma bandeira de trégua, portanto controle seus arqueiros.",
@@ -1939,10 +1900,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 39,
-        "dia_minimo": 13,
+        "dia_minimo": 14,
         "falas": [
             "Olá Shogun, encontrei os rastros de Sukuna nas montanhas.",
             "A presença dele ainda marca esta terra...",
@@ -1986,10 +1946,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 40,
-        "dia_minimo": 14,
+        "dia_minimo": 4,
         "falas": [
             "Sou Hana novamente.",
             "A batalha contra o feudo vizinho finalmente cessou, mas a estrada norte está coberta de casas queimadas e armas abandonadas.",
@@ -2033,10 +1992,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 41,
-        "dia_minimo": 4,
+        "dia_minimo": 47,
         "falas": [
             "Meu nome é Banzé, e vim lhe apresentar um sonho grandioso!",
             "Quero construir um templo dentro deste reino, mas não para venerar espíritos, yokais ou deuses distantes.",
@@ -2052,7 +2010,7 @@ eventos = [
             "opcao_quarta": "Recusar o projeto"
         },
         "efeito_primeira": {"Contentamento": 15, "Populacao": 5, "Dinheiro": -120},
-        "efeito_segunda": {"Contentamento": 8, "Populacao": 2, "Dinheiro": -55},
+        "efeito_segunda": {"Contentamento": 8, "Populacao": 2, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": 4, "Populacao": 0, "Dinheiro": 15},
         "efeito_quarta": {"Contentamento": -8, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
@@ -2061,13 +2019,13 @@ eventos = [
                 "Então erguerei colunas tão altas que até os deuses terão de olhar para cima!",
                 "HUMANIDADEEEEEEEE!",
                 "(Os trabalhadores da cidade comemoram a construção de um templo dedicado ao próprio esforço.)",
-                "(+15 de Contentamento, +5 de População, -120 de Dinheiro)"
+                "(+15 de Contentamento, +5 de Populacao, -120 de Dinheiro)"
             ],
             2: [
                 "Um templo menor ainda será um grande começo, meu senhor!",
                 "Não importa o tamanho das paredes, mas sim a força daqueles que as construíram!",
                 "HUMANIDADEEEEEEEE!",
-                "(+8 de Contentamento, +2 de População, -55 de Dinheiro)"
+                "(+8 de Contentamento, +2 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Entendo, senhor shogun! Então construirei este sonho com a ajuda do próprio povo!",
@@ -2082,10 +2040,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 42,
-        "dia_minimo": 14,
+        "dia_minimo": 40,
         "falas": [
             "Com sua licença, senhor shogun. Meu nome é Sayo, e minha família cria bichos-da-seda nas terras próximas ao rio.",
             "As folhas de amoreira estão boas este ano, e várias famílias desejam vendê-las junto aos casulos na praça diante do castelo.",
@@ -2099,7 +2056,7 @@ eventos = [
             "opcao_terceira": "Vender tudo aos grandes mercadores",
             "opcao_quarta": "Proibir o comércio de casulos"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 4, "Dinheiro": -25},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 4, "Dinheiro": -80},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 2, "Dinheiro": 45},
         "efeito_terceira": {"Contentamento": -8, "Populacao": -3, "Dinheiro": 100},
         "efeito_quarta": {"Contentamento": -10, "Populacao": -5, "Dinheiro": 0},
@@ -2108,29 +2065,28 @@ eventos = [
                 "Sua decisão será lembrada com respeito.",
                 "As famílias poderão negociar com as próprias mãos aquilo que criaram com tanto esforço.",
                 "O lucro será menor para o castelo, mas o mercado estará cheio de gente agradecida.",
-                "(+10 de Contentamento, +4 de População, -25 de Dinheiro)"
+                "(+10 de Contentamento, +4 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Entendo. Organizaremos as barracas e pagaremos a taxa estabelecida.",
                 "Não será perfeito para todos, mas ainda poderemos trabalhar honestamente.",
-                "(+3 de Contentamento, +2 de População, +45 de Dinheiro)"
+                "(+3 de Contentamento, +2 de Populacao, +45 de Dinheiro)"
             ],
             3: [
                 "Então entregaremos nossos casulos antes mesmo de abrir as barracas...",
                 "Os grandes comerciantes certamente agradecerão. As famílias menores, nem tanto.",
-                "(-8 de Contentamento, -3 de População, +100 de Dinheiro)"
+                "(-8 de Contentamento, -3 de Populacao, +100 de Dinheiro)"
             ],
             4: [
                 "Proibir a venda? Mas é disso que muitas famílias vivem, meu senhor!",
                 "Sem mercado para nossos casulos, alguns deixarão Takayama antes da próxima estação.",
-                "(-10 de Contentamento, -5 de População)"
+                "(-10 de Contentamento, -5 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 43,
-        "dia_minimo": 14,
+        "dia_minimo": 33,
         "falas": [
             "Saudações, meu senhor. Sou Genzo, mestre entalhador da madeira de Hida.",
             "Minhas mãos já estão velhas, mas ainda conhecem técnicas que aprendi com meu mestre e aperfeiçoei durante toda a vida.",
@@ -2144,7 +2100,7 @@ eventos = [
             "opcao_segunda": "Permitir apenas a aprendizagem",
             "opcao_terceira": "Entregar a oficina aos parentes"
         },
-        "efeito_primeira": {"Contentamento": 9, "Populacao": 3, "Dinheiro": -20},
+        "efeito_primeira": {"Contentamento": 9, "Populacao": 3, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": 0},
         "efeito_terceira": {"Contentamento": -9, "Populacao": -2, "Dinheiro": 70},
         "falas_pos": {
@@ -2152,21 +2108,20 @@ eventos = [
                 "O senhor preservou mais do que uma oficina.",
                 "Ren carregará meu nome e meu ofício com honra.",
                 "Takayama ainda terá grandes artesãos quando minhas mãos não puderem mais trabalhar.",
-                "(+9 de Contentamento, +3 de População, -20 de Dinheiro)"
+                "(+9 de Contentamento, +3 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "Entendo sua cautela, meu senhor.",
                 "Continuarei ensinando o rapaz enquanto tiver forças, mesmo sem saber o destino da oficina.",
-                "(+3 de Contentamento, +1 de População)"
+                "(+3 de Contentamento, +1 de Populacao)"
             ],
             3: [
                 "Então minhas ferramentas serão vendidas como objetos comuns...",
                 "Os parentes receberão moedas, mas Takayama perderá uma tradição que levou décadas para ser construída.",
-                "(-9 de Contentamento, -2 de População, +70 de Dinheiro)"
+                "(-9 de Contentamento, -2 de Populacao, +70 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 44,
         "dia_minimo": 14,
@@ -2211,10 +2166,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 45,
-        "dia_minimo": 15,
+        "dia_minimo": 52,
         "falas": [
             "Bom dia, senhor shogun. Sou Chiyo, filha de um escriba e professora de algumas crianças do bairro leste.",
             "Os filhos dos mercadores aprendem contas em casa, mas os filhos dos camponeses e artesãos raramente conseguem sequer escrever seus nomes.",
@@ -2229,24 +2183,24 @@ eventos = [
             "opcao_quarta": "Recusar o pedido"
         },
         "efeito_primeira": {"Contentamento": 12, "Populacao": 6, "Dinheiro": -100},
-        "efeito_segunda": {"Contentamento": 8, "Populacao": 4, "Dinheiro": -55},
+        "efeito_segunda": {"Contentamento": 8, "Populacao": 4, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": 2, "Populacao": 1, "Dinheiro": 25},
         "efeito_quarta": {"Contentamento": -6, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Muito obrigada, meu senhor!",
                 "Um feudo onde até o filho de um lavrador pode aprender a contar será mais forte amanhã do que é hoje.",
-                "(+12 de Contentamento, +6 de População, -100 de Dinheiro)"
+                "(+12 de Contentamento, +6 de Populacao, -100 de Dinheiro)"
             ],
             2: [
                 "Farei bom uso de cada moeda.",
                 "As crianças que jamais teriam acesso aos estudos agora terão uma chance.",
-                "(+8 de Contentamento, +4 de População, -55 de Dinheiro)"
+                "(+8 de Contentamento, +4 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Entendido. Começarei com aqueles que puderem pagar pelas aulas.",
                 "Talvez, algum dia, consigamos abrir as portas para mais crianças.",
-                "(+2 de Contentamento, +1 de População, +25 de Dinheiro)"
+                "(+2 de Contentamento, +1 de Populacao, +25 de Dinheiro)"
             ],
             4: [
                 "Compreendo, meu senhor.",
@@ -2255,10 +2209,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 46,
-        "dia_minimo": 15,
+        "dia_minimo": 16,
         "falas": [
             "Senhor shogun! Sou Tetsumaru, lutador de sumô viajante.",
             "Minha comitiva chegou a Takayama com homens fortes, tambores e vontade de mostrar nossa arte.",
@@ -2273,7 +2226,7 @@ eventos = [
             "opcao_quarta": "Mandar a comitiva seguir viagem"
         },
         "efeito_primeira": {"Contentamento": 13, "Populacao": 4, "Dinheiro": -85},
-        "efeito_segunda": {"Contentamento": 8, "Populacao": 2, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 8, "Populacao": 2, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 1, "Dinheiro": 95},
         "efeito_quarta": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
@@ -2281,17 +2234,17 @@ eventos = [
                 "HA! Uma decisão digna de um governante de peito forte!",
                 "Prepararemos os melhores combates que Takayama já viu.",
                 "Até quem perder sairá contando histórias sobre este lugar.",
-                "(+13 de Contentamento, +4 de População, -85 de Dinheiro)"
+                "(+13 de Contentamento, +4 de Populacao, -85 de Dinheiro)"
             ],
             2: [
                 "Sem apostas? Justo.",
                 "Lutaremos pela honra e pelo rugido da multidão, não pelas moedas dos bêbados.",
-                "(+8 de Contentamento, +2 de População, -25 de Dinheiro)"
+                "(+8 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Então o castelo deseja lucrar com a empolgação do povo...",
                 "Os combates acontecerão, mas alguns apostadores não gostarão de dividir suas moedas.",
-                "(-3 de Contentamento, +1 de População, +95 de Dinheiro)"
+                "(-3 de Contentamento, +1 de Populacao, +95 de Dinheiro)"
             ],
             4: [
                 "Que pena, meu senhor.",
@@ -2300,10 +2253,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 47,
-        "dia_minimo": 15,
+        "dia_minimo": 86,
         "falas": [
             "Perdoe minha entrada tão desesperada.",
             "Meu nome é Kinu. Após uma colheita ruim, meu marido empenhou nossas ferramentas para comprar comida.",
@@ -2317,25 +2269,25 @@ eventos = [
             "opcao_terceira": "Manter o acordo como foi assinado",
             "opcao_quarta": "Confiscar os registros do credor"
         },
-        "efeito_primeira": {"Contentamento": 11, "Populacao": 3, "Dinheiro": -75},
-        "efeito_segunda": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -20},
+        "efeito_primeira": {"Contentamento": 11, "Populacao": 3, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -9, "Populacao": -4, "Dinheiro": 20},
         "efeito_quarta": {"Contentamento": 2, "Populacao": 0, "Dinheiro": 60},
         "falas_pos": {
             1: [
                 "Eu... não sei como agradecer, meu senhor.",
                 "Meus filhos terão teto, e eu poderei voltar a trabalhar sem carregar essa ameaça sobre nós.",
-                "(+11 de Contentamento, +3 de População, -75 de Dinheiro)"
+                "(+11 de Contentamento, +3 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Com as ferramentas de volta, conseguirei pagar o restante trabalhando.",
                 "O senhor não nos deu esmola; deu-nos uma chance.",
-                "(+7 de Contentamento, +2 de População, -20 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Entendo... a palavra escrita vale mais do que o desespero de uma viúva.",
                 "Recolherei meus filhos antes que o credor venha buscar a casa.",
-                "(-9 de Contentamento, -4 de População, +20 de Dinheiro)"
+                "(-9 de Contentamento, -4 de Populacao, +20 de Dinheiro)"
             ],
             4: [
                 "Meu senhor, talvez existam outras famílias presas nos mesmos registros.",
@@ -2344,7 +2296,6 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 48,
         "dia_minimo": 16,
@@ -2388,10 +2339,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 49,
-        "dia_minimo": 17,
+        "dia_minimo": 14,
         "falas": [
             "Sou Saburo novamente. Chegou o dia do festival.",
             "Os moradores já se reúnem nas ruas e os tambores começaram a soar desde cedo.",
@@ -2434,10 +2384,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 50,
-        "dia_minimo": 17,
+        "dia_minimo": 70,
         "falas": [
             "Com sua permissão, senhor shogun. Sou Matsuda, representante de um grande senhor que atravessará as estradas de Hida em poucos dias.",
             "Sua comitiva trará guardas, carregadores, cavalos e oficiais que precisam repousar antes de seguir viagem.",
@@ -2452,21 +2401,21 @@ eventos = [
             "opcao_quarta": "Negar passagem pela cidade"
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 3, "Dinheiro": -140},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 1, "Dinheiro": -55},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 1, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 95},
-        "efeito_quarta": {"Contentamento": 3, "Populacao": -3, "Dinheiro": -40},
+        "efeito_quarta": {"Contentamento": 3, "Populacao": -3, "Dinheiro": -80},
         "falas_pos": {
             1: [
                 "Sua generosidade será lembrada, meu senhor.",
                 "A comitiva atravessou Takayama elogiando a ordem das ruas e a qualidade da recepção.",
                 "Os moradores trabalharam muito, mas ouviram boas palavras sobre sua cidade.",
-                "(+6 de Contentamento, +3 de População, -140 de Dinheiro)"
+                "(+6 de Contentamento, +3 de Populacao, -140 de Dinheiro)"
             ],
             2: [
                 "Levaremos sua resposta ao meu mestre.",
                 "Os oficiais foram bem recebidos, enquanto o restante da comitiva acampou fora das muralhas.",
                 "Não foi uma recepção grandiosa, mas evitou grande peso sobre os moradores.",
-                "(+2 de Contentamento, +1 de População, -55 de Dinheiro)"
+                "(+2 de Contentamento, +1 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Cobrar de uma comitiva honrada não será esquecido facilmente.",
@@ -2477,11 +2426,10 @@ eventos = [
             4: [
                 "Negar passagem? Meu mestre considerará isso uma grande ofensa.",
                 "A comitiva desviou pelas estradas menores, causando tensão entre seus guardas e os moradores das vilas próximas.",
-                "(+3 de Contentamento, -3 de População, -40 de Dinheiro)"
+                "(+3 de Contentamento, -3 de Populacao, -80 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 51,
         "dia_minimo": 50,
@@ -2503,7 +2451,7 @@ eventos = [
         "efeito_primeira": {"Contentamento": 18, "Populacao": 10, "Dinheiro": 80},
         "efeito_segunda": {"Contentamento": 15, "Populacao": 50, "Dinheiro": 40},
         "efeito_terceira": {"Contentamento": 20, "Populacao": 25, "Dinheiro": 120},
-        "efeito_quarta": {"Contentamento": 15, "Populacao": 100, "Dinheiro": 350},
+        "efeito_quarta": {"Contentamento": 15, "Populacao": 50, "Dinheiro": 180},
         "falas_pos": {
             1: [
                 "Uma escolha digna de um verdadeiro governante.",
@@ -2529,14 +2477,13 @@ eventos = [
                 "Vejo sabedoria em seu coração, shogun.",
                 "Gladtornm ergueu sua espada diante do castelo, e uma luz serena percorreu os campos, as ruas e os telhados de Takayama.",
                 "Os armazéns receberam suprimentos, os enfermos encontraram alívio e o povo sentiu que dias melhores finalmente poderiam chegar.",
-                "(+15 de Contentamento, +100 de População, +350 de Dinheiro)"
+                "(+15 de Contentamento, +50 de Populacao, +180 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 52,
-        "dia_minimo": 17,
+        "dia_minimo": 73,
         "falas": [
             "Senhor shogun, sou Oume, parteira do bairro sul.",
             "Vim porque uma febre estranha começou a se espalhar entre as famílias que dividem as casas mais apertadas.",
@@ -2554,19 +2501,18 @@ eventos = [
             1: [
                 "Farei com que as famílias doentes permaneçam afastadas e recebam arroz sem sair de casa.",
                 "Não conseguiremos salvar todos, mas a febre não se espalhou pela cidade inteira.",
-                "(+6 de Contentamento, -4 de População, -80 de Dinheiro)"
+                "(+6 de Contentamento, -4 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Entendido... não diremos nada para não interromper as vendas.",
                 "Dias depois, muitas barracas ficaram fechadas, não por ordem do castelo, mas porque seus donos já não conseguiam se levantar.",
-                "(-12 de Contentamento, -16 de População, +35 de Dinheiro)"
+                "(-12 de Contentamento, -16 de Populacao, +35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 53,
-        "dia_minimo": 18,
+        "dia_minimo": 52,
         "falas": [
             "Com sua licença, senhor shogun. Meu nome é Akemi, sou mestra na fabricação de papel.",
             "Viajei até Takayama com meus aprendizes e nossas famílias, procurando um lugar onde possamos recomeçar.",
@@ -2580,30 +2526,29 @@ eventos = [
             "opcao_terceira": "Cobrar uma taxa para recebê-los"
         },
         "efeito_primeira": {"Contentamento": 11, "Populacao": 12, "Dinheiro": -80},
-        "efeito_segunda": {"Contentamento": 6, "Populacao": 8, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 6, "Populacao": 8, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 5, "Dinheiro": 55},
         "falas_pos": {
             1: [
                 "Uma oficina? O senhor nos oferece mais do que abrigo, oferece um futuro.",
                 "Nossos aprendizes trabalharão para que Takayama nunca fique sem papel para registrar sua história.",
-                "(+11 de Contentamento, +12 de População, -80 de Dinheiro)"
+                "(+11 de Contentamento, +12 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Muito obrigada. Levarei sua ordem imediatamente.",
                 "Usaremos nossas próprias economias para começar, e em breve nossas famílias estarão produzindo para a cidade.",
-                "(+6 de Contentamento, +8 de População, -20 de Dinheiro)"
+                "(+6 de Contentamento, +8 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "O preço é alto para quem está começando de novo...",
                 "Ainda assim, algumas famílias aceitarão ficar, pois não temos outro lar esperando por nós.",
-                "(-3 de Contentamento, +5 de População, +55 de Dinheiro)"
+                "(-3 de Contentamento, +5 de Populacao, +55 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 54,
-        "dia_minimo": 18,
+        "dia_minimo": 29,
         "falas": [
             "Sou Fumi, responsável por aconselhar famílias nas vilas próximas.",
             "Muitos jovens de Takayama desejam formar seus próprios lares, mas não têm arroz, tecido ou moedas para iniciar uma casa.",
@@ -2615,26 +2560,25 @@ eventos = [
             "opcao_primeira": "Oferecer auxílio aos novos casais",
             "opcao_segunda": "Apenas reconhecer as novas famílias"
         },
-        "efeito_primeira": {"Contentamento": 13, "Populacao": 14, "Dinheiro": -95},
-        "efeito_segunda": {"Contentamento": 6, "Populacao": 7, "Dinheiro": -15},
+        "efeito_primeira": {"Contentamento": 13, "Populacao": 12, "Dinheiro": -95},
+        "efeito_segunda": {"Contentamento": 6, "Populacao": 7, "Dinheiro": -35},
         "falas_pos": {
             1: [
                 "Que decisão bondosa, meu senhor!",
                 "Com arroz para os primeiros meses e tecido para novas casas, muitos casais poderão permanecer em Takayama.",
                 "As vilas logo estarão cheias de novos lares.",
-                "(+13 de Contentamento, +14 de População, -95 de Dinheiro)"
+                "(+13 de Contentamento, +12 de Populacao, -95 de Dinheiro)"
             ],
             2: [
                 "Entendo. Nem todos precisam de moedas; alguns só desejavam a permissão para construir uma vida aqui.",
                 "Registrarei as novas famílias sob a proteção de Takayama.",
-                "(+6 de Contentamento, +7 de População, -15 de Dinheiro)"
+                "(+6 de Contentamento, +7 de Populacao, -35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 55,
-        "dia_minimo": 19,
+        "dia_minimo": 31,
         "falas": [
             "Saudações, senhor shogun. Sou Bansaku, agricultor das encostas além das montanhas.",
             "Minha aldeia cresceu mais do que nossas terras conseguem alimentar.",
@@ -2647,31 +2591,30 @@ eventos = [
             "opcao_segunda": "Permitir o cultivo mediante tributo",
             "opcao_terceira": "Receber apenas algumas famílias"
         },
-        "efeito_primeira": {"Contentamento": 12, "Populacao": 18, "Dinheiro": -110},
-        "efeito_segunda": {"Contentamento": 5, "Populacao": 13, "Dinheiro": 35},
-        "efeito_terceira": {"Contentamento": 3, "Populacao": 7, "Dinheiro": -25},
+        "efeito_primeira": {"Contentamento": 12, "Populacao": 12, "Dinheiro": -110},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 12, "Dinheiro": 35},
+        "efeito_terceira": {"Contentamento": 3, "Populacao": 7, "Dinheiro": -35},
         "falas_pos": {
             1: [
                 "Terra e ferramentas? Não esqueceremos tamanha generosidade.",
                 "Antes da próxima estação, as encostas terão casas, plantações e novos moradores servindo ao seu feudo.",
-                "(+12 de Contentamento, +18 de População, -110 de Dinheiro)"
+                "(+12 de Contentamento, +12 de Populacao, -110 de Dinheiro)"
             ],
             2: [
                 "Aceitamos suas condições, meu senhor.",
                 "Pagaremos o tributo com o resultado do nosso trabalho, e Takayama ganhará novas famílias produtivas.",
-                "(+5 de Contentamento, +13 de População, +35 de Dinheiro)"
+                "(+5 de Contentamento, +12 de Populacao, +35 de Dinheiro)"
             ],
             3: [
                 "Nem todos conseguirão ficar, mas aqueles que forem escolhidos honrarão esta oportunidade.",
                 "Talvez, quando as primeiras plantações crescerem, o senhor permita a chegada dos demais.",
-                "(+3 de Contentamento, +7 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, +7 de Populacao, -35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 56,
-        "dia_minimo": 24,
+        "dia_minimo": 16,
         "falas": [
             "Sou eu novamente: Noritada, o mestre carpinteiro que pediu trabalhadores de Takayama.",
             "A construção em outra cidade foi concluída, e devo dizer que seus homens impressionaram até os oficiais mais exigentes.",
@@ -2703,14 +2646,13 @@ eventos = [
             3: [
                 "Uma nova oficina? Excelente!",
                 "Os homens que retornaram ensinarão suas técnicas aos jovens, e os aprendizes que vieram conosco terão onde trabalhar.A habilidade de Takayama atrairá ainda mais famílias.",
-                "(+13 de Contentamento, +15 de População, +55 de Dinheiro)"
+                "(+13 de Contentamento, +20 de Populacao, +55 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 57,
-        "dia_minimo": 19,
+        "dia_minimo": 24,
         "falas": [
             "Com sua permissão, senhor shogun. Sou Shige, chefe de um grupo de carregadores das montanhas.",
             "Passamos a vida levando sal, ferramentas e mensagens pelos caminhos difíceis de Hida.",
@@ -2723,31 +2665,30 @@ eventos = [
             "opcao_segunda": "Permitir que morem perto da estrada",
             "opcao_terceira": "Contratar apenas os carregadores"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 16, "Dinheiro": -90},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 12, "Dinheiro": -90},
         "efeito_segunda": {"Contentamento": 6, "Populacao": 11, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": 2, "Populacao": 5, "Dinheiro": 20},
         "falas_pos": {
             1: [
                 "Então nossas famílias finalmente terão um lugar para chamar de lar.",
                 "Serviremos Takayama nas montanhas e nas estradas com gratidão.",
-                "(+10 de Contentamento, +16 de População, -90 de Dinheiro)"
+                "(+10 de Contentamento, +12 de Populacao, -90 de Dinheiro)"
             ],
             2: [
                 "É mais do que tínhamos antes, meu senhor.",
                 "Ergueremos nossas casas perto da estrada e faremos de Takayama o centro de nossas viagens.",
-                "(+6 de Contentamento, +11 de População, -35 de Dinheiro)"
+                "(+6 de Contentamento, +11 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Alguns homens aceitarão o trabalho e trarão suas famílias mais próximas.",
                 "Não será uma mudança completa, mas Takayama ganhará novos braços fortes.",
-                "(+2 de Contentamento, +5 de População, +20 de Dinheiro)"
+                "(+2 de Contentamento, +5 de Populacao, +20 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 58,
-        "dia_minimo": 20,
+        "dia_minimo": 70,
         "falas": [
             "Sou Heikichi, um homem sem terras reconhecidas.",
             "Não vim sozinho: há famílias vivendo escondidas entre as montanhas, cultivando pequenos terrenos sem pertencer oficialmente a nenhum feudo.",
@@ -2763,36 +2704,35 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 14, "Populacao": 22, "Dinheiro": -100},
         "efeito_segunda": {"Contentamento": -2, "Populacao": 10, "Dinheiro": 35},
-        "efeito_terceira": {"Contentamento": 9, "Populacao": 18, "Dinheiro": -60},
+        "efeito_terceira": {"Contentamento": 9, "Populacao": 18, "Dinheiro": -80},
         "efeito_quarta": {"Contentamento": -5, "Populacao": 8, "Dinheiro": 85},
         "falas_pos": {
             1: [
                 "O senhor aceitará todos nós?",
                 "Pela primeira vez em muitos anos, essas famílias poderão dormir sem medo de serem expulsas.",
                 "Trabalharemos para que Takayama nunca se arrependa desta misericórdia.",
-                "(+14 de Contentamento, +22 de População, -100 de Dinheiro)"
+                "(+14 de Contentamento, +22 de Populacao, -100 de Dinheiro)"
             ],
             2: [
                 "Entendo... os adultos virão trabalhar, embora muitos sofram por deixar parentes para trás.",
                 "Ainda assim, haverá novas mãos servindo ao seu feudo.",
-                "(-2 de Contentamento, +10 de População, +35 de Dinheiro)"
+                "(-2 de Contentamento, +10 de Populacao, +35 de Dinheiro)"
             ],
             3: [
                 "Teremos terras para cultivar e um lugar sob sua proteção.",
                 "As famílias aceitarão com gratidão e começarão a preparar os campos assim que chegarem.",
-                "(+9 de Contentamento, +18 de População, -60 de Dinheiro)"
+                "(+9 de Contentamento, +18 de Populacao, -80 de Dinheiro)"
             ],
             4: [
                 "Alguns não conseguirão pagar, meu senhor.",
                 "Mas aqueles que reunirem as moedas atravessarão as montanhas para viver sob sua autoridade.",
-                "(-5 de Contentamento, +8 de População, +85 de Dinheiro)"
+                "(-5 de Contentamento, +8 de Populacao, +85 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 59,
-        "dia_minimo": 20,
+        "dia_minimo": 16,
         "falas": [
             "Saudações, senhor shogun. Meu nome é Matsu, e minha família produz missô há muitas gerações.",
             "Trouxe comigo barris, receitas e parentes que sabem trabalhar com soja, arroz e sal.",
@@ -2805,33 +2745,32 @@ eventos = [
             "opcao_segunda": "Conceder espaço no mercado",
             "opcao_terceira": "Permitir a instalação sem ajuda"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 13, "Dinheiro": -75},
-        "efeito_segunda": {"Contentamento": 6, "Populacao": 9, "Dinheiro": -25},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 12, "Dinheiro": -75},
+        "efeito_segunda": {"Contentamento": 6, "Populacao": 9, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": 2, "Populacao": 6, "Dinheiro": 15},
         "falas_pos": {
             1: [
                 "Agradeço profundamente, meu senhor!",
                 "Nossa família trará seus barris e começará a trabalhar imediatamente.",
                 "Takayama terá novos moradores e alimento preparado para os meses mais difíceis.",
-                "(+10 de Contentamento, +13 de População, -75 de Dinheiro)"
+                "(+10 de Contentamento, +12 de Populacao, -75 de Dinheiro)"
             ],
             2: [
                 "Um lugar no mercado será suficiente para começarmos.",
                 "Quando os moradores provarem nosso missô, talvez outras famílias também queiram vir para Takayama.",
-                "(+6 de Contentamento, +9 de População, -25 de Dinheiro)"
+                "(+6 de Contentamento, +9 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Aceitamos, meu senhor.",
                 "Começaremos de forma humilde, usando apenas aquilo que trouxemos conosco.",
                 "Mesmo sem auxílio, algumas famílias permanecerão em sua cidade.",
-                "(+2 de Contentamento, +6 de População, +15 de Dinheiro)"
+                "(+2 de Contentamento, +6 de Populacao, +15 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 60,
-        "dia_minimo": 21,
+        "dia_minimo": 41,
         "falas": [
             "Sou Jirozaemon, representante de famílias jovens das aldeias de Hida.",
             "Em muitas casas, apenas o filho mais velho herdará os campos. Os demais precisam partir ou viver sem terras próprias.",
@@ -2844,32 +2783,31 @@ eventos = [
             "opcao_segunda": "Integrar as famílias aos bairros existentes",
             "opcao_terceira": "Oferecer terras sem auxílio financeiro"
         },
-        "efeito_primeira": {"Contentamento": 18, "Populacao": 100, "Dinheiro": -250},
-        "efeito_segunda": {"Contentamento": 11, "Populacao": 50, "Dinheiro": -90},
+        "efeito_primeira": {"Contentamento": 18, "Populacao": 35, "Dinheiro": -250},
+        "efeito_segunda": {"Contentamento": 11, "Populacao": 35, "Dinheiro": -90},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 12, "Dinheiro": 20},
         "falas_pos": {
             1: [
                 "Uma nova vila sob o nome de Takayama... não poderíamos receber honra maior.",
                 "As famílias chegarão com ferramentas, sementes e vontade de transformar a terra em lar.",
                 "Em pouco tempo, haverá novos telhados, novos campos e muitas vozes onde hoje existe apenas silêncio.",
-                "(+18 de Contentamento, +100 de População, -250 de Dinheiro)"
+                "(+18 de Contentamento, +35 de Populacao, -250 de Dinheiro)"
             ],
             2: [
                 "É uma escolha sábia, meu senhor.",
                 "As famílias poderão chegar mais rápido e ajudar os bairros que já existem, sem esperar uma vila inteira ser construída.",
-                "(+11 de Contentamento, +50 de População, -90 de Dinheiro)"
+                "(+11 de Contentamento, +35 de Populacao, -90 de Dinheiro)"
             ],
             3: [
                 "As famílias terão de trabalhar muito para começar sem apoio.",
                 "Ainda assim, algumas aceitarão a oportunidade de possuir terras sob sua autoridade.",
-                "(-3 de Contentamento, +12 de População, +20 de Dinheiro)"
+                "(-3 de Contentamento, +12 de Populacao, +20 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 61,
-        "dia_minimo": 21,
+        "dia_minimo": 22,
         "falas": [
             "Sou um dos guardas responsáveis pela praça do mercado.",
             "Alguns comerciantes começaram a recusar moedas de cobre recebidas esta manhã.",
@@ -2890,25 +2828,24 @@ eventos = [
                 "Como ordenar, meu senhor.",
                 "Recolheremos as moedas falsas e devolveremos parte do prejuízo aos moradores.",
                 "O mercado não ficará feliz, mas ao menos voltará a funcionar.",
-                "(0 de Contentamento, 0 de População, -55 de Dinheiro)"
+                "(-55 de Dinheiro)"
             ],
             2: [
                 "Entendido, meu senhor.",
                 "Muitos moradores perderão as moedas que receberam honestamente.",
                 "A culpa não é deles, mas serão eles que pagarão por ela.",
-                "(-8 de Contentamento, -2 de População, 0 de Dinheiro)"
+                "(-8 de Contentamento, -2 de Populacao)"
             ],
             3: [
                 "Então aceitaremos essas moedas nos pagamentos ao castelo.",
                 "Os cofres receberão mais metal, mas o povo dirá que permitimos a fraude continuar.",
-                "(-5 de Contentamento, 0 de População, +35 de Dinheiro)"
+                "(-5 de Contentamento, +35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 62,
-        "dia_minimo": 21,
+        "dia_minimo": 4,
         "falas": [
             "Dois agricultores discutem diante dos portões desde o amanhecer.",
             "Durante a noite, as pedras que marcavam o limite entre seus campos foram movidas.",
@@ -2922,29 +2859,28 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -25},
         "efeito_segunda": {"Contentamento": -3, "Populacao": 0, "Dinheiro": -10},
-        "efeito_terceira": {"Contentamento": -10, "Populacao": -3, "Dinheiro": 45},
+        "efeito_terceira": {"Contentamento": -8, "Populacao": -3, "Dinheiro": 45},
         "falas_pos": {
             1: [
                 "Buscaremos os registros antigos e mediremos o terreno novamente.",
                 "Nenhuma das famílias gostou de esperar, mas aceitaram a decisão quando viram as marcas corretas.",
-                "(0 de Contentamento, 0 de População, -25 de Dinheiro)"
+                "(-25 de Dinheiro)"
             ],
             2: [
                 "Dividiremos a área como ordenou.",
                 "A briga foi encerrada, mas ambas as famílias acreditam ter perdido algo.",
-                "(-3 de Contentamento, 0 de População, -10 de Dinheiro)"
+                "(-3 de Contentamento, -10 de Dinheiro)"
             ],
             3: [
                 "A família de maior tributo receberá o campo disputado.",
                 "Os cofres ficarão protegidos, mas os camponeses entenderão qual justiça pesa mais neste feudo.",
-                "(-10 de Contentamento, -3 de População, +45 de Dinheiro)"
+                "(-8 de Contentamento, -3 de Populacao, +45 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 63,
-        "dia_minimo": 21,
+        "dia_minimo": 38,
         "falas": [
             "Venho relatar uma vergonha entre nossos próprios homens.",
             "Viajantes denunciaram que guardas do portão estão exigindo moedas extras para permitir sua entrada.",
@@ -2963,24 +2899,23 @@ eventos = [
             1: [
                 "Os culpados serão retirados do posto e punidos diante dos demais.",
                 "O povo dirá que a justiça chegou, embora tarde demais para alguns viajantes.",
-                "(0 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(-20 de Dinheiro)"
             ],
             2: [
                 "Trocaremos todos os homens do portão.",
                 "Alguns inocentes reclamarão por terem sido tratados como culpados, mas a cobrança cessará.",
-                "(-3 de Contentamento, -1 de População, -45 de Dinheiro)"
+                "(-3 de Contentamento, -1 de Populacao, -45 de Dinheiro)"
             ],
             3: [
                 "Entendido, meu senhor. A cobrança continuará sem levar o nome do castelo.",
                 "Ainda assim, o povo sabe muito bem quem controla os portões.",
-                "(-12 de Contentamento, -4 de População, +75 de Dinheiro)"
+                "(-12 de Contentamento, -4 de Populacao, +75 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 64,
-        "dia_minimo": 22,
+        "dia_minimo": 51,
         "falas": [
             "Alguns bois escaparam de um curral durante a madrugada.",
             "Eles atravessaram dois campos plantados e destruíram parte da colheita.",
@@ -2999,24 +2934,23 @@ eventos = [
             1: [
                 "Entregaremos compensação aos agricultores, meu senhor.",
                 "Eles ainda perderam trabalho e parte da colheita, mas não ficarão completamente desamparados.",
-                "(0 de Contentamento, 0 de População, -45 de Dinheiro)"
+                "(-45 de Dinheiro)"
             ],
             2: [
                 "Os bois serão tomados e vendidos para cobrir parte das perdas.",
                 "Os agricultores aceitaram a decisão. Os donos dos animais jamais esquecerão.",
-                "(-4 de Contentamento, 0 de População, +20 de Dinheiro)"
+                "(-4 de Contentamento, +20 de Dinheiro)"
             ],
             3: [
                 "Como ordenar.",
                 "Sem uma decisão do castelo, as duas famílias resolveram a disputa com violência.",
-                "(-8 de Contentamento, -2 de População)"
+                "(-8 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 65,
-        "dia_minimo": 22,
+        "dia_minimo": 88,
         "falas": [
             "Os guardas encontraram o depósito de lenha para o inverno quase vazio.",
             "A reserva deveria ser usada pelas famílias mais velhas e pelos doentes.",
@@ -3035,24 +2969,23 @@ eventos = [
             1: [
                 "Compraremos lenha imediatamente, meu senhor.",
                 "A reserva voltará a existir, embora o ladrão permaneça sem punição.",
-                "(0 de Contentamento, 0 de População, -65 de Dinheiro)"
+                "(-65 de Dinheiro)"
             ],
             2: [
                 "Revistaremos as casas até encontrar a madeira desaparecida.",
                 "Parte da lenha foi recuperada, mas muitos moradores se revoltaram com a busca.",
-                "(-5 de Contentamento, -1 de População, -20 de Dinheiro)"
+                "(-5 de Contentamento, -1 de Populacao, -20 de Dinheiro)"
             ],
             3: [
                 "Distribuiremos apenas o que restou.",
                 "Quando as noites frias chegaram, algumas famílias descobriram que a reserva não era suficiente.",
-                "(-10 de Contentamento, -4 de População)"
+                "(-10 de Contentamento, -4 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 66,
-        "dia_minimo": 22,
+        "dia_minimo": 18,
         "falas": [
             "Descobrimos jogos de aposta acontecendo nos fundos de uma casa de chá.",
             "Trabalhadores têm perdido moedas e até porções de arroz nessas partidas.",
@@ -3064,28 +2997,27 @@ eventos = [
             "opcao_segunda": "Cobrar uma taxa sobre os jogos",
             "opcao_terceira": "Aceitar o pagamento do dono"
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -25},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 50},
         "efeito_terceira": {"Contentamento": -11, "Populacao": -3, "Dinheiro": 80},
         "falas_pos": {
             1: [
                 "Fecharemos o local ainda hoje.",
                 "Os apostadores reclamarão, mas novas brigas não acontecerão ali.",
-                "(+5 de Contentamento, 0 de População, -25 de Dinheiro)"
+                "(+5 de Contentamento, -35 de Dinheiro)"
             ],
             2: [
                 "Então os jogos poderão continuar sob cobrança do castelo.",
                 "As brigas talvez diminuam, mas muitas famílias ainda perderão arroz nas apostas.",
-                "(-5 de Contentamento, 0 de População, +50 de Dinheiro)"
+                "(-5 de Contentamento, +50 de Dinheiro)"
             ],
             3: [
                 "Entendido, meu senhor.",
                 "O dono continuará lucrando, e nós fingiremos não ouvir as brigas durante a noite.",
-                "(-11 de Contentamento, -3 de População, +80 de Dinheiro)"
+                "(-11 de Contentamento, -3 de Populacao, +80 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 67,
         "dia_minimo": 67,
@@ -3101,18 +3033,17 @@ eventos = [
         "falas_pos": {
             1: [
                 "SIX SEVEEEEEEEEEN!!!!!!!!!!!!!",
-                "(+20 de Contentamento, 0 de População, +67 de Dinheiro)"
+                "(+20 de Contentamento, +67 de Dinheiro)"
             ],
             2: [
                 "Six seven... four two não...",
-                "(-20 de Contentamento, 0 de População, -42 de Dinheiro)"
+                "(-20 de Contentamento, -42 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 68,
-        "dia_minimo": 23,
+        "dia_minimo": 89,
         "falas": [
             "Parte do óleo usado nas lanternas das ruas desapareceu do depósito dos guardas.",
             "Sem iluminação, algumas passagens ficam completamente escuras durante a noite.",
@@ -3124,31 +3055,30 @@ eventos = [
             "opcao_segunda": "Estabelecer toque de recolher",
             "opcao_terceira": "Manter as rondas como estão"
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -50},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -80},
         "efeito_segunda": {"Contentamento": -6, "Populacao": 0, "Dinheiro": -15},
         "efeito_terceira": {"Contentamento": -10, "Populacao": -3, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Compraremos óleo e dobraremos as rondas nas ruas mais escuras.",
                 "O povo continuará desconfiado, mas os roubos diminuirão.",
-                "(+6 de Contentamento, 0 de População, -50 de Dinheiro)"
+                "(+6 de Contentamento, -80 de Dinheiro)"
             ],
             2: [
                 "Ao cair da noite, todos deverão permanecer em suas casas.",
                 "As ruas ficaram mais seguras, mas os moradores não gostam de ser tratados como prisioneiros.",
-                "(-6 de Contentamento, 0 de População, -15 de Dinheiro)"
+                "(-6 de Contentamento, -15 de Dinheiro)"
             ],
             3: [
                 "Como ordenar.",
                 "Sem luz suficiente, os ladrões continuaram escolhendo suas vítimas na escuridão.",
-                "(-10 de Contentamento, -3 de População)"
+                "(-10 de Contentamento, -3 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 69,
-        "dia_minimo": 23,
+        "dia_minimo": 12,
         "falas": [
             "Homens convocados para limpar a vala ao redor das defesas abandonaram o trabalho.",
             "Eles dizem que foram chamados vezes demais e que suas próprias plantações estão sendo esquecidas.",
@@ -3161,30 +3091,29 @@ eventos = [
             "opcao_terceira": "Adiar a limpeza"
         },
         "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -70},
-        "efeito_segunda": {"Contentamento": -9, "Populacao": -2, "Dinheiro": -10},
+        "efeito_segunda": {"Contentamento": -8, "Populacao": -2, "Dinheiro": -10},
         "efeito_terceira": {"Contentamento": -6, "Populacao": -3, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Contrataremos homens para concluir a limpeza, meu senhor.",
                 "A vala será desobstruída sem retirar mais camponeses de seus campos.",
-                "(0 de Contentamento, 0 de População, -70 de Dinheiro)"
+                "(-70 de Dinheiro)"
             ],
             2: [
                 "Os convocados voltarão ao trabalho sob vigilância dos guardas.",
                 "A vala ficou limpa, mas alguns agricultores abandonaram suas plantações em protesto.",
-                "(-9 de Contentamento, -2 de População, -10 de Dinheiro)"
+                "(-8 de Contentamento, -2 de Populacao, -10 de Dinheiro)"
             ],
             3: [
                 "Então deixaremos o serviço para depois.",
                 "A chuva veio antes da nova convocação, danificando parte da defesa e algumas casas próximas.",
-                "(-6 de Contentamento, -3 de População)"
+                "(-6 de Contentamento, -3 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 70,
-        "dia_minimo": 23,
+        "dia_minimo": 19,
         "falas": [
             "Encontramos o corpo de um homem na estrada leste.",
             "Ele não carrega símbolo de família, moedas ou documentos.",
@@ -3203,24 +3132,23 @@ eventos = [
             1: [
                 "Investigaremos cada trilha e cada pousada próxima, meu senhor.",
                 "Talvez demore, mas o povo verá que uma morte não será simplesmente ignorada.",
-                "(0 de Contentamento, 0 de População, -45 de Dinheiro)"
+                "(-45 de Dinheiro)"
             ],
             2: [
                 "O corpo ficará exposto até que alguém reconheça seu rosto.",
                 "A família foi encontrada, mas muitos moradores ficaram perturbados com a cena.",
-                "(-4 de Contentamento, 0 de População, -10 de Dinheiro)"
+                "(-4 de Contentamento, -10 de Dinheiro)"
             ],
             3: [
                 "Ele será enterrado sem perguntas.",
                 "Dias depois, viajantes começaram a evitar a estrada por medo de serem os próximos.",
-                "(-8 de Contentamento, -2 de População)"
+                "(-8 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 71,
-        "dia_minimo": 24,
+        "dia_minimo": 1,
         "falas": [
             "Dois povoados estão discutindo pelo uso de uma pequena comporta de água.",
             "A aldeia de cima abre a passagem para seus campos e deixa pouca água para as plantações mais baixas.",
@@ -3234,29 +3162,28 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -20},
         "efeito_segunda": {"Contentamento": -8, "Populacao": -3, "Dinheiro": 50},
-        "efeito_terceira": {"Contentamento": -10, "Populacao": -4, "Dinheiro": 0},
+        "efeito_terceira": {"Contentamento": -8, "Populacao": -4, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os guardas observarão a abertura da comporta durante os próximos dias.",
                 "Ninguém recebeu toda a água que queria, mas a disputa foi controlada.",
-                "(0 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(-20 de Dinheiro)"
             ],
             2: [
                 "A aldeia que mais contribui ao castelo receberá prioridade.",
                 "A arrecadação ficará protegida, mas os campos abaixo começaram a secar.",
-                "(-8 de Contentamento, -3 de População, +50 de Dinheiro)"
+                "(-8 de Contentamento, -3 de Populacao, +50 de Dinheiro)"
             ],
             3: [
                 "Como ordenar.",
                 "Durante a noite, a comporta foi destruída e a briga chegou aos campos.",
-                "(-10 de Contentamento, -4 de População)"
+                "(-8 de Contentamento, -4 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 72,
-        "dia_minimo": 24,
+        "dia_minimo": 64,
         "falas": [
             "Os coletores recolheram parte do arroz que alguns agricultores haviam separado para plantar na próxima estação.",
             "Eles afirmam que apenas cumpriram a cobrança devida.",
@@ -3275,24 +3202,23 @@ eventos = [
             1: [
                 "Devolveremos o arroz reservado para o plantio.",
                 "Os agricultores não celebrarão, mas ao menos poderão semear quando chegar a estação.",
-                "(0 de Contentamento, 0 de População, -50 de Dinheiro)"
+                "(-50 de Dinheiro)"
             ],
             2: [
                 "O castelo emprestará sementes, e a dívida será cobrada após a colheita.",
                 "As famílias aceitaram, embora não gostem de iniciar a estação devendo ainda mais.",
-                "(-3 de Contentamento, 0 de População, -25 de Dinheiro)"
+                "(-3 de Contentamento, -25 de Dinheiro)"
             ],
             3: [
                 "A cobrança será mantida integralmente.",
                 "Alguns campos permanecerão vazios, pois seus donos já não possuem o que plantar.",
-                "(-12 de Contentamento, -5 de População, +60 de Dinheiro)"
+                "(-12 de Contentamento, -5 de Populacao, +60 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 73,
-        "dia_minimo": 24,
+        "dia_minimo": 17,
         "falas": [
             "Alguém espalhou tábuas escritas pelas ruas acusando um oficial do castelo de desviar tributos.",
             "Não sabemos se as acusações são verdadeiras, mas muitos moradores já leram as mensagens.",
@@ -3306,29 +3232,28 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
-        "efeito_terceira": {"Contentamento": -11, "Populacao": -2, "Dinheiro": 30},
+        "efeito_terceira": {"Contentamento": -8, "Populacao": -2, "Dinheiro": 30},
         "falas_pos": {
             1: [
                 "Investigaremos os registros do oficial e ouviremos testemunhas.",
                 "O povo ainda desconfia, mas verá que a acusação não foi simplesmente silenciada.",
-                "(0 de Contentamento, 0 de População, -35 de Dinheiro)"
+                "(-35 de Dinheiro)"
             ],
             2: [
                 "Retiraremos todas as tábuas das ruas.",
                 "As palavras desapareceram da praça, mas não da conversa dos moradores.",
-                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ],
             3: [
                 "Os responsáveis serão encontrados e presos.",
                 "O oficial agradeceu sua proteção, enquanto o povo passou a acreditar ainda mais nas acusações.",
-                "(-11 de Contentamento, -2 de População, +30 de Dinheiro)"
+                "(-8 de Contentamento, -2 de Populacao, +30 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 74,
-        "dia_minimo": 25,
+        "dia_minimo": 36,
         "falas": [
             "Trabalhadores de uma forja vieram até o posto dos guardas pedir ajuda.",
             "O proprietário prometeu pagar seus salários após vender uma grande encomenda de ferramentas.",
@@ -3347,24 +3272,23 @@ eventos = [
             1: [
                 "O pagamento será retirado dos cofres da oficina antes de qualquer nova venda.",
                 "Os trabalhadores receberam aquilo que já lhes pertencia, embora a produção tenha parado por alguns dias.",
-                "(0 de Contentamento, 0 de População, -15 de Dinheiro)"
+                "(-15 de Dinheiro)"
             ],
             2: [
                 "O castelo pagará os salários atrasados.",
                 "Os homens ficaram aliviados, mas o dono da forja escapou das consequências de sua própria dívida.",
-                "(-2 de Contentamento, 0 de População, -70 de Dinheiro)"
+                "(-2 de Contentamento, -70 de Dinheiro)"
             ],
             3: [
                 "Expulsaremos os trabalhadores que insistirem em protestar.",
                 "A oficina permanecerá aberta, mas muitos homens deixaram Takayama procurando trabalho justo em outro lugar.",
-                "(-12 de Contentamento, -5 de População, +45 de Dinheiro)"
+                "(-12 de Contentamento, -5 de Populacao, +45 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 75,
-        "dia_minimo": 25,
+        "dia_minimo": 36,
         "falas": [
             "As celas do posto de guarda estão cheias.",
             "A maioria dos presos não é formada por assassinos ou invasores, mas por homens que não conseguiram pagar pequenas dívidas.",
@@ -3383,24 +3307,23 @@ eventos = [
             1: [
                 "Os presos por pequenas dívidas serão libertados.",
                 "Suas famílias os receberão de volta, embora os credores protestem diante do castelo.",
-                "(0 de Contentamento, +2 de População, -40 de Dinheiro)"
+                "(+2 de Populacao, -40 de Dinheiro)"
             ],
             2: [
                 "Eles trabalharão para pagar aquilo que devem.",
                 "As obras ganharão braços, mas poucos chamarão isso de misericórdia.",
-                "(-7 de Contentamento, -2 de População, +45 de Dinheiro)"
+                "(-7 de Contentamento, -2 de Populacao, +45 de Dinheiro)"
             ],
             3: [
                 "As celas permanecerão fechadas até que as dívidas sejam pagas.",
                 "Sem os prisioneiros para sustentar suas casas, algumas famílias deixaram o feudo.",
-                "(-10 de Contentamento, -4 de População, -15 de Dinheiro)"
+                "(-10 de Contentamento, -4 de Populacao, -15 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 76,
-        "dia_minimo": 25,
+        "dia_minimo": 17,
         "falas": [
             "Olá shogun, sou Bampi e vejo que você tem tido dificuldades para manter a administração do feudo",
             "Mas não se preocupe, eu posso te ajudar a resolver isso!",
@@ -3410,25 +3333,24 @@ eventos = [
             "opcao_primeira": "Contratar a bampi",
             "opcao_segunda": "Recusar a ajuda dela"
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": 250},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": 140},
         "efeito_segunda": {"Contentamento": -10, "Populacao": 0, "Dinheiro": -40},
         "falas_pos": {
             1: [
                 "Ótimo shogun! vamos começar a organizar as finanças do castelo imediatamente!",
                 "ABSOLUTE BIZAGI!!!",
-                "(+5 de Contentamento, +1 de População, +250 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, +140 de Dinheiro)"
             ],
             2: [
                 "Que penas... Vai perder muito com meus Bizagis e meus contatos, mas tudo bem, shogun...",
                 "(Alguns processos falham por falta de organização, e o castelo perde dinheiro por isso.)",
-                "(-10 de Contentamento, 0 de População, -40 de Dinheiro)"
+                "(-10 de Contentamento, -40 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 77,
-        "dia_minimo": 60,
+        "dia_minimo": 50,
         "falas": [
             "Olá humano... sou Kankatsu, o rei do submundo, deus da destruição...",
             "Soube que um jovem de cabelos brancos com semblante pacífico... sinto um fragmento de sua presença aqui...",
@@ -3438,25 +3360,25 @@ eventos = [
             "opcao_primeira": "Entregar Gladtornm",
             "opcao_segunda": "Esconder Gladtornm"
         },
-        "efeito_primeira": {"Contentamento": 20, "Populacao": -20, "Dinheiro": 1000},
+        "efeito_primeira": {"Contentamento": 20, "Populacao": -20, "Dinheiro": 350},
         "efeito_segunda": {"Contentamento": -20, "Populacao": -50, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Gladtornm... aqui está ele... HAHAHAHAHAHAHAHAHA!!!",
                 "Muito obrigado...te darei uma recompensa por isso...",
                 "(Kankatsu acaba matando algumas pessoas no meio da captura de Gladtornm, e o povo fica com medo de você por isso...)",
-                "(+20 de Contentamento, -20 de População, +1000 de Dinheiro)"
+                "(+20 de Contentamento, -20 de Populacao, +350 de Dinheiro)"
             ],
             2: [
                 "Muito bem... se é isso que você quer... mas saiba que isso não ficará impune...",
-                "Irei mandar minhas tropas atrás de você... já que está do lado deste humano inútil...(-20 de Contentamento, -50 de População,)"
+                "Irei mandar minhas tropas atrás de você... já que está do lado deste humano inútil...",
+                "(-20 de Contentamento, -50 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 78,
-        "dia_minimo": 25,
+        "dia_minimo": 27,
         "falas": [
             "OLÁ SHOGUN! Sou Susano'o o deus da espada",
             "Estou aqui para consagrar seu povo com minha benção e aprender parte da arte da esada com seus samurais",
@@ -3467,25 +3389,24 @@ eventos = [
             "opcao_primeira": "Aceitar Susano'o",
             "opcao_segunda": "Recusar Susano'o"
         },
-        "efeito_primeira": {"Contentamento": 15, "Populacao": 50, "Dinheiro": -100},
-        "efeito_segunda": {"Contentamento": -20, "Populacao": 0, "Dinheiro": 0},
+        "efeito_primeira": {"Contentamento": 13, "Populacao": 12, "Dinheiro": -100},
+        "efeito_segunda": {"Contentamento": -13, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "MUITO OBRIGADO SENHOR SHOGUN!",
                 "Prometo que não irei incomodar!",
                 "(Susano'o acaba atraindo muitos espadachins para cidade em busca de conseguir sua benção)",
-                "(+15 de Contentamento, +50 de População, -100 de Dinheiro)"
+                "(+13 de Contentamento, +12 de Populacao, -100 de Dinheiro)"
             ],
             2: [
                 "Ah tudo bem shogun... Até uma próxima opurtunidade...",
-                "(-20 de Contentamento)"
+                "(-13 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 79,
-        "dia_minimo": 25,
+        "dia_minimo": 77,
         "falas": [
             "Você deve ser o shogun de Takayama né...",
             "Me chamo Lisiane, estou aqui para propor ensinar um nova linguagem.. chamada python",
@@ -3498,24 +3419,25 @@ eventos = [
             "opcao_terceira": "Recusar proposta"
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 25, "Dinheiro": -100},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 10, "Dinheiro": -50},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 10, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -10, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Obrigado pela Oportunidade senhor!! Não irá se arrepender!!!",
                 "(Várias pessoas de fora do feudo se interessam pela academia)",
-                "(+5 de Contentamento, +25 de População, -100 de Dinheiro)"
+                "(+5 de Contentamento, +25 de Populacao, -100 de Dinheiro)"
             ],
             2: [
-                "Não é o ideal, porém já é uma órima decisão senhor!(A linguagem faz muito sucesso e atrai muitos moradores...)(+3 de contentamento, +10 de população, -50 de Dinheiro)"
+                "Não é o ideal, porém já é uma órima decisão senhor!(A linguagem faz muito sucesso e atrai muitos moradores...)(+3 de contentamento, +10 de população, -50 de Dinheiro)",
+                "(+3 de Contentamento, +10 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Ah ok... Talvez em uma próxima...",
-                "(-10 de contentamento)"
+                "(-10 de contentamento)",
+                "(-10 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 80,
         "dia_minimo": 25,
@@ -3542,10 +3464,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 81,
-        "dia_minimo": 60,
+        "dia_minimo": 50,
         "falas": [
             "Meu caro shogun... obrigado por me esconder de kanakatsu",
             "Ele é um ser poderoso que busca o caos incessantemente, caso me entregasse a ele haveria consequencias horríveis...",
@@ -3556,24 +3477,23 @@ eventos = [
             "opcao_primeira": "Aceitar ajuda militar",
             "opcao_segunda": "Aceitar ajuda em dinheiro"
         },
-        "efeito_primeira": {"Contentamento": 0, "Populacao": 350, "Dinheiro": 0},
-        "efeito_segunda": {"Contentamento": 0, "Populacao": 0, "Dinheiro": 750},
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 80, "Dinheiro": 0},
+        "efeito_segunda": {"Contentamento": 0, "Populacao": 0, "Dinheiro": 300},
         "falas_pos": {
             1: [
                 "Agradeço senhor shogun...",
                 "Meus exércitos garantem proteção aos seus cidadãos, espero te ver novamente...",
-                "(+350 de População)"
+                "(+80 de Populacao)"
             ],
             2: [
                 "Ah ok... Mas ainda sim preciso te recompensar de alguma forma... receba isso...",
-                "(+750 de dinheiro)"
+                "(+300 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 82,
-        "dia_minimo": 60,
+        "dia_minimo": 50,
         "falas": [
             "Ah shogun... oque fizestes...",
             "Kankatsu é um ser poderoso que busca o caos incessantemente...",
@@ -3584,22 +3504,20 @@ eventos = [
             "opcao_primeira": "Ajudar Gladtornm",
             "opcao_segunda": "Ajudar Kankatsu"
         },
-        "efeito_primeira": {"Contentamento": 15, "Populacao": 500, "Dinheiro": 0},
-        "efeito_segunda": {"Contentamento": -50, "Populacao": -100, "Dinheiro": 1000},
+        "efeito_primeira": {"Contentamento": 15, "Populacao": 100, "Dinheiro": 0},
+        "efeito_segunda": {"Contentamento": -35, "Populacao": -60, "Dinheiro": 350},
         "falas_pos": {
             1: [
                 "Agradeço senhor shogun...",
                 "Vamos trabalhar juntos para derrotar essa ameaça absurda...",
-                "(+15 de Contentamento, +500 de População)"
+                "(+15 de Contentamento, +100 de Populacao)"
             ],
             2: [
                 "Então parece que você não era tão puro assim... sinto pena de ter que lutar contra você neste momento..",
-                "(Kankatsu destrói boa parte de seu feudo contra Gladtornm, porém ele decide te recompensar em dinheiro...)",
-                "(-50 de Contentamento, -100 de População, 1000 de dinheiro)"
+                "(-35 de Contentamento, -60 de Populacao, +350 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 83,
         "dia_minimo": 25,
@@ -3628,10 +3546,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 84,
-        "dia_minimo": 28,
+        "dia_minimo": 1,
         "falas": [
             "OH! Finalmente encontrei o castelo certo!",
             "Você aí no trono deve ser o shogun de Takayama, não é?",
@@ -3656,7 +3573,7 @@ eventos = [
                 "Seus guardas procurarão por Karasu nas estradas, hospedarias e tavernas da região.",
                 "Quando eu encontrar aquele garoto, darei nele o maior sermão que Takayama já ouviu!",
                 "NETINHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!",
-                "(+5 de Contentamento, +1 de População, -45 de Dinheiro)"
+                "(+10 de Contentamento, +2 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "Então terei que procurar sozinho?",
@@ -3666,7 +3583,6 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 85,
         "dia_minimo": 1,
@@ -3682,14 +3598,14 @@ eventos = [
             "opcao_segunda": "Dispensá-la",
             "opcao_terceira": "Cortar negócios com a sua família"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 0, "Dinheiro": 1000},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 0, "Dinheiro": 150},
         "efeito_segunda": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
-        "efeito_terceira": {"Contentamento": -15, "Populacao": -15, "Dinheiro": -500},
+        "efeito_terceira": {"Contentamento": -15, "Populacao": -15, "Dinheiro": -150},
         "falas_pos": {
             1: [
                 "Que ótima notícia!",
                 "De agora em diante farei de tudo para prosperar ao seu lado, meu amor!",
-                "(+10 de Contentamento, +1000 de Dinheiro)"
+                "(+10 de Contentamento, +150 de Dinheiro)"
             ],
             2: [
                 "É como dizem, nem todos têm bom gosto!",
@@ -3698,11 +3614,10 @@ eventos = [
             3: [
                 "COMO SE ATREVE?",
                 "VOCÊ SE ARREPENDERÁ AMARGAMENTE DISSO!",
-                "(-15 de Contentamento, -15 de População, -500 de Dinheiro)"
+                "(-15 de Contentamento, -15 de Populacao, -150 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 86,
         "dia_minimo": 1,
@@ -3723,7 +3638,7 @@ eventos = [
         "falas_pos": {
             1: [
                 "Vou começar os preparos para recebê-lo imediatamente, meu amor!",
-                "(+10 de Contentamento, +1 de População)"
+                "(+15 de Contentamento, +1 de Populacao)"
             ],
             2: [
                 "Você é o melhor marido que eu poderia ter!",
@@ -3736,10 +3651,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 87,
-        "dia_minimo": 1,
+        "dia_minimo": 10,
         "falas": [
             "Muito obrigado por sua ajuda nobre senhor!",
             "Com os experimentos que o senhor me possibilitou foi possível encontrar uma cura para o meu povo!",
@@ -3749,24 +3663,23 @@ eventos = [
             "opcao_primeira": "Fico feliz em ouvir isso!",
             "opcao_segunda": "Ótimo, agora caia fora daqui!"
         },
-        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": 1000},
-        "efeito_segunda": {"Contentamento": -1, "Populacao": 0, "Dinheiro": 1000},
+        "efeito_primeira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": 250},
+        "efeito_segunda": {"Contentamento": -1, "Populacao": 0, "Dinheiro": 250},
         "falas_pos": {
             1: [
                 "Agora tenho que voltar para o meu tempo.",
                 "Até a próxima, senhor!",
-                "(+1000 de Dinheiro)"
+                "(+250 de Dinheiro)"
             ],
             2: [
                 "Nossa... perdão pelo incômodo.",
-                "(-1 de Contentamento, +1000 de Dinheiro)"
+                "(-1 de Contentamento, +250 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 88,
-        "dia_minimo": 1,
+        "dia_minimo": 17,
         "falas": [
             "Glob. gLob. glOb. gloB.",
             "glob ggggllloooooob globglob",
@@ -3792,11 +3705,10 @@ eventos = [
             3: [
                 "GLOBBBBBBBBBBB GLOB GLOB :3",
                 "(Você se sente estranhamente alegre com a presença dele)",
-                "(+5 de Contentamento, +1 de População)"
+                "(+5 de Contentamento, +1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 89,
         "dia_minimo": 1,
@@ -3824,7 +3736,6 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 90,
         "dia_minimo": 1,
@@ -3836,22 +3747,21 @@ eventos = [
             "opcao_primeira": "Permitir",
             "opcao_segunda": "Proibir"
         },
-        "efeito_primeira": {"Contentamento": 20, "Populacao": 0, "Dinheiro": 333},
-        "efeito_segunda": {"Contentamento": 10, "Populacao": 0, "Dinheiro": 222},
+        "efeito_primeira": {"Contentamento": 12, "Populacao": 1, "Dinheiro": 120},
+        "efeito_segunda": {"Contentamento": 7, "Populacao": 0, "Dinheiro": 80},
         "falas_pos": {
             1: [
                 "Ebaaaaaa hahahaha.",
                 "(Você sente que aqueles amuletos funcionaram)",
-                "(+20 de Contentamento, +1 de População, +333 de Dinheiro)"
+                "(+12 de Contentamento, +1 de Populacao, +120 de Dinheiro)"
             ],
             2: [
                 "Poxa hahahaha.",
                 "(Você sente que aqueles amuletos funcionaram)",
-                "(+10 de Contentamento, 222 de Dinheiro)"
+                "(+7 de Contentamento, +80 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 91,
         "dia_minimo": 1,
@@ -3863,25 +3773,24 @@ eventos = [
             "opcao_primeira": "Permitir",
             "opcao_segunda": "Proibir"
         },
-        "efeito_primeira": {"Contentamento": -11, "Populacao": -22, "Dinheiro": -333},
-        "efeito_segunda": {"Contentamento": -33, "Populacao": -22, "Dinheiro": -111},
+        "efeito_primeira": {"Contentamento": -8, "Populacao": -10, "Dinheiro": -120},
+        "efeito_segunda": {"Contentamento": -18, "Populacao": -10, "Dinheiro": -70},
         "falas_pos": {
             1: [
                 "HAHAHAHAHAHAHA.",
                 "(Você se arrepende de não ter comprado os amuletos)",
-                "(-11 de Contentamento, -22 de População, -333 de Dinheiro)"
+                "(-8 de Contentamento, -10 de Populacao, -120 de Dinheiro)"
             ],
             2: [
                 "AHHAHAHAHAHAHAHAHAHHAHAHAHAHHAHAHAHAHAHHAHAHAHAHAHAHAHA.",
                 "(Você se arrepende de não ter comprado os amuletos)",
-                "(-33 de Contentamento, -22 de População, -111 de Dinheiro)"
+                "(-18 de Contentamento, -10 de Populacao, -70 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 92,
-        "dia_minimo": 1,
+        "dia_minimo": 12,
         "falas": [
             "Sou Torobei, guardião das lanternas ancestrais, carrego a luz daquele que já se foram.",
             "Ultimamente, as chamas andam inquietas... Takayama esqueceu seus mortos.",
@@ -3891,14 +3800,14 @@ eventos = [
             "opcao_primeira": "Restaurar o santuário",
             "opcao_segunda": "Negar o pedido"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 0, "Dinheiro": -77},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 0, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Muito obrigado, meu senhor!",
                 "Tenho certeza que honrar o passado é a chave para vencer essa crise!",
                 "Agora tenho de ir, até a próxima.",
-                "(+10 de Contentamento, -77 de Dinheiro)"
+                "(+8 de Contentamento, -70 de Dinheiro)"
             ],
             2: [
                 "Entendo... só não sei se os espíritos também entenderão.",
@@ -3907,10 +3816,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 93,
-        "dia_minimo": 1,
+        "dia_minimo": 47,
         "falas": [
             "Olá, venho do passo de Shirakawa.",
             "De onde venho é de onde eles partem dessa vida.",
@@ -3922,7 +3830,7 @@ eventos = [
             "opcao_segunda": "Preservar o comércio",
             "opcao_terceira": "Prender a suspeita"
         },
-        "efeito_primeira": {"Contentamento": -15, "Populacao": 30, "Dinheiro": -50},
+        "efeito_primeira": {"Contentamento": -15, "Populacao": 30, "Dinheiro": -80},
         "efeito_segunda": {"Contentamento": 5, "Populacao": -30, "Dinheiro": 50},
         "efeito_terceira": {"Contentamento": 10, "Populacao": -15, "Dinheiro": 50},
         "falas_pos": {
@@ -3931,26 +3839,25 @@ eventos = [
                 "Isso é raro!",
                 "Até mais!",
                 "Que Takayama permaneça sob boas estrelas!",
-                "(-15 de Contentamento, +30 de População, -50 de Dinheiro)"
+                "(-15 de Contentamento, +30 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Isso é um erro!",
                 "Quando a neve cair, se despeça daqueles que ama...",
-                "(+5 de Contentamento, -30 de População, +50 de Dinheiro)"
+                "(+5 de Contentamento, -30 de Populacao, +50 de Dinheiro)"
             ],
             3: [
                 "Quando a lua romper o véu da noite",
                 "serei apenas um devaneio em suas memórias.",
                 "Mas aqueles que brilharem sob a neve",
                 "jamais verão o sol raiar.",
-                "(+10 de Contentamento, -15 de População, +50 de Dinheiro)"
+                "(+10 de Contentamento, -15 de Populacao, +50 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 94,
-        "dia_minimo": 20,
+        "dia_minimo": 41,
         "falas": [
             "Meu nome é Akabane Sogen, guardião das montanhas de Takayama.",
             "Estou observando seu reino do alto dos morros há algum tempo.",
@@ -3968,7 +3875,7 @@ eventos = [
         "falas_pos": {
             1: [
                 "Esta foi uma decisão sábia! Este reino está em boas mãos, em alguns dias estará em mãos melhores ainda!",
-                "(-5 de Contentamento, -10 de População, +100 de Dinheiro)"
+                "(-5 de Contentamento, -10 de Populacao, +100 de Dinheiro)"
             ],
             2: [
                 "Pelo que consigo ver o mais fraco daqui é você mesmo.",
@@ -3977,10 +3884,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 95,
-        "dia_minimo": 1,
+        "dia_minimo": 40,
         "falas": [
             "Vim informá-lo de algo que está acontecendo em nosso reino.",
             "A princípio parecia uma maldição... mas descobri que era apenas descuido!",
@@ -3994,19 +3900,19 @@ eventos = [
             "opcao_segunda": "Queimar os objetos",
             "opcao_terceira": "Vender os objetos"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 0, "Dinheiro": -75},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 0, "Dinheiro": -80},
         "efeito_segunda": {"Contentamento": 5, "Populacao": -25, "Dinheiro": 0},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 50},
         "falas_pos": {
             1: [
                 "Obrigado meu senhor!",
                 "Tenho certeza de que não teremos mais problemas assim daqui em diante.",
-                "(+10 de Contentamento, -75 de Dinheiro)"
+                "(+10 de Contentamento, -80 de Dinheiro)"
             ],
             2: [
                 "Você não deveria fazer isso...",
                 "As consequências serão terríveis!",
-                "(+5 de Contentamento, -25 de População)"
+                "(+5 de Contentamento, -25 de Populacao)"
             ],
             3: [
                 "Isso resolverá por agora, mas eles não pararão de surgir...",
@@ -4014,10 +3920,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 96,
-        "dia_minimo": 1,
+        "dia_minimo": 37,
         "falas": [
             "Meu senhor, venho da cozinha do castelo com más notícias.",
             "Parte do arroz reservado para o povo foi tomado por mofo durante a noite.",
@@ -4031,29 +3936,28 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": -10},
         "efeito_segunda": {"Contentamento": 5, "Populacao": -5, "Dinheiro": 0},
-        "efeito_terceira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -35},
         "falas_pos": {
             1: [
                 "Como ordenar, meu senhor.",
                 "O povo sentirá a falta do arroz, mas ao menos não adoecerá.",
-                "(-5 de Contentamento, 0 de População, -10 de Dinheiro)"
+                "(-5 de Contentamento, -10 de Dinheiro)"
             ],
             2: [
                 "Entendido... mandarei preparar tudo antes que percebam o cheiro.",
                 "Que os deuses sejam gentis com os estômagos da vila.",
-                "(+5 de Contentamento, -5 de População, 0 de Dinheiro)"
+                "(+5 de Contentamento, -5 de Populacao)"
             ],
             3: [
                 "Uma decisão nobre, meu senhor.",
                 "Os cofres sentirão o peso, mas o povo lembrará de sua generosidade.",
-                "(+8 de Contentamento, +3 de População, -25 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 97,
-        "dia_minimo": 1,
+        "dia_minimo": 40,
         "falas": [
             "Venho das margens do Rio Miyagawa.",
             "Os pescadores encontraram um peixe enorme esta manhã.",
@@ -4066,37 +3970,36 @@ eventos = [
             "opcao_terceira": "Vender no mercado",
             "opcao_quarta": "Devolver ao rio"
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -5},
-        "efeito_segunda": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -10},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 20},
-        "efeito_quarta": {"Contentamento": 5, "Populacao": 5, "Dinheiro": -5},
+        "efeito_quarta": {"Contentamento": 5, "Populacao": 5, "Dinheiro": -35},
         "falas_pos": {
             1: [
                 "Como desejar, meu senhor.",
                 "O peixe será levado ao santuário antes que alguém ouse tocá-lo.",
-                "(+5 de Contentamento, 0 de População, -5 de Dinheiro)"
+                "(+5 de Contentamento, -35 de Dinheiro)"
             ],
             2: [
                 "Um banquete com peixe sagrado... isso dará assunto por muitos dias.",
                 "Espero que os espíritos também tenham bom apetite.",
-                "(+8 de Contentamento, +3 de População, -10 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Os mercadores pagarão bem por uma criatura tão rara.",
                 "Mas alguns pescadores dirão que vendemos um sinal dos deuses.",
-                "(-5 de Contentamento, 0 de População, +20 de Dinheiro)"
+                "(-5 de Contentamento, +20 de Dinheiro)"
             ],
             4: [
                 "Então ele voltará às águas de onde veio.",
                 "Talvez o rio se lembre de sua misericórdia.",
-                "(+5 de Contentamento, +5 de População, -5 de Dinheiro)"
+                "(+5 de Contentamento, +5 de Populacao, -35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 98,
-        "dia_minimo": 1,
+        "dia_minimo": 30,
         "falas": [
             "Os campos estão secos e o povo começa a temer a colheita.",
             "O santuário deseja realizar um pequeno festival para pedir chuva.",
@@ -4108,31 +4011,30 @@ eventos = [
             "opcao_segunda": "Fazer algo simples",
             "opcao_terceira": "Proibir o ritual"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 3, "Dinheiro": -25},
-        "efeito_segunda": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -10},
+        "efeito_primeira": {"Contentamento": 10, "Populacao": 3, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -8, "Populacao": 0, "Dinheiro": 5},
         "falas_pos": {
             1: [
                 "Sua generosidade será lembrada nas preces, meu senhor.",
                 "Que as nuvens escutem o nome de seu castelo.",
-                "(+10 de Contentamento, +3 de População, -25 de Dinheiro)"
+                "(+10 de Contentamento, +3 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "Faremos algo humilde, mas sincero.",
                 "Às vezes, os espíritos escutam melhor quando há menos ouro entre as palavras.",
-                "(+5 de Contentamento, 0 de População, -10 de Dinheiro)"
+                "(+5 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "Entendo sua ordem.",
                 "Mas quando o céu permanecer vazio, o povo procurará alguém para culpar.",
-                "(-8 de Contentamento, 0 de População, +5 de Dinheiro)"
+                "(-8 de Contentamento, +5 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 99,
-        "dia_minimo": 2,
+        "dia_minimo": 7,
         "falas": [
             "Um artesão da praça terminou uma estátua em sua homenagem.",
             "Ela foi feita com devoção... mas talvez não com muito talento.",
@@ -4149,19 +4051,18 @@ eventos = [
             1: [
                 "Aceitará mesmo assim? Que atitude inesperadamente nobre.",
                 "O povo rirá da estátua, mas talvez também ria com o senhor.",
-                "(+8 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(+8 de Contentamento)"
             ],
             2: [
                 "Chamarei o artesão para corrigir a obra.",
                 "Desta vez, pedirei que ele olhe para o senhor antes de esculpir.",
-                "(+3 de Contentamento, 0 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, -15 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 100,
-        "dia_minimo": 2,
+        "dia_minimo": 43,
         "falas": [
             "Trago notícias da ponte do caminho norte.",
             "A madeira está rangendo mais do que deveria.",
@@ -4173,31 +4074,30 @@ eventos = [
             "opcao_segunda": "Fechar a passagem",
             "opcao_terceira": "Ignorar por enquanto"
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 5, "Dinheiro": -25},
-        "efeito_segunda": {"Contentamento": -5, "Populacao": 3, "Dinheiro": -5},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 5, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": -5, "Populacao": 3, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -8, "Populacao": -5, "Dinheiro": 10},
         "falas_pos": {
             1: [
                 "Os carpinteiros começarão ainda hoje.",
                 "A ponte ficará firme, mesmo que os cofres reclamem.",
-                "(+5 de Contentamento, +5 de População, -25 de Dinheiro)"
+                "(+5 de Contentamento, +5 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Fecharemos a ponte até segunda ordem.",
                 "Os comerciantes não gostarão, mas ao menos ninguém cairá no rio.",
-                "(-5 de Contentamento, +3 de População, -5 de Dinheiro)"
+                "(-5 de Contentamento, +3 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Entendido, meu senhor.",
                 "A ponte continuará aberta... e os deuses decidirão se ela também continuará de pé.",
-                "(-8 de Contentamento, -5 de População, +10 de Dinheiro)"
+                "(-8 de Contentamento, -5 de Populacao, +10 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 101,
-        "dia_minimo": 1,
+        "dia_minimo": 15,
         "falas": [
             "Durante a madrugada, um sino de um pequeno santuário tocou três vezes sem que ninguém o tocasse.",
             "Os monges dizem que é um aviso dos kami.",
@@ -4217,29 +4117,28 @@ eventos = [
             1: [
                 "Os guardas encontraram marcas recentes perto do santuário.",
                 "Talvez não fossem espíritos, mas o povo ainda está inquieto.",
-                "(-2 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(-2 de Contentamento, -20 de Dinheiro)"
             ],
             2: [
                 "A oferenda acalmou os monges e parte dos moradores.",
                 "O castelo gastou alguns recursos, mas a tensão diminuiu.",
-                "(+5 de Contentamento, 0 de População, -30 de Dinheiro)"
+                "(+5 de Contentamento, -30 de Dinheiro)"
             ],
             3: [
                 "Os boatos pararam em público, mas continuaram nos corredores.",
                 "O silêncio imposto não trouxe muita confiança.",
-                "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ],
             4: [
                 "O medo tornou o povo mais obediente por alguns dias.",
                 "Mas ninguém sorri quando passa pelo santuário.",
-                "(-8 de Contentamento, 0 de População, +20 de Dinheiro)"
+                "(-8 de Contentamento, +20 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 102,
-        "dia_minimo": 1,
+        "dia_minimo": 69,
         "falas": [
             "Um mercador chegou pelas estradas de Hida carregando sal raro.",
             "O preço é alto, mas sem sal a conservação dos alimentos do inverno será pior.",
@@ -4251,37 +4150,36 @@ eventos = [
             "opcao_terceira": "Deixe os comerciantes comprarem.",
             "opcao_quarta": "Confisque a carga."
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 4, "Dinheiro": -60},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 2, "Dinheiro": -35},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 4, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 2, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": 10},
         "efeito_quarta": {"Contentamento": -8, "Populacao": 0, "Dinheiro": 45},
         "falas_pos": {
             1: [
                 "Os armazéns foram reforçados com sal suficiente para a estação.",
                 "Foi caro, mas o povo reconheceu a prudência.",
-                "(+6 de Contentamento, +4 de População, -60 de Dinheiro)"
+                "(+6 de Contentamento, +4 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "O mercador reclamou, mas aceitou a negociação.",
                 "Não veio tanto sal quanto o ideal, mas já ajudará no inverno.",
-                "(+3 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+3 de Contentamento, +2 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "Os comerciantes locais compraram parte da carga e revenderam aos moradores.",
                 "O castelo não se comprometeu muito, mas arrecadou uma pequena taxa.",
-                "(0 de Contentamento, 0 de População, +10 de Dinheiro)"
+                "(+10 de Dinheiro)"
             ],
             4: [
                 "A carga ficou para o feudo, mas os mercadores espalharam má fama sobre Takayama.",
                 "Nem todo lucro vem sem custo.",
-                "(-8 de Contentamento, 0 de População, +45 de Dinheiro)"
+                "(-8 de Contentamento, +45 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 103,
-        "dia_minimo": 2,
+        "dia_minimo": 36,
         "falas": [
             "Um oficial enviado pelo governo exige que Takayama registre todos que entram e saem pelas estradas da montanha.",
             "Mercadores dizem que isso atrasará o comércio.",
@@ -4296,34 +4194,33 @@ eventos = [
         "efeito_primeira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 35},
         "efeito_segunda": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 50},
         "efeito_terceira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": 10},
-        "efeito_quarta": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -20},
+        "efeito_quarta": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -35},
         "falas_pos": {
             1: [
                 "As entradas foram controladas com rigor.",
                 "Alguns reclamaram da demora, mas os registros trouxeram mais ordem.",
-                "(-5 de Contentamento, 0 de População, +35 de Dinheiro)"
+                "(-5 de Contentamento, +35 de Dinheiro)"
             ],
             2: [
                 "Os mercadores pagaram para passar, ainda que contrariados.",
                 "A estrada continua funcionando, mas com menos boa vontade.",
-                "(-3 de Contentamento, 0 de População, +50 de Dinheiro)"
+                "(-3 de Contentamento, +50 de Dinheiro)"
             ],
             3: [
                 "Os moradores ficaram satisfeitos por não serem tratados como suspeitos.",
                 "Ainda assim, alguns viajantes escaparam sem registro.",
-                "(+5 de Contentamento, +1 de População, +10 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, +10 de Dinheiro)"
             ],
             4: [
                 "O oficial partiu humilhado, e o povo gostou da coragem.",
                 "Mas desafiar autoridades sempre cobra algum preço.",
-                "(+3 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(+3 de Contentamento, -35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 104,
-        "dia_minimo": 2,
+        "dia_minimo": 41,
         "falas": [
             "Uma artesã apresenta uma tigela de laca tão fina que deixa ver os veios da madeira.",
             "Ao receber água quente, porém, surge no fundo o brasão de uma família rival.",
@@ -4337,35 +4234,34 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
         "efeito_segunda": {"Contentamento": 1, "Populacao": 0, "Dinheiro": -40},
-        "efeito_terceira": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -20},
+        "efeito_terceira": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_quarta": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A artesã jurou que não sabia do brasão oculto.",
                 "O interrogatório trouxe dúvidas, mas também certo desconforto.",
-                "(-2 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ],
             2: [
                 "As tigelas foram compradas discretamente e guardadas no castelo.",
                 "O segredo foi preservado, mas custou caro.",
-                "(+1 de Contentamento, 0 de População, -40 de Dinheiro)"
+                "(+1 de Contentamento, -40 de Dinheiro)"
             ],
             3: [
                 "O presente chegou ao clã rival como uma provocação elegante.",
                 "Alguns nobres riram da ousadia.",
-                "(+2 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             4: [
                 "A peça foi destruída antes de virar fofoca.",
                 "A artesã saiu em silêncio, sem esconder a mágoa.",
-                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 105,
-        "dia_minimo": 3,
+        "dia_minimo": 43,
         "falas": [
             "Um escriba descobriu que várias famílias trocaram nomes nos registros do feudo.",
             "Com isso, escaparam de impostos e trabalhos obrigatórios.",
@@ -4380,34 +4276,33 @@ eventos = [
         "efeito_primeira": {"Contentamento": -7, "Populacao": 0, "Dinheiro": 40},
         "efeito_segunda": {"Contentamento": 5, "Populacao": 0, "Dinheiro": 10},
         "efeito_terceira": {"Contentamento": -6, "Populacao": 0, "Dinheiro": 65},
-        "efeito_quarta": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -10},
+        "efeito_quarta": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "falas_pos": {
             1: [
                 "Os registros foram corrigidos com pressa.",
                 "A arrecadação melhorou, mas muitas famílias ficaram ressentidas.",
-                "(-7 de Contentamento, 0 de População, +40 de Dinheiro)"
+                "(-7 de Contentamento, +40 de Dinheiro)"
             ],
             2: [
                 "Muitas famílias confessaram antes que a punição chegasse.",
                 "A ordem voltou aos poucos, sem grande revolta.",
-                "(+5 de Contentamento, 0 de População, +10 de Dinheiro)"
+                "(+5 de Contentamento, +10 de Dinheiro)"
             ],
             3: [
                 "As multas encheram parte dos cofres.",
                 "Mas o povo não esquece quando o castelo aperta demais a corda.",
-                "(-6 de Contentamento, 0 de População, +65 de Dinheiro)"
+                "(-6 de Contentamento, +65 de Dinheiro)"
             ],
             4: [
                 "O problema foi varrido para baixo dos tatames.",
                 "O povo ficou aliviado, mas os registros continuam confusos.",
-                "(+2 de Contentamento, 0 de População, -10 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 106,
-        "dia_minimo": 3,
+        "dia_minimo": 17,
         "falas": [
             "Um mestre de incenso propõe uma cerimônia para acalmar dois grupos rivais dentro do castelo.",
             "Ele diz que cada aroma desperta uma emoção diferente.",
@@ -4427,29 +4322,28 @@ eventos = [
             1: [
                 "A reunião terminou sem gritos, mas com olhares baixos demais.",
                 "A paz imposta raramente parece paz.",
-                "(-3 de Contentamento, 0 de População, +15 de Dinheiro)"
+                "(-3 de Contentamento, +15 de Dinheiro)"
             ],
             2: [
                 "Os rivais falaram com firmeza e aceitaram dividir responsabilidades.",
                 "A cerimônia custou pouco, mas trouxe ânimo.",
-                "(+4 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -20 de Dinheiro)"
             ],
             3: [
                 "Alguns baixaram a cabeça e pediram desculpas.",
                 "Outros apenas engoliram a humilhação.",
-                "(-4 de Contentamento, 0 de População, +10 de Dinheiro)"
+                "(-4 de Contentamento, +10 de Dinheiro)"
             ],
             4: [
                 "Sem incenso, as palavras foram duras, mas honestas.",
                 "Ao menos ninguém dirá que foi manipulado.",
-                "(+2 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(+2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 107,
-        "dia_minimo": 4,
+        "dia_minimo": 35,
         "falas": [
             "Carvoeiros de Hida trouxeram um lote de carvão branco raro.",
             "Ele queimaria melhor nas forjas do feudo.",
@@ -4462,36 +4356,35 @@ eventos = [
             "opcao_quarta": "Punam os responsáveis e fiquem com o carvão."
         },
         "efeito_primeira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 55},
-        "efeito_segunda": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": -30},
         "efeito_quarta": {"Contentamento": -6, "Populacao": 0, "Dinheiro": 70},
         "falas_pos": {
             1: [
                 "As forjas trabalharam melhor com o carvão branco.",
                 "O templo, porém, não recebeu explicações.",
-                "(-3 de Contentamento, 0 de População, +55 de Dinheiro)"
+                "(-3 de Contentamento, +55 de Dinheiro)"
             ],
             2: [
                 "O templo recebeu o carvão de volta e abençoou sua decisão.",
                 "As forjas terão que esperar por outro lote.",
-                "(+6 de Contentamento, 0 de População, -25 de Dinheiro)"
+                "(+6 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "Os carvoeiros aceitaram moedas e silêncio.",
                 "Segredos comprados costumam voltar mais caros.",
-                "(-4 de Contentamento, 0 de População, -30 de Dinheiro)"
+                "(-4 de Contentamento, -30 de Dinheiro)"
             ],
             4: [
                 "Os culpados foram punidos e o carvão ficou no castelo.",
                 "A justiça foi conveniente demais para parecer limpa.",
-                "(-6 de Contentamento, 0 de População, +70 de Dinheiro)"
+                "(-6 de Contentamento, +70 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 108,
-        "dia_minimo": 4,
+        "dia_minimo": 45,
         "falas": [
             "Uma família pobre pede permissão para registrar o filho com um nome associado a oni.",
             "Eles acreditam que o nome afastará doenças e maus espíritos.",
@@ -4505,35 +4398,34 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": 0},
         "efeito_segunda": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
-        "efeito_terceira": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -15},
+        "efeito_terceira": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -80},
         "efeito_quarta": {"Contentamento": -8, "Populacao": -1, "Dinheiro": 10},
         "falas_pos": {
             1: [
                 "A família chorou de alívio ao receber sua permissão.",
                 "Alguns nobres torceram o nariz, mas o povo gostou da misericórdia.",
-                "(+5 de Contentamento, +1 de População, 0 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao)"
             ],
             2: [
                 "A criança recebeu um nome mais aceitável aos nobres.",
                 "A família agradeceu, mas sem alegria verdadeira.",
-                "(-2 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ],
             3: [
                 "O templo escolheu um nome intermediário, forte sem ser ofensivo.",
                 "A decisão pareceu prudente.",
-                "(+2 de Contentamento, 0 de População, -15 de Dinheiro)"
+                "(+2 de Contentamento, -80 de Dinheiro)"
             ],
             4: [
                 "A família foi punida por desafiar os costumes.",
                 "Poucos disseram algo, mas muitos lembraram.",
-                "(-8 de Contentamento, -1 de População, +10 de Dinheiro)"
+                "(-8 de Contentamento, -1 de Populacao, +10 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 109,
-        "dia_minimo": 5,
+        "dia_minimo": 43,
         "falas": [
             "Trabalhadores encontraram uma pedra estranhamente quente perto de uma nascente nas montanhas.",
             "Alguns dizem que é uma bênção para abrir banhos termais.",
@@ -4547,35 +4439,34 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 8, "Populacao": 2, "Dinheiro": -60},
         "efeito_segunda": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 35},
-        "efeito_terceira": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -25},
+        "efeito_terceira": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -35},
         "efeito_quarta": {"Contentamento": -1, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O banho público trouxe conforto aos moradores e viajantes.",
                 "A obra custou caro, mas a notícia se espalhou bem.",
-                "(+8 de Contentamento, +2 de População, -60 de Dinheiro)"
+                "(+8 de Contentamento, +2 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "A nascente passou a servir apenas ao castelo.",
                 "Os nobres aprovaram. O povo, nem tanto.",
-                "(-5 de Contentamento, 0 de População, +35 de Dinheiro)"
+                "(-5 de Contentamento, +35 de Dinheiro)"
             ],
             3: [
                 "O ritual acalmou os temores antes de qualquer obra.",
                 "Os monges dizem que a montanha aceitou sua cautela.",
-                "(+4 de Contentamento, 0 de População, -25 de Dinheiro)"
+                "(+4 de Contentamento, -35 de Dinheiro)"
             ],
             4: [
                 "A pedra foi enterrada, e a nascente esquecida por enquanto.",
                 "Ninguém ganhou muito, mas ninguém se arriscou.",
-                "(-1 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-1 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 110,
-        "dia_minimo": 5,
+        "dia_minimo": 25,
         "falas": [
             "Um corvo pousou no telhado do Jinya e deixou cair um papel com marcas estranhas.",
             "O escriba diz que parece uma lista de nomes.",
@@ -4595,29 +4486,28 @@ eventos = [
             1: [
                 "O escriba começou a estudar os símbolos com cuidado.",
                 "A curiosidade cresceu junto com a inquietação.",
-                "(-2 de Contentamento, 0 de População, -15 de Dinheiro)"
+                "(-2 de Contentamento, -15 de Dinheiro)"
             ],
             2: [
                 "O papel virou cinzas antes que o medo se espalhasse.",
                 "Alguns ainda sussurram queimar não apaga presságios.",
-                "(+1 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(+1 de Contentamento)"
             ],
             3: [
                 "Os boateiros foram presos como exemplo.",
                 "O silêncio voltou, mas veio acompanhado de rancor.",
-                "(-6 de Contentamento, 0 de População, +10 de Dinheiro)"
+                "(-6 de Contentamento, +10 de Dinheiro)"
             ],
             4: [
                 "O aviso foi anunciado ao povo como mensagem dos céus.",
                 "As oferendas aumentaram, mas a paz diminuiu.",
-                "(-5 de Contentamento, 0 de População, +30 de Dinheiro)"
+                "(-5 de Contentamento, +30 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 111,
-        "dia_minimo": 6,
+        "dia_minimo": 16,
         "falas": [
             "As ferraduras dos cavalos de patrulha estão gastas.",
             "Akemi, ferreira das cavalariças, trouxe o alerta pessoalmente ao castelo.",
@@ -4636,24 +4526,23 @@ eventos = [
             1: [
                 "Akemi ouviu a sentença com atenção: reforjar todas.",
                 "Pouco depois, as consequências do pedido de Akemi ficaram claras e a reação popular foi favorável; o custo pesou nos cofres.",
-                "(+5 de Contentamento, +2 de População, -70 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para priorizar a patrulha.",
                 "Nas ruas de Takayama, a decisão comunicada por Akemi teve um saldo claro: a rotina local absorveu a decisão aos poucos.",
-                "(+2 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+2 de Contentamento, +1 de Populacao, -30 de Dinheiro)"
             ],
             3: [
                 "Akemi recebeu autorização para adiar o serviço e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Akemi alcançou as vilas, o descontentamento apareceu depressa.",
-                "(-5 de Contentamento, -2 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 112,
-        "dia_minimo": 7,
+        "dia_minimo": 78,
         "falas": [
             "Daichi se adiantou aos demais conselheiros e abriu a audiência com urgência.",
             "A correnteza deslocou dois pilares durante a madrugada.",
@@ -4666,30 +4555,29 @@ eventos = [
             "opcao_terceira": "Fechar a ponte."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 3, "Dinheiro": -100},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -6, "Populacao": -3, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A corte preferiu reconstruir os pilares. Daichi adaptou o plano antes do anoitecer.",
                 "O problema levado por Daichi mudou de rumo; a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+6 de Contentamento, +3 de População, -100 de Dinheiro)"
+                "(+6 de Contentamento, +3 de Populacao, -100 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu fazer reparo provisório.",
                 "Daichi levou a resposta aos envolvidos, e a mudança foi pequena, mas perceptível.",
-                "(+2 de Contentamento, +0 de População, -35 de Dinheiro)"
+                "(+2 de Contentamento, -80 de Dinheiro)"
             ],
             3: [
                 "A escolha foi fechar a ponte, uma solução que obrigou Daichi a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Daichi mostraram que o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-6 de Contentamento, -3 de População, +0 de Dinheiro)"
+                "(-6 de Contentamento, -3 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 113,
-        "dia_minimo": 8,
+        "dia_minimo": 43,
         "falas": [
             "Peço licença para realizar uma feira de três dias.",
             "A proposta vem de Emi, mercadora de seda de Mino, que conhece o problema de perto.",
@@ -4708,24 +4596,23 @@ eventos = [
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu patrocinar a feira.",
                 "Emi assumiu a execução e, nas semanas seguintes, a reação popular foi favorável.",
-                "(+7 de Contentamento, +2 de População, -45 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de cobrar licença comum.",
                 "A notícia levada por Emi chegou às oficinas e aldeias, onde o resultado dividiu opiniões sem abalar a cidade.",
-                "(+2 de Contentamento, +0 de População, +35 de Dinheiro)"
+                "(+2 de Contentamento, +35 de Dinheiro)"
             ],
             3: [
                 "Emi não recebeu tudo o que esperava: a ordem foi recusar a feira.",
                 "Ainda assim, o plano de Emi saiu do papel e a rotina local absorveu a decisão aos poucos.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 114,
-        "dia_minimo": 9,
+        "dia_minimo": 15,
         "falas": [
             "Genkai não trouxe cortesias; trouxe um problema que exigia resposta.",
             "O sino principal rachou e seu som agora assusta os fiéis.",
@@ -4737,31 +4624,30 @@ eventos = [
             "opcao_segunda": "Reparar a rachadura.",
             "opcao_terceira": "Manter o sino atual."
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -85},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -30},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Entre as alternativas apresentadas, prevaleceu fundir um sino novo.",
                 "O resultado da proposta de Genkai não ficou restrito ao salão: a reação popular foi favorável; o custo pesou nos cofres.",
-                "(+6 de Contentamento, +1 de População, -85 de Dinheiro)"
+                "(+6 de Contentamento, +1 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de reparar a rachadura.",
                 "Genkai iniciou o trabalho sabendo que a rotina local absorveu a decisão aos poucos.",
-                "(+3 de Contentamento, +0 de População, -30 de Dinheiro)"
+                "(+3 de Contentamento, -30 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso manter o sino atual.",
                 "Com Genkai à frente da execução, a mudança foi pequena, mas perceptível.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 115,
-        "dia_minimo": 10,
+        "dia_minimo": 45,
         "falas": [
             "Uma doença atingiu parte dos casulos desta estação.",
             "Podemos isolar as criações, mas perderemos produção imediata.",
@@ -4774,30 +4660,29 @@ eventos = [
             "opcao_terceira": "Vender antes que piore."
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -55},
-        "efeito_segunda": {"Contentamento": 1, "Populacao": -1, "Dinheiro": -15},
+        "efeito_segunda": {"Contentamento": 1, "Populacao": -1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -8, "Populacao": -4, "Dinheiro": 70},
         "falas_pos": {
             1: [
                 "Hana ouviu a sentença com atenção: isolar todos os casulos.",
                 "Pouco depois, as consequências do pedido de Hana ficaram claras e a reação popular foi favorável.",
-                "(+5 de Contentamento, +2 de População, -55 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para isolar apenas os doentes.",
                 "Nas ruas de Takayama, a decisão comunicada por Hana teve um saldo claro: a mudança foi pequena, mas perceptível.",
-                "(+1 de Contentamento, -1 de População, -15 de Dinheiro)"
+                "(+1 de Contentamento, -1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Hana recebeu autorização para vender antes que piore e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Hana alcançou as vilas, os cofres receberam uma boa quantia; o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-8 de Contentamento, -4 de População, +70 de Dinheiro)"
+                "(-8 de Contentamento, -4 de Populacao, +70 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 116,
-        "dia_minimo": 11,
+        "dia_minimo": 14,
         "falas": [
             "Isamu, o vigia contra incêndios, apareceu nos portões antes do nascer do sol.",
             "As casas do bairro sul estão secas demais.",
@@ -4816,24 +4701,23 @@ eventos = [
             1: [
                 "A corte preferiu equipar todo o bairro. Isamu adaptou o plano antes do anoitecer.",
                 "O problema levado por Isamu mudou de rumo; a reação popular foi favorável.",
-                "(+7 de Contentamento, +2 de População, -65 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -65 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu instalar poucos barris.",
                 "Isamu levou a resposta aos envolvidos, e o resultado dividiu opiniões sem abalar a cidade.",
-                "(+3 de Contentamento, +0 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, -25 de Dinheiro)"
             ],
             3: [
                 "A escolha foi dispensar os turnos, uma solução que obrigou Isamu a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Isamu mostraram que o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-7 de Contentamento, -3 de População, +0 de Dinheiro)"
+                "(-7 de Contentamento, -3 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 117,
-        "dia_minimo": 12,
+        "dia_minimo": 41,
         "falas": [
             "Jun trouxe até a corte uma queixa das vilas afastadas.",
             "Os registros do feudo estão ilegíveis e geram disputas.",
@@ -4846,30 +4730,29 @@ eventos = [
             "opcao_terceira": "Manter os escribas atuais."
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -60},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 1, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu criar uma escola.",
                 "Jun assumiu a execução e, nas semanas seguintes, a reação popular foi favorável; novas famílias encontraram motivo para permanecer.",
-                "(+5 de Contentamento, +3 de População, -60 de Dinheiro)"
+                "(+5 de Contentamento, +3 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de oferecer curso breve.",
                 "A notícia levada por Jun chegou às oficinas e aldeias, onde a rotina local absorveu a decisão aos poucos.",
-                "(+2 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+2 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Jun não recebeu tudo o que esperava: a ordem foi manter os escribas atuais.",
                 "Ainda assim, o plano de Jun saiu do papel e a mudança foi pequena, mas perceptível.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 118,
-        "dia_minimo": 13,
+        "dia_minimo": 37,
         "falas": [
             "Preciso afastar a oficina do rio para não contaminar a água.",
             "Tenho uma técnica para produzir couro mais resistente.",
@@ -4888,24 +4771,23 @@ eventos = [
             1: [
                 "Entre as alternativas apresentadas, prevaleceu construir oficina afastada.",
                 "O resultado da proposta de Kenta não ficou restrito ao salão: a rotina local absorveu a decisão aos poucos.",
-                "(+4 de Contentamento, +2 de População, -50 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de limitar a produção.",
                 "Kenta iniciou o trabalho sabendo que a mudança foi pequena, mas perceptível.",
-                "(+1 de Contentamento, +0 de População, +10 de Dinheiro)"
+                "(+1 de Contentamento, +10 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso proibir o curtume.",
                 "Com Kenta à frente da execução, o descontentamento apareceu depressa.",
-                "(-5 de Contentamento, -2 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 119,
-        "dia_minimo": 14,
+        "dia_minimo": 13,
         "falas": [
             "Mai espalhou ferramentas e anotações sobre a mesa do conselho.",
             "As trilhas atrasam meu atendimento durante tempestades.",
@@ -4917,31 +4799,30 @@ eventos = [
             "opcao_segunda": "Criar um abrigo central.",
             "opcao_terceira": "Negar o pedido."
         },
-        "efeito_primeira": {"Contentamento": 8, "Populacao": 5, "Dinheiro": -90},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 5, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 4, "Populacao": 2, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -8, "Populacao": -4, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Mai ouviu a sentença com atenção: construir os abrigos.",
                 "Pouco depois, as consequências do pedido de Mai ficaram claras e a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+8 de Contentamento, +5 de População, -90 de Dinheiro)"
+                "(+8 de Contentamento, +5 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para criar um abrigo central.",
                 "Nas ruas de Takayama, a decisão comunicada por Mai teve um saldo claro: o resultado dividiu opiniões sem abalar a cidade.",
-                "(+4 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Mai recebeu autorização para negar o pedido e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Mai alcançou as vilas, o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-8 de Contentamento, -4 de População, +0 de Dinheiro)"
+                "(-8 de Contentamento, -4 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 120,
-        "dia_minimo": 15,
+        "dia_minimo": 25,
         "falas": [
             "Parte do arroz está sendo perdida para a umidade.",
             "Foi por isso que Noboru abandonou o trabalho e veio pedir uma ordem.",
@@ -4954,30 +4835,29 @@ eventos = [
             "opcao_terceira": "Aceitar as perdas."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 4, "Dinheiro": -80},
-        "efeito_segunda": {"Contentamento": 1, "Populacao": 1, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 1, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -7, "Populacao": -6, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A corte preferiu reformar os armazéns. Noboru adaptou o plano antes do anoitecer.",
                 "O problema levado por Noboru mudou de rumo; a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+6 de Contentamento, +4 de População, -80 de Dinheiro)"
+                "(+6 de Contentamento, +4 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu salvar apenas o melhor arroz.",
                 "Noboru levou a resposta aos envolvidos, e a rotina local absorveu a decisão aos poucos.",
-                "(+1 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+1 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "A escolha foi aceitar as perdas, uma solução que obrigou Noboru a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Noboru mostraram que o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-7 de Contentamento, -6 de População, +0 de Dinheiro)"
+                "(-7 de Contentamento, -6 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 121,
-        "dia_minimo": 16,
+        "dia_minimo": 37,
         "falas": [
             "Oto afinou o shamisen em silêncio antes de transformar sua queixa em advertência.",
             "Quero reunir artistas para animar a praça no fim da colheita.",
@@ -4996,24 +4876,23 @@ eventos = [
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu financiar o festival.",
                 "Oto assumiu a execução e, nas semanas seguintes, a reação popular foi favorável; o custo pesou nos cofres.",
-                "(+9 de Contentamento, +2 de População, -70 de Dinheiro)"
+                "(+9 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de permitir apresentações livres.",
                 "A notícia levada por Oto chegou às oficinas e aldeias, onde a reação popular foi favorável.",
-                "(+5 de Contentamento, +1 de População, +0 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao)"
             ],
             3: [
                 "Oto não recebeu tudo o que esperava: a ordem foi proibir a reunião.",
                 "Ainda assim, o plano de Oto saiu do papel e o descontentamento apareceu depressa.",
-                "(-8 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-8 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 122,
-        "dia_minimo": 17,
+        "dia_minimo": 36,
         "falas": [
             "Com apoio, posso abastecer escolas e repartições.",
             "Ren afirma que ainda há tempo para agir.",
@@ -5026,30 +4905,29 @@ eventos = [
             "opcao_terceira": "Recusar o papel."
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -65},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Entre as alternativas apresentadas, prevaleceu ampliar a oficina.",
                 "O resultado da proposta de Ren não ficou restrito ao salão: a reação popular foi favorável; novas famílias encontraram motivo para permanecer.",
-                "(+5 de Contentamento, +3 de População, -65 de Dinheiro)"
+                "(+5 de Contentamento, +3 de Populacao, -65 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de comprar um lote.",
                 "Ren iniciou o trabalho sabendo que o resultado dividiu opiniões sem abalar a cidade.",
-                "(+2 de Contentamento, +0 de População, -20 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso recusar o papel.",
                 "Com Ren à frente da execução, a rotina local absorveu a decisão aos poucos.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 123,
-        "dia_minimo": 18,
+        "dia_minimo": 39,
         "falas": [
             "Encontrei marcas de deslizamento acima de duas aldeias.",
             "Saki, batedora das trilhas do norte, trouxe o alerta pessoalmente ao castelo.",
@@ -5068,24 +4946,23 @@ eventos = [
             1: [
                 "Saki ouviu a sentença com atenção: mobilizar trabalhadores.",
                 "Pouco depois, as consequências do pedido de Saki ficaram claras e a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+5 de Contentamento, +4 de População, -85 de Dinheiro)"
+                "(+5 de Contentamento, +4 de Populacao, -85 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para evacuar as casas próximas.",
                 "Nas ruas de Takayama, a decisão comunicada por Saki teve um saldo claro: a rotina local absorveu a decisão aos poucos.",
-                "(-1 de Contentamento, -2 de População, -30 de Dinheiro)"
+                "(-1 de Contentamento, -2 de Populacao, -30 de Dinheiro)"
             ],
             3: [
                 "Saki recebeu autorização para ignorar as marcas e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Saki alcançou as vilas, o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-12 de Contentamento, -10 de População, +0 de Dinheiro)"
+                "(-12 de Contentamento, -10 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 124,
-        "dia_minimo": 19,
+        "dia_minimo": 9,
         "falas": [
             "Taro entrou no salão antes dos sinos anunciarem a audiência.",
             "A soja deste ano está excelente e posso alimentar muita gente.",
@@ -5097,31 +4974,30 @@ eventos = [
             "opcao_segunda": "Conceder empréstimo.",
             "opcao_terceira": "Recusar o acordo."
         },
-        "efeito_primeira": {"Contentamento": 7, "Populacao": 4, "Dinheiro": -75},
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 4, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 2, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A corte preferiu construir o moinho. Taro adaptou o plano antes do anoitecer.",
                 "O problema levado por Taro mudou de rumo; a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+7 de Contentamento, +4 de População, -75 de Dinheiro)"
+                "(+7 de Contentamento, +4 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu conceder empréstimo.",
                 "Taro levou a resposta aos envolvidos, e a mudança foi pequena, mas perceptível.",
-                "(+3 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+3 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "A escolha foi recusar o acordo, uma solução que obrigou Taro a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Taro mostraram que o resultado dividiu opiniões sem abalar a cidade.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 125,
-        "dia_minimo": 20,
+        "dia_minimo": 4,
         "falas": [
             "Quero instalar placas e mapas nas bifurcações.",
             "A proposta vem de Ume, guia de peregrinos, que conhece o problema de perto.",
@@ -5140,24 +5016,23 @@ eventos = [
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu sinalizar todas as rotas.",
                 "Ume assumiu a execução e, nas semanas seguintes, a reação popular foi favorável; novas famílias encontraram motivo para permanecer.",
-                "(+6 de Contentamento, +3 de População, -50 de Dinheiro)"
+                "(+6 de Contentamento, +3 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de marcar apenas a principal.",
                 "A notícia levada por Ume chegou às oficinas e aldeias, onde o resultado dividiu opiniões sem abalar a cidade.",
-                "(+3 de Contentamento, +1 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -15 de Dinheiro)"
             ],
             3: [
                 "Ume não recebeu tudo o que esperava: a ordem foi deixar como está.",
                 "Ainda assim, o plano de Ume saiu do papel e a rotina local absorveu a decisão aos poucos.",
-                "(-3 de Contentamento, -1 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 126,
-        "dia_minimo": 21,
+        "dia_minimo": 29,
         "falas": [
             "Yori chegou sem rodeios, segurando um pedido que não podia esperar.",
             "As pontes e poços precisam de cabos novos antes do inverno.",
@@ -5170,30 +5045,29 @@ eventos = [
             "opcao_terceira": "Adiar a compra."
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -60},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -5, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Entre as alternativas apresentadas, prevaleceu encomendar o lote.",
                 "O resultado da proposta de Yori não ficou restrito ao salão: a reação popular foi favorável.",
-                "(+5 de Contentamento, +2 de População, -60 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de comprar só para os poços.",
                 "Yori iniciou o trabalho sabendo que a rotina local absorveu a decisão aos poucos.",
-                "(+2 de Contentamento, +0 de População, -20 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso adiar a compra.",
                 "Com Yori à frente da execução, o descontentamento apareceu depressa.",
-                "(-5 de Contentamento, -2 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 127,
-        "dia_minimo": 22,
+        "dia_minimo": 62,
         "falas": [
             "Uma febre leve está se espalhando entre os lenhadores.",
             "Preciso distribuir ervas e afastar os doentes por alguns dias.",
@@ -5205,31 +5079,30 @@ eventos = [
             "opcao_segunda": "Distribuir apenas ervas.",
             "opcao_terceira": "Mandá-los trabalhar."
         },
-        "efeito_primeira": {"Contentamento": 7, "Populacao": 4, "Dinheiro": -70},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -25},
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 4, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -10, "Populacao": -8, "Dinheiro": 20},
         "falas_pos": {
             1: [
                 "Zen ouviu a sentença com atenção: tratar e isolar todos.",
                 "Pouco depois, as consequências do pedido de Zen ficaram claras e a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+7 de Contentamento, +4 de População, -70 de Dinheiro)"
+                "(+7 de Contentamento, +4 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para distribuir apenas ervas.",
                 "Nas ruas de Takayama, a decisão comunicada por Zen teve um saldo claro: a mudança foi pequena, mas perceptível.",
-                "(+2 de Contentamento, +0 de População, -25 de Dinheiro)"
+                "(+2 de Contentamento, -80 de Dinheiro)"
             ],
             3: [
                 "Zen recebeu autorização para mandá-los trabalhar e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Zen alcançou as vilas, o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-10 de Contentamento, -8 de População, +20 de Dinheiro)"
+                "(-10 de Contentamento, -8 de Populacao, +20 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 128,
-        "dia_minimo": 23,
+        "dia_minimo": 14,
         "falas": [
             "Aiko, oleira do distrito oeste, chegou com as mãos ainda marcadas de barro.",
             "Meu novo forno pode produzir telhas resistentes ao gelo.",
@@ -5248,24 +5121,23 @@ eventos = [
             1: [
                 "A corte preferiu financiar os testes. Aiko adaptou o plano antes do anoitecer.",
                 "O problema levado por Aiko mudou de rumo; a reação popular foi favorável.",
-                "(+5 de Contentamento, +2 de População, -55 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu comprar poucas telhas.",
                 "Aiko levou a resposta aos envolvidos, e o resultado dividiu opiniões sem abalar a cidade.",
-                "(+2 de Contentamento, +0 de População, -15 de Dinheiro)"
+                "(+2 de Contentamento, -15 de Dinheiro)"
             ],
             3: [
                 "A escolha foi recusar o projeto, uma solução que obrigou Aiko a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Aiko mostraram que a rotina local absorveu a decisão aos poucos.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 129,
-        "dia_minimo": 24,
+        "dia_minimo": 29,
         "falas": [
             "Benjiro veio das vilas com um assunto que já dividia os moradores.",
             "Troncos soltos estão bloqueando o rio Miyagawa.",
@@ -5278,30 +5150,29 @@ eventos = [
             "opcao_terceira": "Esperar a correnteza."
         },
         "efeito_primeira": {"Contentamento": 7, "Populacao": 3, "Dinheiro": -80},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -30},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -6, "Populacao": -3, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu limpar todo o rio.",
                 "Benjiro assumiu a execução e, nas semanas seguintes, a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+7 de Contentamento, +3 de População, -80 de Dinheiro)"
+                "(+7 de Contentamento, +3 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de abrir um canal estreito.",
                 "A notícia levada por Benjiro chegou às oficinas e aldeias, onde a rotina local absorveu a decisão aos poucos.",
-                "(+3 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Benjiro não recebeu tudo o que esperava: a ordem foi esperar a correnteza.",
                 "Ainda assim, o plano de Benjiro saiu do papel e o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-6 de Contentamento, -3 de População, +0 de Dinheiro)"
+                "(-6 de Contentamento, -3 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 130,
-        "dia_minimo": 25,
+        "dia_minimo": 13,
         "falas": [
             "Peço que a área seja protegida até os filhotes crescerem.",
             "Caçadores estão se aproximando dos ninhos.",
@@ -5320,24 +5191,23 @@ eventos = [
             1: [
                 "Entre as alternativas apresentadas, prevaleceu criar área protegida.",
                 "O resultado da proposta de Chiyo não ficou restrito ao salão: a reação popular foi favorável.",
-                "(+8 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+8 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de limitar a caça.",
                 "Chiyo iniciou o trabalho sabendo que a mudança foi pequena, mas perceptível.",
-                "(+3 de Contentamento, +0 de População, +10 de Dinheiro)"
+                "(+3 de Contentamento, +10 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso liberar os caçadores.",
                 "Com Chiyo à frente da execução, os cofres receberam uma boa quantia; o descontentamento apareceu depressa.",
-                "(-7 de Contentamento, +0 de População, +55 de Dinheiro)"
+                "(-7 de Contentamento, +55 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 131,
-        "dia_minimo": 26,
+        "dia_minimo": 27,
         "falas": [
             "Daisuke abriu seus mapas e ferramentas diante dos conselheiros.",
             "A água das plantações está sendo dividida de forma injusta.",
@@ -5350,30 +5220,29 @@ eventos = [
             "opcao_terceira": "Não interferir."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 5, "Dinheiro": -95},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 2, "Dinheiro": -15},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 2, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -8, "Populacao": -5, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Daisuke ouviu a sentença com atenção: construir comportas.",
                 "Pouco depois, as consequências do pedido de Daisuke ficaram claras e a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+6 de Contentamento, +5 de População, -95 de Dinheiro)"
+                "(+6 de Contentamento, +5 de Populacao, -95 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para criar turnos sem obras.",
                 "Nas ruas de Takayama, a decisão comunicada por Daisuke teve um saldo claro: o resultado dividiu opiniões sem abalar a cidade.",
-                "(+3 de Contentamento, +2 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Daisuke recebeu autorização para não interferir e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Daisuke alcançou as vilas, o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-8 de Contentamento, -5 de População, +0 de Dinheiro)"
+                "(-8 de Contentamento, -5 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 132,
-        "dia_minimo": 27,
+        "dia_minimo": 17,
         "falas": [
             "Chegaram tônicos estrangeiros com promessas exageradas.",
             "Foi por isso que Fumi abandonou o trabalho e veio pedir uma ordem.",
@@ -5392,24 +5261,23 @@ eventos = [
             1: [
                 "A corte preferiu examinar os tônicos. Fumi adaptou o plano antes do anoitecer.",
                 "O problema levado por Fumi mudou de rumo; o resultado dividiu opiniões sem abalar a cidade.",
-                "(+4 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -25 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu liberar a venda.",
                 "Fumi levou a resposta aos envolvidos, e os cofres receberam uma boa quantia; algumas famílias pagaram o preço da decisão.",
-                "(-3 de Contentamento, -3 de População, +65 de Dinheiro)"
+                "(-3 de Contentamento, -3 de Populacao, +65 de Dinheiro)"
             ],
             3: [
                 "A escolha foi confiscar tudo, uma solução que obrigou Fumi a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Fumi mostraram que a mudança foi pequena, mas perceptível.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 133,
-        "dia_minimo": 28,
+        "dia_minimo": 16,
         "falas": [
             "Goro, escultor de pedra, falou antes mesmo que a poeira de sua oficina deixasse suas roupas.",
             "Quero erguer marcos nas entradas de Takayama.",
@@ -5421,31 +5289,30 @@ eventos = [
             "opcao_segunda": "Fazer apenas um.",
             "opcao_terceira": "Recusar a obra."
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -80},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -30},
         "efeito_terceira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu encomendar os marcos.",
                 "Goro assumiu a execução e, nas semanas seguintes, a reação popular foi favorável; o custo pesou nos cofres.",
-                "(+6 de Contentamento, +2 de População, -80 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de fazer apenas um.",
                 "A notícia levada por Goro chegou às oficinas e aldeias, onde a mudança foi pequena, mas perceptível.",
-                "(+2 de Contentamento, +0 de População, -30 de Dinheiro)"
+                "(+2 de Contentamento, -30 de Dinheiro)"
             ],
             3: [
                 "Goro não recebeu tudo o que esperava: a ordem foi recusar a obra.",
                 "Ainda assim, o plano de Goro saiu do papel e o resultado dividiu opiniões sem abalar a cidade.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 134,
-        "dia_minimo": 29,
+        "dia_minimo": 10,
         "falas": [
             "Preciso de patrulhas discretas para prendê-los sem causar pânico.",
             "Haru afirma que ainda há tempo para agir.",
@@ -5459,29 +5326,28 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -50},
         "efeito_segunda": {"Contentamento": 1, "Populacao": 0, "Dinheiro": -20},
-        "efeito_terceira": {"Contentamento": -9, "Populacao": -2, "Dinheiro": 0},
+        "efeito_terceira": {"Contentamento": -8, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Entre as alternativas apresentadas, prevaleceu reforçar as patrulhas.",
                 "O resultado da proposta de Haru não ficou restrito ao salão: a reação popular foi favorável.",
-                "(+5 de Contentamento, +2 de População, -50 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de contratar informantes.",
                 "Haru iniciou o trabalho sabendo que o resultado dividiu opiniões sem abalar a cidade.",
-                "(+1 de Contentamento, +0 de População, -20 de Dinheiro)"
+                "(+1 de Contentamento, -20 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso ignorar os furtos.",
                 "Com Haru à frente da execução, o descontentamento apareceu depressa.",
-                "(-9 de Contentamento, -2 de População, +0 de Dinheiro)"
+                "(-8 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 135,
-        "dia_minimo": 30,
+        "dia_minimo": 6,
         "falas": [
             "Tenho barris suficientes para formar uma reserva de inverno.",
             "Ine, produtora de missô, trouxe o alerta pessoalmente ao castelo.",
@@ -5493,31 +5359,30 @@ eventos = [
             "opcao_segunda": "Comprar metade.",
             "opcao_terceira": "Não comprar."
         },
-        "efeito_primeira": {"Contentamento": 7, "Populacao": 4, "Dinheiro": -90},
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 4, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 2, "Dinheiro": -40},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Ine ouviu a sentença com atenção: comprar toda a reserva.",
                 "Pouco depois, as consequências do pedido de Ine ficaram claras e a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+7 de Contentamento, +4 de População, -90 de Dinheiro)"
+                "(+7 de Contentamento, +4 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para comprar metade.",
                 "Nas ruas de Takayama, a decisão comunicada por Ine teve um saldo claro: a rotina local absorveu a decisão aos poucos.",
-                "(+3 de Contentamento, +2 de População, -40 de Dinheiro)"
+                "(+3 de Contentamento, +2 de Populacao, -40 de Dinheiro)"
             ],
             3: [
                 "Ine recebeu autorização para não comprar e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Ine alcançou as vilas, a mudança foi pequena, mas perceptível.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 136,
-        "dia_minimo": 31,
+        "dia_minimo": 1,
         "falas": [
             "Jiro atravessou o salão ainda tirando poeira das botas.",
             "Os jovens conhecem pouco sobre as antigas famílias de Hida.",
@@ -5536,24 +5401,23 @@ eventos = [
             1: [
                 "A corte preferiu patrocinar o registro. Jiro adaptou o plano antes do anoitecer.",
                 "O problema levado por Jiro mudou de rumo; a reação popular foi favorável.",
-                "(+6 de Contentamento, +2 de População, -45 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu organizar encontros públicos.",
                 "Jiro levou a resposta aos envolvidos, e a mudança foi pequena, mas perceptível.",
-                "(+4 de Contentamento, +1 de População, -10 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -10 de Dinheiro)"
             ],
             3: [
                 "A escolha foi deixar o passado quieto, uma solução que obrigou Jiro a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Jiro mostraram que o resultado dividiu opiniões sem abalar a cidade.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 137,
-        "dia_minimo": 32,
+        "dia_minimo": 25,
         "falas": [
             "A extração trará riqueza, mas exige cuidado com a água.",
             "A proposta vem de Kiku, responsável por uma mina de cobre, que conhece o problema de perto.",
@@ -5567,29 +5431,28 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 2, "Populacao": 3, "Dinheiro": 120},
         "efeito_segunda": {"Contentamento": 1, "Populacao": 1, "Dinheiro": 55},
-        "efeito_terceira": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -10},
+        "efeito_terceira": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -35},
         "falas_pos": {
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu explorar com fiscalização.",
                 "Kiku assumiu a execução e, nas semanas seguintes, novas famílias encontraram motivo para permanecer; os cofres receberam uma boa quantia.",
-                "(+2 de Contentamento, +3 de População, +120 de Dinheiro)"
+                "(+2 de Contentamento, +3 de Populacao, +120 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de fazer extração pequena.",
                 "A notícia levada por Kiku chegou às oficinas e aldeias, onde os cofres receberam uma boa quantia.",
-                "(+1 de Contentamento, +1 de População, +55 de Dinheiro)"
+                "(+1 de Contentamento, +1 de Populacao, +55 de Dinheiro)"
             ],
             3: [
                 "Kiku não recebeu tudo o que esperava: a ordem foi proibir a mineração.",
                 "Ainda assim, o plano de Kiku saiu do papel e a rotina local absorveu a decisão aos poucos.",
-                "(+4 de Contentamento, +0 de População, -10 de Dinheiro)"
+                "(+4 de Contentamento, -35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 138,
-        "dia_minimo": 33,
+        "dia_minimo": 8,
         "falas": [
             "Matsu entrou com a pressa de quem já discutiu demais fora do castelo.",
             "Os estandartes do castelo estão rasgados pelo vento.",
@@ -5608,24 +5471,23 @@ eventos = [
             1: [
                 "Entre as alternativas apresentadas, prevaleceu restaurar todos.",
                 "O resultado da proposta de Matsu não ficou restrito ao salão: a reação popular foi favorável.",
-                "(+5 de Contentamento, +1 de População, -55 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de remendar os principais.",
                 "Matsu iniciou o trabalho sabendo que a rotina local absorveu a decisão aos poucos.",
-                "(+2 de Contentamento, +0 de População, -20 de Dinheiro)"
+                "(+2 de Contentamento, -20 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso receber os emissários assim.",
                 "Com Matsu à frente da execução, o descontentamento apareceu depressa.",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 139,
-        "dia_minimo": 34,
+        "dia_minimo": 35,
         "falas": [
             "As redes estão capturando peixes jovens demais.",
             "Proponho uma pausa curta para preservar a próxima estação.",
@@ -5637,31 +5499,30 @@ eventos = [
             "opcao_segunda": "Limitar as redes.",
             "opcao_terceira": "Manter a pesca livre."
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -30},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": 2, "Populacao": 1, "Dinheiro": 10},
         "efeito_terceira": {"Contentamento": -6, "Populacao": -4, "Dinheiro": 60},
         "falas_pos": {
             1: [
                 "Nami ouviu a sentença com atenção: suspender a pesca.",
                 "Pouco depois, as consequências do pedido de Nami ficaram claras e a reação popular foi favorável; novas famílias encontraram motivo para permanecer.",
-                "(+5 de Contentamento, +3 de População, -30 de Dinheiro)"
+                "(+5 de Contentamento, +3 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para limitar as redes.",
                 "Nas ruas de Takayama, a decisão comunicada por Nami teve um saldo claro: a mudança foi pequena, mas perceptível.",
-                "(+2 de Contentamento, +1 de População, +10 de Dinheiro)"
+                "(+2 de Contentamento, +1 de Populacao, +10 de Dinheiro)"
             ],
             3: [
                 "Nami recebeu autorização para manter a pesca livre e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Nami alcançou as vilas, os cofres receberam uma boa quantia; o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-6 de Contentamento, -4 de População, +60 de Dinheiro)"
+                "(-6 de Contentamento, -4 de Populacao, +60 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 140,
-        "dia_minimo": 35,
+        "dia_minimo": 10,
         "falas": [
             "Osamu, fabricante de tatames, pediu audiência carregando uma amostra desgastada.",
             "Muitas casas precisam trocar esteiras mofadas.",
@@ -5680,24 +5541,23 @@ eventos = [
             1: [
                 "A corte preferiu apoiar o mutirão. Osamu adaptou o plano antes do anoitecer.",
                 "O problema levado por Osamu mudou de rumo; a reação popular foi favorável; novas famílias encontraram motivo para permanecer.",
-                "(+7 de Contentamento, +4 de População, -65 de Dinheiro)"
+                "(+7 de Contentamento, +4 de Populacao, -65 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu ajudar apenas os pobres.",
                 "Osamu levou a resposta aos envolvidos, e o resultado dividiu opiniões sem abalar a cidade.",
-                "(+4 de Contentamento, +2 de População, -30 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -30 de Dinheiro)"
             ],
             3: [
                 "A escolha foi recusar ajuda, uma solução que obrigou Osamu a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Osamu mostraram que o descontentamento apareceu depressa.",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 141,
-        "dia_minimo": 36,
+        "dia_minimo": 4,
         "falas": [
             "Riku trouxe a voz das aldeias diretamente ao salão.",
             "O caminho está tomado por mato e os fiéis deixaram de visitar.",
@@ -5716,24 +5576,23 @@ eventos = [
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu restaurar o caminho.",
                 "Riku assumiu a execução e, nas semanas seguintes, a reação popular foi favorável.",
-                "(+6 de Contentamento, +2 de População, -50 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de limpar apenas a entrada.",
                 "A notícia levada por Riku chegou às oficinas e aldeias, onde a rotina local absorveu a decisão aos poucos.",
-                "(+2 de Contentamento, +0 de População, -15 de Dinheiro)"
+                "(+2 de Contentamento, -15 de Dinheiro)"
             ],
             3: [
                 "Riku não recebeu tudo o que esperava: a ordem foi abandonar o santuário.",
                 "Ainda assim, o plano de Riku saiu do papel e o descontentamento apareceu depressa.",
-                "(-6 de Contentamento, -1 de População, +0 de Dinheiro)"
+                "(-6 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 142,
-        "dia_minimo": 37,
+        "dia_minimo": 7,
         "falas": [
             "Quero criar pontos de troca para os mensageiros.",
             "As cartas entre aldeias demoram mais que o necessário.",
@@ -5745,31 +5604,30 @@ eventos = [
             "opcao_segunda": "Testar duas estações.",
             "opcao_terceira": "Manter o sistema atual."
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 4, "Dinheiro": -80},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 4, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -30},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Entre as alternativas apresentadas, prevaleceu criar a rede de correio.",
                 "O resultado da proposta de Shino não ficou restrito ao salão: a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+6 de Contentamento, +4 de População, -80 de Dinheiro)"
+                "(+6 de Contentamento, +4 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de testar duas estações.",
                 "Shino iniciou o trabalho sabendo que a mudança foi pequena, mas perceptível.",
-                "(+3 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -30 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso manter o sistema atual.",
                 "Com Shino à frente da execução, o resultado dividiu opiniões sem abalar a cidade.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 143,
-        "dia_minimo": 38,
+        "dia_minimo": 24,
         "falas": [
             "Takeo colocou seus instrumentos no chão como prova de que não vinha apenas reclamar.",
             "Tenho potros fortes que podem melhorar a patrulha.",
@@ -5788,24 +5646,23 @@ eventos = [
             1: [
                 "Takeo ouviu a sentença com atenção: aceitar a parceria.",
                 "Pouco depois, as consequências do pedido de Takeo ficaram claras e a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+5 de Contentamento, +5 de População, -110 de Dinheiro)"
+                "(+5 de Contentamento, +5 de Populacao, -110 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para comprar poucos cavalos.",
                 "Nas ruas de Takayama, a decisão comunicada por Takeo teve um saldo claro: o resultado dividiu opiniões sem abalar a cidade.",
-                "(+2 de Contentamento, +2 de População, -55 de Dinheiro)"
+                "(+2 de Contentamento, +2 de Populacao, -55 de Dinheiro)"
             ],
             3: [
                 "Takeo recebeu autorização para recusar a oferta e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Takeo alcançou as vilas, a rotina local absorveu a decisão aos poucos.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 144,
-        "dia_minimo": 39,
+        "dia_minimo": 4,
         "falas": [
             "Quero distribuir alimento aos trabalhadores no festival.",
             "Foi por isso que Yae abandonou o trabalho e veio pedir uma ordem.",
@@ -5824,24 +5681,23 @@ eventos = [
             1: [
                 "A corte preferiu comprar bolos para todos. Yae adaptou o plano antes do anoitecer.",
                 "O problema levado por Yae mudou de rumo; a reação popular foi favorável; novas famílias encontraram motivo para permanecer.",
-                "(+8 de Contentamento, +3 de População, -55 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu comprar um lote menor.",
                 "Yae levou a resposta aos envolvidos, e a rotina local absorveu a decisão aos poucos.",
-                "(+4 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -20 de Dinheiro)"
             ],
             3: [
                 "A escolha foi não participar, uma solução que obrigou Yae a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Yae mostraram que a mudança foi pequena, mas perceptível.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 145,
-        "dia_minimo": 40,
+        "dia_minimo": 30,
         "falas": [
             "Akio, inspetor de pesos, ergueu uma balança torta diante do conselho.",
             "Alguns mercadores usam balanças alteradas no mercado.",
@@ -5860,24 +5716,23 @@ eventos = [
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu fiscalizar todo o mercado.",
                 "Akio assumiu a execução e, nas semanas seguintes, a reação popular foi favorável.",
-                "(+5 de Contentamento, +1 de População, +35 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, +35 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de emitir um aviso.",
                 "A notícia levada por Akio chegou às oficinas e aldeias, onde a mudança foi pequena, mas perceptível.",
-                "(+1 de Contentamento, +0 de População, +10 de Dinheiro)"
+                "(+1 de Contentamento, +10 de Dinheiro)"
             ],
             3: [
                 "Akio não recebeu tudo o que esperava: a ordem foi ignorar as denúncias.",
                 "Ainda assim, o plano de Akio saiu do papel e o descontentamento apareceu depressa.",
-                "(-8 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-8 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 146,
-        "dia_minimo": 41,
+        "dia_minimo": 16,
         "falas": [
             "Podemos transplantá-lo ou reforçar a fundação.",
             "Botan afirma que ainda há tempo para agir.",
@@ -5896,24 +5751,23 @@ eventos = [
             1: [
                 "Entre as alternativas apresentadas, prevaleceu transplantar a árvore.",
                 "O resultado da proposta de Botan não ficou restrito ao salão: a reação popular foi favorável; o custo pesou nos cofres.",
-                "(+6 de Contentamento, +1 de População, -70 de Dinheiro)"
+                "(+6 de Contentamento, +1 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de reforçar o muro.",
                 "Botan iniciou o trabalho sabendo que o resultado dividiu opiniões sem abalar a cidade.",
-                "(+3 de Contentamento, +0 de População, -45 de Dinheiro)"
+                "(+3 de Contentamento, -45 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso cortar o pinheiro.",
                 "Com Botan à frente da execução, o descontentamento apareceu depressa.",
-                "(-7 de Contentamento, +0 de População, +15 de Dinheiro)"
+                "(-7 de Contentamento, +15 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 147,
-        "dia_minimo": 42,
+        "dia_minimo": 8,
         "falas": [
             "Posso fornecer iluminação mais barata para as ruas.",
             "Chika, fabricante de velas, trouxe o alerta pessoalmente ao castelo.",
@@ -5925,31 +5779,30 @@ eventos = [
             "opcao_segunda": "Testar na praça.",
             "opcao_terceira": "Recusar a proposta."
         },
-        "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -75},
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -25},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Chika ouviu a sentença com atenção: iluminar as ruas.",
                 "Pouco depois, as consequências do pedido de Chika ficaram claras e a reação popular foi favorável; o custo pesou nos cofres.",
-                "(+7 de Contentamento, +2 de População, -75 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para testar na praça.",
                 "Nas ruas de Takayama, a decisão comunicada por Chika teve um saldo claro: a rotina local absorveu a decisão aos poucos.",
-                "(+3 de Contentamento, +0 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, -25 de Dinheiro)"
             ],
             3: [
                 "Chika recebeu autorização para recusar a proposta e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Chika alcançou as vilas, a mudança foi pequena, mas perceptível.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 148,
-        "dia_minimo": 43,
+        "dia_minimo": 18,
         "falas": [
             "Etsu pediu a palavra antes que os conselheiros ocupassem seus lugares.",
             "A colheita de castanhas foi abundante, mas faltam depósitos.",
@@ -5962,30 +5815,29 @@ eventos = [
             "opcao_terceira": "Deixar cada família cuidar."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 4, "Dinheiro": -60},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 2, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 2, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A corte preferiu construir depósitos. Etsu adaptou o plano antes do anoitecer.",
                 "O problema levado por Etsu mudou de rumo; a reação popular foi favorável; novas famílias encontraram motivo para permanecer.",
-                "(+6 de Contentamento, +4 de População, -60 de Dinheiro)"
+                "(+6 de Contentamento, +4 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu comprar cestos cobertos.",
                 "Etsu levou a resposta aos envolvidos, e a mudança foi pequena, mas perceptível.",
-                "(+3 de Contentamento, +2 de População, -20 de Dinheiro)"
+                "(+3 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "A escolha foi deixar cada família cuidar, uma solução que obrigou Etsu a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Etsu mostraram que o resultado dividiu opiniões sem abalar a cidade.",
-                "(-4 de Contentamento, -2 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 149,
-        "dia_minimo": 44,
+        "dia_minimo": 24,
         "falas": [
             "Disciplina reduzirá acidentes com lâminas reais.",
             "A proposta vem de Fujio, mestre de kenjutsu, que conhece o problema de perto.",
@@ -5998,30 +5850,29 @@ eventos = [
             "opcao_terceira": "Recusar o treinamento."
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -65},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 1, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu treinar toda a guarda.",
                 "Fujio assumiu a execução e, nas semanas seguintes, a reação popular foi favorável; novas famílias encontraram motivo para permanecer.",
-                "(+5 de Contentamento, +3 de População, -65 de Dinheiro)"
+                "(+5 de Contentamento, +3 de Populacao, -65 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de treinar os recrutas.",
                 "A notícia levada por Fujio chegou às oficinas e aldeias, onde o resultado dividiu opiniões sem abalar a cidade.",
-                "(+2 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+2 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Fujio não recebeu tudo o que esperava: a ordem foi recusar o treinamento.",
                 "Ainda assim, o plano de Fujio saiu do papel e a rotina local absorveu a decisão aos poucos.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 150,
-        "dia_minimo": 45,
+        "dia_minimo": 34,
         "falas": [
             "Hoshi deixou claro, logo ao entrar, que não buscava favores: buscava uma decisão.",
             "As famílias precisam de recipientes para transportar a colheita.",
@@ -6034,30 +5885,29 @@ eventos = [
             "opcao_terceira": "Recusar o projeto."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 4, "Dinheiro": -55},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Entre as alternativas apresentadas, prevaleceu abrir uma oficina.",
                 "O resultado da proposta de Hoshi não ficou restrito ao salão: a reação popular foi favorável; novas famílias encontraram motivo para permanecer.",
-                "(+6 de Contentamento, +4 de População, -55 de Dinheiro)"
+                "(+6 de Contentamento, +4 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de encomendar cestos.",
                 "Hoshi iniciou o trabalho sabendo que a rotina local absorveu a decisão aos poucos.",
-                "(+3 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso recusar o projeto.",
                 "Com Hoshi à frente da execução, a mudança foi pequena, mas perceptível.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 151,
-        "dia_minimo": 46,
+        "dia_minimo": 2,
         "falas": [
             "As primeiras nevascas fecharão a rota em poucos dias.",
             "Peço mantimentos e cordas para manter um posto de resgate.",
@@ -6069,31 +5919,30 @@ eventos = [
             "opcao_segunda": "Enviar suprimentos básicos.",
             "opcao_terceira": "Fechar a rota sem vigia."
         },
-        "efeito_primeira": {"Contentamento": 7, "Populacao": 4, "Dinheiro": -80},
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 4, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -30},
         "efeito_terceira": {"Contentamento": -7, "Populacao": -4, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Ichiro ouviu a sentença com atenção: equipar o posto.",
                 "Pouco depois, as consequências do pedido de Ichiro ficaram claras e a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+7 de Contentamento, +4 de População, -80 de Dinheiro)"
+                "(+7 de Contentamento, +4 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para enviar suprimentos básicos.",
                 "Nas ruas de Takayama, a decisão comunicada por Ichiro teve um saldo claro: a mudança foi pequena, mas perceptível.",
-                "(+3 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -30 de Dinheiro)"
             ],
             3: [
                 "Ichiro recebeu autorização para fechar a rota sem vigia e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Ichiro alcançou as vilas, o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-7 de Contentamento, -4 de População, +0 de Dinheiro)"
+                "(-7 de Contentamento, -4 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 152,
-        "dia_minimo": 48,
+        "dia_minimo": 37,
         "falas": [
             "Masao, construtor de moinhos, trouxe desenhos dobrados e cheiro de madeira úmida.",
             "Um moinho de água reduziria o esforço para descascar arroz.",
@@ -6106,30 +5955,29 @@ eventos = [
             "opcao_terceira": "Manter o trabalho manual."
         },
         "efeito_primeira": {"Contentamento": 8, "Populacao": 7, "Dinheiro": -140},
-        "efeito_segunda": {"Contentamento": 4, "Populacao": 3, "Dinheiro": -70},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 3, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -6, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A corte preferiu construir o moinho. Masao adaptou o plano antes do anoitecer.",
                 "O problema levado por Masao mudou de rumo; a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+8 de Contentamento, +7 de População, -140 de Dinheiro)"
+                "(+8 de Contentamento, +7 de Populacao, -140 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu fazer uma roda menor.",
                 "Masao levou a resposta aos envolvidos, e novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+4 de Contentamento, +3 de População, -70 de Dinheiro)"
+                "(+4 de Contentamento, +3 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "A escolha foi manter o trabalho manual, uma solução que obrigou Masao a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Masao mostraram que o descontentamento apareceu depressa.",
-                "(-6 de Contentamento, -2 de População, +0 de Dinheiro)"
+                "(-6 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 153,
-        "dia_minimo": 49,
+        "dia_minimo": 23,
         "falas": [
             "Nao chegou representando vilas que já não sabiam a quem recorrer.",
             "Insetos estão destruindo mapas e decretos antigos.",
@@ -6142,30 +5990,29 @@ eventos = [
             "opcao_terceira": "Descartar os papéis velhos."
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -65},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 10},
         "falas_pos": {
             1: [
                 "Sem prolongar a audiência, a decisão favoreceu preservar todo o arquivo.",
                 "Nao assumiu a execução e, nas semanas seguintes, a reação popular foi favorável.",
-                "(+5 de Contentamento, +1 de População, -65 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -65 de Dinheiro)"
             ],
             2: [
                 "Takayama seguiria pelo caminho de salvar os documentos úteis.",
                 "A notícia levada por Nao chegou às oficinas e aldeias, onde a rotina local absorveu a decisão aos poucos.",
-                "(+2 de Contentamento, +0 de População, -25 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "Nao não recebeu tudo o que esperava: a ordem foi descartar os papéis velhos.",
                 "Ainda assim, o plano de Nao saiu do papel e o descontentamento apareceu depressa.",
-                "(-5 de Contentamento, +0 de População, +10 de Dinheiro)"
+                "(-5 de Contentamento, +10 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 154,
-        "dia_minimo": 50,
+        "dia_minimo": 37,
         "falas": [
             "Parecem exaustos, mas não sabemos de onde vieram.",
             "Um grupo de refugiados pede entrada antes do inverno.",
@@ -6184,24 +6031,23 @@ eventos = [
             1: [
                 "Entre as alternativas apresentadas, prevaleceu acolher e registrar todos.",
                 "O resultado da proposta de Saburo não ficou restrito ao salão: a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+7 de Contentamento, +12 de População, -90 de Dinheiro)"
+                "(+7 de Contentamento, +12 de Populacao, -90 de Dinheiro)"
             ],
             2: [
                 "O conselho registrou a decisão de criar acampamento externo.",
                 "Saburo iniciou o trabalho sabendo que novas famílias encontraram motivo para permanecer.",
-                "(+1 de Contentamento, +4 de População, -35 de Dinheiro)"
+                "(+1 de Contentamento, +4 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "A resposta alterou o projeto original: seria preciso fechar a fronteira.",
                 "Com Saburo à frente da execução, o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-8 de Contentamento, -6 de População, +0 de Dinheiro)"
+                "(-8 de Contentamento, -6 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 155,
-        "dia_minimo": 51,
+        "dia_minimo": 12,
         "falas": [
             "Tomoe trouxe registros antigos e ferramentas, pedindo que fossem examinados ali mesmo.",
             "Um cometa será visível sobre Hida nesta semana.",
@@ -6220,24 +6066,23 @@ eventos = [
             1: [
                 "Tomoe ouviu a sentença com atenção: financiar a observação.",
                 "Pouco depois, as consequências do pedido de Tomoe ficaram claras e a reação popular foi favorável; novas famílias encontraram motivo para permanecer.",
-                "(+8 de Contentamento, +3 de População, -45 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "O pedido terminou com uma ordem direta para permitir sem apoio.",
                 "Nas ruas de Takayama, a decisão comunicada por Tomoe teve um saldo claro: o resultado dividiu opiniões sem abalar a cidade.",
-                "(+4 de Contentamento, +1 de População, +0 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao)"
             ],
             3: [
                 "Tomoe recebeu autorização para proibir a reunião noturna e deixou o castelo com os preparativos definidos.",
                 "Quando a medida de Tomoe alcançou as vilas, o descontentamento apareceu depressa.",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 156,
-        "dia_minimo": 52,
+        "dia_minimo": 23,
         "falas": [
             "A margem baixa do rio cedeu perto dos arrozais.",
             "Foi por isso que Wataru abandonou o trabalho e veio pedir uma ordem.",
@@ -6256,24 +6101,23 @@ eventos = [
             1: [
                 "A corte preferiu reforçar toda a margem. Wataru adaptou o plano antes do anoitecer.",
                 "O problema levado por Wataru mudou de rumo; a reação popular foi favorável; novas famílias encontraram motivo para permanecer; o custo pesou nos cofres.",
-                "(+6 de Contentamento, +6 de População, -120 de Dinheiro)"
+                "(+6 de Contentamento, +6 de Populacao, -120 de Dinheiro)"
             ],
             2: [
                 "Depois de ouvir os conselheiros, o shogun decidiu proteger apenas as casas.",
                 "Wataru levou a resposta aos envolvidos, e a rotina local absorveu a decisão aos poucos.",
-                "(+1 de Contentamento, +1 de População, -45 de Dinheiro)"
+                "(+1 de Contentamento, +1 de Populacao, -45 de Dinheiro)"
             ],
             3: [
                 "A escolha foi não gastar recursos, uma solução que obrigou Wataru a rever parte do projeto.",
                 "Os primeiros relatos sobre o trabalho de Wataru mostraram que o descontentamento apareceu depressa; algumas famílias pagaram o preço da decisão.",
-                "(-12 de Contentamento, -10 de População, +0 de Dinheiro)"
+                "(-12 de Contentamento, -10 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 157,
-        "dia_minimo": 12,
+        "dia_minimo": 45,
         "falas": [
             "Durante três noites, a astrônoma observou sinais incomuns nos céus de Takayama.",
             "As estrelas indicam uma estação difícil, mas também uma chance de preparar o feudo.",
@@ -6285,27 +6129,26 @@ eventos = [
             "opcao_terceira": "Ignorar os presságios"
         },
         "efeito_primeira": {"Contentamento": 10, "Populacao": 3, "Dinheiro": -140},
-        "efeito_segunda": {"Contentamento": -10, "Populacao": 0, "Dinheiro": 160},
+        "efeito_segunda": {"Contentamento": -10, "Populacao": 0, "Dinheiro": 140},
         "efeito_terceira": {"Contentamento": -3, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Com tempo e instrumentos, poderemos evitar perdas antes que elas aconteçam.",
-                "(+10 de Contentamento, +3 de População, -140 de Dinheiro)"
+                "(+10 de Contentamento, +3 de Populacao, -140 de Dinheiro)"
             ],
             2: [
                 "Os cofres crescerão, mas o povo não gostará de pagar por medo das estrelas.",
-                "(-10 de Contentamento, +160 de Dinheiro)"
+                "(-10 de Contentamento, +140 de Dinheiro)"
             ],
             3: [
                 "Então torcamos para que os céus estejam errados, meu senhor.",
-                "(-3 de Contentamento, -2 de População)"
+                "(-3 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 158,
-        "dia_minimo": 16,
+        "dia_minimo": 68,
         "falas": [
             "Os campos próximos ao rio poderiam produzir muito mais.",
             "Se cavarmos canais de irrigação, as colheitas futuras serão melhores.",
@@ -6322,22 +6165,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "Os campos beberão do rio. O povo colherá os frutos dessa decisao.",
-                "(+12 de Contentamento, +8 de População, -260 de Dinheiro)"
+                "(+12 de Contentamento, +8 de Populacao, -260 de Dinheiro)"
             ],
             2: [
                 "Não sera perfeito, mas já ajudara parte das plantações.",
-                "(+5 de Contentamento, +3 de População, -100 de Dinheiro)"
+                "(+5 de Contentamento, +3 de Populacao, -100 de Dinheiro)"
             ],
             3: [
                 "A terra continuara seca em muitos lugares, meu senhor.",
-                "(-6 de Contentamento, -2 de População)"
+                "(-6 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 159,
-        "dia_minimo": 10,
+        "dia_minimo": 38,
         "falas": [
             "Os caminhos comerciais estão sendo atacados por bandidos.",
             "Posso enviar patrulhas para proteger as estradas.",
@@ -6354,7 +6196,7 @@ eventos = [
         "falas_pos": {
             1: [
                 "As estradas serao vigiadas. Comerciantes e viajantes respirarao melhor.",
-                "(+8 de Contentamento, +2 de População, -130 de Dinheiro)"
+                "(+8 de Contentamento, +2 de Populacao, -130 de Dinheiro)"
             ],
             2: [
                 "Quem puder pagar estará seguro. Quem não puder, reclamará.",
@@ -6362,14 +6204,13 @@ eventos = [
             ],
             3: [
                 "Então os viajantes seguirão por conta propria. Alguns talvez não cheguem.",
-                "(-9 de Contentamento, -3 de População)"
+                "(-9 de Contentamento, -3 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 160,
-        "dia_minimo": 7,
+        "dia_minimo": 35,
         "falas": [
             "Minhas colmeias estão crescendo bem.",
             "Com apoio, posso ensinar outras famílias a produzir mel.",
@@ -6386,7 +6227,7 @@ eventos = [
         "falas_pos": {
             1: [
                 "As colmeias se espalharao pelas vilas. O povo terá alimento e trabalho.",
-                "(+9 de Contentamento, +2 de População, -70 de Dinheiro)"
+                "(+9 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Será lucrativo, mas as famílias sentirao falta do mel em casa.",
@@ -6398,10 +6239,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 161,
-        "dia_minimo": 9,
+        "dia_minimo": 44,
         "falas": [
             "Nossas tecelãs produzem bons tecidos, mas faltam teares.",
             "Com novos equipamentos, poderemos vender mais e empregar famílias.",
@@ -6412,17 +6252,17 @@ eventos = [
             "opcao_segunda": "Exigir mais produção",
             "opcao_terceira": "Recusar"
         },
-        "efeito_primeira": {"Contentamento": 11, "Populacao": 5, "Dinheiro": -180},
+        "efeito_primeira": {"Contentamento": 11, "Populacao": 5, "Dinheiro": -150},
         "efeito_segunda": {"Contentamento": -12, "Populacao": -1, "Dinheiro": 140},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As oficinas ficarão cheias de trabalho. O feudo vestira sua prosperidade.",
-                "(+11 de Contentamento, +5 de População, -180 de Dinheiro)"
+                "(+11 de Contentamento, +5 de Populacao, -150 de Dinheiro)"
             ],
             2: [
                 "Produziremos mais, mas a custa do cansaço e da raiva das artesãs.",
-                "(-12 de Contentamento, -1 de População, +140 de Dinheiro)"
+                "(-12 de Contentamento, -1 de Populacao, +140 de Dinheiro)"
             ],
             3: [
                 "Então continuaremos trabalhando devagar, com ferramentas antigas.",
@@ -6430,10 +6270,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 162,
-        "dia_minimo": 18,
+        "dia_minimo": 26,
         "falas": [
             "O embaixador do feudo vizinho entrou carregando uma proposta selada.",
             "Meu mestre propõe um acordo comercial entre nossas terras.",
@@ -6450,7 +6289,7 @@ eventos = [
         "falas_pos": {
             1: [
                 "O acordo sera firmado. Que ambas as terras lucrem com prudencia.",
-                "(+4 de Contentamento, +2 de População, -120 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -120 de Dinheiro)"
             ],
             2: [
                 "Vejo que não sera facil enganá-lo, meu senhor. Levarei sua contraproposta.",
@@ -6462,10 +6301,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 163,
-        "dia_minimo": 11,
+        "dia_minimo": 33,
         "falas": [
             "Muitas famílias vivem longe de ajuda quando nascem suas crianças.",
             "Se eu puder treinar novas parteiras, salvaremos mães e bebês.",
@@ -6476,28 +6314,27 @@ eventos = [
             "opcao_segunda": "Ajudar a vila central",
             "opcao_terceira": "Negar apoio"
         },
-        "efeito_primeira": {"Contentamento": 13, "Populacao": 7, "Dinheiro": -160},
+        "efeito_primeira": {"Contentamento": 13, "Populacao": 7, "Dinheiro": -150},
         "efeito_segunda": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -50},
         "efeito_terceira": {"Contentamento": -9, "Populacao": -3, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Viajarei amanhã. Muitas vidas pequenas agradecerão sem saber seu nome.",
-                "(+13 de Contentamento, +7 de População, -160 de Dinheiro)"
+                "(+13 de Contentamento, +7 de Populacao, -150 de Dinheiro)"
             ],
             2: [
                 "A vila central ficara mais segura, mas as distantes ainda precisarao de ajuda.",
-                "(+5 de Contentamento, +2 de População, -50 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -50 de Dinheiro)"
             ],
             3: [
                 "Então farei o que puder sozinha, meu senhor.",
-                "(-9 de Contentamento, -3 de População)"
+                "(-9 de Contentamento, -3 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 164,
-        "dia_minimo": 15,
+        "dia_minimo": 29,
         "falas": [
             "Retornei das montanhas com mapas incompletos, mas promissores.",
             "Encontrei trilhas, fontes e possíveis rotas comerciais.",
@@ -6514,7 +6351,7 @@ eventos = [
         "falas_pos": {
             1: [
                 "Com proteção, voltarei com rotas seguras para comércio e expansao.",
-                "(+6 de Contentamento, +3 de População, -110 de Dinheiro)"
+                "(+6 de Contentamento, +3 de Populacao, -110 de Dinheiro)"
             ],
             2: [
                 "Os mapas ainda podem servir, embora faltem partes importantes.",
@@ -6522,14 +6359,13 @@ eventos = [
             ],
             3: [
                 "Entendo. Talvez outro senhor veja valor nos caminhos que encontrei.",
-                "(0 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(sem alteracoes)"
             ]
         }
     },
-
     {
         "sprite": 165,
-        "dia_minimo": 13,
+        "dia_minimo": 20,
         "falas": [
             "Minha família sabe produzir uma bebida de arroz excelente.",
             "Ela pode render lucro em festivais e tavernas.",
@@ -6541,16 +6377,16 @@ eventos = [
             "opcao_terceira": "Proibir"
         },
         "efeito_primeira": {"Contentamento": 8, "Populacao": 1, "Dinheiro": 90},
-        "efeito_segunda": {"Contentamento": -7, "Populacao": 0, "Dinheiro": 180},
+        "efeito_segunda": {"Contentamento": -7, "Populacao": 0, "Dinheiro": 140},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As tavernas brindarao por sua decisao, meu senhor.",
-                "(+8 de Contentamento, +1 de População, +90 de Dinheiro)"
+                "(+8 de Contentamento, +1 de Populacao, +90 de Dinheiro)"
             ],
             2: [
                 "Os cofres gostarao. Os clientes e produtores, nem tanto.",
-                "(-7 de Contentamento, +180 de Dinheiro)"
+                "(-7 de Contentamento, +140 de Dinheiro)"
             ],
             3: [
                 "Então os barris permanecerao fechados... oficialmente.",
@@ -6558,10 +6394,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 166,
-        "dia_minimo": 20,
+        "dia_minimo": 26,
         "falas": [
             "Sou um samurai sem mestre.",
             "Procuro um lugar onde minha espada ainda tenha propósito.",
@@ -6578,7 +6413,7 @@ eventos = [
         "falas_pos": {
             1: [
                 "Minha espada sera sua, meu senhor.",
-                "(+3 de Contentamento, +1 de População, -100 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -100 de Dinheiro)"
             ],
             2: [
                 "Treinarei seus guardas para que muitos protejam o que antes um só protegia.",
@@ -6586,14 +6421,13 @@ eventos = [
             ],
             3: [
                 "Então seguirei pela estrada. Que seu feudo não precise de mim.",
-                "(-2 de Contentamento, -1 de População)"
+                "(-2 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 167,
-        "dia_minimo": 17,
+        "dia_minimo": 42,
         "falas": [
             "Os campos começam a secar.",
             "Posso conduzir um ritual pela chuva, mas precisarei de oferendas.",
@@ -6605,27 +6439,26 @@ eventos = [
             "opcao_terceira": "Esperar a chuva"
         },
         "efeito_primeira": {"Contentamento": 9, "Populacao": 2, "Dinheiro": -90},
-        "efeito_segunda": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -180},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -150},
         "efeito_terceira": {"Contentamento": -8, "Populacao": -4, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As preces subirao com a fumaca das oferendas.",
-                "(+9 de Contentamento, +2 de População, -90 de Dinheiro)"
+                "(+9 de Contentamento, +2 de Populacao, -90 de Dinheiro)"
             ],
             2: [
                 "A agua chegara em barris. Não sera barato, mas salvara plantações.",
-                "(+5 de Contentamento, +3 de População, -180 de Dinheiro)"
+                "(+5 de Contentamento, +3 de Populacao, -150 de Dinheiro)"
             ],
             3: [
                 "A terra aguardara. Espero que ela tenha paciencia.",
-                "(-8 de Contentamento, -4 de População)"
+                "(-8 de Contentamento, -4 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 168,
-        "dia_minimo": 8,
+        "dia_minimo": 47,
         "falas": [
             "Os impostos deste mês podem ser aumentados.",
             "Os cofres precisam se fortalecer para decisões futuras.",
@@ -6642,7 +6475,7 @@ eventos = [
         "falas_pos": {
             1: [
                 "Os cofres ficarão cheios, mas as ruas ficarão amargas.",
-                "(-15 de Contentamento, -2 de População, +260 de Dinheiro)"
+                "(-15 de Contentamento, -2 de Populacao, +260 de Dinheiro)"
             ],
             2: [
                 "Seguiremos com a cobrança habitual, meu senhor.",
@@ -6650,14 +6483,13 @@ eventos = [
             ],
             3: [
                 "O povo sentirá alívio imediato. Os cofres, nem tanto.",
-                "(+14 de Contentamento, +2 de População, -120 de Dinheiro)"
+                "(+14 de Contentamento, +2 de Populacao, -120 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 169,
-        "dia_minimo": 19,
+        "dia_minimo": 29,
         "falas": [
             "Caçadores estão entrando fundo demais na floresta.",
             "Se continuarem, os animais desaparecerão e as vilas perderão equilíbrio.",
@@ -6670,26 +6502,25 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": 60},
-        "efeito_terceira": {"Contentamento": -10, "Populacao": -3, "Dinheiro": 170},
+        "efeito_terceira": {"Contentamento": -10, "Populacao": -3, "Dinheiro": 140},
         "falas_pos": {
             1: [
                 "A floresta terá tempo para respirar. As próximas gerações notarao.",
-                "(+6 de Contentamento, +2 de População, -70 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Cacaremos com medida. Nem fome, nem destruição.",
-                "(+4 de Contentamento, +1 de População, +60 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, +60 de Dinheiro)"
             ],
             3: [
                 "A carne sera abundante agora. Depois, talvez só reste silencio.",
-                "(-10 de Contentamento, -3 de População, +170 de Dinheiro)"
+                "(-10 de Contentamento, -3 de Populacao, +140 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 170,
-        "dia_minimo": 6,
+        "dia_minimo": 16,
         "falas": [
             "Criei pipas enormes que podem levar mensagens pelo vento.",
             "Tambem podem alegrar as crianças nos dias de descanso.",
@@ -6700,13 +6531,13 @@ eventos = [
             "opcao_segunda": "Usar só em mensagens",
             "opcao_terceira": "Mandá-lo embora"
         },
-        "efeito_primeira": {"Contentamento": 10, "Populacao": 1, "Dinheiro": -60},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 1, "Dinheiro": -60},
         "efeito_segunda": {"Contentamento": -2, "Populacao": 0, "Dinheiro": -30},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As crianças verão dragões no céu, e os mensageiros terão novas rotas.",
-                "(+10 de Contentamento, +1 de População, -60 de Dinheiro)"
+                "(+8 de Contentamento, +1 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "Funciona também... mas é triste ver uma pipa sem riso por perto.",
@@ -6718,10 +6549,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 171,
-        "dia_minimo": 5,
+        "dia_minimo": 18,
         "falas": [
             "Sobras do castelo poderiam alimentar muita gente.",
             "Posso organizar uma cozinha comunitária para os mais necessitados.",
@@ -6738,22 +6568,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "Ninguém deveria dormir com fome sob um bom governante.",
-                "(+12 de Contentamento, +4 de População, -90 de Dinheiro)"
+                "(+12 de Contentamento, +4 de Populacao, -90 de Dinheiro)"
             ],
             2: [
                 "Não sera caridade completa, mas já aliviará muitas mesas.",
-                "(+5 de Contentamento, +1 de População, +30 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, +30 de Dinheiro)"
             ],
             3: [
                 "As panelas do castelo ficarão cheias. As das ruas, talvez não.",
-                "(-9 de Contentamento, -2 de População)"
+                "(-9 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 172,
-        "dia_minimo": 21,
+        "dia_minimo": 59,
         "falas": [
             "Cavalos fortes chegaram das planícies.",
             "Com eles, mensageiros, patrulhas e comerciantes viajarão mais rápido.",
@@ -6770,11 +6599,11 @@ eventos = [
         "falas_pos": {
             1: [
                 "Seu feudo parecera menor quando as noticias correrem a cavalo.",
-                "(+8 de Contentamento, +4 de População, -300 de Dinheiro)"
+                "(+8 de Contentamento, +4 de Populacao, -300 de Dinheiro)"
             ],
             2: [
                 "Os guardas montarao melhor, ainda que o povo veja pouco beneficio.",
-                "(+3 de Contentamento, +1 de População, -120 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -120 de Dinheiro)"
             ],
             3: [
                 "Então seguiremos no passo dos proprios pes.",
@@ -6782,10 +6611,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 173,
-        "dia_minimo": 14,
+        "dia_minimo": 18,
         "falas": [
             "A viúva de um soldado apresentou-se com o manto de luto ainda nos ombros.",
             "Minha família ficou sem sustento.",
@@ -6796,13 +6624,13 @@ eventos = [
             "opcao_segunda": "Dar pagamento unico",
             "opcao_terceira": "Negar ajuda"
         },
-        "efeito_primeira": {"Contentamento": 14, "Populacao": 1, "Dinheiro": -150},
+        "efeito_primeira": {"Contentamento": 13, "Populacao": 1, "Dinheiro": -150},
         "efeito_segunda": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -60},
-        "efeito_terceira": {"Contentamento": -14, "Populacao": -1, "Dinheiro": 0},
+        "efeito_terceira": {"Contentamento": -13, "Populacao": -1, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Meu marido descansara sabendo que sua casa não foi abandonada.",
-                "(+14 de Contentamento, +1 de População, -150 de Dinheiro)"
+                "(+13 de Contentamento, +1 de Populacao, -150 de Dinheiro)"
             ],
             2: [
                 "A ajuda aliviará este mês. Depois, veremos como sobreviver.",
@@ -6810,14 +6638,13 @@ eventos = [
             ],
             3: [
                 "Então a lealdade dele morreu com ele, meu senhor.",
-                "(-14 de Contentamento, -1 de População)"
+                "(-13 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 174,
-        "dia_minimo": 10,
+        "dia_minimo": 36,
         "falas": [
             "Proponho um festival de máscaras para atrair visitantes.",
             "Haverá música, teatro e comércio nas ruas.",
@@ -6828,17 +6655,17 @@ eventos = [
             "opcao_segunda": "Cobrar entrada",
             "opcao_terceira": "Proibir aglomerações"
         },
-        "efeito_primeira": {"Contentamento": 16, "Populacao": 3, "Dinheiro": -100},
+        "efeito_primeira": {"Contentamento": 13, "Populacao": 3, "Dinheiro": -100},
         "efeito_segunda": {"Contentamento": 5, "Populacao": 1, "Dinheiro": 120},
         "efeito_terceira": {"Contentamento": -10, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As ruas terão música, cor e histórias até a lua subir.",
-                "(+16 de Contentamento, +3 de População, -100 de Dinheiro)"
+                "(+13 de Contentamento, +3 de Populacao, -100 de Dinheiro)"
             ],
             2: [
                 "Haverá festa, mas alguns ficarão do lado de fora contando moedas.",
-                "(+5 de Contentamento, +1 de População, +120 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, +120 de Dinheiro)"
             ],
             3: [
                 "Guardarei as máscaras. Rostos sérios também contam uma história.",
@@ -6846,10 +6673,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 175,
-        "dia_minimo": 4,
+        "dia_minimo": 26,
         "falas": [
             "As chuvas abriram frestas nos telhados de algumas casas.",
             "Posso organizar reparos rápidos com madeira simples e poucos ajudantes.",
@@ -6861,30 +6687,29 @@ eventos = [
             "opcao_terceira": "Adiar até sobrar madeira."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -35},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -15},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os telhados foram reforçados antes da próxima chuva.",
                 "As famílias dormirão melhor esta noite.",
-                "(+6 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "Os casos mais urgentes foram atendidos.",
                 "Nem todos ficaram satisfeitos, mas o pior foi evitado.",
-                "(+3 de Contentamento, +1 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "A madeira ficará guardada, mas as goteiras não esperam ordens.",
                 "Algumas casas continuarão sofrendo com a umidade.",
-                "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 176,
-        "dia_minimo": 3,
+        "dia_minimo": 17,
         "falas": [
             "Trouxe agulhas, cordas, óleo e pequenas ferramentas para a vila.",
             "São coisas simples, mas todo trabalhador precisa delas em algum momento.",
@@ -6895,31 +6720,30 @@ eventos = [
             "opcao_segunda": "Cobrar taxa de venda.",
             "opcao_terceira": "Mandá-lo ao mercado."
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -30},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 25},
         "efeito_terceira": {"Contentamento": 1, "Populacao": 0, "Dinheiro": 5},
         "falas_pos": {
             1: [
                 "As ferramentas foram distribuídas entre trabalhadores e artesãos.",
                 "Pequenos reparos renderão grandes agradecimentos.",
-                "(+5 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "O mercador aceitou pagar para vender dentro de Takayama.",
                 "Os cofres ganharam moedas, e os preços subiram um pouco.",
-                "(-3 de Contentamento, 0 de População, +25 de Dinheiro)"
+                "(-3 de Contentamento, +25 de Dinheiro)"
             ],
             3: [
                 "Ele venderá por conta própria no mercado.",
                 "O castelo pouco ganhou, mas também pouco arriscou.",
-                "(+1 de Contentamento, 0 de População, +5 de Dinheiro)"
+                "(+1 de Contentamento, +5 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 177,
-        "dia_minimo": 5,
+        "dia_minimo": 41,
         "falas": [
             "Preparei pomadas para cortes, queimaduras e febres leves.",
             "Não são milagres, apenas bons remédios para problemas comuns.",
@@ -6931,30 +6755,29 @@ eventos = [
             "opcao_terceira": "Recusar as pomadas."
         },
         "efeito_primeira": {"Contentamento": 7, "Populacao": 3, "Dinheiro": -45},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As pomadas chegaram às oficinas e campos.",
                 "Pequenos ferimentos deixarão de virar grandes problemas.",
-                "(+7 de Contentamento, +3 de População, -45 de Dinheiro)"
+                "(+7 de Contentamento, +3 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "Um lote menor foi comprado para os casos urgentes.",
                 "A ajuda foi limitada, mas ainda útil.",
-                "(+3 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "O alquimista recolheu os frascos em silêncio.",
                 "Os trabalhadores continuarão improvisando curas.",
-                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 178,
-        "dia_minimo": 5,
+        "dia_minimo": 16,
         "falas": [
             "As trilhas de Hida estão cheias de ervas boas nesta estação.",
             "Posso ensinar famílias a secá-las para o inverno.",
@@ -6972,24 +6795,23 @@ eventos = [
             1: [
                 "As famílias aprenderam a secar e guardar ervas.",
                 "O inverno parecerá um pouco menos cruel.",
-                "(+8 de Contentamento, +3 de População, -25 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -25 de Dinheiro)"
             ],
             2: [
                 "As melhores ervas foram compradas para o castelo.",
                 "A reserva ficou segura, mas poucos moradores receberam ajuda.",
-                "(-2 de Contentamento, 0 de População, -15 de Dinheiro)"
+                "(-2 de Contentamento, -15 de Dinheiro)"
             ],
             3: [
                 "Cada um colherá por conta própria.",
                 "É simples, mas nem todos saberão escolher bem.",
-                "(+2 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(+2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 179,
-        "dia_minimo": 4,
+        "dia_minimo": 40,
         "falas": [
             "Meus falcões podem vigiar as trilhas próximas ao feudo.",
             "Eles não substituem soldados, mas enxergam movimentos antes dos homens.",
@@ -7001,30 +6823,29 @@ eventos = [
             "opcao_terceira": "Dispensar o serviço."
         },
         "efeito_primeira": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -40},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -15},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": 0, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As aves circularão sobre as trilhas de Takayama.",
                 "Viajantes se sentirão mais seguros sob olhos alados.",
-                "(+4 de Contentamento, +1 de População, -40 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -40 de Dinheiro)"
             ],
             2: [
                 "Os falcões vigiarão apenas os arredores do castelo.",
                 "É uma proteção menor, mas mais barata.",
-                "(+2 de Contentamento, 0 de População, -15 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "O falcoeiro se curvou e partiu com suas aves.",
                 "Talvez os olhos humanos sejam suficientes por hoje.",
-                "(0 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(sem alteracoes)"
             ]
         }
     },
-
     {
         "sprite": 180,
-        "dia_minimo": 6,
+        "dia_minimo": 37,
         "falas": [
             "Muitos potes de armazenamento racharam no frio.",
             "Sem bons recipientes, arroz, sal e ervas se perdem rápido.",
@@ -7036,30 +6857,29 @@ eventos = [
             "opcao_terceira": "Recusar a encomenda."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -45},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os armazéns receberam potes novos e resistentes.",
                 "Menos comida será perdida por descuido.",
-                "(+6 de Contentamento, +2 de População, -45 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "A cozinha do castelo recebeu o essencial.",
                 "O povo percebeu que a prioridade não foi exatamente ele.",
-                "(+3 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "O argilista guardou seus moldes e saiu desapontado.",
                 "Os potes rachados continuarão servindo até falharem de vez.",
-                "(-3 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 181,
-        "dia_minimo": 4,
+        "dia_minimo": 23,
         "falas": [
             "Com licença, shogun. Javalis estão revirando plantações próximas à vila.",
             "Ainda não é uma tragédia, mas pode virar uma antes da próxima colheita.",
@@ -7070,31 +6890,30 @@ eventos = [
             "opcao_segunda": "Montar armadilhas.",
             "opcao_terceira": "Ignorar por enquanto."
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -30},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -15},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -6, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A caçada afastou os javalis dos campos.",
                 "Algumas famílias ainda ganharam carne fresca.",
-                "(+5 de Contentamento, +2 de População, -30 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "As armadilhas foram montadas com calma.",
                 "Não resolve tudo, mas reduz o estrago.",
-                "(+3 de Contentamento, +1 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Os javalis continuarão tratando a plantação como banquete.",
                 "Os camponeses não ficaram tranquilos.",
-                "(-6 de Contentamento, -2 de População, 0 de Dinheiro)"
+                "(-6 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 182,
-        "dia_minimo": 5,
+        "dia_minimo": 23,
         "falas": [
             "As placas do mercado estão gastas e confundem visitantes.",
             "Posso pintar novas placas para lojas, pontes e caminhos.",
@@ -7105,31 +6924,30 @@ eventos = [
             "opcao_segunda": "Pintar apenas o mercado.",
             "opcao_terceira": "Recusar o serviço."
         },
-        "efeito_primeira": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -25},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -10},
+        "efeito_primeira": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As placas novas deixaram as ruas mais claras para moradores e viajantes.",
                 "O comércio agradeceu em silêncio e moedas.",
-                "(+4 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "O mercado ficou mais organizado.",
                 "As trilhas fora dele continuarão confundindo visitantes.",
-                "(+2 de Contentamento, 0 de População, -10 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "O pintor recolheu seus pincéis.",
                 "As placas antigas continuarão apontando para metade dos lugares errados.",
-                "(-2 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 183,
-        "dia_minimo": 3,
+        "dia_minimo": 44,
         "falas": [
             "O arroz do castelo pode render mais se for misturado com painço.",
             "O sabor será mais simples, mas alimentará mais bocas.",
@@ -7140,31 +6958,30 @@ eventos = [
             "opcao_segunda": "Manter o arroz puro.",
             "opcao_terceira": "Servir só aos trabalhadores."
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 3, "Dinheiro": -10},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -25},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 3, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 1, "Dinheiro": 5},
         "falas_pos": {
             1: [
                 "A panela rendeu mais do que o esperado.",
                 "Nem todos elogiaram o sabor, mas muitos comeram.",
-                "(+6 de Contentamento, +3 de População, -10 de Dinheiro)"
+                "(+6 de Contentamento, +3 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "A qualidade foi mantida, mas a quantidade não cresceu.",
                 "Quem recebeu arroz gostou; quem ficou sem, nem tanto.",
-                "(+2 de Contentamento, 0 de População, -25 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "Os trabalhadores comerão primeiro para manter as obras de pé.",
                 "Alguns moradores chamarão isso de favoritismo.",
-                "(-3 de Contentamento, +1 de População, +5 de Dinheiro)"
+                "(-3 de Contentamento, +1 de Populacao, +5 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 184,
-        "dia_minimo": 4,
+        "dia_minimo": 13,
         "falas": [
             "As redes dos pescadores estão velhas e rasgando no rio.",
             "Com novas cordas, poderemos trazer mais peixe para as barracas.",
@@ -7182,24 +6999,23 @@ eventos = [
             1: [
                 "As redes foram reforçadas antes da próxima saída ao rio.",
                 "Mais peixe chegará às mesas de Takayama.",
-                "(+5 de Contentamento, +2 de População, -30 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -30 de Dinheiro)"
             ],
             2: [
                 "O castelo ajudou, mas exigiu parte do que vier do rio.",
                 "Os pescadores aceitaram, sem sorrir muito.",
-                "(-2 de Contentamento, 0 de População, +35 de Dinheiro)"
+                "(-2 de Contentamento, +35 de Dinheiro)"
             ],
             3: [
                 "As redes antigas voltarão ao rio mais uma vez.",
                 "Talvez aguentem. Talvez não.",
-                "(-4 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 185,
-        "dia_minimo": 6,
+        "dia_minimo": 20,
         "falas": [
             "O piso do armazém principal está cedendo em alguns pontos.",
             "Se continuar assim, sacos de arroz podem se perder com umidade e ratos.",
@@ -7211,30 +7027,29 @@ eventos = [
             "opcao_terceira": "Ignorar o rangido."
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -45},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -6, "Populacao": -1, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O armazém foi reforçado do chão ao telhado.",
                 "Os mantimentos ficarão mais seguros.",
-                "(+5 de Contentamento, +1 de População, -45 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "As partes mais perigosas foram trocadas.",
                 "O resto ainda range, mas ao menos não ameaça cair hoje.",
-                "(+2 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "O rangido continuará acompanhando cada passo no armazém.",
                 "Os servos não gostaram da aposta.",
-                "(-6 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-6 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 186,
-        "dia_minimo": 13,
+        "dia_minimo": 15,
         "falas": [
             "Agricultores perguntam qual será o melhor dia para iniciar o plantio.",
             "Posso observar o céu e montar um calendário simples para as vilas.",
@@ -7252,24 +7067,23 @@ eventos = [
             1: [
                 "O calendário foi copiado e enviado às vilas.",
                 "Os agricultores terão uma direção comum.",
-                "(+7 de Contentamento, +2 de População, -50 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "Uma orientação simples foi suficiente para acalmar parte dos campos.",
                 "Não é ciência completa, mas ajuda.",
-                "(+3 de Contentamento, +1 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -15 de Dinheiro)"
             ],
             3: [
                 "Cada vila decidirá conforme sua própria experiência.",
                 "Isso economiza moedas, mas espalha incerteza.",
-                "(-3 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 187,
-        "dia_minimo": 14,
+        "dia_minimo": 19,
         "falas": [
             "Depois das chuvas, a água está acumulando perto das casas baixas.",
             "Não precisamos de canais enormes, apenas valas bem feitas.",
@@ -7287,24 +7101,23 @@ eventos = [
             1: [
                 "As valas desviaram a água antes que ela apodrecesse nas ruas.",
                 "A vila ficará mais limpa por alguns dias.",
-                "(+8 de Contentamento, +3 de População, -90 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -90 de Dinheiro)"
             ],
             2: [
                 "As casas mais afetadas foram protegidas.",
                 "O restante da lama continuará nos caminhos.",
-                "(+4 de Contentamento, +1 de População, -40 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -40 de Dinheiro)"
             ],
             3: [
                 "A água talvez baixe sozinha.",
                 "Até lá, todos saberão exatamente onde pisar mal.",
-                "(-7 de Contentamento, -2 de População, 0 de Dinheiro)"
+                "(-7 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 188,
-        "dia_minimo": 8,
+        "dia_minimo": 45,
         "falas": [
             "Pequenos furtos aumentaram perto do mercado ao anoitecer.",
             "Nada grave ainda, mas comerciantes já estão fechando mais cedo.",
@@ -7322,24 +7135,23 @@ eventos = [
             1: [
                 "Os guardas rondarão o mercado ao cair da noite.",
                 "Os comerciantes abrirão com menos medo.",
-                "(+5 de Contentamento, +1 de População, -55 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "Os comerciantes financiarão a própria segurança.",
                 "Alguns chamaram isso de justiça. Outros, de abandono.",
-                "(-4 de Contentamento, 0 de População, +45 de Dinheiro)"
+                "(-4 de Contentamento, +45 de Dinheiro)"
             ],
             3: [
                 "Os furtos continuarão pequenos, até deixarem de ser.",
                 "O mercado fechará os olhos mais cedo.",
-                "(-7 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-7 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 189,
-        "dia_minimo": 7,
+        "dia_minimo": 6,
         "falas": [
             "Algumas colmeias precisam ser movidas antes da próxima florada.",
             "Se forem bem posicionadas, teremos mais mel e melhor polinização.",
@@ -7357,24 +7169,23 @@ eventos = [
             1: [
                 "As colmeias foram movidas com cuidado.",
                 "As flores e as famílias agradecerão no tempo certo.",
-                "(+6 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "O mel foi colhido antes da mudança.",
                 "Rendeu moedas, mas atrasou o crescimento das colmeias.",
-                "(-3 de Contentamento, 0 de População, +45 de Dinheiro)"
+                "(-3 de Contentamento, +45 de Dinheiro)"
             ],
             3: [
                 "As abelhas continuarão onde estão.",
                 "Às vezes, não ser picado já é uma vitória.",
-                "(+1 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(+1 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 190,
-        "dia_minimo": 9,
+        "dia_minimo": 12,
         "falas": [
             "O frio está chegando e faltam mantos resistentes nas vilas.",
             "As tecelãs podem produzir peças simples se receberem lã e tempo.",
@@ -7385,31 +7196,30 @@ eventos = [
             "opcao_segunda": "Produzir só para guardas.",
             "opcao_terceira": "Vender os mantos."
         },
-        "efeito_primeira": {"Contentamento": 9, "Populacao": 3, "Dinheiro": -80},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 70},
         "falas_pos": {
             1: [
                 "Mantos simples serão entregues às famílias mais vulneráveis.",
                 "O inverno terá menos dentes.",
-                "(+9 de Contentamento, +3 de População, -80 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Os guardas ficarão melhor equipados para rondas frias.",
                 "O povo entenderá a utilidade, mas sentirá falta do tecido.",
-                "(+2 de Contentamento, 0 de População, -35 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "Os mantos foram vendidos com bom lucro.",
                 "Quem sente frio raramente aplaude bons negócios.",
-                "(-5 de Contentamento, 0 de População, +70 de Dinheiro)"
+                "(-5 de Contentamento, +70 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 191,
-        "dia_minimo": 17,
+        "dia_minimo": 38,
         "falas": [
             "O feudo vizinho quer revisar taxas de passagem na estrada comum.",
             "Eles dizem que a manutenção pesa mais para o lado deles.",
@@ -7427,24 +7237,23 @@ eventos = [
             1: [
                 "A revisão foi aceita sem atritos.",
                 "O comércio continua, embora custe um pouco mais.",
-                "(+2 de Contentamento, +1 de População, -60 de Dinheiro)"
+                "(+2 de Contentamento, +1 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "A proposta de divisão pareceu justa aos dois lados.",
                 "Ninguém saiu rico, mas ninguém saiu ofendido.",
-                "(+4 de Contentamento, 0 de População, +25 de Dinheiro)"
+                "(+4 de Contentamento, +25 de Dinheiro)"
             ],
             3: [
                 "A resposta foi firme demais para parecer diplomática.",
                 "A estrada comum ficará menos amigável por um tempo.",
-                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 192,
-        "dia_minimo": 10,
+        "dia_minimo": 17,
         "falas": [
             "Uma vila distante pediu ajuda para partos durante a estação fria.",
             "Posso viajar até lá com alguns suprimentos.",
@@ -7462,24 +7271,23 @@ eventos = [
             1: [
                 "A parteira partirá com mantimentos e cobertores.",
                 "Algumas vidas começarão sob proteção do feudo.",
-                "(+8 de Contentamento, +4 de População, -60 de Dinheiro)"
+                "(+8 de Contentamento, +4 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "Os suprimentos ajudarão, mas mãos experientes farão falta.",
                 "Ainda assim, é melhor que nada.",
-                "(+4 de Contentamento, +2 de População, -25 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -25 de Dinheiro)"
             ],
             3: [
                 "A vila terá que se virar sozinha.",
                 "Notícias ruins viajam devagar, mas chegam.",
-                "(-8 de Contentamento, -2 de População, 0 de Dinheiro)"
+                "(-8 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 193,
-        "dia_minimo": 12,
+        "dia_minimo": 1,
         "falas": [
             "Placas antigas nas trilhas estão apagadas pela chuva.",
             "Viajantes erram caminhos e chegam tarde ao mercado.",
@@ -7497,24 +7305,23 @@ eventos = [
             1: [
                 "As trilhas receberam placas novas e mapas mais úteis.",
                 "Menos gente se perderá entre montanhas e pressa.",
-                "(+5 de Contentamento, +1 de População, -50 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "As placas principais foram refeitas.",
                 "Os mapas continuam incompletos, mas já há melhora.",
-                "(+3 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(+3 de Contentamento, -20 de Dinheiro)"
             ],
             3: [
                 "As trilhas permanecerão como estão.",
                 "Quem viaja por Hida aprenderá a perguntar mais.",
-                "(-3 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 194,
-        "dia_minimo": 18,
+        "dia_minimo": 33,
         "falas": [
             "Alguns jovens guardas querem treino de espada fora da rotina.",
             "Posso instruí-los por algumas semanas.",
@@ -7532,24 +7339,23 @@ eventos = [
             1: [
                 "Os guardas treinarão com lâminas de verdade e disciplina.",
                 "A segurança crescerá em silêncio.",
-                "(+6 de Contentamento, +1 de População, -90 de Dinheiro)"
+                "(+6 de Contentamento, +1 de Populacao, -90 de Dinheiro)"
             ],
             2: [
                 "Algumas aulas serão dadas antes do ronin partir.",
                 "Não muda uma tropa, mas corrige maus hábitos.",
-                "(+3 de Contentamento, 0 de População, -40 de Dinheiro)"
+                "(+3 de Contentamento, -40 de Dinheiro)"
             ],
             3: [
                 "O ronin aceitou a recusa com um aceno curto.",
                 "Espadas sem mestre costumam continuar andando.",
-                "(-2 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 195,
-        "dia_minimo": 8,
+        "dia_minimo": 16,
         "falas": [
             "Algumas aldeias atrasaram o pagamento dos impostos menores.",
             "Pode ser má-fé, mas também pode ser colheita ruim.",
@@ -7567,24 +7373,23 @@ eventos = [
             1: [
                 "A auditoria separou atraso real de desculpa conveniente.",
                 "Os cofres ganharam pouco, mas a cobrança pareceu justa.",
-                "(+1 de Contentamento, 0 de População, +30 de Dinheiro)"
+                "(+1 de Contentamento, +30 de Dinheiro)"
             ],
             2: [
                 "A multa leve entrou nos cofres rapidamente.",
                 "O povo pagou, mas não agradeceu.",
-                "(-5 de Contentamento, 0 de População, +80 de Dinheiro)"
+                "(-5 de Contentamento, +80 de Dinheiro)"
             ],
             3: [
                 "O perdão aliviou as aldeias neste mês.",
                 "Os cofres sentiram a falta, mas o povo respirou melhor.",
-                "(+8 de Contentamento, +1 de População, -40 de Dinheiro)"
+                "(+8 de Contentamento, +1 de Populacao, -40 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 196,
-        "dia_minimo": 11,
+        "dia_minimo": 16,
         "falas": [
             "Lenhadores jovens estão cortando árvores antes do tempo.",
             "A madeira é útil, mas a floresta precisa crescer para continuar servindo.",
@@ -7597,29 +7402,28 @@ eventos = [
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": 2, "Populacao": 1, "Dinheiro": 40},
-        "efeito_terceira": {"Contentamento": -7, "Populacao": -2, "Dinheiro": 90},
+        "efeito_terceira": {"Contentamento": -7, "Populacao": -2, "Dinheiro": 70},
         "falas_pos": {
             1: [
                 "As árvores foram marcadas com cuidado.",
                 "A floresta continuará dando madeira por mais tempo.",
-                "(+6 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "O corte seguirá com limites práticos.",
                 "Nem os lenhadores nem a floresta ficaram plenamente satisfeitos.",
-                "(+2 de Contentamento, +1 de População, +40 de Dinheiro)"
+                "(+2 de Contentamento, +1 de Populacao, +40 de Dinheiro)"
             ],
             3: [
                 "A madeira virá em grande quantidade por agora.",
                 "O futuro da floresta ficou mais curto.",
-                "(-7 de Contentamento, -2 de População, +90 de Dinheiro)"
+                "(-7 de Contentamento, -2 de Populacao, +70 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 197,
-        "dia_minimo": 7,
+        "dia_minimo": 17,
         "falas": [
             "As pipas de sinalização rasgaram depois de ventos fortes.",
             "Com bambu e papel novos, posso deixá-las úteis para mensagens rápidas.",
@@ -7631,30 +7435,29 @@ eventos = [
             "opcao_terceira": "Guardar o projeto."
         },
         "efeito_primeira": {"Contentamento": 7, "Populacao": 1, "Dinheiro": -45},
-        "efeito_segunda": {"Contentamento": 1, "Populacao": 0, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 1, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As pipas voltarão ao céu como sinais e brincadeiras.",
                 "Até os ventos parecerão trabalhar para o feudo.",
-                "(+7 de Contentamento, +1 de População, -45 de Dinheiro)"
+                "(+7 de Contentamento, +1 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "As pipas de mensagem foram reparadas primeiro.",
                 "Funcionam bem, mesmo sem alegrar a praça.",
-                "(+1 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(+1 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "O projeto ficará guardado em algum canto seco.",
                 "O vento não pareceu ofendido.",
-                "(-2 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 198,
-        "dia_minimo": 6,
+        "dia_minimo": 16,
         "falas": [
             "A cozinha encontrou legumes quase passando do ponto.",
             "Podemos transformá-los em sopa para moradores pobres antes que estraguem.",
@@ -7665,31 +7468,30 @@ eventos = [
             "opcao_segunda": "Vender por preço baixo.",
             "opcao_terceira": "Guardar para o castelo."
         },
-        "efeito_primeira": {"Contentamento": 9, "Populacao": 3, "Dinheiro": -20},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -20},
         "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": 20},
         "efeito_terceira": {"Contentamento": -6, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A sopa quente foi distribuída antes do desperdício.",
                 "Panelas simples também fazem boa política.",
-                "(+9 de Contentamento, +3 de População, -20 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -20 de Dinheiro)"
             ],
             2: [
                 "A sopa foi vendida barato e ainda aqueceu muitas mãos.",
                 "Não foi caridade total, mas ajudou.",
-                "(+4 de Contentamento, +1 de População, +20 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, +20 de Dinheiro)"
             ],
             3: [
                 "A cozinha do castelo ficará bem abastecida.",
                 "As ruas sentirão o cheiro sem provar a sopa.",
-                "(-6 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-6 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 199,
-        "dia_minimo": 15,
+        "dia_minimo": 17,
         "falas": [
             "Os estábulos precisam de ferraduras e cuidados antes das viagens longas.",
             "Cavalos cansados atrasam mensageiros e patrulhas.",
@@ -7700,28 +7502,27 @@ eventos = [
             "opcao_segunda": "Priorizar os melhores.",
             "opcao_terceira": "Adiar os cuidados."
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -80},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -5, "Populacao": -1, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os cavalos receberam ferraduras, descanso e ração decente.",
                 "As rotas responderão com velocidade.",
-                "(+6 de Contentamento, +2 de População, -80 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Os melhores cavalos foram tratados primeiro.",
                 "A tropa melhora, mas nem todos os animais acompanharão.",
-                "(+3 de Contentamento, +1 de População, -35 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Os estábulos continuarão economizando cuidados.",
                 "Cavalos não reclamam em palavras, mas mancam do mesmo jeito.",
-                "(-5 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-5 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 200,
         "dia_minimo": 9,
@@ -7742,24 +7543,23 @@ eventos = [
             1: [
                 "O carvão chegou às forjas antes que os martelos parassem.",
                 "Mais ferramentas chegarão aos campos.",
-                "(+5 de Contentamento, +2 de População, -55 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "Metade do lote manterá as forjas funcionando por pouco tempo.",
                 "Não resolve tudo, mas evita silêncio imediato.",
-                "(+2 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+2 de Contentamento, +1 de Populacao, -25 de Dinheiro)"
             ],
             3: [
                 "O carvoeiro procurará outro comprador.",
                 "As forjas terão que trabalhar devagar.",
-                "(-4 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 201,
-        "dia_minimo": 7,
+        "dia_minimo": 20,
         "falas": [
             "Os banhos termais próximos à estrada chegaram ao conselho como assunto urgente.",
             "Viajantes, idosos e trabalhadores usam aquelas águas para descansar o corpo.",
@@ -7771,27 +7571,26 @@ eventos = [
             "opcao_terceira": "Fechar por economia."
         },
         "efeito_primeira": {"Contentamento": 9, "Populacao": 3, "Dinheiro": -80},
-        "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -6, "Populacao": -1, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os banhos foram restaurados e voltarão a receber moradores cansados.",
-                "(+9 de Contentamento, +3 de População, -80 de Dinheiro)"
+                "(+9 de Contentamento, +3 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "A área principal ficou limpa, embora o resto ainda precise de cuidado.",
-                "(+4 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Os portões dos banhos serão fechados, e muitos sentirão falta do calor.",
-                "(-6 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-6 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 202,
-        "dia_minimo": 6,
+        "dia_minimo": 71,
         "falas": [
             "As placas de madeira nas trilhas estão gastas pela chuva.",
             "Viajantes erram caminhos e chegam tarde ao mercado.",
@@ -7802,28 +7601,27 @@ eventos = [
             "opcao_segunda": "Fazer só placas principais.",
             "opcao_terceira": "Manter as antigas."
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -45},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -15},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As trilhas receberão placas novas e viajantes se perderão menos.",
-                "(+6 de Contentamento, +1 de População, -45 de Dinheiro)"
+                "(+6 de Contentamento, +1 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "As placas principais ajudarão, mas caminhos menores seguirão confusos.",
-                "(+3 de Contentamento, 0 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, -80 de Dinheiro)"
             ],
             3: [
                 "As placas velhas continuarão apontando direções pela metade.",
-                "(-3 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 203,
-        "dia_minimo": 12,
+        "dia_minimo": 7,
         "falas": [
             "A neve costuma esconder pedras soltas nas trilhas altas de Hida.",
             "Com marcações simples, posso tornar a passagem mais segura antes do frio piorar.",
@@ -7840,22 +7638,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "A rota será marcada antes que a neve esconda os perigos.",
-                "(+7 de Contentamento, +2 de População, -60 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "Um guia ajudará por algum tempo, embora nem todos sejam atendidos.",
-                "(+3 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -30 de Dinheiro)"
             ],
             3: [
                 "A montanha continuará ensinando seus caminhos com frio e risco.",
-                "(-7 de Contentamento, -2 de População, 0 de Dinheiro)"
+                "(-7 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 204,
-        "dia_minimo": 8,
+        "dia_minimo": 30,
         "falas": [
             "Algumas bancas do mercado usam medidas diferentes para vender arroz.",
             "O povo reclama que paga o mesmo e recebe menos.",
@@ -7872,22 +7669,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "O mercado ficará mais justo, e as medidas terão o peso da lei.",
-                "(+8 de Contentamento, +1 de População, -35 de Dinheiro)"
+                "(+8 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "Alguns abusos serão corrigidos, mas muitos escaparão da vistoria.",
-                "(+3 de Contentamento, 0 de População, +20 de Dinheiro)"
+                "(+3 de Contentamento, +20 de Dinheiro)"
             ],
             3: [
                 "Os cofres ganham com taxas, mas o povo perde confiança no mercado.",
-                "(-8 de Contentamento, 0 de População, +40 de Dinheiro)"
+                "(-8 de Contentamento, +40 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 205,
-        "dia_minimo": 10,
+        "dia_minimo": 7,
         "falas": [
             "Posso fundir sinos pequenos para alertar vilas sobre incêndios e cheias.",
             "Um bom som atravessa neblina, chuva e confusão.",
@@ -7898,28 +7694,27 @@ eventos = [
             "opcao_segunda": "Colocar só no castelo.",
             "opcao_terceira": "Recusar os sinos."
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -75},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -25},
         "efeito_terceira": {"Contentamento": -4, "Populacao": -1, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os sinos chamarão ajuda antes que o fogo ou a água avancem demais.",
-                "(+6 de Contentamento, +2 de População, -75 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O castelo terá aviso claro, mas as vilas continuarão mais lentas.",
-                "(+2 de Contentamento, 0 de População, -25 de Dinheiro)"
+                "(+2 de Contentamento, -25 de Dinheiro)"
             ],
             3: [
                 "Sem sinos, cada emergência dependerá de gritos e pernas rápidas.",
-                "(-4 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 206,
-        "dia_minimo": 9,
+        "dia_minimo": 41,
         "falas": [
             "O jardim do templo está tomado por mato e pedras fora do lugar.",
             "Um jardim bem cuidado acalma visitantes e honra as cerimônias.",
@@ -7931,27 +7726,26 @@ eventos = [
             "opcao_terceira": "Abandonar o jardim."
         },
         "efeito_primeira": {"Contentamento": 10, "Populacao": 1, "Dinheiro": -65},
-        "efeito_segunda": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O jardim voltará a receber passos calmos e preces silenciosas.",
-                "(+10 de Contentamento, +1 de População, -65 de Dinheiro)"
+                "(+10 de Contentamento, +1 de Populacao, -65 de Dinheiro)"
             ],
             2: [
                 "O pátio ficará apresentável, embora o jardim continue sem vida.",
-                "(+4 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "O templo seguirá cercado por descuido e folhas mortas.",
-                "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 207,
-        "dia_minimo": 11,
+        "dia_minimo": 26,
         "falas": [
             "Pequenos marcos de estrada estão quebrados nas rotas de montanha.",
             "Viajantes deixam oferendas ali antes de seguir viagem.",
@@ -7963,27 +7757,26 @@ eventos = [
             "opcao_terceira": "Negar o pedido."
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -40},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -15},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os caminhos parecerão menos abandonados aos olhos de quem viaja.",
-                "(+5 de Contentamento, +1 de População, -40 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -40 de Dinheiro)"
             ],
             2: [
                 "Os piores marcos foram salvos, mas muitos ainda envelhecem sozinhos.",
-                "(+2 de Contentamento, 0 de População, -15 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "Os marcos continuarão caídos, como preces esquecidas na estrada.",
-                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 208,
-        "dia_minimo": 13,
+        "dia_minimo": 16,
         "falas": [
             "Caixas laqueadas de Takayama poderiam atrair compradores ricos.",
             "A madeira local é boa, e nossos artesãos sabem trabalhar com delicadeza.",
@@ -8000,22 +7793,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "A feira ganhará brilho, e o nome de Takayama viajará em madeira laqueada.",
-                "(+5 de Contentamento, +1 de População, -50 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "A taxa encherá os cofres, mas apertará a margem dos artesãos.",
-                "(-3 de Contentamento, 0 de População, +90 de Dinheiro)"
+                "(-3 de Contentamento, +90 de Dinheiro)"
             ],
             3: [
                 "A mercadora seguirá para outro lugar com suas caixas brilhantes.",
-                "(-2 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 209,
-        "dia_minimo": 10,
+        "dia_minimo": 12,
         "falas": [
             "Sei cantar histórias antigas de Hida ao som do biwa.",
             "O povo trabalha melhor quando lembra por que sua terra importa.",
@@ -8026,25 +7818,24 @@ eventos = [
             "opcao_segunda": "Permitir doações.",
             "opcao_terceira": "Proibir aglomeração."
         },
-        "efeito_primeira": {"Contentamento": 11, "Populacao": 1, "Dinheiro": -45},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 1, "Dinheiro": -45},
         "efeito_segunda": {"Contentamento": 5, "Populacao": 0, "Dinheiro": 0},
         "efeito_terceira": {"Contentamento": -7, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A praça ouvirá canções antigas, e a noite parecerá menos pesada.",
-                "(+11 de Contentamento, +1 de População, -45 de Dinheiro)"
+                "(+8 de Contentamento, +1 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "A música virá sem custo ao castelo, sustentada por pequenas moedas.",
-                "(+5 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(+5 de Contentamento)"
             ],
             3: [
                 "A praça ficará quieta, e algumas histórias continuarão sem voz.",
-                "(-7 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-7 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 210,
         "dia_minimo": 5,
@@ -8064,22 +7855,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "Sandálias novas chegarão aos trabalhadores antes que os pés desistam.",
-                "(+8 de Contentamento, +2 de População, -55 de Dinheiro)"
+                "(+8 de Contentamento, +2 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "Os mais necessitados receberão pares novos, embora muitos ainda esperem.",
-                "(+4 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -20 de Dinheiro)"
             ],
             3: [
                 "O trabalho continuará, mas cada passo cobrará seu preço.",
-                "(-6 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-6 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 211,
-        "dia_minimo": 16,
+        "dia_minimo": 42,
         "falas": [
             "Uma galeria de prata nas montanhas está rendendo mais que o esperado.",
             "Mas as vigas antigas rangem quando os homens batem a picareta.",
@@ -8091,27 +7881,26 @@ eventos = [
             "opcao_terceira": "Explorar ao máximo."
         },
         "efeito_primeira": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -90},
-        "efeito_segunda": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -20},
-        "efeito_terceira": {"Contentamento": -10, "Populacao": -3, "Dinheiro": 160},
+        "efeito_segunda": {"Contentamento": 5, "Populacao": 0, "Dinheiro": -35},
+        "efeito_terceira": {"Contentamento": -10, "Populacao": -3, "Dinheiro": 140},
         "falas_pos": {
             1: [
                 "A mina ficará mais segura antes que a prata custe vidas.",
-                "(+3 de Contentamento, +1 de População, -90 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -90 de Dinheiro)"
             ],
             2: [
                 "A produção diminuirá, mas os mineradores respirarão melhor.",
-                "(+5 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(+5 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "A prata virá rápido, junto com medo e vigas cansadas.",
-                "(-10 de Contentamento, -3 de População, +160 de Dinheiro)"
+                "(-10 de Contentamento, -3 de Populacao, +140 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 212,
-        "dia_minimo": 9,
+        "dia_minimo": 21,
         "falas": [
             "Encontrei cogumelos medicinais nas florestas úmidas de Hida.",
             "Eles ajudam contra febres leves, mas precisam ser colhidos com cuidado.",
@@ -8123,27 +7912,26 @@ eventos = [
             "opcao_terceira": "Deixar coleta livre."
         },
         "efeito_primeira": {"Contentamento": 7, "Populacao": 3, "Dinheiro": -50},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -15},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": -1, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os remédios chegarão às vilas sem arriscar colheitas perigosas.",
-                "(+7 de Contentamento, +3 de População, -50 de Dinheiro)"
+                "(+7 de Contentamento, +3 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "Uma porção pequena ajudará os primeiros doentes.",
-                "(+3 de Contentamento, +1 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Quem não conhece a floresta pode confundir cura com veneno.",
-                "(-4 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 213,
-        "dia_minimo": 7,
+        "dia_minimo": 17,
         "falas": [
             "Muitas casas ainda usam telhas rachadas desde as últimas chuvas.",
             "Posso moldar uma nova leva de barro antes que o tempo vire novamente.",
@@ -8154,28 +7942,27 @@ eventos = [
             "opcao_segunda": "Priorizar casas piores.",
             "opcao_terceira": "Adiar a encomenda."
         },
-        "efeito_primeira": {"Contentamento": 9, "Populacao": 2, "Dinheiro": -85},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 2, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -6, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As casas receberão telhas novas antes da próxima chuva forte.",
-                "(+9 de Contentamento, +2 de População, -85 de Dinheiro)"
+                "(+8 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "As casas mais afetadas serão protegidas primeiro.",
-                "(+5 de Contentamento, +1 de População, -35 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "As goteiras continuarão caindo onde ordens não chegaram.",
-                "(-6 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-6 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 214,
-        "dia_minimo": 14,
+        "dia_minimo": 20,
         "falas": [
             "Cães bem treinados podem vigiar armazéns e trilhas próximas.",
             "Eles farejam intrusos antes dos guardas enxergarem sombras.",
@@ -8187,27 +7974,26 @@ eventos = [
             "opcao_terceira": "Recusar o treino."
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -70},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -30},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A vila dormirá com ouvidos atentos guardando as ruas.",
-                "(+5 de Contentamento, +1 de População, -70 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Os armazéns ficarão protegidos, mas as trilhas seguirão quietas demais.",
-                "(+2 de Contentamento, 0 de População, -30 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "Os guardas continuarão contando apenas com os próprios olhos.",
-                "(-3 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 215,
-        "dia_minimo": 11,
+        "dia_minimo": 9,
         "falas": [
             "Vilas afastadas recebem notícias tarde demais.",
             "Posso criar rotas fixas de mensagens pelas montanhas.",
@@ -8218,28 +8004,27 @@ eventos = [
             "opcao_segunda": "Testar uma rota.",
             "opcao_terceira": "Negar o pedido."
         },
-        "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -75},
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -25},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As mensagens circularão melhor entre castelo, vilas e estradas.",
-                "(+7 de Contentamento, +2 de População, -75 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Uma rota será testada antes que o plano cresça.",
-                "(+3 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -25 de Dinheiro)"
             ],
             3: [
                 "As vilas distantes continuarão sabendo das coisas tarde demais.",
-                "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 216,
-        "dia_minimo": 15,
+        "dia_minimo": 34,
         "falas": [
             "Doentes e idosos pedem horários reservados nos banhos termais.",
             "A água quente ajuda corpos cansados, mas os viajantes comuns reclamarão da espera.",
@@ -8256,22 +8041,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "Os mais frágeis terão acesso tranquilo às águas quentes.",
-                "(+8 de Contentamento, +3 de População, -35 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "A entrada reduzida ajudará alguns, mas não resolverá a disputa por espaço.",
-                "(+3 de Contentamento, +1 de População, +15 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, +15 de Dinheiro)"
             ],
             3: [
                 "Os banhos seguirão cheios, e os fracos esperarão como todos.",
-                "(-4 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 217,
-        "dia_minimo": 10,
+        "dia_minimo": 39,
         "falas": [
             "Muitos discutem no mercado por não conhecerem as regras.",
             "Posso gravar tabuletas com leis simples sobre pesos, filas e taxas.",
@@ -8282,28 +8066,27 @@ eventos = [
             "opcao_segunda": "Gravar só impostos.",
             "opcao_terceira": "Não expor regras."
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -30},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 0, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": 1, "Populacao": 0, "Dinheiro": 25},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As regras ficarão claras para moradores e viajantes.",
-                "(+6 de Contentamento, 0 de População, -30 de Dinheiro)"
+                "(+6 de Contentamento, -35 de Dinheiro)"
             ],
             2: [
                 "Todos saberão o que devem ao castelo, mas pouco sobre seus direitos.",
-                "(+1 de Contentamento, 0 de População, +25 de Dinheiro)"
+                "(+1 de Contentamento, +25 de Dinheiro)"
             ],
             3: [
                 "O mercado continuará resolvendo dúvidas no grito.",
-                "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 218,
-        "dia_minimo": 18,
+        "dia_minimo": 41,
         "falas": [
             "Uma rota fria precisa de abrigo simples para viajantes.",
             "Basta uma construção pequena com telhado firme e lenha seca.",
@@ -8315,27 +8098,26 @@ eventos = [
             "opcao_terceira": "Ignorar a rota."
         },
         "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -80},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -6, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O abrigo ficará de pé contra vento, neve e azar.",
-                "(+7 de Contentamento, +2 de População, -80 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Os mantimentos ajudarão, mesmo sem proteger do frio.",
-                "(+3 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "A rota seguirá vazia de abrigo e cheia de risco.",
-                "(-6 de Contentamento, -2 de População, 0 de Dinheiro)"
+                "(-6 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 219,
-        "dia_minimo": 9,
+        "dia_minimo": 24,
         "falas": [
             "Parte do arroz no armazém está úmida.",
             "Se separarmos agora, salvamos o restante.",
@@ -8346,28 +8128,27 @@ eventos = [
             "opcao_segunda": "Vender barato.",
             "opcao_terceira": "Esconder o problema."
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -30},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 2, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 45},
         "efeito_terceira": {"Contentamento": -9, "Populacao": -3, "Dinheiro": 80},
         "falas_pos": {
             1: [
                 "O arroz bom será salvo antes que a umidade avance.",
-                "(+5 de Contentamento, +2 de População, -30 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "O arroz ruim sairá rápido, mas compradores notarão o cheiro.",
-                "(-2 de Contentamento, 0 de População, +45 de Dinheiro)"
+                "(-2 de Contentamento, +45 de Dinheiro)"
             ],
             3: [
                 "Os cofres ganham hoje; os armazéns podem pagar amanhã.",
-                "(-9 de Contentamento, -3 de População, +80 de Dinheiro)"
+                "(-9 de Contentamento, -3 de Populacao, +80 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 220,
-        "dia_minimo": 13,
+        "dia_minimo": 16,
         "falas": [
             "O sino menor do templo rachou.",
             "Seu som falha durante cerimônias e avisos públicos.",
@@ -8379,27 +8160,26 @@ eventos = [
             "opcao_terceira": "Deixar rachado."
         },
         "efeito_primeira": {"Contentamento": 8, "Populacao": 0, "Dinheiro": -90},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -25},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Um sino novo chamará o povo com som limpo.",
-                "(+8 de Contentamento, 0 de População, -90 de Dinheiro)"
+                "(+8 de Contentamento, -90 de Dinheiro)"
             ],
             2: [
                 "O sino voltará a soar, ainda que sem a mesma força.",
-                "(+3 de Contentamento, 0 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "O templo continuará ouvindo metal cansado.",
-                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 221,
-        "dia_minimo": 6,
+        "dia_minimo": 17,
         "falas": [
             "O musgo deixou escorregadias as escadas de pedra.",
             "Muitos passam por ali levando água, lenha e arroz.",
@@ -8416,22 +8196,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "As escadas voltarão a servir pés apressados com segurança.",
-                "(+5 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -25 de Dinheiro)"
             ],
             2: [
                 "A entrada ficará segura, mas os degraus altos ainda exigirão cuidado.",
-                "(+2 de Contentamento, 0 de População, -10 de Dinheiro)"
+                "(+2 de Contentamento, -10 de Dinheiro)"
             ],
             3: [
                 "O musgo continuará esperando o próximo tornozelo distraído.",
-                "(-5 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-5 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 222,
-        "dia_minimo": 12,
+        "dia_minimo": 2,
         "falas": [
             "Uma encruzilhada perigosa não tem altar nem placa.",
             "Viajantes hesitam ali e escolhem caminhos errados.",
@@ -8448,22 +8227,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "A encruzilhada ganhará altar, direção e respeito.",
-                "(+6 de Contentamento, +1 de População, -45 de Dinheiro)"
+                "(+6 de Contentamento, +1 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "A placa ajudará os olhos, mesmo sem confortar o espírito.",
-                "(+2 de Contentamento, 0 de População, -10 de Dinheiro)"
+                "(+2 de Contentamento, -10 de Dinheiro)"
             ],
             3: [
                 "A encruzilhada continuará confundindo passos.",
-                "(-3 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 223,
-        "dia_minimo": 15,
+        "dia_minimo": 2,
         "falas": [
             "Documentos importantes estão guardados em caixas frágeis.",
             "A umidade de Takayama não respeita decretos nem registros.",
@@ -8480,22 +8258,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "Os registros ficarão secos, organizados e dignos do castelo.",
-                "(+3 de Contentamento, 0 de População, -60 de Dinheiro)"
+                "(+3 de Contentamento, -60 de Dinheiro)"
             ],
             2: [
                 "Só os documentos mais importantes serão protegidos.",
-                "(+1 de Contentamento, 0 de População, -20 de Dinheiro)"
+                "(+1 de Contentamento, -20 de Dinheiro)"
             ],
             3: [
                 "Os papéis continuarão enfrentando a umidade sozinhos.",
-                "(-2 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 224,
-        "dia_minimo": 16,
+        "dia_minimo": 26,
         "falas": [
             "Há mortos antigos que não receberam cerimônia pública.",
             "Posso tocar por eles no templo e na praça.",
@@ -8507,27 +8284,26 @@ eventos = [
             "opcao_terceira": "Recusar."
         },
         "efeito_primeira": {"Contentamento": 9, "Populacao": 1, "Dinheiro": -35},
-        "efeito_segunda": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -10},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -7, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A música dará nome ao luto que muitos guardavam calados.",
-                "(+9 de Contentamento, +1 de População, -35 de Dinheiro)"
+                "(+9 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "O templo ouvirá a homenagem, mesmo sem toda a praça presente.",
-                "(+4 de Contentamento, 0 de População, -10 de Dinheiro)"
+                "(+4 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "Os mortos seguirão lembrados apenas dentro de algumas casas.",
-                "(-7 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-7 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 225,
-        "dia_minimo": 8,
+        "dia_minimo": 6,
         "falas": [
             "Mensageiros gastam sandálias rápido nas trilhas de Hida.",
             "Quando as tiras arrebentam, notícias importantes chegam tarde.",
@@ -8544,22 +8320,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "Os mensageiros caminharão melhor pelas rotas de montanha.",
-                "(+5 de Contentamento, +1 de População, -40 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -40 de Dinheiro)"
             ],
             2: [
                 "Os remendos aguentarão por algum tempo.",
-                "(+2 de Contentamento, 0 de População, -10 de Dinheiro)"
+                "(+2 de Contentamento, -10 de Dinheiro)"
             ],
             3: [
                 "As mensagens seguirão dependendo de tiras velhas e sorte.",
-                "(-4 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 226,
-        "dia_minimo": 19,
+        "dia_minimo": 30,
         "falas": [
             "Encontrei um veio pequeno de prata em terreno difícil.",
             "Não vale uma grande mina, mas pode render moedas se for explorado com cuidado.",
@@ -8576,22 +8351,21 @@ eventos = [
         "falas_pos": {
             1: [
                 "A prata será retirada sem transformar a montanha em ferida aberta.",
-                "(+2 de Contentamento, +1 de População, +70 de Dinheiro)"
+                "(+2 de Contentamento, +1 de Populacao, +70 de Dinheiro)"
             ],
             2: [
                 "Os mercadores pagarão bem, mas pensarão primeiro no lucro.",
-                "(-4 de Contentamento, 0 de População, +140 de Dinheiro)"
+                "(-4 de Contentamento, +140 de Dinheiro)"
             ],
             3: [
                 "O veio ficará fechado, quieto sob a pedra.",
-                "(+1 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(+1 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 227,
-        "dia_minimo": 13,
+        "dia_minimo": 56,
         "falas": [
             "Raízes amargas podem ajudar contra febres leves.",
             "Com preparo correto, elas servem às vilas antes que a doença cresça.",
@@ -8602,28 +8376,27 @@ eventos = [
             "opcao_segunda": "Guardar na enfermaria.",
             "opcao_terceira": "Não confiar."
         },
-        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -45},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -15},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -5, "Populacao": -1, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As raízes preparadas chegarão às vilas antes que a febre se espalhe.",
-                "(+8 de Contentamento, +3 de População, -45 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "A enfermaria ficará abastecida, mas as vilas terão menos acesso.",
-                "(+3 de Contentamento, +1 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "As raízes voltarão à floresta, e os doentes dependerão de descanso.",
-                "(-5 de Contentamento, -1 de População, 0 de Dinheiro)"
+                "(-5 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 228,
-        "dia_minimo": 17,
+        "dia_minimo": 46,
         "falas": [
             "O templo menor tem goteiras sobre tábuas votivas.",
             "Quando a chuva cai, nomes e pedidos se apagam devagar.",
@@ -8634,28 +8407,27 @@ eventos = [
             "opcao_segunda": "Reparar só o altar.",
             "opcao_terceira": "Adiar."
         },
-        "efeito_primeira": {"Contentamento": 7, "Populacao": 1, "Dinheiro": -70},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -25},
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 1, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O templo ficará seco, e as preces não escorrerão pela madeira.",
-                "(+7 de Contentamento, +1 de População, -70 de Dinheiro)"
+                "(+7 de Contentamento, +1 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "O altar será protegido, mas o restante ainda ouvirá a chuva.",
-                "(+3 de Contentamento, 0 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, -80 de Dinheiro)"
             ],
             3: [
                 "As goteiras continuarão apagando pequenos pedidos.",
-                "(-5 de Contentamento, 0 de População, 0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 229,
-        "dia_minimo": 7,
+        "dia_minimo": 1,
         "falas": [
             "Os cães se recusaram a seguir a trilha esta manhã.",
             "Eu e os outros caçadores encontramos pegadas de um lobo branco, grandes como pratos, perto das fazendas.",
@@ -8665,23 +8437,22 @@ eventos = [
             "opcao_primeira": "Organizar uma caça",
             "opcao_segunda": "Ignorar os relatos"
         },
-        "efeito_primeira": {"Contentamento": 8, "Populacao": 0, "Dinheiro": -90},
-        "efeito_segunda": {"Contentamento": -12, "Populacao": -15, "Dinheiro": 0},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 0, "Dinheiro": -70},
+        "efeito_segunda": {"Contentamento": -8, "Populacao": -5, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os caçadores retornam celebrando enquanto carregam peles e presas.",
-                "(+8 de Contentamento, -90 de Dinheiro)"
+                "(+8 de Contentamento, -70 de Dinheiro)"
             ],
             2: [
                 "Durante a noite, animais desaparecem dos celeiros e o medo cresce.",
-                "(-12 de Contentamento, -15 de População)"
+                "(-8 de Contentamento, -5 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 230,
-        "dia_minimo": 7,
+        "dia_minimo": 9,
         "falas": [
             "Veja esta tigela antes de rir, shogun.",
             "O forno entortou o lote inteiro, mas nenhuma peça quebrou.",
@@ -8699,24 +8470,23 @@ eventos = [
             1: [
                 "As tigelas tortas viraram moda por um dia.",
                 "Até o arroz pareceu se inclinar em respeito.",
-                "(+5 de Contentamento, +1 de População, +35 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, +35 de Dinheiro)"
             ],
             2: [
                 "As tigelas foram distribuídas nos refeitórios, onde ninguém se importou com a curva enquanto houvesse arroz.",
                 "O oleiro recuperou parte do prejuízo e ganhou uma encomenda menos exigente.",
-                "(+3 de Contentamento, +0 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, -25 de Dinheiro)"
             ],
             3: [
                 "A proibição deixou o lote acumulado na oficina.",
                 "Durante semanas, o mercado discutiu se o shogun havia banido tigelas ou apenas o mau gosto.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 231,
-        "dia_minimo": 8,
+        "dia_minimo": 44,
         "falas": [
             "Trouxe um guarda-chuva que sobreviveu a três chuvas e apenas duas rajadas.",
             "Quero testar meus novos modelos de papel oleado na rua principal.",
@@ -8728,30 +8498,29 @@ eventos = [
             "opcao_terceira": "Negar a demonstração."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -40},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -15},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os guarda-chuvas resistiram à chuva e quase resistiram ao orgulho do artesão.",
                 "A rua ficou mais colorida.",
-                "(+6 de Contentamento, +1 de População, -40 de Dinheiro)"
+                "(+6 de Contentamento, +1 de Populacao, -40 de Dinheiro)"
             ],
             2: [
                 "O teste foi transferido para um pátio fechado e acompanhado por poucos curiosos.",
                 "Os modelos resistiram à água, mas não conquistaram a mesma publicidade.",
-                "(+2 de Contentamento, +0 de População, -15 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "Sem autorização, o artesão guardou os protótipos até a próxima estação.",
                 "A primeira chuva encontrou a rua tão despreparada quanto antes.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 232,
-        "dia_minimo": 9,
+        "dia_minimo": 44,
         "falas": [
             "Depois de uma madrugada inteira somando sacos de arroz, o escriba trouxe números que não paravam de mudar.",
             "Os registros do armazém não correspondem ao que existe nas prateleiras.",
@@ -8762,31 +8531,30 @@ eventos = [
             "opcao_segunda": "Aceitar os números atuais.",
             "opcao_terceira": "Punir os responsáveis."
         },
-        "efeito_primeira": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -20},
+        "efeito_primeira": {"Contentamento": 4, "Populacao": 0, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 40},
         "efeito_terceira": {"Contentamento": -7, "Populacao": -1, "Dinheiro": 20},
         "falas_pos": {
             1: [
                 "Os registros foram corrigidos com paciência.",
                 "Pouco dinheiro se perdeu, e muita desconfiança foi evitada.",
-                "(+4 de Contentamento, +0 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, -35 de Dinheiro)"
             ],
             2: [
                 "A revisão foi limitada aos maiores depósitos e encontrou erros suficientes para justificar a suspeita.",
                 "O restante dos livros continuou esperando por olhos descansados.",
-                "(-4 de Contentamento, +0 de População, +40 de Dinheiro)"
+                "(-4 de Contentamento, +40 de Dinheiro)"
             ],
             3: [
                 "Os registros foram aceitos como estavam.",
                 "Quando faltou arroz numa entrega, ninguém conseguiu provar se a culpa era de ladrões ou de números ruins.",
-                "(-7 de Contentamento, -1 de População, +20 de Dinheiro)"
+                "(-7 de Contentamento, -1 de Populacao, +20 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 233,
-        "dia_minimo": 10,
+        "dia_minimo": 41,
         "falas": [
             "O aroma chegou antes de mim, então minha apresentação talvez seja desnecessária.",
             "Quero vender mochi perto do templo durante os dias de peregrinação.",
@@ -8804,24 +8572,23 @@ eventos = [
             1: [
                 "O mochi atraiu peregrinos e deixou o templo mais animado.",
                 "Nem todas as orações foram silenciosas.",
-                "(+7 de Contentamento, +2 de População, +30 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, +30 de Dinheiro)"
             ],
             2: [
                 "A barraca foi levada para uma rua lateral, longe das cerimônias.",
                 "Os peregrinos caminharam alguns passos extras e os monges encontraram menos migalhas.",
-                "(+3 de Contentamento, +1 de População, +15 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, +15 de Dinheiro)"
             ],
             3: [
                 "A licença foi negada e o aroma desapareceu da entrada do templo.",
                 "Peregrinos passaram a comprar doces de vendedores vindos de outras vilas.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 234,
-        "dia_minimo": 11,
+        "dia_minimo": 9,
         "falas": [
             "Estas carpas foram criadas na correnteza mais forte do Miyagawa.",
             "Quero soltá-las no lago do jardim para trazer sorte e visitantes.",
@@ -8839,24 +8606,23 @@ eventos = [
             1: [
                 "As carpas deslizaram pelo lago como pequenos senhores de bigode.",
                 "O jardim ganhou movimento.",
-                "(+5 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -30 de Dinheiro)"
             ],
             2: [
                 "Apenas algumas carpas foram soltas sob vigilância do jardineiro.",
                 "O lago ganhou movimento sem perder todas as plantas na primeira semana.",
-                "(+3 de Contentamento, +0 de População, -10 de Dinheiro)"
+                "(+3 de Contentamento, -10 de Dinheiro)"
             ],
             3: [
                 "Os peixes voltaram ao rio em grandes cestos.",
                 "O jardim permaneceu impecável e tão silencioso quanto antes.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 235,
-        "dia_minimo": 12,
+        "dia_minimo": 17,
         "falas": [
             "Uma carga mal amarrada feriu dois carregadores na última semana.",
             "Posso ensinar as mulheres da vila a tecer faixas resistentes e criar uma nova fonte de renda.",
@@ -8874,24 +8640,23 @@ eventos = [
             1: [
                 "A oficina começou com fios firmes e conversa alta.",
                 "As cargas e os ânimos ficaram mais seguros.",
-                "(+7 de Contentamento, +3 de População, -60 de Dinheiro)"
+                "(+7 de Contentamento, +3 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "A oficina começou com poucas alunas e fios mais baratos.",
                 "As primeiras faixas não eram belas, mas seguraram cargas que antes se soltavam.",
-                "(+4 de Contentamento, +1 de População, -10 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -10 de Dinheiro)"
             ],
             3: [
                 "Sem apoio, a tecelã continuou trabalhando sozinha.",
                 "Os carregadores mantiveram as cordas antigas e os acidentes também.",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 236,
-        "dia_minimo": 13,
+        "dia_minimo": 34,
         "falas": [
             "Carrego comigo sutras que sobreviveram a incêndios, guerras e monges descuidados.",
             "Desejo copiá-los no salão menor antes que o tempo apague o que restou.",
@@ -8903,30 +8668,29 @@ eventos = [
             "opcao_terceira": "Recusar o pedido."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": -70},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os sutras começaram a ser copiados com tinta cuidadosa.",
                 "O feudo ganhou respeito entre estudiosos.",
-                "(+6 de Contentamento, +2 de População, -70 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Os monges receberam papel suficiente apenas para os textos mais frágeis.",
                 "Alguns sutras foram preservados; outros continuaram envelhecendo nas caixas.",
-                "(+3 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "O salão permaneceu fechado aos copistas.",
                 "O viajante partiu levando consigo escritos que talvez nunca retornassem a Hida.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 237,
-        "dia_minimo": 14,
+        "dia_minimo": 76,
         "falas": [
             "À noite, a margem do rio desaparece no escuro.",
             "Minhas lanternas poderiam conduzir as famílias durante o festival de outono.",
@@ -8937,31 +8701,30 @@ eventos = [
             "opcao_segunda": "Iluminar só a praça.",
             "opcao_terceira": "Cancelar as lanternas."
         },
-        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -75},
-        "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -30},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As lanternas refletiram no rio como estrelas obedientes.",
                 "O festival ficou memorável.",
-                "(+8 de Contentamento, +3 de População, -75 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Lanternas foram colocadas apenas nas pontes e curvas perigosas.",
                 "A margem continuou escura, mas as famílias encontraram o caminho sem grandes gastos.",
-                "(+4 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "O rio não recebeu iluminação naquele festival.",
                 "A celebração terminou cedo, e vários visitantes evitaram a margem depois do pôr do sol.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 238,
-        "dia_minimo": 15,
+        "dia_minimo": 16,
         "falas": [
             "As ervas que crescem junto às águas quentes têm um aroma diferente.",
             "Quero cultivá-las para tratar dores e resfriados durante o inverno.",
@@ -8973,30 +8736,29 @@ eventos = [
             "opcao_terceira": "Negar o jardim."
         },
         "efeito_primeira": {"Contentamento": 7, "Populacao": 3, "Dinheiro": -50},
-        "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O jardim começou a perfumar as águas com cuidado.",
                 "Doentes e curiosos apareceram em igual número.",
-                "(+7 de Contentamento, +3 de População, -50 de Dinheiro)"
+                "(+7 de Contentamento, +3 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "A curandeira recebeu um pequeno canteiro longe das piscinas principais.",
                 "As ervas cresceram sem transformar todo banho numa infusão medicinal.",
-                "(+4 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "O cultivo foi proibido junto às águas.",
                 "Ela levou as mudas para outro vale, e os banhistas conservaram o ar puro.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 239,
-        "dia_minimo": 16,
+        "dia_minimo": 6,
         "falas": [
             "Escrevi uma peça sobre um governante teimoso que só aceita conselhos de um sapo.",
             "Meus atores juram que qualquer semelhança com esta corte é coincidência.",
@@ -9014,24 +8776,23 @@ eventos = [
             1: [
                 "A peça lotou o pátio e ninguém mencionou seu bigode.",
                 "O sapo recebeu mais aplausos que alguns oficiais.",
-                "(+8 de Contentamento, +2 de População, -65 de Dinheiro)"
+                "(+8 de Contentamento, +2 de Populacao, -65 de Dinheiro)"
             ],
             2: [
                 "A companhia apresentou a peça sem dinheiro do castelo, usando cenários emprestados.",
                 "A sátira perdeu brilho, mas não perdeu as piadas sobre governantes teimosos.",
-                "(+4 de Contentamento, +1 de População, +0 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao)"
             ],
             3: [
                 "Guardas impediram a apresentação na praça.",
                 "Naquela noite, tavernas inteiras ouviram versões improvisadas e muito menos gentis.",
-                "(-6 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-6 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 240,
-        "dia_minimo": 17,
+        "dia_minimo": 8,
         "falas": [
             "Escute.",
             "Este tambor ainda guarda um som poderoso, apesar dos anos no depósito.",
@@ -9042,31 +8803,30 @@ eventos = [
             "opcao_segunda": "Restaurar dois tambores.",
             "opcao_terceira": "Vender os antigos."
         },
-        "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -80},
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 60},
         "falas_pos": {
             1: [
                 "Os tambores voltaram a soar fundo.",
                 "Até as montanhas pareceram responder.",
-                "(+7 de Contentamento, +2 de População, -80 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Somente os tambores de alerta foram reparados.",
                 "As festas continuaram modestas, mas a cidade recuperou uma voz para emergências.",
-                "(+4 de Contentamento, +1 de População, -35 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Os instrumentos permaneceram no depósito.",
                 "Cupins e umidade continuaram trabalhando neles sem pedir pagamento.",
-                "(-4 de Contentamento, +0 de População, +60 de Dinheiro)"
+                "(-4 de Contentamento, +60 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 241,
-        "dia_minimo": 18,
+        "dia_minimo": 13,
         "falas": [
             "Chegou ao castelo uma proposta vinda das aldeias afastadas.",
             "Elas querem caixas de recados para não depender de uma viagem ao castelo sempre que surgir um problema pequeno.",
@@ -9084,24 +8844,23 @@ eventos = [
             1: [
                 "As caixas de recados aproximaram o castelo das aldeias.",
                 "Alguns bilhetes vieram com desenhos de gatos.",
-                "(+6 de Contentamento, +2 de População, -45 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "As caixas chegaram apenas às aldeias maiores.",
                 "Moradores das vilas menores passaram a enviar seus bilhetes por parentes e viajantes.",
-                "(+3 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -20 de Dinheiro)"
             ],
             3: [
                 "Nada mudou nas rotas de mensagens.",
                 "Pedidos simples continuaram chegando tarde, depois de longas caminhadas.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 242,
-        "dia_minimo": 19,
+        "dia_minimo": 22,
         "falas": [
             "Minha família encontrou uma encosta onde a água corre devagar e o sol permanece até tarde.",
             "Queremos abrir ali um novo terraço de arroz.",
@@ -9119,24 +8878,23 @@ eventos = [
             1: [
                 "O terraço foi preparado com barro firme e esperança.",
                 "A encosta ganhou degraus produtivos.",
-                "(+8 de Contentamento, +4 de População, -90 de Dinheiro)"
+                "(+8 de Contentamento, +4 de Populacao, -90 de Dinheiro)"
             ],
             2: [
                 "A família recebeu permissão para testar apenas uma faixa da encosta.",
                 "A colheita foi pequena, mas provou que a água podia ser controlada.",
-                "(+4 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "O novo terraço não foi aberto.",
                 "A encosta permaneceu vazia enquanto famílias buscavam terra em outras regiões.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 243,
-        "dia_minimo": 20,
+        "dia_minimo": 17,
         "falas": [
             "Três brigas começaram no mercado enquanto pessoas esperavam a mesma chaleira.",
             "Quero oferecer sessões públicas de chá e etiqueta.",
@@ -9154,24 +8912,23 @@ eventos = [
             1: [
                 "As sessões ensinaram silêncio, postura e paciência.",
                 "Alguns só aprenderam a segurar a tigela.",
-                "(+6 de Contentamento, +2 de População, -55 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "As aulas foram abertas sem chá pago pelo castelo.",
                 "Os participantes aprenderam etiqueta levando suas próprias folhas e suas próprias opiniões.",
-                "(+3 de Contentamento, +1 de População, +20 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, +20 de Dinheiro)"
             ],
             3: [
                 "A proposta foi recusada como luxo desnecessário.",
                 "As filas do mercado continuaram produzindo mais discussões que comércio.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 244,
-        "dia_minimo": 21,
+        "dia_minimo": 44,
         "falas": [
             "Alguns barcos de pesca estão bebendo mais água do que carregando peixes.",
             "Posso reparar cascos e remos antes das cheias.",
@@ -9189,24 +8946,23 @@ eventos = [
             1: [
                 "Os barcos voltaram ao rio sem engolir metade dele.",
                 "Os pescadores agradeceram.",
-                "(+7 de Contentamento, +3 de População, -85 de Dinheiro)"
+                "(+7 de Contentamento, +3 de Populacao, -85 de Dinheiro)"
             ],
             2: [
                 "Os reparos priorizaram os barcos que alimentavam mais famílias.",
                 "Alguns cascos menores ficaram na margem, mas a pesca principal continuou.",
-                "(+4 de Contentamento, +1 de População, -35 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Nenhuma madeira foi liberada.",
                 "A primeira cheia levou duas embarcações e convenceu o rio a encerrar a discussão.",
-                "(-6 de Contentamento, -2 de População, +0 de Dinheiro)"
+                "(-6 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 245,
-        "dia_minimo": 22,
+        "dia_minimo": 54,
         "falas": [
             "Guardei estas sementes desde o inverno em que metade da colheita morreu.",
             "Quero criar uma reserva comum para que nenhuma família precise plantar o último punhado de arroz.",
@@ -9217,31 +8973,30 @@ eventos = [
             "opcao_segunda": "Guardar só sementes raras.",
             "opcao_terceira": "Não organizar estoque."
         },
-        "efeito_primeira": {"Contentamento": 8, "Populacao": 4, "Dinheiro": -70},
-        "efeito_segunda": {"Contentamento": 4, "Populacao": 2, "Dinheiro": -25},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 4, "Dinheiro": -80},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 2, "Dinheiro": -80},
         "efeito_terceira": {"Contentamento": -5, "Populacao": -1, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O banco de sementes começou pequeno e promissor.",
                 "O futuro ganhou sacos bem amarrados.",
-                "(+8 de Contentamento, +4 de População, -70 de Dinheiro)"
+                "(+8 de Contentamento, +4 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "Cada família guardou sua própria parte sob regras comuns.",
                 "A reserva ficou espalhada, menos eficiente e mais difícil de perder de uma só vez.",
-                "(+4 de Contentamento, +2 de População, -25 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -80 de Dinheiro)"
             ],
             3: [
                 "O banco de sementes foi considerado desnecessário.",
                 "Quando a próxima colheita falhou numa aldeia, não havia reserva comum para ajudá-la.",
-                "(-5 de Contentamento, -1 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 246,
-        "dia_minimo": 23,
+        "dia_minimo": 42,
         "falas": [
             "As montanhas ficam diferentes quando são vistas de dentro do castelo.",
             "Quero pintar essa paisagem num biombo para que visitantes compreendam a força de Hida.",
@@ -9253,30 +9008,29 @@ eventos = [
             "opcao_terceira": "Recusar a obra."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -75},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -30},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O biombo começou a tomar forma com montanhas serenas.",
                 "O salão parecerá maior que suas paredes.",
-                "(+6 de Contentamento, +1 de População, -75 de Dinheiro)"
+                "(+6 de Contentamento, +1 de Populacao, -75 de Dinheiro)"
             ],
             2: [
                 "O pintor recebeu pigmentos locais e uma tela menor.",
                 "O biombo ficou simples, mas reconhecivelmente ligado às montanhas de Hida.",
-                "(+3 de Contentamento, +0 de População, -30 de Dinheiro)"
+                "(+3 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "A encomenda foi recusada e o salão permaneceu vazio.",
                 "O artista vendeu a paisagem a um mercador que a levou para longe.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 247,
-        "dia_minimo": 24,
+        "dia_minimo": 19,
         "falas": [
             "Sem sal, peixe e legumes apodrecem antes do inverno terminar.",
             "Quero abrir um depósito perto do mercado e manter preços estáveis.",
@@ -9294,24 +9048,23 @@ eventos = [
             1: [
                 "O depósito foi aberto com portas fortes.",
                 "A comida durará mais que a desconfiança.",
-                "(+5 de Contentamento, +1 de População, +35 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, +35 de Dinheiro)"
             ],
             2: [
                 "A licença foi concedida sem guardas pagos pelo castelo.",
                 "O vendedor contratou parentes e manteve um depósito menor do que imaginava.",
-                "(+2 de Contentamento, +0 de População, +60 de Dinheiro)"
+                "(+2 de Contentamento, +60 de Dinheiro)"
             ],
             3: [
                 "O sal continuou chegando em pequenas cargas irregulares.",
                 "No inverno, os preços subiram junto com o número de alimentos estragados.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 248,
-        "dia_minimo": 5,
+        "dia_minimo": 24,
         "falas": [
             "A patrulha ouve passos nos becos, mas chega sempre tarde demais.",
             "Sinos discretos poderiam avisar os guardas sem acordar a cidade inteira.",
@@ -9323,30 +9076,29 @@ eventos = [
             "opcao_terceira": "Recusar os sinos."
         },
         "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -45},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -15},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os sinos passaram a vigiar onde olhos falham.",
                 "A noite ficou um pouco menos ousada.",
-                "(+6 de Contentamento, +1 de População, -45 de Dinheiro)"
+                "(+6 de Contentamento, +1 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "Os sinos foram instalados apenas nos becos mais perigosos.",
                 "A patrulha recebeu poucos alertas, mas passou a chegar a tempo em alguns deles.",
-                "(+3 de Contentamento, +0 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "A guarda continuou dependendo de olhos e sorte.",
                 "Os ladrões aprenderam quais ruas permaneciam silenciosas.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 249,
-        "dia_minimo": 6,
+        "dia_minimo": 8,
         "falas": [
             "Recebi um pedido oficial que dizia apenas: 'aquela coisa perto da outra coisa'.",
             "Quero ensinar as crianças a escrever solicitações que o castelo consiga compreender.",
@@ -9364,24 +9116,23 @@ eventos = [
             1: [
                 "As crianças começaram a escrever com traços mais firmes.",
                 "Alguns pedidos agora têm menos manchas de ameixa.",
-                "(+7 de Contentamento, +3 de População, -50 de Dinheiro)"
+                "(+7 de Contentamento, +3 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "As aulas aceitaram apenas filhos de comerciantes e funcionários.",
                 "Os pedidos melhoraram, embora boa parte da vila continuasse escrevendo 'aquela coisa'.",
-                "(+4 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -20 de Dinheiro)"
             ],
             3: [
                 "A escola não recebeu apoio.",
                 "O castelo continuou gastando horas decifrando bilhetes e intenções.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 250,
-        "dia_minimo": 7,
+        "dia_minimo": 22,
         "falas": [
             "Os reparadores enviaram ao trono um aviso preocupante sobre os telhados de palha.",
             "Muitas casas entrarão no inverno com a cobertura úmida, sujeita a mofo e desabamentos.",
@@ -9399,24 +9150,23 @@ eventos = [
             1: [
                 "Os telhados foram reforçados antes do frio.",
                 "As casas respirarão melhor.",
-                "(+8 de Contentamento, +4 de População, -95 de Dinheiro)"
+                "(+8 de Contentamento, +4 de Populacao, -95 de Dinheiro)"
             ],
             2: [
                 "O mutirão atendeu primeiro as casas mais antigas.",
                 "Muitas famílias ficaram seguras, enquanto outras cobriram goteiras com bacias.",
-                "(+4 de Contentamento, +2 de População, -40 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -40 de Dinheiro)"
             ],
             3: [
                 "Os reparos foram adiados até a neve.",
                 "Quando o peso branco chegou, alguns telhados confirmaram o aviso da pior maneira.",
-                "(-8 de Contentamento, -3 de População, +0 de Dinheiro)"
+                "(-8 de Contentamento, -3 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 251,
-        "dia_minimo": 8,
+        "dia_minimo": 28,
         "falas": [
             "Um comerciante de papel propõe uma feira de livros usados.",
             "Textos antigos e manchados poderiam chegar às mãos de estudantes que não compram cópias novas.",
@@ -9434,24 +9184,23 @@ eventos = [
             1: [
                 "O mercado de livros trouxe estudantes e curiosos.",
                 "Conhecimento usado ainda pesa pouco e vale muito.",
-                "(+7 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "A feira foi autorizada apenas para textos escolares e religiosos.",
                 "Estudantes encontraram livros baratos, e os comerciantes novos perderam menos clientes.",
-                "(+4 de Contentamento, +1 de População, +20 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, +20 de Dinheiro)"
             ],
             3: [
                 "A proposta foi recusada para proteger as lojas existentes.",
                 "Livros usados continuaram acumulando poeira em casas onde ninguém mais os lia.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 252,
-        "dia_minimo": 9,
+        "dia_minimo": 29,
         "falas": [
             "Viajo por esta estrada há anos e sempre vejo peregrinos cobertos de poeira.",
             "Minha família quer abrir uma casa de banho pequena para atendê-los.",
@@ -9469,24 +9218,23 @@ eventos = [
             1: [
                 "A casa de banho recebeu os primeiros viajantes cansados.",
                 "A estrada cheirou melhor por um instante histórico.",
-                "(+7 de Contentamento, +3 de População, -80 de Dinheiro)"
+                "(+7 de Contentamento, +3 de Populacao, -80 de Dinheiro)"
             ],
             2: [
                 "A família abriu um banho menor usando instalações simples.",
                 "Os viajantes saíram limpos, embora a fila fosse quase tão longa quanto a estrada.",
-                "(+3 de Contentamento, +1 de População, +20 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, +20 de Dinheiro)"
             ],
             3: [
                 "A licença foi negada por causa do consumo de madeira.",
                 "Peregrinos continuaram entrando na cidade com poeira suficiente para marcar o caminho.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 253,
-        "dia_minimo": 10,
+        "dia_minimo": 44,
         "falas": [
             "As máscaras do festival dos ancestrais racharam tanto que assustam os próprios sacerdotes.",
             "Posso criar rostos novos, leves e fiéis aos modelos antigos.",
@@ -9498,30 +9246,29 @@ eventos = [
             "opcao_terceira": "Usar as rachadas."
         },
         "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -65},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As novas máscaras trouxeram dignidade ao festival.",
                 "Os ancestrais pareceram menos zangados.",
-                "(+7 de Contentamento, +2 de População, -65 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -65 de Dinheiro)"
             ],
             2: [
                 "Apenas as máscaras mais rachadas foram substituídas.",
                 "O festival misturou rostos novos e antigos, como se os ancestrais tivessem idades diferentes.",
-                "(+3 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "O artesão não recebeu material.",
                 "Na cerimônia, uma máscara antiga se partiu e assustou mais os vivos que os mortos.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 254,
-        "dia_minimo": 11,
+        "dia_minimo": 10,
         "falas": [
             "Os pomares floresceram, mas quase não há insetos entre as árvores.",
             "Minhas colmeias poderiam aumentar a produção de frutas.",
@@ -9539,24 +9286,23 @@ eventos = [
             1: [
                 "As abelhas trabalharam sem pedir salário.",
                 "Os pomares agradecerão na próxima estação.",
-                "(+8 de Contentamento, +4 de População, -55 de Dinheiro)"
+                "(+8 de Contentamento, +4 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "Poucas colmeias foram levadas para uma área cercada.",
                 "As árvores produziram mais frutos e os camponeses aprenderam a manter distância.",
-                "(+4 de Contentamento, +2 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -20 de Dinheiro)"
             ],
             3: [
                 "Os pomares permaneceram sem abelhas.",
                 "A colheita foi menor, mas ninguém voltou para casa com o rosto inchado.",
-                "(-4 de Contentamento, -1 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 255,
-        "dia_minimo": 12,
+        "dia_minimo": 5,
         "falas": [
             "Retalhos ainda aquecem quando são costurados por mãos pacientes.",
             "Quero reparar as roupas de inverno das famílias pobres.",
@@ -9574,24 +9320,23 @@ eventos = [
             1: [
                 "O mutirão remendou roupas e dignidade.",
                 "O inverno encontrará menos buracos.",
-                "(+8 de Contentamento, +3 de População, -45 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "Os retalhos foram reservados para crianças e idosos.",
                 "A ajuda alcançou menos pessoas, mas protegeu quem suportava pior o frio.",
-                "(+5 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -20 de Dinheiro)"
             ],
             3: [
                 "Sem linha nova, a costureira trabalhou apenas com o que possuía.",
                 "Muitas roupas continuaram rasgadas quando a temperatura caiu.",
-                "(-6 de Contentamento, -1 de População, +0 de Dinheiro)"
+                "(-6 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 256,
-        "dia_minimo": 13,
+        "dia_minimo": 10,
         "falas": [
             "Jovens estão praticando arco perto demais das barracas do mercado.",
             "Um torneio com alvos de palha daria disciplina à brincadeira e atrairia visitantes.",
@@ -9609,24 +9354,23 @@ eventos = [
             1: [
                 "As flechas encontraram palha, aplausos e poucos sustos.",
                 "A vila ganhou competição sem briga.",
-                "(+7 de Contentamento, +2 de População, -70 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O torneio foi permitido sem prêmio do castelo.",
                 "A competição atraiu menos visitantes, mas ensinou os jovens a mirar longe das barracas.",
-                "(+4 de Contentamento, +1 de População, +0 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao)"
             ],
             3: [
                 "A reunião foi proibida por risco de acidentes.",
                 "Os arqueiros voltaram a praticar escondidos, onde ninguém podia corrigir seus erros.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 257,
-        "dia_minimo": 14,
+        "dia_minimo": 16,
         "falas": [
             "As filas do arroz estão mais irritadas desde que o calor começou.",
             "Posso distribuir leques simples de bambu e papel.",
@@ -9644,24 +9388,23 @@ eventos = [
             1: [
                 "Os leques espalharam vento e gratidão.",
                 "A praça parecia cheia de pequenas asas.",
-                "(+7 de Contentamento, +3 de População, -40 de Dinheiro)"
+                "(+7 de Contentamento, +3 de Populacao, -40 de Dinheiro)"
             ],
             2: [
                 "Leques foram entregues apenas aos trabalhadores das filas e cozinhas.",
                 "O alívio não alcançou toda a vila, mas reduziu as discussões nos lugares mais quentes.",
-                "(+4 de Contentamento, +1 de População, +25 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, +25 de Dinheiro)"
             ],
             3: [
                 "O castelo não comprou os leques.",
                 "O calor continuou governando o humor do mercado.",
-                "(-4 de Contentamento, -1 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 258,
-        "dia_minimo": 15,
+        "dia_minimo": 18,
         "falas": [
             "Cabras, galinhas e crianças atravessam as hortas como se fossem estradas.",
             "Quero fornecer cercas leves de bambu às famílias.",
@@ -9679,24 +9422,23 @@ eventos = [
             1: [
                 "As hortas ganharam cercas retas e esperança verde.",
                 "Os legumes ficaram menos vulneráveis a cabras curiosas.",
-                "(+7 de Contentamento, +3 de População, -60 de Dinheiro)"
+                "(+7 de Contentamento, +3 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "Um pequeno lote foi testado em hortas próximas.",
                 "As cercas contiveram galinhas, mas uma cabra já observava as travas com interesse.",
-                "(+4 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -25 de Dinheiro)"
             ],
             3: [
                 "A encomenda foi recusada.",
                 "Animais e crianças continuaram atravessando os canteiros como se fossem caminhos públicos.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 259,
-        "dia_minimo": 16,
+        "dia_minimo": 9,
         "falas": [
             "O projeto do relojoeiro de água foi colocado diante do conselho com certo orgulho.",
             "O marcador seria instalado no pátio administrativo para impedir que audiências comecem quando cada oficial bem entende.",
@@ -9707,31 +9449,30 @@ eventos = [
             "opcao_segunda": "Testar por um mês.",
             "opcao_terceira": "Manter sinos manuais."
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -75},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 1, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -25},
         "efeito_terceira": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "O relógio de água começou a pingar disciplina.",
                 "Algumas reuniões finalmente terminaram antes da fome.",
-                "(+6 de Contentamento, +1 de População, -75 de Dinheiro)"
+                "(+6 de Contentamento, +1 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O relojoeiro recebeu permissão para montar uma versão menor.",
                 "As audiências ganharam alguma pontualidade, desde que todos concordassem em olhar o mesmo marcador.",
-                "(+3 de Contentamento, +0 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, -25 de Dinheiro)"
             ],
             3: [
                 "O projeto foi arquivado como complicação desnecessária.",
                 "Cada oficial continuou chegando segundo a própria interpretação das horas.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 260,
-        "dia_minimo": 17,
+        "dia_minimo": 15,
         "falas": [
             "Dois comerciantes quase duelaram porque discordaram sobre uma soma simples.",
             "Minha família quer abrir uma escola de contas para seus filhos.",
@@ -9749,24 +9490,23 @@ eventos = [
             1: [
                 "A escola começou com contas simples e muita testa franzida.",
                 "O mercado terá menos discussões sobre troco.",
-                "(+8 de Contentamento, +3 de População, -65 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -65 de Dinheiro)"
             ],
             2: [
                 "A escola começou com poucas tábuas e turmas reduzidas.",
                 "Os primeiros alunos aprenderam a conferir contas antes de iniciar discussões.",
-                "(+4 de Contentamento, +1 de População, +15 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, +15 de Dinheiro)"
             ],
             3: [
                 "Os comerciantes mantiveram o ensino dentro de casa.",
                 "Algumas famílias prosperaram; outras continuaram perdendo moedas por não saber somar.",
-                "(-5 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 261,
-        "dia_minimo": 18,
+        "dia_minimo": 40,
         "falas": [
             "As amoreiras das aldeias podem nos dar mais do que folhas.",
             "Quero organizar a coleta de fibras e produzir papel sem depender de mercadores distantes.",
@@ -9784,21 +9524,20 @@ eventos = [
             1: [
                 "A coleta começou com cuidado e cestos bem marcados.",
                 "O papel local terá origem conhecida.",
-                "(+7 de Contentamento, +2 de População, -45 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -45 de Dinheiro)"
             ],
             2: [
                 "A coleta foi limitada às aldeias com mais amoreiras.",
                 "A oficina produziu menos papel, mas não prejudicou os pomares jovens.",
-                "(+3 de Contentamento, +1 de População, -35 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "O feudo continuou comprando folhas de mercadores distantes.",
                 "Quando as estradas fecharam, os escribas descobriram o custo da dependência.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 262,
         "dia_minimo": 19,
@@ -9813,30 +9552,29 @@ eventos = [
             "opcao_terceira": "Não fazer estoque."
         },
         "efeito_primeira": {"Contentamento": 7, "Populacao": 2, "Dinheiro": -70},
-        "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -30},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 1, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -5, "Populacao": -1, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "As telhas foram empilhadas como escamas de proteção.",
                 "A próxima tempestade encontrará resposta pronta.",
-                "(+7 de Contentamento, +2 de População, -70 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "A reserva foi reduzida ao necessário para edifícios públicos.",
                 "Templos e armazéns ganharam proteção, enquanto casas comuns aguardaram sua vez.",
-                "(+4 de Contentamento, +1 de População, -30 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "Nenhuma telha foi produzida antecipadamente.",
                 "Depois da tempestade, o preço de cada peça subiu como se também tivesse sido carregado pelo vento.",
-                "(-5 de Contentamento, -1 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento, -1 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 263,
-        "dia_minimo": 20,
+        "dia_minimo": 27,
         "falas": [
             "O inverno transforma legumes esquecidos em desperdício.",
             "Quero preparar um estoque de picles para os meses frios.",
@@ -9848,30 +9586,29 @@ eventos = [
             "opcao_terceira": "Não preparar picles."
         },
         "efeito_primeira": {"Contentamento": 8, "Populacao": 4, "Dinheiro": -50},
-        "efeito_segunda": {"Contentamento": 4, "Populacao": 2, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 4, "Populacao": 2, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -5, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os jarros de picles foram alinhados como soldados azedos.",
                 "O inverno terá sabor forte.",
-                "(+8 de Contentamento, +4 de População, -50 de Dinheiro)"
+                "(+8 de Contentamento, +4 de Populacao, -50 de Dinheiro)"
             ],
             2: [
                 "A cozinheira preparou apenas legumes que seriam desperdiçados.",
                 "O estoque ficou menor, mas o depósito conservou um cheiro suportável.",
-                "(+4 de Contentamento, +2 de População, -20 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             3: [
                 "A produção foi proibida dentro dos armazéns do feudo.",
                 "Legumes sobraram no outono e faltaram quando a neve fechou as estradas.",
-                "(-5 de Contentamento, -2 de População, +0 de Dinheiro)"
+                "(-5 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 264,
-        "dia_minimo": 21,
+        "dia_minimo": 11,
         "falas": [
             "Cruzamentos perigosos fazem até viajantes experientes escolherem o caminho errado.",
             "Quero colocar pequenas estátuas protetoras em cada bifurcação.",
@@ -9889,24 +9626,23 @@ eventos = [
             1: [
                 "As estátuas surgiram nos cruzamentos com olhos atentos.",
                 "Até os apressados diminuíram o passo.",
-                "(+6 de Contentamento, +2 de População, -55 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -55 de Dinheiro)"
             ],
             2: [
                 "As estátuas foram colocadas somente nas rotas mais perigosas.",
                 "Viajantes encontraram orientação sem transformar cada trilha numa galeria.",
-                "(+3 de Contentamento, +1 de População, -20 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -20 de Dinheiro)"
             ],
             3: [
                 "O projeto foi considerado superstição cara.",
                 "As bifurcações continuaram sem marcas, e viajantes continuaram chegando pelo lado errado.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 265,
-        "dia_minimo": 22,
+        "dia_minimo": 1,
         "falas": [
             "Paciência não se ensina com discursos longos.",
             "Quero mostrar aos jovens como cuidar de bonsais e esperar anos por um galho perfeito.",
@@ -9924,24 +9660,23 @@ eventos = [
             1: [
                 "As aulas começaram lentas, como esperado.",
                 "Alguns jovens descobriram que paciência também cresce torta.",
-                "(+5 de Contentamento, +2 de População, -40 de Dinheiro)"
+                "(+5 de Contentamento, +2 de Populacao, -40 de Dinheiro)"
             ],
             2: [
                 "O mestre recebeu espaço para uma única turma.",
                 "Poucos jovens aprenderam a esperar, mas cuidaram das árvores com orgulho.",
-                "(+3 de Contentamento, +1 de População, -15 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -15 de Dinheiro)"
             ],
             3: [
                 "As aulas foram recusadas por parecerem pouco úteis.",
                 "O mestre voltou ao jardim e os jovens às decisões apressadas.",
-                "(-2 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-2 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 266,
-        "dia_minimo": 23,
+        "dia_minimo": 32,
         "falas": [
             "Metade das reclamações do mercado começa com pés doloridos.",
             "Quero abrir uma oficina de conserto de sandálias numa esquina movimentada.",
@@ -9959,21 +9694,20 @@ eventos = [
             1: [
                 "A oficina abriu com cheiro de palha nova.",
                 "O mercado caminhou melhor.",
-                "(+6 de Contentamento, +2 de População, +25 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, +25 de Dinheiro)"
             ],
             2: [
                 "A oficina foi autorizada numa rua lateral.",
                 "O movimento foi menor, mas os reparos começaram sem bloquear o mercado.",
-                "(+3 de Contentamento, +1 de População, +10 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, +10 de Dinheiro)"
             ],
             3: [
                 "A esquina permaneceu vazia.",
                 "Sandálias gastas continuaram rompendo no pior momento possível.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 267,
         "dia_minimo": 24,
@@ -9987,31 +9721,30 @@ eventos = [
             "opcao_segunda": "Marcar só os maiores.",
             "opcao_terceira": "Não marcar nada."
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -25},
-        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -10},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 1, "Dinheiro": -35},
+        "efeito_segunda": {"Contentamento": 3, "Populacao": 0, "Dinheiro": -35},
         "efeito_terceira": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os sacos ganharam símbolos claros.",
                 "Menos aldeias discutirão com grãos inocentes.",
-                "(+5 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+5 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "Somente os sacos destinados às aldeias distantes receberam marcas.",
                 "As entregas principais melhoraram sem consumir toda a tinta do armazém.",
-                "(+3 de Contentamento, +0 de População, -10 de Dinheiro)"
+                "(+3 de Contentamento, -35 de Dinheiro)"
             ],
             3: [
                 "O sistema antigo foi mantido.",
                 "Na semana seguinte, duas aldeias discutiram por sacos que ninguém conseguia identificar.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 268,
-        "dia_minimo": 5,
+        "dia_minimo": 2,
         "falas": [
             "Estas fibras foram tingidas apenas com cascas encontradas em Hida.",
             "O tecido não tem brilho de corte, mas resiste ao trabalho e à chuva.",
@@ -10029,24 +9762,23 @@ eventos = [
             1: [
                 "O tecido marrom entrou em uso nas tarefas duras.",
                 "Nem tudo precisa brilhar para servir bem.",
-                "(+6 de Contentamento, +2 de População, -60 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, -60 de Dinheiro)"
             ],
             2: [
                 "O feudo comprou um lote pequeno para roupas de trabalho.",
                 "O tecido provou sua resistência sem obrigar os cofres a apostar toda a estação.",
-                "(+3 de Contentamento, +1 de População, -25 de Dinheiro)"
+                "(+3 de Contentamento, +1 de Populacao, -25 de Dinheiro)"
             ],
             3: [
                 "A oferta foi recusada por falta de luxo.",
                 "A família vendeu o tecido a trabalhadores de outro domínio, onde resistência valia mais que brilho.",
-                "(-3 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-3 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 269,
-        "dia_minimo": 6,
+        "dia_minimo": 5,
         "falas": [
             "A primeira neve merece mais do que reclamações sobre o frio.",
             "Quero reunir poetas para um concurso de haicais no pátio.",
@@ -10064,24 +9796,23 @@ eventos = [
             1: [
                 "Os haicais cobriram a praça antes da neve.",
                 "Alguns versos foram melhores que outros, mas todos couberam.",
-                "(+7 de Contentamento, +2 de População, -35 de Dinheiro)"
+                "(+7 de Contentamento, +2 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "Os poetas puderam competir sem recompensa em moedas.",
                 "Vieram menos mestres famosos e mais iniciantes dispostos a recitar.",
-                "(+4 de Contentamento, +1 de População, +0 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao)"
             ],
             3: [
                 "O concurso foi cancelado para evitar gastos e barulho.",
                 "Os versos circularam escondidos nas tavernas, acompanhados por críticas ao castelo.",
-                "(-4 de Contentamento, +0 de População, +0 de Dinheiro)"
+                "(-4 de Contentamento)"
             ]
         }
     },
-
     {
         "sprite": 270,
-        "dia_minimo": 7,
+        "dia_minimo": 76,
         "falas": [
             "O mensageiro abre sobre a mesa um mapa ainda úmido de tinta.",
             "Carpinteiros e mercadores propõem uma ponte sobre o desfiladeiro ao sul.",
@@ -10100,24 +9831,23 @@ eventos = [
             1: [
                 "Pedreiros trabalharam por semanas acima do desfiladeiro.",
                 "Quando a ponte foi aberta, caravanas que antes evitavam Hida passaram a cruzá-la diariamente.",
-                "(+12 de Contentamento, +18 de População, -260 de Dinheiro)"
+                "(+12 de Contentamento, +18 de Populacao, -260 de Dinheiro)"
             ],
             2: [
                 "A estrutura de madeira rangeu na primeira travessia, mas suportou carroças e viajantes.",
                 "O comércio cresceu sem esvaziar completamente os cofres.",
-                "(+6 de Contentamento, +8 de População, -110 de Dinheiro)"
+                "(+6 de Contentamento, +8 de Populacao, -110 de Dinheiro)"
             ],
             3: [
                 "Os mercadores guardaram os mapas e procuraram rotas mais longas.",
                 "Alguns prometeram não voltar a apresentar a proposta.",
-                "(-6 de Contentamento, -2 de População, +0 de Dinheiro)"
+                "(-6 de Contentamento, -2 de Populacao)"
             ]
         }
     },
-
     {
         "sprite": 271,
-        "dia_minimo": 8,
+        "dia_minimo": 20,
         "falas": [
             "Meu senhor, sou Aiko, guardiã dos sinos do templo.",
             "O sino maior rachou durante a última tempestade.",
@@ -10142,10 +9872,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 272,
-        "dia_minimo": 9,
+        "dia_minimo": 51,
         "falas": [
             "Meu senhor, Ren, mestre das pontes, examinou a passagem do rio leste.",
             "A madeira está podre e os carroceiros já evitam o caminho.",
@@ -10170,10 +9899,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 273,
-        "dia_minimo": 10,
+        "dia_minimo": 11,
         "falas": [
             "Meu senhor, Hana trouxe folhas raras de chá das encostas frias.",
             "Ela quer abrir uma pequena casa de chá perto do mercado.",
@@ -10198,10 +9926,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 274,
-        "dia_minimo": 7,
+        "dia_minimo": 15,
         "falas": [
             "Meu senhor, Sora, um menino mensageiro, pede trabalho oficial.",
             "Ele conhece atalhos entre as vilas e corre mais que muitos adultos.",
@@ -10226,10 +9953,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 275,
-        "dia_minimo": 11,
+        "dia_minimo": 15,
         "falas": [
             "Meu senhor, Masaru revisou os registros de arroz.",
             "Ele afirma que parte dos sacos some antes de chegar aos celeiros.",
@@ -10254,10 +9980,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 276,
-        "dia_minimo": 12,
+        "dia_minimo": 7,
         "falas": [
             "Meu senhor, Yumi, arqueira da colina, viu pegadas perto dos currais.",
             "Ela pede flechas novas para vigiar a região.",
@@ -10282,10 +10007,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 277,
-        "dia_minimo": 6,
+        "dia_minimo": 11,
         "falas": [
             "Meu senhor, Daichi quer tocar tambores na praça.",
             "Ele diz que o povo anda cabisbaixo e precisa de ritmo.",
@@ -10310,10 +10034,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 278,
-        "dia_minimo": 13,
+        "dia_minimo": 3,
         "falas": [
             "Meu senhor, Natsuki pinta leques com paisagens do feudo.",
             "Ela quer vender alguns para viajantes nobres.",
@@ -10338,10 +10061,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 279,
-        "dia_minimo": 8,
+        "dia_minimo": 12,
         "falas": [
             "Meu senhor, Koji, limpador de poços, encontrou água turva no bairro sul.",
             "Ele suspeita que folhas podres estejam contaminando o poço.",
@@ -10366,10 +10088,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 280,
-        "dia_minimo": 14,
+        "dia_minimo": 17,
         "falas": [
             "Meu senhor, Mei cria grilos cantores em pequenas gaiolas.",
             "Ela afirma que eles acalmam crianças e trazem sorte.",
@@ -10394,10 +10115,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 281,
-        "dia_minimo": 16,
+        "dia_minimo": 10,
         "falas": [
             "Meu senhor, Taro, velho barqueiro, oferece ensinar rotas seguras do rio.",
             "Ele conhece bancos de areia, curvas perigosas e pontos de pesca.",
@@ -10407,13 +10127,13 @@ eventos = [
             "opcao_primeira": "Pagar Taro",
             "opcao_segunda": "Recusar o acordo"
         },
-        "efeito_primeira": {"Contentamento": 4, "Populacao": 2, "Dinheiro": -100},
+        "efeito_primeira": {"Contentamento": 4, "Populacao": 2, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": -3, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os barqueiros aprenderam rotas melhores.",
                 "Taro gastou o pagamento com um sorriso raro.",
-                "(+4 de Contentamento, +2 de Populacao, -100 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "As rotas continuaram perigosas.",
@@ -10422,10 +10142,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 282,
-        "dia_minimo": 10,
+        "dia_minimo": 18,
         "falas": [
             "Meu senhor, Kaede cuida do pomar da vila baixa.",
             "As árvores estão carregadas, mas precisam de cercas contra invasores.",
@@ -10450,10 +10169,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 283,
-        "dia_minimo": 12,
+        "dia_minimo": 8,
         "falas": [
             "Meu senhor, Nobu, ferreiro de agulhas, precisa de carvão fino.",
             "Sem agulhas, costureiras e curandeiros atrasarão seus trabalhos.",
@@ -10478,7 +10196,6 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 284,
         "dia_minimo": 9,
@@ -10506,10 +10223,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 285,
-        "dia_minimo": 14,
+        "dia_minimo": 5,
         "falas": [
             "Meu senhor, Goro chegou com sacos de sal das terras baixas.",
             "O preço está alto, mas o sal conservará peixe e carne.",
@@ -10519,13 +10235,13 @@ eventos = [
             "opcao_primeira": "Comprar o sal",
             "opcao_segunda": "Recusar a carga"
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -95},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": -5, "Populacao": -2, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os armazéns receberam sal suficiente.",
                 "O inverno pareceu um pouco menos ameaçador.",
-                "(+5 de Contentamento, +3 de Populacao, -95 de Dinheiro)"
+                "(+5 de Contentamento, +3 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Goro vendeu a carga em outro lugar.",
@@ -10534,10 +10250,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 286,
-        "dia_minimo": 15,
+        "dia_minimo": 14,
         "falas": [
             "Meu senhor, Emi treina falcões para vigiar as fronteiras.",
             "Ela precisa de luvas, carne e um poleiro alto.",
@@ -10547,13 +10262,13 @@ eventos = [
             "opcao_primeira": "Apoiar os falcões",
             "opcao_segunda": "Ficar só com guardas"
         },
-        "efeito_primeira": {"Contentamento": 4, "Populacao": 2, "Dinheiro": -80},
+        "efeito_primeira": {"Contentamento": 4, "Populacao": 2, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": -2, "Populacao": -1, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os falcões passaram a rondar as fronteiras.",
                 "Os guardas fingiram que sempre gostaram da ideia.",
-                "(+4 de Contentamento, +2 de Populacao, -80 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "Emi recolheu seus falcões em silêncio.",
@@ -10562,10 +10277,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 287,
-        "dia_minimo": 11,
+        "dia_minimo": 7,
         "falas": [
             "Meu senhor, Shiro, um monge risonho, quer distribuir mingau na praça.",
             "Ele diz que barriga vazia discute com mais força.",
@@ -10575,13 +10289,13 @@ eventos = [
             "opcao_primeira": "Distribuir mingau",
             "opcao_segunda": "Guardar o arroz"
         },
-        "efeito_primeira": {"Contentamento": 9, "Populacao": 3, "Dinheiro": -75},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 20},
         "falas_pos": {
             1: [
                 "O mingau acalmou filas, crianças e velhos resmungões.",
                 "Shiro riu como se tivesse vencido uma guerra.",
-                "(+9 de Contentamento, +3 de Populacao, -75 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O arroz ficou guardado.",
@@ -10590,10 +10304,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 288,
-        "dia_minimo": 17,
+        "dia_minimo": 21,
         "falas": [
             "Meu senhor, Kanna tece mantos grossos para o inverno.",
             "Ela precisa de lã antes que os preços subam.",
@@ -10618,10 +10331,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 289,
-        "dia_minimo": 18,
+        "dia_minimo": 41,
         "falas": [
             "Meu senhor, Isamu, fiscal de telhados, encontrou casas com palha seca demais.",
             "Ele teme incêndios durante ventos fortes.",
@@ -10646,10 +10358,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 290,
-        "dia_minimo": 13,
+        "dia_minimo": 24,
         "falas": [
             "Meu senhor, Mio, curandeira de riacho, pede permissão para colher ervas na área sagrada.",
             "Ela diz que as plantas podem baixar febres fortes.",
@@ -10659,13 +10370,13 @@ eventos = [
             "opcao_primeira": "Permitir a colheita",
             "opcao_segunda": "Respeitar os sacerdotes"
         },
-        "efeito_primeira": {"Contentamento": 3, "Populacao": 5, "Dinheiro": -20},
+        "efeito_primeira": {"Contentamento": 3, "Populacao": 5, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": 2, "Populacao": -3, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Mio preparou remédios eficazes.",
                 "Os sacerdotes reclamaram, mas os doentes melhoraram.",
-                "(+3 de Contentamento, +5 de Populacao, -20 de Dinheiro)"
+                "(+3 de Contentamento, +5 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "A área sagrada permaneceu intocada.",
@@ -10674,10 +10385,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 291,
-        "dia_minimo": 15,
+        "dia_minimo": 45,
         "falas": [
             "Meu senhor, Akira, oleiro de urnas, quer argila das margens do rio.",
             "Ele produzirá recipientes para água e arroz.",
@@ -10688,7 +10398,7 @@ eventos = [
             "opcao_segunda": "Proteger a margem"
         },
         "efeito_primeira": {"Contentamento": 5, "Populacao": 2, "Dinheiro": 50},
-        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -30},
+        "efeito_segunda": {"Contentamento": 2, "Populacao": 0, "Dinheiro": -35},
         "falas_pos": {
             1: [
                 "Akira produziu urnas fortes e vendeu parte delas.",
@@ -10698,14 +10408,13 @@ eventos = [
             2: [
                 "A margem do rio foi preservada.",
                 "Akira trabalhou com pouca argila.",
-                "(+2 de Contentamento, -30 de Dinheiro)"
+                "(+2 de Contentamento, -35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 292,
-        "dia_minimo": 16,
+        "dia_minimo": 7,
         "falas": [
             "Meu senhor, Setsu vende mapas desenhados à mão.",
             "Ela afirma conhecer uma rota curta até uma feira distante.",
@@ -10715,13 +10424,13 @@ eventos = [
             "opcao_primeira": "Comprar o mapa",
             "opcao_segunda": "Não confiar nela"
         },
-        "efeito_primeira": {"Contentamento": 4, "Populacao": 1, "Dinheiro": 90},
+        "efeito_primeira": {"Contentamento": 4, "Populacao": 1, "Dinheiro": 70},
         "efeito_segunda": {"Contentamento": -2, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A rota encurtou viagens comerciais.",
                 "Metade do mapa era precisão, metade era coragem.",
-                "(+4 de Contentamento, +1 de Populacao, +90 de Dinheiro)"
+                "(+4 de Contentamento, +1 de Populacao, +70 de Dinheiro)"
             ],
             2: [
                 "Setsu vendeu o mapa para outra caravana.",
@@ -10730,10 +10439,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 293,
-        "dia_minimo": 12,
+        "dia_minimo": 9,
         "falas": [
             "Meu senhor, Riku trata bois usados nos campos.",
             "Ele pede ferraduras melhores e descanso para os animais.",
@@ -10743,13 +10451,13 @@ eventos = [
             "opcao_primeira": "Cuidar dos bois",
             "opcao_segunda": "Forçar o trabalho"
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -75},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 3, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": -5, "Populacao": -3, "Dinheiro": 40},
         "falas_pos": {
             1: [
                 "Os bois trabalharam melhor depois do cuidado.",
                 "Riku disse que até animal entende justiça.",
-                "(+5 de Contentamento, +3 de Populacao, -75 de Dinheiro)"
+                "(+5 de Contentamento, +3 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O trabalho continuou, mas alguns bois adoeceram.",
@@ -10758,10 +10466,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 294,
-        "dia_minimo": 20,
+        "dia_minimo": 5,
         "falas": [
             "Meu senhor, Tomoe resolve disputas na praça.",
             "Duas famílias brigam por uma cerca colocada meio passo fora do lugar.",
@@ -10786,10 +10493,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 295,
-        "dia_minimo": 7,
+        "dia_minimo": 22,
         "falas": [
             "Meu senhor, Haru vende doces de arroz na entrada do mercado.",
             "As crianças adoram, mas os cobradores dizem que ele ocupa espaço sem pagar taxa.",
@@ -10814,10 +10520,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 296,
-        "dia_minimo": 24,
+        "dia_minimo": 5,
         "falas": [
             "Mina, fabricante de cordas, trouxe fibras secas das vilas baixas.",
             "Ela afirma que as cordas antigas dos poços e carroças estão prestes a romper.",
@@ -10842,10 +10547,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 297,
-        "dia_minimo": 26,
+        "dia_minimo": 42,
         "falas": [
             "Jiro, guarda dos celeiros, notou marcas de faca nas portas do armazém.",
             "Ele suspeita de ladrões famintos ou comerciantes tentando esconder desvios.",
@@ -10870,10 +10574,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 298,
-        "dia_minimo": 28,
+        "dia_minimo": 41,
         "falas": [
             "Ayame, coletora de cogumelos, encontrou uma espécie rara nas florestas úmidas.",
             "Ela diz que alguns curam febres, mas outros podem derrubar um homem adulto.",
@@ -10898,10 +10601,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 299,
-        "dia_minimo": 30,
+        "dia_minimo": 40,
         "falas": [
             "Daisuke, reparador de rodas, chegou coberto de poeira da estrada sul.",
             "Ele afirma que metade das carroças do mercado está rangendo como espírito irritado.",
@@ -10926,10 +10628,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 300,
-        "dia_minimo": 32,
+        "dia_minimo": 19,
         "falas": [
             "Fumiko, cantora de ninar, cuida de crianças enquanto os pais trabalham.",
             "Ela pede arroz, mantas e um canto coberto perto do templo.",
@@ -10954,10 +10655,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 301,
-        "dia_minimo": 34,
+        "dia_minimo": 6,
         "falas": [
             "Kaito, pescador de enguias, descobriu que os canais baixos estão cheios delas.",
             "Ele quer organizar uma pesca noturna com lanternas.",
@@ -10982,10 +10682,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 302,
-        "dia_minimo": 36,
+        "dia_minimo": 24,
         "falas": [
             "Chiyo, escriba de nascimentos, trouxe registros manchados e incompletos.",
             "Ela afirma que muitas famílias não declaram filhos por medo de impostos futuros.",
@@ -10995,13 +10694,13 @@ eventos = [
             "opcao_primeira": "Anistiar registros",
             "opcao_segunda": "Cobrar multas"
         },
-        "efeito_primeira": {"Contentamento": 7, "Populacao": 6, "Dinheiro": -30},
+        "efeito_primeira": {"Contentamento": 7, "Populacao": 6, "Dinheiro": -35},
         "efeito_segunda": {"Contentamento": -7, "Populacao": 2, "Dinheiro": 100},
         "falas_pos": {
             1: [
                 "As famílias apareceram com crianças tímidas e documentos atrasados.",
                 "Chiyo passou o dia escrevendo nomes novos.",
-                "(+7 de Contentamento, +6 de Populacao, -30 de Dinheiro)"
+                "(+7 de Contentamento, +6 de Populacao, -35 de Dinheiro)"
             ],
             2: [
                 "As multas renderam moedas, mas fecharam muitas portas.",
@@ -11010,10 +10709,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 303,
-        "dia_minimo": 38,
+        "dia_minimo": 17,
         "falas": [
             "Gen, mestre dos espantalhos, diz que os corvos aprenderam a ignorar bonecos comuns.",
             "Ele propõe criar espantalhos com sinos, tecido brilhante e rostos assustadores.",
@@ -11038,10 +10736,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 304,
-        "dia_minimo": 40,
+        "dia_minimo": 37,
         "falas": [
             "Sayuri cultiva flores medicinais perto das cercas do castelo.",
             "Ela quer transformar um terreno vazio em jardim de cura.",
@@ -11052,7 +10749,7 @@ eventos = [
             "opcao_segunda": "Reservar para soldados"
         },
         "efeito_primeira": {"Contentamento": 7, "Populacao": 4, "Dinheiro": -75},
-        "efeito_segunda": {"Contentamento": 1, "Populacao": 1, "Dinheiro": -20},
+        "efeito_segunda": {"Contentamento": 1, "Populacao": 1, "Dinheiro": -35},
         "falas_pos": {
             1: [
                 "O terreno vazio ganhou flores, abelhas e curandeiros atentos.",
@@ -11062,14 +10759,13 @@ eventos = [
             2: [
                 "O espaço foi reservado para treino.",
                 "Sayuri aceitou, mas levou as sementes embora com cuidado demais.",
-                "(+1 de Contentamento, +1 de Populacao, -20 de Dinheiro)"
+                "(+1 de Contentamento, +1 de Populacao, -35 de Dinheiro)"
             ]
         }
     },
-
     {
         "sprite": 305,
-        "dia_minimo": 42,
+        "dia_minimo": 4,
         "falas": [
             "Raiko, vigia de tempestades, observou nuvens pesadas sobre as montanhas.",
             "Ele acredita que uma chuva forte pode atingir os terraços de arroz.",
@@ -11079,13 +10775,13 @@ eventos = [
             "opcao_primeira": "Abrir valas",
             "opcao_segunda": "Esperar a chuva"
         },
-        "efeito_primeira": {"Contentamento": 5, "Populacao": 4, "Dinheiro": -85},
+        "efeito_primeira": {"Contentamento": 5, "Populacao": 4, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": -8, "Populacao": -4, "Dinheiro": -60},
         "falas_pos": {
             1: [
                 "A chuva veio forte, mas encontrou caminho para escoar.",
                 "Raiko ficou encharcado e satisfeito.",
-                "(+5 de Contentamento, +4 de Populacao, -85 de Dinheiro)"
+                "(+5 de Contentamento, +4 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "A água desceu como um exército sem bandeira.",
@@ -11094,10 +10790,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 306,
-        "dia_minimo": 44,
+        "dia_minimo": 4,
         "falas": [
             "Nori, fabricante de barris, diz que o feudo desperdiça água e saquê por falta de recipientes bons.",
             "Ele pede madeira seca e aros de ferro para aumentar a produção.",
@@ -11107,13 +10802,13 @@ eventos = [
             "opcao_primeira": "Produzir barris",
             "opcao_segunda": "Economizar madeira"
         },
-        "efeito_primeira": {"Contentamento": 4, "Populacao": 2, "Dinheiro": 75},
+        "efeito_primeira": {"Contentamento": 4, "Populacao": 2, "Dinheiro": 70},
         "efeito_segunda": {"Contentamento": -3, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "Os novos barris armazenaram água, saquê e conservas.",
                 "Nori bateu em cada um como se testasse tambores.",
-                "(+4 de Contentamento, +2 de Populacao, +75 de Dinheiro)"
+                "(+4 de Contentamento, +2 de Populacao, +70 de Dinheiro)"
             ],
             2: [
                 "A madeira foi poupada.",
@@ -11122,10 +10817,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 307,
-        "dia_minimo": 46,
+        "dia_minimo": 16,
         "falas": [
             "Hoshi, astróloga do mercado, anunciou que uma estrela vermelha favorece grandes compras.",
             "Os comerciantes querem usar a previsão para atrair visitantes.",
@@ -11135,13 +10829,13 @@ eventos = [
             "opcao_primeira": "Apoiar a feira da estrela",
             "opcao_segunda": "Proibir o anúncio"
         },
-        "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": 90},
+        "efeito_primeira": {"Contentamento": 6, "Populacao": 2, "Dinheiro": 70},
         "efeito_segunda": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A feira da estrela atraiu curiosos e compradores.",
                 "Hoshi aceitou moedas como prova científica.",
-                "(+6 de Contentamento, +2 de Populacao, +90 de Dinheiro)"
+                "(+6 de Contentamento, +2 de Populacao, +70 de Dinheiro)"
             ],
             2: [
                 "O anúncio foi proibido.",
@@ -11150,10 +10844,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 308,
-        "dia_minimo": 48,
+        "dia_minimo": 11,
         "falas": [
             "Etsu, fiandeira de cânhamo, quer organizar mulheres das vilas para produzir tecido resistente.",
             "O material serviria para sacos, cordas leves e roupas de trabalho.",
@@ -11163,13 +10856,13 @@ eventos = [
             "opcao_primeira": "Financiar a oficina",
             "opcao_segunda": "Comprar tecido barato"
         },
-        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -95},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 3, "Dinheiro": -70},
         "efeito_segunda": {"Contentamento": -5, "Populacao": 0, "Dinheiro": 60},
         "falas_pos": {
             1: [
                 "A oficina começou a produzir tecido forte e salários honestos.",
                 "Etsu disse que fio bem pago não arrebenta fácil.",
-                "(+8 de Contentamento, +3 de Populacao, -95 de Dinheiro)"
+                "(+8 de Contentamento, +3 de Populacao, -70 de Dinheiro)"
             ],
             2: [
                 "O tecido barato chegou rápido e rasgou mais rápido ainda.",
@@ -11178,10 +10871,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 309,
-        "dia_minimo": 50,
+        "dia_minimo": 36,
         "falas": [
             "Banri, caçador de javalis, apareceu com marcas de lama até os ombros.",
             "Um bando tem destruído plantações perto da floresta.",
@@ -11206,10 +10898,9 @@ eventos = [
             ]
         }
     },
-
     {
         "sprite": 310,
-        "dia_minimo": 52,
+        "dia_minimo": 1,
         "falas": [
             "Ume, uma velha contadora de histórias, quer reunir crianças e viajantes na praça.",
             "Ela diz que histórias antigas ensinam prudência melhor que broncas novas.",
@@ -11219,13 +10910,13 @@ eventos = [
             "opcao_primeira": "Permitir a noite de histórias",
             "opcao_segunda": "Encerrar cedo"
         },
-        "efeito_primeira": {"Contentamento": 9, "Populacao": 1, "Dinheiro": -30},
+        "efeito_primeira": {"Contentamento": 8, "Populacao": 1, "Dinheiro": -30},
         "efeito_segunda": {"Contentamento": -4, "Populacao": 0, "Dinheiro": 0},
         "falas_pos": {
             1: [
                 "A praça ficou cheia de risos, sustos e silêncio atento.",
                 "Ume terminou a noite dizendo que até shoguns precisam ouvir histórias.",
-                "(+9 de Contentamento, +1 de Populacao, -30 de Dinheiro)"
+                "(+8 de Contentamento, +1 de Populacao, -30 de Dinheiro)"
             ],
             2: [
                 "As histórias foram interrompidas antes do final.",
@@ -11235,6 +10926,7 @@ eventos = [
         }
     }
 ]
+
 
 
 rect_limite = pg.Rect(17, 248, 343, 634)

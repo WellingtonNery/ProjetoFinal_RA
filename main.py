@@ -7,6 +7,7 @@ import random
 
 pg.init()
 pg.mixer.init()
+pg.mixer.set_num_channels(16)
 
 LARGURA = 1600
 ALTURA = 900
@@ -19,6 +20,11 @@ DIA_MAXIMO = 100
 final_ativo = False
 final_tipo = None
 final_imagem = None
+
+resultado_final = None
+texto_final = None
+prestigio_final = None
+final = False
 
 prestigio = 0
 
@@ -37,7 +43,7 @@ tempo_preto = 0
 
 esperando_npc = False
 mostrar_npc = True
-TEMPO_ESPERANDO = 5000
+TEMPO_ESPERANDO = 2500
 tempo_sem_npc = 0
 
 mostrando_escolhas = False
@@ -81,6 +87,11 @@ sons_fala = [
     pg.mixer.Sound("Audios/vozes3.mp3"),
     pg.mixer.Sound("Audios/vozes4.mp3"),
 ]
+som_andando = pg.mixer.Sound("Audios/som-andando.mp3")
+canal_passos = pg.mixer.Channel(0)
+canal_fala = pg.mixer.Channel(1)
+final_tocar = None
+musica_final_tocando = False
 
 rects_quadro = {
     "cima": pg.Rect(1398, 119, 92, 39),
@@ -144,26 +155,51 @@ def carregar_final(tipo):
 def verificar_final():
     global final_ativo, final_tipo, final_imagem
     global mostrar_npc, esperando_npc, mostrando_escolhas, apagando, esperando
+    global resultado_final, texto_final, final, final_tocar
 
     if final_ativo:
         return
 
     if rects_pontos["Populacao"] <= 0:
         final_tipo = "populacao"
+        resultado_final = "GAME OVER!\nFinal: Terra Sem Vozes"
+        texto_final = "O último sino ecoou, mas não há mais ninguém para ouvi-lo."
+        final = True
+        final_tocar = False
     elif rects_pontos["Dinheiro"] <= 0:
         final_tipo = "dinheiro"
+        resultado_final = "Game over!\nFinal: Cofres Vazios"
+        texto_final = "Nem mesmo um shogun governa com promessas quebradas."
+        final = True
+        final_tocar = False
     elif rects_pontos["Contentamento"] <= 0:
         final_tipo = "contentamento"
+        resultado_final = "Game over!\nFinal: Rebelião"
+        texto_final = "As tochas iluminaram a noite em que Takayama se levantou contra você."
+        final = True
+        final_tocar = False
     elif dia >= DIA_MAXIMO:
         if esta_na_era_de_ouro():
             final_tipo = "era_de_ouro"
+            resultado_final = "GAME WON!\nFinal: A Era de Ouro"
+            texto_final = "A história lembrará este reinado como o amanhecer de uma era dourada."
+            final = True
+            final_tocar = True
         else:
             final_tipo = "dia_100"
+            resultado_final = "GAME WON!\nFinal: O Trono Permanece"
+            texto_final = "Entre perdas e vitórias, Takayama chegou ao amanhã. Mas a hora de baixar a guarda ainda não chegou!"
+            final = True
+            final_tocar = True
     else:
         return
 
     final_ativo = True
     final_imagem = carregar_final(final_tipo)
+
+    canal_passos.stop()
+    canal_fala.stop()
+
     mostrar_npc = False
     esperando_npc = False
     mostrando_escolhas = False
@@ -178,7 +214,6 @@ def desenhar_final():
 def finalizar_evento():
     global mostrar_npc, esperando_npc, mostrando_escolhas, ultimas_falas
     global fala_atual, evento, tempo_sem_npc, ultima_fala_atual, ultimas_falas_escolha
-
     mostrar_npc = False
     esperando_npc = True
     mostrando_escolhas = False
@@ -192,6 +227,9 @@ def finalizar_evento():
     eventos.eventos.pop(evento_atual)
 
     tempo_sem_npc = pg.time.get_ticks()
+
+    if evento < 3:
+        tocar_som_passos()
 
 
 def efeito_digitando(texto):
@@ -212,28 +250,33 @@ def efeito_digitando(texto):
             if letras_visiveis % 4 == 0:
                 som = random.choice(sons_fala)
                 som.set_volume(0.1)
-                som.play()
+                if not canal_fala.get_busy():
+                    canal_fala.play(som)
 
     return texto[:letras_visiveis]
 
 
 def calcular_prestigio():
     pesos = {
-        "Contentamento": 2,
-        "Populacao": 1.5,
-        "Dinheiro": 0.3
+        "Contentamento": 8,
+        "Populacao": 10,
+        "Dinheiro": 1
     }
 
     soma_pesos = pesos["Contentamento"] + pesos["Populacao"] + pesos["Dinheiro"]
 
     prestigioCalc = (
-                            rects_pontos["Contentamento"] * pesos["Contentamento"] +
-                            rects_pontos["Populacao"] * pesos["Populacao"] +
-                            rects_pontos["Dinheiro"] * pesos["Dinheiro"]
+                        rects_pontos["Contentamento"] * pesos["Contentamento"] +
+                        rects_pontos["Populacao"] * pesos["Populacao"] +
+                        rects_pontos["Dinheiro"] * pesos["Dinheiro"]
                     ) / soma_pesos
 
     return prestigioCalc
 
+def tocar_som_passos():
+    if not esperando and not apagando:
+        if not canal_passos.get_busy():
+            canal_passos.play(som_andando, loops=-1)
 
 prestigio = calcular_prestigio()
 
@@ -546,12 +589,16 @@ while loop:
 
     if prestigio >= 300:
         prestigio_atual = prestigio_ouro
+        prestigio_final = "Ouro"
     elif prestigio >= 200:
         prestigio_atual = prestigio_prata
+        prestigio_final = "Prata"
     elif prestigio >= 100:
         prestigio_atual = prestigio_bronze
+        prestigio_final = "Bronze"
     else:
         prestigio_atual = prestigio_madeira
+        prestigio_final = "Madeira"
 
     if tela_inicio:
         janela.blit(fundo_inicio, (0, 0))
@@ -563,6 +610,17 @@ while loop:
 
     if final_ativo:
         desenhar_final()
+
+        if not musica_final_tocando:
+            if not final_tocar:
+                pg.mixer.music.load("Audios/musica-triste.wav")
+            else:
+                pg.mixer.music.load("Audios/final-bom.wav")
+
+            pg.mixer.music.set_volume(0.3)
+            pg.mixer.music.play(-1)
+            musica_final_tocando = True
+
         pg.display.update()
         continue
 
@@ -572,6 +630,8 @@ while loop:
         if agora - tempo_sem_npc >= TEMPO_ESPERANDO:
             mostrar_npc = True
             esperando_npc = False
+
+            canal_passos.stop()
 
             eventos_disponiveis = []
 
@@ -659,6 +719,7 @@ while loop:
                 alpha = 0
 
     if evento >= 3 and not apagando and not esperando:
+        canal_passos.stop()
         apagando = True
 
     elif evento == 2:
@@ -727,3 +788,16 @@ while loop:
     pg.display.update()
 
 pg.quit()
+
+if final:
+    with open("resultado.txt", "w", encoding="utf-8") as arquivo:
+        arquivo.write(f"{resultado_final}\n")
+        arquivo.write(f"{texto_final}\n")
+        arquivo.write(f"Nível de prestígio: {prestigio_final}\n")
+        arquivo.write(f"Contentamento final: {rects_pontos['Contentamento']}\n")
+        arquivo.write(f"População final: {rects_pontos['Populacao']}\n")
+        arquivo.write(f"Dinheiro final: {rects_pontos['Dinheiro']}\n")
+        arquivo.write("\n")
+else:
+    with open("resultado.txt", "w", encoding="utf-8") as arquivo:
+        arquivo.write(f"Jogo fechado por erro!\n")
