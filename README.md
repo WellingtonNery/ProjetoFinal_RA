@@ -41,7 +41,10 @@ Projeto/
 │
 ├── Imagens/
 │   ├── Calendario/
-│   └── Personagens/
+│   ├── Finais/
+│   └── sprites/
+│
+├── Audios/
 │
 └── README.md
 ```
@@ -54,7 +57,7 @@ Utilizamos dicionários para armazenar informações do mesmo tipo que possuem v
 
 ## Status do Projeto
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/status-concluido-green)
 
 ## Autores
 
