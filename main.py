@@ -20,6 +20,8 @@ final_ativo = False
 final_tipo = None
 final_imagem = None
 
+prestigio = 0
+
 FINAIS = {
     "populacao": "Imagens/Finais/final_populacao.png",
     "dinheiro": "Imagens/Finais/final_dinheiro.png",
@@ -119,15 +121,18 @@ dialogo.carregar()
 
 
 def aplicar_efeito(efeito):
+    global prestigio
+
     for chave, valor in efeito.items():
         rects_pontos[chave] += valor
         rects_pontos["Contentamento"] = max(0, min(rects_pontos["Contentamento"], 100))
         rects_pontos["Dinheiro"] = max(0, rects_pontos["Dinheiro"])
         rects_pontos["Populacao"] = max(0, rects_pontos["Populacao"])
+    prestigio = calcular_prestigio()
 
 
 def esta_na_era_de_ouro():
-    return False
+    return prestigio >= 300
 
 
 def carregar_final(tipo):
@@ -211,6 +216,27 @@ def efeito_digitando(texto):
 
     return texto[:letras_visiveis]
 
+
+def calcular_prestigio():
+    pesos = {
+        "Contentamento": 2,
+        "Populacao": 1.5,
+        "Dinheiro": 0.3
+    }
+
+    soma_pesos = pesos["Contentamento"] + pesos["Populacao"] + pesos["Dinheiro"]
+
+    prestigioCalc = (
+                            rects_pontos["Contentamento"] * pesos["Contentamento"] +
+                            rects_pontos["Populacao"] * pesos["Populacao"] +
+                            rects_pontos["Dinheiro"] * pesos["Dinheiro"]
+                    ) / soma_pesos
+
+    return prestigioCalc
+
+
+prestigio = calcular_prestigio()
+
 pg.mixer.music.load("Audios/som_fundo.mp3")
 pg.mixer.music.set_volume(0.025)
 pg.mixer.music.play(-1)
@@ -276,6 +302,28 @@ quadro_rect.topright = (LARGURA + 40, -100)
 
 personagem_rect = pg.Rect(17, 248, 343, 634)
 
+prestigio_madeira = pg.image.load("Imagens/madeira.png").convert_alpha()
+prestigio_madeira = pg.transform.smoothscale(prestigio_madeira, (96, 96))
+
+prestigio_bronze = pg.image.load("Imagens/bronze.png").convert_alpha()
+prestigio_bronze = pg.transform.smoothscale(prestigio_bronze, (96, 96))
+
+prestigio_prata = pg.image.load("Imagens/prata.png").convert_alpha()
+prestigio_prata = pg.transform.smoothscale(prestigio_prata, (96, 96))
+
+prestigio_ouro = pg.image.load("Imagens/ouro.png").convert_alpha()
+prestigio_ouro = pg.transform.smoothscale(prestigio_ouro, (96, 96))
+
+prestigio_atual = prestigio_madeira
+
+rect_prestigio = prestigio_atual.get_rect()
+area_visivel = quadro.get_bounding_rect()
+
+rect_prestigio.center = (
+    quadro_rect.left + area_visivel.left + 10,
+    quadro_rect.top + area_visivel.bottom - 10
+)
+
 sombra_opcoes = pg.Surface((LARGURA, ALTURA))
 sombra_opcoes.fill((0, 0, 0))
 sombra_opcoes.set_alpha(120)
@@ -284,7 +332,7 @@ if dia == 1 and evento == 0:
     evento_atual = 0
 
 if dia == 67 and evento == 0:
-    evento_atual = 66
+    evento_atual = 67
 
 loop = True
 
@@ -337,7 +385,7 @@ while loop:
                                 guerra1 = True
                             if evento_info["sprite"] == 77:
                                 entregar = True
-                            if evento_info["sprite"] == 80 :
+                            if evento_info["sprite"] == 80:
                                 kenji = True
                             if evento_info["sprite"] == 89:
                                 vendedor_escolha_boa = True
@@ -356,7 +404,7 @@ while loop:
                                 guerra1 = True
                             if evento_info["sprite"] == 77:
                                 esconder = True
-                            if evento_info["sprite"] == 80 :
+                            if evento_info["sprite"] == 80:
                                 kenji = True
                             if evento_info["sprite"] == 89:
                                 vendedor_escolha_ma = True
@@ -452,7 +500,7 @@ while loop:
                                 festival = True
                             if evento_info["sprite"] == 51:
                                 reidemonio = True
-                            
+
 
                         elif rects_escolhas[4]["baixo"].collidepoint(event.pos):
                             aplicar_efeito(evento_info["efeito_quarta"])
@@ -496,6 +544,14 @@ while loop:
     else:
         quadro = quadro_baixo
 
+    if prestigio >= 300:
+        prestigio_atual = prestigio_ouro
+    elif prestigio >= 200:
+        prestigio_atual = prestigio_prata
+    elif prestigio >= 100:
+        prestigio_atual = prestigio_bronze
+    else:
+        prestigio_atual = prestigio_madeira
 
     if tela_inicio:
         janela.blit(fundo_inicio, (0, 0))
@@ -619,6 +675,8 @@ while loop:
 
     janela.blit(calendario, cal_rect)
     janela.blit(quadro, quadro_rect)
+
+    janela.blit(prestigio_atual, rect_prestigio)
 
     dias.desenhar_dia_no_papel(janela, papel_rect, dia)
 
